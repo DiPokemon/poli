@@ -21,10 +21,10 @@
                             <li><a href="#" class="links">Противодействие коррупции</a></li>
                         </ul>
                         <ul class="menutop__icon">
-                        <li><a href="#" class="links"></a></li>
-                        <li><a href="#" class="links"></a></li>
-                        <li><a href="#" class="links"></a></li>
-                        <li><a href="#" class="links"></a></li>
+                        <li><a href="#" class="links">иконка</a></li>
+                        <li><a href="#" class="links">иконка</a></li>
+                        <li><a href="#" class="links">иконка</a></li>
+                        <li><a href="#" class="links">иконка</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,11 +32,11 @@
             <div class="header__contacts">
                 <div class="header__wrapper">
                     <div class="contacts__container">
-                        <div class="contacts__container_item"></div>
-                        <div class="contacts__container_item"></div>
-                        <div class="contacts__container_item"></div>
-                        <div class="contacts__container_item"></div>
-                        <div class="contacts__container_item"></div>
+                        <div class="contacts__container_item logo"></div>
+                        <div class="contacts__container_item">ГБУ РО “Городская Больница №4”</div>
+                        <div class="contacts__container_item">8 (863) 263-13-80</div>
+                        <div class="contacts__container_item">8 (863) 263-50-64</div>
+                        <div class="contacts__container_item">Версия для слабовидящих</div>
                     </div>
                 </div>
             </div>

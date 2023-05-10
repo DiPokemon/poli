@@ -20,22 +20,37 @@
 .menutop__list {
     display: flex;
     flex-direction: row;
+    gap: 40px;
 }
 
 .list-links {
-font-family: 'Open Sans';
+font-family: $font_opensans;
 font-style: normal;
 font-weight: 600;
 font-size: 12px;
 line-height: 16px;
 display: flex;
 align-items: center;
-color: #055D65;
+color: $font-blue;
+margin-top: 12px;
+margin-bottom: 12px;
 
 }
 .menutop__icon {
     display: flex;
     flex-direction: row;
+    align-content: center;
+    gap: 21px;
+    li {
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+img {
+    height: 15px;
+    width: 15px;
 }
 
 .contacts__container {

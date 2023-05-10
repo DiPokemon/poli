@@ -21,10 +21,11 @@
                             <li><a href="#" class="list-links">Противодействие коррупции</a></li>
                         </ul>
                         <ul class="menutop__icon">
-                        <li><a href="#" class="links">ic</a></li>
-                        <li><a href="#" class="links">ic</a></li>
-                        <li><a href="#" class="links">ic</a></li>
-                        <li><a href="#" class="links">ic</a></li>
+                        <li><a href="#" class="links-icon"><img src="img/ok.svg" alt=""></a></li>
+                        <li><a href="#" class="links-icon"><img src="img/vk.svg" alt=""></a></li>
+                        <li><a href="#" class="links-icon"><img src="img/inst.svg" alt=""></a></li>
+                        <li><a href="#" class="links-icon"><img src="img/tv.svg" alt=""></a></li>
+                        <li><a href="#" class="links-icon"><img src="img/fc.svg" alt=""></a></li>
                         </ul>
                     </nav>
                 </div>

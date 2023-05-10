@@ -70,16 +70,14 @@ hr {
   margin: 0;
 }
 
-.header__menutop {
+.header_top {
   background-color: #E5F2F4;
 }
-
-.header__wrapper {
+.header_top .header_wrapper {
   margin: 0 auto;
   max-width: 1200px;
 }
-
-.menutop_nav {
+.header_top .header_wrapper .header_top_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,4 +159,19 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 64px;
+}
+
+.menubottom_links {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

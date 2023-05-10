@@ -2,20 +2,23 @@
 @import "fonts";
 @import "all";
 
-.header__menutop {
+.header_top {
   background-color: $light-blue;
+  .header_wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    .header_top_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+  }
 }
 
-.header__wrapper {
-  margin: 0 auto;
-  max-width: 1200px;
-}
 
-.menutop_nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
+
 
 .menutop__list {
     display: flex;
@@ -88,6 +91,6 @@ line-height: 22px;
 display: flex;
 align-items: center;
 
-color: #FFFFFF;
+color: $white;
 }
 @import "adaptive";

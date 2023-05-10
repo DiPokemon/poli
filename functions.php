@@ -18,6 +18,7 @@ add_theme_support('post-thumbnails');
 
 //Register menu areas
 register_nav_menus([
+    'top_menu' => 'Top menu',
     'main_menu' => 'Main menu',
     'footer_menu' => 'Footer menu'
 ]);

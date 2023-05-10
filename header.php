@@ -11,10 +11,34 @@
     </head>
     <body>
         <header>
-            <div class="header__menutop">
-                <div class="header__wrapper">
-                    <nav class="menutop_nav">
-                        <ul class="menutop__list">
+            <div class="header_top">
+                <div class="header_wrapper">
+                    <nav class="header_top_menu">
+                    <?php
+                        $args = array(
+                            'container'       => 'nav',          
+                            'container_class' => 'header_top_menu menu',           
+                            'menu_class'      => 'menu_list',          
+                            'fallback_cb'     => 'wp_page_menu',            
+                            'link_class'     => 'menu_link',           
+                            'theme_location'  => 'top_menu',
+                            'add_li_class'    => 'menu_item',
+                            'echo'          => false,               
+                        );
+                        $temp_menu = wp_nav_menu($args);
+                        preg_match_all("~<a (.*?)>(.*)</a>~", $temp_menu, $matches);
+                        foreach($matches[0] as $value){
+                            if(strpos($value, "<span") === false){
+                                $temp_value = preg_replace("~<a (.*?)>(.*)</a>~", "<a $1><span itemprop='name'>$2</span></a>", $value);
+                                $temp_menu = str_replace($value, $temp_value, $temp_menu);
+                            }else{
+                                $temp_value = str_replace("<span", "<span itemprop='name'", $value);
+                                $temp_menu = str_replace($value, $temp_value, $temp_menu);
+                            }
+                        }
+                        echo $temp_menu;
+                    ?>  
+                        <!-- <ul class="menutop__list">
                             <li><a href="#" class="list-links">Информация по правам пациентов</a></li>
                             <li><a href="#" class="list-links">Портал ГОСУСЛУГИ</a></li>
                             <li><a href="#" class="list-links">Результаты СОУТ</a></li>
@@ -26,25 +50,104 @@
                         <li><a href="#" class="links-icon"><img src="img/inst.svg" alt=""></a></li>
                         <li><a href="#" class="links-icon"><img src="img/tv.svg" alt=""></a></li>
                         <li><a href="#" class="links-icon"><img src="img/fc.svg" alt=""></a></li>
-                        </ul>
+                        </ul> -->
+                    </nav>
+                    <nav class="header_top_social">
+                    <?php
+                        $args = array(
+                            'container'       => 'nav',          
+                            'container_class' => 'header_top_social menu',           
+                            'menu_class'      => 'menu_list',          
+                            'fallback_cb'     => 'wp_page_menu',            
+                            'link_class'     => 'menu_link',           
+                            'theme_location'  => 'top_menu',
+                            'add_li_class'    => 'menu_item',
+                            'echo'          => false,               
+                        );
+                        $temp_menu = wp_nav_menu($args);
+                        preg_match_all("~<a (.*?)>(.*)</a>~", $temp_menu, $matches);
+                        foreach($matches[0] as $value){
+                            if(strpos($value, "<span") === false){
+                                $temp_value = preg_replace("~<a (.*?)>(.*)</a>~", "<a $1><span itemprop='name'>$2</span></a>", $value);
+                                $temp_menu = str_replace($value, $temp_value, $temp_menu);
+                            }else{
+                                $temp_value = str_replace("<span", "<span itemprop='name'", $value);
+                                $temp_menu = str_replace($value, $temp_value, $temp_menu);
+                            }
+                        }
+                        echo $temp_menu;
+                    ?>  
                     </nav>
                 </div>
             </div>
-            <div class="header__contacts">
-                <div class="header__wrapper">
-                    <div class="contacts__container">
+            <div class="header_middle">
+                <div class="header_wrapper">
+                    <div class="site_identification">
+                    <div class="logo_img"><?php the_custom_logo() ?></div>
+                    <div class="logo_text"></div>
+                    <div class="header_phone"><a href="tel:<?= $contacts_main_phone_href ?>" class="header_phone-link"><?= $contacts_main_phone_front ?></a></div>
+                    </div>
+                    <div class="visually_impaired"></div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <!--<div class="contacts__container">
                         <div class="contacts__container_item logo"></div>
                         <div class="contacts__container_item">ГБУ РО “Городская Больница №4”</div>
                         <div class="contacts__container_item">8 (863) 263-13-80</div>
                         <div class="contacts__container_item">8 (863) 263-50-64</div>
                         <div class="contacts__container_item">Версия для слабовидящих</div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
-            <div class="header__menubottom">
-                <div class="header__wrapper">
-                    <nav class="menubottom_nav">
-                        <ul class="menubottom__list">
+            <div class="header_bottom">
+                <div class="header_wrapper">
+                    <nav class="header_bottom_menu">
+                    <?php
+                        $args = array(
+                            'container'       => 'nav',          
+                            'container_class' => 'header_menu menu',           
+                            'menu_class'      => 'menu_list',          
+                            'fallback_cb'     => 'wp_page_menu',            
+                            'link_class'     => 'menu_link',           
+                            'theme_location'  => 'main_menu',
+                            'add_li_class'    => 'menu_item',
+                            'echo'          => false,               
+                        );
+                        $temp_menu = wp_nav_menu($args);
+                        preg_match_all("~<a (.*?)>(.*)</a>~", $temp_menu, $matches);
+                        foreach($matches[0] as $value){
+                            if(strpos($value, "<span") === false){
+                                $temp_value = preg_replace("~<a (.*?)>(.*)</a>~", "<a $1><span itemprop='name'>$2</span></a>", $value);
+                                $temp_menu = str_replace($value, $temp_value, $temp_menu);
+                            }else{
+                                $temp_value = str_replace("<span", "<span itemprop='name'", $value);
+                                $temp_menu = str_replace($value, $temp_value, $temp_menu);
+                            }
+                        }
+                        echo $temp_menu;
+                    ?>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <!-- <ul class="menubottom__list">
                             <li><a href="#" class="menubottom_links">Главная</a></li>
                             <li><a href="#" class="menubottom_links">О больнице</a></li>
                             <li><a href="#" class="menubottom_links">Отделение</a></li>
@@ -54,7 +157,7 @@
                             <li><a href="#" class="menubottom_links">Запись на приём</a></li>
                             <li><a href="#" class="menubottom_links">Контакты</a></li>
                         
-                        </ul>
+                        </ul> -->
                     </nav>
                     
 

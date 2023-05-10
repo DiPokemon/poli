@@ -1,7 +1,93 @@
-@import "fonts";
 @import "reset";
+@import "fonts";
 @import "all";
 
+.header__menutop {
+  background-color: $light-blue;
+}
 
+.header__wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
 
+.menutop_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menutop__list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.list-links {
+font-family: $font_opensans;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+display: flex;
+align-items: center;
+color: $font-blue;
+margin-top: 12px;
+margin-bottom: 12px;
+
+}
+.menutop__icon {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 21px;
+    li {
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+img {
+    height: 15px;
+    width: 15px;
+}
+
+.contacts__container {
+    display: flex;
+}
+
+.contacts__container_item {
+
+}
+
+.logo {
+
+}
+
+.menubottom_nav {
+
+}
+
+.header__menubottom {
+background-color: $blue2;
+}
+
+.menubottom__list {
+    display: flex;
+    gap: 64px;
+
+}
+
+.menubottom_links {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
 @import "adaptive";

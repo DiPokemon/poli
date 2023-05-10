@@ -152,8 +152,13 @@ img {
   display: flex;
 }
 
+.header__menubottom {
+  background-color: #45A6AF;
+}
+
 .menubottom__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 64px;
 }/*# sourceMappingURL=style.css.map */

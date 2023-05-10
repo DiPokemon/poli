@@ -45,14 +45,14 @@
                 <div class="header__wrapper">
                     <nav class="menubottom_nav">
                         <ul class="menubottom__list">
-                            <li><a href="#" class="links">Главная</a></li>
-                            <li><a href="#" class="links">О больнице</a></li>
-                            <li><a href="#" class="links">Отделение</a></li>
-                            <li><a href="#" class="links">Новости</a></li>
-                            <li><a href="#" class="links">Задать вопрос</a></li>
-                            <li><a href="#" class="links">Отзывы</a></li>
-                            <li><a href="#" class="links">Запись на приём</a></li>
-                            <li><a href="#" class="links">Контакты</a></li>
+                            <li><a href="#" class="menubottom_links">Главная</a></li>
+                            <li><a href="#" class="menubottom_links">О больнице</a></li>
+                            <li><a href="#" class="menubottom_links">Отделение</a></li>
+                            <li><a href="#" class="menubottom_links">Новости</a></li>
+                            <li><a href="#" class="menubottom_links">Задать вопрос</a></li>
+                            <li><a href="#" class="menubottom_links">Отзывы</a></li>
+                            <li><a href="#" class="menubottom_links">Запись на приём</a></li>
+                            <li><a href="#" class="menubottom_links">Контакты</a></li>
                         
                         </ul>
                     </nav>

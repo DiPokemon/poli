@@ -2,11 +2,60 @@
 @import "fonts";
 @import "all";
 
+.header__menutop {
+  background-color: $light-blue;
+}
 
-.wrapper {
+.header__wrapper {
   margin: 0 auto;
   max-width: 1200px;
 }
 
+.menutop_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menutop__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-links {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+display: flex;
+align-items: center;
+color: #055D65;
+
+}
+.menutop__icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts__container {
+    display: flex;
+}
+
+.contacts__container_item {
+
+}
+
+.logo {
+
+}
+
+.menubottom_nav {
+
+}
+
+.menubottom__list {
+
+}
 
 @import "adaptive";

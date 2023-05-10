@@ -15,16 +15,16 @@
                 <div class="header__wrapper">
                     <nav class="menutop_nav">
                         <ul class="menutop__list">
-                            <li><a href="#" class="links">Информация по правам пациентов</a></li>
-                            <li><a href="#" class="links">Портал ГОСУСЛУГИ</a></li>
-                            <li><a href="#" class="links">Результаты СОУТ</a></li>
-                            <li><a href="#" class="links">Противодействие коррупции</a></li>
+                            <li><a href="#" class="list-links">Информация по правам пациентов</a></li>
+                            <li><a href="#" class="list-links">Портал ГОСУСЛУГИ</a></li>
+                            <li><a href="#" class="list-links">Результаты СОУТ</a></li>
+                            <li><a href="#" class="list-links">Противодействие коррупции</a></li>
                         </ul>
                         <ul class="menutop__icon">
-                        <li><a href="#" class="links">иконка</a></li>
-                        <li><a href="#" class="links">иконка</a></li>
-                        <li><a href="#" class="links">иконка</a></li>
-                        <li><a href="#" class="links">иконка</a></li>
+                        <li><a href="#" class="links">ic</a></li>
+                        <li><a href="#" class="links">ic</a></li>
+                        <li><a href="#" class="links">ic</a></li>
+                        <li><a href="#" class="links">ic</a></li>
                         </ul>
                     </nav>
                 </div>

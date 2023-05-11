@@ -81,13 +81,19 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.header_top .header_wrapper .header_top_menu .menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.header_top .header_wrapper .header_top_menu .menu_list .menu-item {
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .menutop__list {

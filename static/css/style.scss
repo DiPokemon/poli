@@ -9,10 +9,17 @@
     max-width: 1200px;
     .header_top_menu {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
+        .menu_list {
+            display: flex;
+            gap: 40px;
+            .menu-item {
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+        }
     }
-    
+
   }
 }
 

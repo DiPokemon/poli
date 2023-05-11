@@ -15,6 +15,7 @@ add_theme_support( 'custom-logo' );
 
 //Miniatures
 add_theme_support('post-thumbnails');
+add_theme_support('title-tag');
 
 //Register menu areas
 register_nav_menus([
@@ -36,6 +37,11 @@ function load_styles(){
   	wp_enqueue_style('style_min', get_template_directory_uri().'/static/css/style.min.css');
   	wp_enqueue_style('slick', get_template_directory_uri().'/static/libs/slick/slick.min.css');
   	wp_enqueue_style('slick_theme', get_template_directory_uri().'/static/libs/slick/slick-theme.min.css');
+    wp_enqueue_style('googleapis', 'https://fonts.googleapis.com', array(), 'null', true);
+    wp_enqueue_style('gstatic', 'https://fonts.gstatic.com', array(), 'null', true);
+    wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap', array(), 'null', true);
+
+
 
 }; 
 add_action('wp_enqueue_scripts', 'load_styles', 10);

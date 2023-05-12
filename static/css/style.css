@@ -95,19 +95,7 @@ hr {
   margin-top: 12px;
   margin-bottom: 12px;
 }
-
-.menutop__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 40px;
-}
-
-.list-links {
+.header_top .header_wrapper .header_top_menu .menu_list .menu-item .menu_link {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -120,44 +108,51 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   color: #055D65;
-  margin-top: 12px;
-  margin-bottom: 12px;
 }
 
-.menutop__icon {
+.header_middle .header_wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.header_middle .header_wrapper .site_identification {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  gap: 21px;
 }
-.menutop__icon li {
+
+.header_bottom {
+  background-color: #45A6AF;
+}
+.header_bottom .header_wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.header_bottom .header_wrapper .header_bottom_menu .menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header_bottom .header_wrapper .header_bottom_menu .menu_list .menu-item {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.header_bottom .header_wrapper .header_bottom_menu .menu_list .menu-item .menu_link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-img {
-  height: 15px;
-  width: 15px;
-}
-
-.contacts__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header__menubottom {
-  background-color: #45A6AF;
+  color: #ffffff;
 }
 
 .menubottom__list {

@@ -60,11 +60,12 @@
             <div class="header_middle">
                 <div class="header_wrapper">
                     <div class="site_identification">
-                    <div class="logo_img"><?php the_custom_logo() ?></div>
-                    <div class="logo_text"></div>
-                    <div class="header_phone"><a href="tel:<?= $contacts_main_phone_href ?>" class="header_phone-link"><?= $contacts_main_phone_front ?></a></div>
+                       <div class="logo_img"><?php the_custom_logo() ?></div>
+                       <div class="logo_text">ГБУ РО “Городская Больница №4”</div>
+                       <div class="header_phone"><a href="tel:<?= $contacts_main_phone_href ?>" class="header_phone-link"><?= $contacts_main_phone_front ?></a></div>
+                       <div class="header_phone"><a href="tel:<?= $contacts_main_phone_href ?>" class="header_phone-link"><?= $contacts_main_phone_front ?></a></div>
+                       <div class="visually_impaired"></div>
                     </div>
-                    <div class="visually_impaired"></div>
                 
                 
                 
@@ -92,7 +93,7 @@
                     <?php
                         $args = array(
                             'container'       => 'nav',          
-                            'container_class' => 'header_menu menu',           
+                            'container_class' => 'header_bottom_menu menu',           
                             'menu_class'      => 'menu_list',          
                             'fallback_cb'     => 'wp_page_menu',            
                             'link_class'     => 'menu_link',           

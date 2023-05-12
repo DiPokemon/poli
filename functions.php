@@ -61,3 +61,68 @@ function load_scripts(){
   wp_enqueue_script('maskedinput', get_template_directory_uri().'/static/js/maskedinput.min.js', array('jquery'), NULL, true); 
 } 
 add_action('wp_enqueue_scripts', 'load_scripts', 10);
+
+/**
+* Добавляет блок для ввода контактных данных
+*/
+function mytheme_customize_register( $wp_customize ) {
+    /*
+    Добавляем секцию в настройки темы
+    */
+    $wp_customize->add_section(
+    // ID
+    'data_site_section',
+    // Массив аргументов
+    array(
+    'title' => 'Контактные данные в шапке сайта',
+    'capability' => 'edit_theme_options',
+    'description' => "Тут можно указать контактные данные"    )
+    );
+    /*
+    Добавляем поле контактных данных
+    */
+    $wp_customize->add_setting(
+    // ID
+    'theme_contacttext',
+    // Массив аргументов
+    array(
+    'default' => '',
+    'type' => 'option'
+    )
+    );
+    $wp_customize->add_control(
+    // ID
+    'theme_contacttext_control',
+    // Массив аргументов
+    array(
+    'type' => 'text',
+    'label' => "Текст с контактной информацией",
+    'section' => 'data_site_section',
+    'settings' => 'theme_contacttext'
+    )
+    );
+    /*
+    Добавляем поле телефона site_telephone
+    */
+    $wp_customize->add_setting(
+    // ID
+    'site_telephone',
+    // Массив аргументов
+    array(
+    'default' => '',
+    'type' => 'option'
+    )
+    );
+    $wp_customize->add_control(
+    // ID
+    'site_telephone_control',
+    // Массив аргументов
+    array(
+    'type' => 'text',
+    'label' => "Текст с телефоном",
+    'section' => 'data_site_section',
+    'settings' => 'site_telephone'
+    )
+    );
+    }
+    add_action( 'customize_register', 'mytheme_customize_register' );

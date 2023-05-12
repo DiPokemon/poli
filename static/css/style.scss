@@ -16,6 +16,17 @@
             .menu-item {
                 margin-top: 12px;
                 margin-bottom: 12px;
+                .menu_link {
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 16px;
+                    display: flex;
+                    align-items: center;
+                    color: $font-blue;
+
+                }
             }
         }
     }
@@ -27,60 +38,84 @@
 
 
 
-.menutop__list {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-}
+// .menutop__list {
+//     display: flex;
+//     flex-direction: row;
+//     gap: 40px;
+// }
 
-.list-links {
-font-family: $font_opensans;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 16px;
-display: flex;
-align-items: center;
-color: $font-blue;
-margin-top: 12px;
-margin-bottom: 12px;
+// .list-links {
+// font-family: $font_opensans;
+// font-style: normal;
+// font-weight: 600;
+// font-size: 12px;
+// line-height: 16px;
+// display: flex;
+// align-items: center;
+// color: $font-blue;
+// margin-top: 12px;
+// margin-bottom: 12px;
 
-}
-.menutop__icon {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    gap: 21px;
-    li {
-        display: flex;
-        align-items: center;
-    }
+// }
+// .menutop__icon {
+//     display: flex;
+//     flex-direction: row;
+//     align-content: center;
+//     gap: 21px;
+//     li {
+//         display: flex;
+//         align-items: center;
+//     }
     
+// }
+
+// img {
+//     height: 15px;
+//     width: 15px;
+// }
+
+.header_middle {
+    .header_wrapper {
+        margin: 0 auto;
+        max-width: 1200px;
+        .site_identification {
+            display: flex; 
+
+        }
+    }
 }
 
-img {
-    height: 15px;
-    width: 15px;
-}
 
-.contacts__container {
-    display: flex;
-}
 
-.contacts__container_item {
-
-}
-
-.logo {
-
-}
-
-.menubottom_nav {
-
-}
-
-.header__menubottom {
+.header_bottom {
 background-color: $blue2;
+    .header_wrapper {
+        margin: 0 auto;
+        max-width: 1200px;
+        .header_bottom_menu {
+            
+            .menu_list {
+            display: flex;
+            gap: 60px;
+            justify-content: space-between;
+               .menu-item {
+                margin-top: 18px;
+                margin-bottom: 18px;
+                 .menu_link {
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 22px;
+                    display: flex;
+                    align-items: center;
+                    color: $white;
+                 }
+               }
+
+            }
+        }
+    }
 }
 
 .menubottom__list {

@@ -2,24 +2,26 @@
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
-// Default options page
+// Default options page. Создание в админке нового пункта меню "Theme options" 
 $basic_options_container = Container::make( 'theme_options', __( 'Theme options', 'kstehno' ) )
+   
+
     ->set_icon( 'dashicons-welcome-widgets-menus' )    
-    ->add_tab( __( 'Additional code', 'kstehno' ), array(
-        Field::make( 'header_scripts', 'head_code', __('Code in HEAD', 'kstehno')),
-        Field::make( 'footer_scripts', 'footer_code', __('Code in FOOTER', 'kstehno')),
-        Field::make( 'textarea', 'text_404', __('Page 404 text', 'kstehno') ),                           
+    ->add_tab( __( 'Additional code', 'kstehno' ), array( //Создание вкладки "Additional code" в новом пункте меню "Theme options" 
+        Field::make( 'header_scripts', 'head_code', __('Code in HEAD', 'kstehno')), //Создаём поле 'Code in HEAD' на вкладке "Additional code"
+        Field::make( 'footer_scripts', 'footer_code', __('Code in FOOTER', 'kstehno')), //Создаём поле 'Code in FOOTER' на вкладке "Additional code"
+        Field::make( 'textarea', 'text_404', __('Page 404 text', 'kstehno') ), //Создаём поле 'Page 404 text' на вкладке "Additional code"                           
     ) )
-    ->add_tab( __( 'Contacts', 'kstehno' ), array(
-        Field::make( 'text', 'org_name', __('Organization name', 'kstehno')),
+    ->add_tab( __( 'Contacts', 'kstehno' ), array( //Создание вкладки "Contacts" в новом пункте меню "Theme options" 
+        Field::make( 'text', 'org_name', __('Organization name', 'kstehno')), //Создаем поле 'Organization name' на вкладке "Contacts"
         Field::make( 'text', 'main_phone', __( 'main phone', 'kstehno' ) )
             ->set_attribute( 'placeholder', '+7 (***) ***-**-**' )            
             ->set_width(33),
-        Field::make( 'text', 'email', __( 'E-mail', 'kstehno' ) )
-            ->set_attribute( 'placeholder', 'example@example.com' )  
-            ->set_width(33),
         Field::make( 'text', 'second_phone', __( 'Add. phone', 'kstehno' ) )
             ->set_attribute( 'placeholder', '+7 (***) ***-**-**' ) 
+            ->set_width(33),
+        Field::make( 'text', 'email', __( 'E-mail', 'kstehno' ) )
+            ->set_attribute( 'placeholder', 'example@example.com' )
             ->set_width(33),
         Field::make( 'text', 'vk', __( 'VKontakte', 'kstehno' ) )
             ->set_attribute( 'placeholder', 'vk.com/example' )

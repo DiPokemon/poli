@@ -61,7 +61,7 @@
                 <div class="header_wrapper">
                     <div class="site_identification">
                        <div class="logo_img"><?php the_custom_logo() ?></div>
-                       <div class="logo_text">ГБУ РО “Городская Больница №4”</div>
+                       <div class="logo_text"><?php echo carbon_get_post_meta(get_the_ID(), name: 'org_name'); ?></div>
                        <div class="header_phone"><a href="tel:<?= $contacts_main_phone_href ?>" class="header_phone-link"><?= $contacts_main_phone_front ?></a></div>
                        <div class="header_phone"><a href="tel:<?= $contacts_main_phone_href ?>" class="header_phone-link"><?= $contacts_main_phone_front ?></a></div>
                        <div class="visually_impaired"></div>

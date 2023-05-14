@@ -20,6 +20,14 @@ $basic_options_container = Container::make( 'theme_options', __( 'Theme options'
         Field::make( 'text', 'second_phone', __( 'Add. phone', 'kstehno' ) )
             ->set_attribute( 'placeholder', '+7 (***) ***-**-**' ) 
             ->set_width(33),
+        Field::make( 'text', 'visually_impaired', __( 'Add. text', 'kstehno' ) )
+            ->set_attribute( 'placeholder', 'visually_impaired' ) 
+            ->set_width(33),
+        
+        
+        
+        
+        
         Field::make( 'text', 'email', __( 'E-mail', 'kstehno' ) )
             ->set_attribute( 'placeholder', 'example@example.com' )
             ->set_width(33),

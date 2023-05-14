@@ -28,8 +28,10 @@
                         );
                         $temp_menu = wp_nav_menu($args);
                         preg_match_all("~<a (.*?)>(.*)</a>~", $temp_menu, $matches);
-                        foreach($matches[0] as $value){
-                            if(strpos($value, "<span") === false){
+                        foreach($matches[0] as $value)
+                        {
+                            if(strpos($value, "<span") === false)
+                            {
                                 $temp_value = preg_replace("~<a (.*?)>(.*)</a>~", "<a $1><span itemprop='name'>$2</span></a>", $value);
                                 $temp_menu = str_replace($value, $temp_value, $temp_menu);
                             }else{
@@ -53,21 +55,17 @@
                         <li><a href="#" class="links-icon"><img src="img/fc.svg" alt=""></a></li>
                         </ul> -->
                     </nav>
-                    <nav class="header_top_social">
-                    </nav>
+                    <nav class="header_top_social"></nav>
                 </div>
             </div>
             <div class="header_middle">
                 <div class="header_wrapper">
                     <div class="site_identification">
                        <div class="logo_img"><?php the_custom_logo() ?></div>
-                       <div class="logo_text"><?php
-                                               echo carbon_get_post_meta( get_the_ID(), name: 'org_name' );
-                                              ?>
-                        </div>
-                       <div class="header_phone"><a href="tel:<?= $contacts_main_phone_href ?>" class="header_phone-link"><?= $contacts_main_phone_front ?></a></div>
-                       <div class="header_phone"><a href="tel:<?= $contacts_main_phone_href ?>" class="header_phone-link"><?= $contacts_main_phone_front ?></a></div>
-                       <div class="visually_impaired"></div>
+                       <div class="logo_text"><a href="#" class="logo_text-link"><?php echo carbon_get_theme_option('org_name'); ?></a></div>
+                       <div class="header_phone"><a href="#" class="header_phone-link"><?php echo carbon_get_theme_option('main_phone'); ?></a></div>
+                       <div class="header_phone"><a href="#" class="header_phone-link"><?php echo carbon_get_theme_option('second_phone'); ?></a></div>
+                       <div class="visually_impaired"><a href="#" class="visually_impaired-link"><?php echo carbon_get_theme_option('visually_impaired'); ?></a></div>
                     </div>
                 
                 
@@ -93,30 +91,30 @@
             <div class="header_bottom">
                 <div class="header_wrapper">
                     <nav class="header_bottom_menu">
-                    <?php
-                        $args = array(
-                            'container'       => 'nav',          
-                            'container_class' => 'header_bottom_menu menu',           
-                            'menu_class'      => 'menu_list',          
-                            'fallback_cb'     => 'wp_page_menu',            
-                            'link_class'     => 'menu_link',           
-                            'theme_location'  => 'main_menu',
-                            'add_li_class'    => 'menu_item',
-                            'echo'          => false,               
-                        );
-                        $temp_menu = wp_nav_menu($args);
-                        preg_match_all("~<a (.*?)>(.*)</a>~", $temp_menu, $matches);
-                        foreach($matches[0] as $value){
-                            if(strpos($value, "<span") === false){
-                                $temp_value = preg_replace("~<a (.*?)>(.*)</a>~", "<a $1><span itemprop='name'>$2</span></a>", $value);
-                                $temp_menu = str_replace($value, $temp_value, $temp_menu);
-                            }else{
-                                $temp_value = str_replace("<span", "<span itemprop='name'", $value);
-                                $temp_menu = str_replace($value, $temp_value, $temp_menu);
-                            }
-                        }
-                        echo $temp_menu;
-                    ?>
+                                    <?php
+                                        $args = array(
+                                            'container'       => 'nav',          
+                                            'container_class' => 'header_bottom_menu menu',           
+                                            'menu_class'      => 'menu_list',          
+                                            'fallback_cb'     => 'wp_page_menu',            
+                                            'link_class'     => 'menu_link',           
+                                            'theme_location'  => 'main_menu',
+                                            'add_li_class'    => 'menu_item',
+                                            'echo'          => false,               
+                                        );
+                                        $temp_menu = wp_nav_menu($args);
+                                        preg_match_all("~<a (.*?)>(.*)</a>~", $temp_menu, $matches);
+                                        foreach($matches[0] as $value){
+                                            if(strpos($value, "<span") === false){
+                                                $temp_value = preg_replace("~<a (.*?)>(.*)</a>~", "<a $1><span itemprop='name'>$2</span></a>", $value);
+                                                $temp_menu = str_replace($value, $temp_value, $temp_menu);
+                                            }else{
+                                                $temp_value = str_replace("<span", "<span itemprop='name'", $value);
+                                                $temp_menu = str_replace($value, $temp_value, $temp_menu);
+                                            }
+                                        }
+                                        echo $temp_menu;
+                                    ?>
                     
                     
                     

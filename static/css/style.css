@@ -95,7 +95,7 @@ hr {
   margin-top: 12px;
   margin-bottom: 12px;
 }
-.header_top .header_wrapper .header_top_menu .menu_list .menu-item .menu_link {
+.header_top .header_wrapper .header_top_menu .menu_list .menu-item span {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -118,6 +118,41 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header_middle .header_wrapper .site_identification .logo_text-link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #E80B8B;
+}
+.header_middle .header_wrapper .site_identification .header_phone-link, .header_middle .header_wrapper .site_identification .visually_impaired-link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #E80B8B;
 }
 
 .header_bottom {
@@ -128,6 +163,8 @@ hr {
   max-width: 1200px;
 }
 .header_bottom .header_wrapper .header_bottom_menu .menu_list {
+  margin-top: 0px;
+  margin-bottom: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,29 +177,7 @@ hr {
   margin-top: 18px;
   margin-bottom: 18px;
 }
-.header_bottom .header_wrapper .header_bottom_menu .menu_list .menu-item .menu_link {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #ffffff;
-}
-
-.menubottom__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 64px;
-}
-
-.menubottom_links {
+.header_bottom .header_wrapper .header_bottom_menu .menu_list .menu-item span {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;

@@ -2,92 +2,148 @@
 @import "fonts";
 @import "all";
 
-.header__menutop {
-  background-color: $light-blue;
+.header_top {
+            background-color: $light-blue;
+            .header_wrapper {
+                margin: 0 auto;
+                max-width: 1200px;
+                .header_top_menu {
+                    display: flex;
+                    justify-content: space-between;
+                    .menu_list {
+                        display: flex;
+                        gap: 40px;
+                        .menu-item {
+                            margin-top: 12px;
+                            margin-bottom: 12px;
+                            span {
+                                font-family: $font_opensans;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 12px;
+                                line-height: 16px;
+                                display: flex;
+                                align-items: center;
+                                color: $font-blue;
+
+                            }
+                        }
+                    }
+                }
+
+            }
 }
 
-.header__wrapper {
-  margin: 0 auto;
-  max-width: 1200px;
-}
 
-.menutop_nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-.menutop__list {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-}
 
-.list-links {
-font-family: $font_opensans;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 16px;
-display: flex;
-align-items: center;
-color: $font-blue;
-margin-top: 12px;
-margin-bottom: 12px;
 
-}
-.menutop__icon {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    gap: 21px;
-    li {
-        display: flex;
-        align-items: center;
-    }
+// .menutop__list {
+//     display: flex;
+//     flex-direction: row;
+//     gap: 40px;
+// }
+
+// .list-links {
+// font-family: $font_opensans;
+// font-style: normal;
+// font-weight: 600;
+// font-size: 12px;
+// line-height: 16px;
+// display: flex;
+// align-items: center;
+// color: $font-blue;
+// margin-top: 12px;
+// margin-bottom: 12px;
+
+// }
+// .menutop__icon {
+//     display: flex;
+//     flex-direction: row;
+//     align-content: center;
+//     gap: 21px;
+//     li {
+//         display: flex;
+//         align-items: center;
+//     }
     
+// }
+
+// img {
+//     height: 15px;
+//     width: 15px;
+// }
+
+.header_middle {
+    .header_wrapper {
+        margin: 0 auto;
+        max-width: 1200px;
+        .site_identification {
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+            .logo_text-link {
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 21px;
+                line-height: 29px;
+                display: flex;
+                align-items: center;
+                color: $red;
+            }
+            .header_phone-link, .visually_impaired-link {
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 21px;
+                line-height: 29px;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                color: $red;
+            }
+            
+        }
+    }
 }
 
-img {
-    height: 15px;
-    width: 15px;
-}
 
-.contacts__container {
-    display: flex;
-}
 
-.contacts__container_item {
-
-}
-
-.logo {
-
-}
-
-.menubottom_nav {
-
-}
-
-.header__menubottom {
+.header_bottom {
 background-color: $blue2;
+    .header_wrapper {
+        margin: 0 auto;
+        max-width: 1200px;
+        .header_bottom_menu {
+            
+            .menu_list {
+                 
+                margin-top: 0px;
+                margin-bottom: 0px;
+                display: flex;
+                gap: 60px;
+                justify-content: space-between;
+           
+                        .menu-item {
+                            margin-top: 18px;
+                            margin-bottom: 18px;
+                            span {
+                                font-family: $font_opensans;
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 22px;
+                                display: flex;
+                                align-items: center;
+                                color: $white;
+                            }
+                        }
+                
+            }
+        }
+    }
 }
 
-.menubottom__list {
-    display: flex;
-    gap: 64px;
 
-}
-
-.menubottom_links {
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 22px;
-display: flex;
-align-items: center;
-
-color: #FFFFFF;
-}
 @import "adaptive";

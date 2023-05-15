@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="ru">
+<html <?php language_attributes(); ?>>
     <head itemscope itemtype="http://schema.org/WPHeader">
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />   
+        <title>ГБУ РО “Городская Больница №4”</title> 
         
         <?php wp_head();?>
         
@@ -104,8 +105,9 @@
                         <li><a href="#" class="links-icon"><img src="img/inst.svg" alt=""></a></li>
                         <li><a href="#" class="links-icon"><img src="img/tv.svg" alt=""></a></li>
                         <li><a href="#" class="links-icon"><img src="img/fc.svg" alt=""></a></li>
-                        </ul>
+                        </ul> -->
                     </nav>
+                    <nav class="header_top_social"></nav>
                 </div>
             </div> -->
 
@@ -117,7 +119,7 @@
                         <div class="contacts__container_item">8 (863) 263-13-80</div>
                         <div class="contacts__container_item">8 (863) 263-50-64</div>
                         <div class="contacts__container_item">Версия для слабовидящих</div>
-                    </div>
+                    </div> -->
                 </div>
             </div> -->
 
@@ -134,7 +136,7 @@
                             <li><a href="#" class="menubottom_links">Запись на приём</a></li>
                             <li><a href="#" class="menubottom_links">Контакты</a></li>
                         
-                        </ul>
+                        </ul> -->
                     </nav>
                     
 

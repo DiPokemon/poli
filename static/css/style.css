@@ -70,40 +70,32 @@ hr {
   margin: 0;
 }
 
-.header__menutop {
+.header_top {
   background-color: #E5F2F4;
 }
-
-.header__wrapper {
+.header_top .header_wrapper {
   margin: 0 auto;
   max-width: 1200px;
 }
-
-.menutop_nav {
+.header_top .header_wrapper .header_top_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.menutop__list {
+.header_top .header_wrapper .header_top_menu .menu_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   gap: 40px;
 }
-
-.list-links {
+.header_top .header_wrapper .header_top_menu .menu_list .menu-item {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.header_top .header_wrapper .header_top_menu .menu_list .menu-item span {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -116,49 +108,86 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   color: #055D65;
-  margin-top: 12px;
-  margin-bottom: 12px;
 }
 
-.menutop__icon {
+.header_middle .header_wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.header_middle .header_wrapper .site_identification {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  gap: 21px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.menutop__icon li {
+.header_middle .header_wrapper .site_identification .logo_text-link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 29px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #E80B8B;
 }
-
-img {
-  height: 15px;
-  width: 15px;
-}
-
-.contacts__container {
+.header_middle .header_wrapper .site_identification .header_phone-link, .header_middle .header_wrapper .site_identification .visually_impaired-link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 29px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #E80B8B;
 }
 
-.header__menubottom {
+.header_bottom {
   background-color: #45A6AF;
 }
-
-.menubottom__list {
+.header_bottom .header_wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.header_bottom .header_wrapper .header_bottom_menu .menu_list {
+  margin-top: 0px;
+  margin-bottom: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 64px;
+  gap: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header_bottom .header_wrapper .header_bottom_menu .menu_list .menu-item {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.header_bottom .header_wrapper .header_bottom_menu .menu_list .menu-item span {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

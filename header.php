@@ -12,6 +12,11 @@
     </head>
     <body>
         <header>
+            <div class="container">
+
+            
+            </div>
+
             <div class="header_top">
                 <div class="header_top_menu">
                     <?php

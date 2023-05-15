@@ -2,6 +2,11 @@
 @import "fonts";
 @import "all";
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .header_top {
             background-color: $light-blue;
             .header_wrapper {
@@ -144,6 +149,62 @@ background-color: $blue2;
         }
     }
 }
+
+.footer {
+    background-color: $blue3;
+    .footer_wrapper {
+        margin: 0 auto;
+        max-width: 1200px;
+        display: flex;
+        gap: 39px;
+        .footer_general {
+            display: flex;
+            gap: 8px;
+            //align-items: center;
+            .logo_img {
+                //margin-top: 60px;
+                //margin-bottom: 60px;
+                //width: 100%;
+            }
+            .logo_text-link {
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 21px;
+                line-height: 29px;
+                /* identical to box height */
+                color: $red;
+                //display: flex;
+                //align-items: center;
+            }
+        }
+        .footer_menu {
+            display: flex;
+            flex-wrap: wrap;
+            .menu_list {
+                display: flex;
+                gap: 40px;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                span {
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 25px;
+                    /* identical to box height */
+                    color: $blue4;
+                                    }
+            }
+        }
+
+    }
+
+}
+
+
+
+
 
 
 @import "adaptive";

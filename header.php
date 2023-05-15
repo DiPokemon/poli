@@ -105,13 +105,13 @@
                         <li><a href="#" class="links-icon"><img src="img/inst.svg" alt=""></a></li>
                         <li><a href="#" class="links-icon"><img src="img/tv.svg" alt=""></a></li>
                         <li><a href="#" class="links-icon"><img src="img/fc.svg" alt=""></a></li>
-                        </ul> -->
+                        </ul> 
                     </nav>
                     <nav class="header_top_social"></nav>
                 </div>
-            </div> -->
+            </div> 
 
-            <!-- <div class="header__contacts">
+            <div class="header__contacts">
                 <div class="header__wrapper">
                     <div class="contacts__container">
                         <div class="contacts__container_item logo"></div>
@@ -119,11 +119,11 @@
                         <div class="contacts__container_item">8 (863) 263-13-80</div>
                         <div class="contacts__container_item">8 (863) 263-50-64</div>
                         <div class="contacts__container_item">Версия для слабовидящих</div>
-                    </div> -->
+                    </div> 
                 </div>
-            </div> -->
+            </div>
 
-            <!-- <div class="header__menubottom">
+            <div class="header__menubottom">
                 <div class="header__wrapper">
                     <nav class="menubottom_nav">
                         <ul class="menubottom__list">
@@ -136,9 +136,8 @@
                             <li><a href="#" class="menubottom_links">Запись на приём</a></li>
                             <li><a href="#" class="menubottom_links">Контакты</a></li>
                         
-                        </ul> -->
-                    </nav>
-                    
+                        </ul>
+                    </nav>                  
 
                 </div>
             </div>       -->

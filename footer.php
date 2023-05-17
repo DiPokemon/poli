@@ -1,13 +1,13 @@
 
         </main>
-        <footer>
-            <div class="footer">
+        <footer class="footer">
+            <!-- <div class="footer"> -->
                 <div class="footer_wrapper">
                     <div class="footer_general">
                     <div class="logo_img"><?php the_custom_logo() ?></div>
                        <div class="logo_text"><a href="#" class="logo_text-link"><?php echo carbon_get_theme_option('org_name'); ?></a></div>
                     </div>
-                    <nav class="footer_menu">
+                    <!-- <nav class="footer_menu"> -->
                     <?php
                         $args = array(
                             'container'       => 'nav',          
@@ -34,10 +34,10 @@
                         }
                         echo $temp_menu;
                     ?>
-                    </nav>
+                    <!-- </nav> -->
                 </div>
 
-            </div>
+            <!-- </div> -->
         
         </footer>    
     </body>

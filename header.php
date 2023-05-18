@@ -13,7 +13,7 @@
     <body>
         <header>
             <div class="header_top">
-                <div class="header_wrapper">
+                <div class="header_container">
                     <!-- <nav class="header_top_menu"> -->
                     <?php
                         $args = array(
@@ -44,11 +44,11 @@
                        
                     <!-- </nav> -->
                     <nav class="header_top_social">
-                      <div class="odnoklassniki social_item"><a href="#"><i class="fa-brands fa-odnoklassniki"></i></a></div>
-                      <div class="odnoklassniki social_item"><a href="#"><i class="fa-brands fa-vk"></i></a></div> 
-                      <div class="odnoklassniki social_item"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
-                      <div class="odnoklassniki social_item"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
-                      <div class="odnoklassniki social_item"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+                      <div class="social_item"><a href="#"><i class="fa-brands fa-odnoklassniki"></i></a></div>
+                      <div class="social_item"><a href="#"><i class="fa-brands fa-vk"></i></a></div> 
+                      <div class="social_item"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                      <div class="social_item"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+                      <div class="social_item"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
                     
                     
                     
@@ -60,12 +60,12 @@
                 </div>
             </div>
             <div class="header_middle">
-                <div class="header_wrapper">
+                <div class="header_container">
                     <div class="site_identification">
                        <div class="logo_img"><?php the_custom_logo() ?></div>
-                       <div class="logo_text"><a href="#" class="logo_text-link"><?php echo carbon_get_theme_option('org_name'); ?></a></div>
-                       <div class="header_phone"><a href="#" class="header_phone-link"><?php echo carbon_get_theme_option('main_phone'); ?></a></div>
-                       <div class="header_phone"><a href="#" class="header_phone-link"><?php echo carbon_get_theme_option('second_phone'); ?></a></div>
+                       <h1 class="logo_text"><a href="#" class="logo_text-link"><?php echo carbon_get_theme_option('org_name'); ?></a></h1>
+                       <div class="header_phone"><i class="fa-solid fa-phone"></i><a href="#" class="header_phone-link"><?php echo carbon_get_theme_option('main_phone'); ?></a></div>
+                       <div class="header_phone"><i class="fa-solid fa-phone"></i><a href="#" class="header_phone-link"><?php echo carbon_get_theme_option('second_phone'); ?></a></div>
                        <div class="visually_impaired"><a href="#" class="visually_impaired-link"><?php echo carbon_get_theme_option('visually_impaired'); ?></a></div>
                     </div>
                 
@@ -90,7 +90,7 @@
                 </div>
             </div>
             <div class="header_bottom">
-                <div class="header_wrapper">
+                <div class="header_container">
                     <nav class="header_bottom_menu">
                                     <?php
                                         $args = array(

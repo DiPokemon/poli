@@ -125,7 +125,7 @@ body {
 .header_top {
   background-color: #E5F2F4;
 }
-.header_top .header_wrapper {
+.header_top .header_container {
   margin: 0 auto;
   max-width: 1200px;
   display: -webkit-box;
@@ -135,7 +135,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.header_top .header_wrapper .header_top_menu {
+.header_top .header_container .header_top_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,17 +143,17 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.header_top .header_wrapper .header_top_menu .menu_list {
+.header_top .header_container .header_top_menu .menu_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
 }
-.header_top .header_wrapper .header_top_menu .menu_list .menu-item {
+.header_top .header_container .header_top_menu .menu_list .menu-item {
   margin-top: 12px;
   margin-bottom: 12px;
 }
-.header_top .header_wrapper .header_top_menu .menu_list .menu-item span {
+.header_top .header_container .header_top_menu .menu_list .menu-item span {
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 600;
@@ -167,21 +167,25 @@ body {
           align-items: center;
   color: #055D65;
 }
-.header_top .header_wrapper .header_top_social {
+.header_top .header_container .header_top_social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.header_top .header_wrapper .header_top_social i {
+.header_top .header_container .header_top_social i {
   font-size: 16px;
+  color: #055D65;
 }
 
-.header_middle .header_wrapper {
+.header_middle .header_container {
   margin: 0 auto;
   max-width: 1200px;
 }
-.header_middle .header_wrapper .site_identification {
+.header_middle .header_container .site_identification {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,7 +196,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.header_middle .header_wrapper .site_identification .logo_text-link {
+.header_middle .header_container .site_identification .logo_text-link {
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 700;
@@ -206,7 +210,25 @@ body {
           align-items: center;
   color: #E80B8B;
 }
-.header_middle .header_wrapper .site_identification .header_phone-link, .header_middle .header_wrapper .site_identification .visually_impaired-link {
+.header_middle .header_container .site_identification .header_phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+}
+.header_middle .header_container .site_identification .header_phone i {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  color: #E80B8B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header_middle .header_container .site_identification .header_phone-link, .header_middle .header_container .site_identification .visually_impaired-link {
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 700;
@@ -225,11 +247,11 @@ body {
 .header_bottom {
   background-color: #45A6AF;
 }
-.header_bottom .header_wrapper {
+.header_bottom .header_container {
   margin: 0 auto;
   max-width: 1200px;
 }
-.header_bottom .header_wrapper .header_bottom_menu .menu_list {
+.header_bottom .header_container .header_bottom_menu .menu_list {
   margin-top: 0px;
   margin-bottom: 0px;
   display: -webkit-box;
@@ -240,11 +262,11 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.header_bottom .header_wrapper .header_bottom_menu .menu_list .menu-item {
+.header_bottom .header_container .header_bottom_menu .menu_list .menu-item {
   margin-top: 18px;
   margin-bottom: 18px;
 }
-.header_bottom .header_wrapper .header_bottom_menu .menu_list .menu-item span {
+.header_bottom .header_container .header_bottom_menu .menu_list .menu-item span {
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 700;
@@ -263,7 +285,7 @@ body {
   background-color: #03646D;
 }
 
-.footer_wrapper {
+.footer_container {
   margin: 0 auto;
   max-width: 1200px;
   display: -webkit-box;
@@ -334,4 +356,16 @@ body {
 }
 .footer_menu .menu_list:not(:last-child) {
   margin-right: 40px;
+}
+
+.slider {
+  border: 1px solid black;
+}
+
+.departmens_container {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

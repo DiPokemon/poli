@@ -2,7 +2,7 @@
         </main>
         <footer class="footer">
             <!-- <div class="footer"> -->
-                <div class="footer_wrapper">
+                <div class="footer_container">
                     <div class="footer_general">
                     <div class="logo_img"><?php the_custom_logo() ?></div>
                        <div class="logo_text"><a href="#" class="logo_text-link"><?php echo carbon_get_theme_option('org_name'); ?></a></div>

@@ -265,6 +265,15 @@ background-color: $header_bg;
         margin: 0 auto;
         max-width: 1200px;
         display: flex;
+        flex-direction: column;
+        .departmens_title {
+
+        }
+        .departmens_body {
+            display: flex;
+            gap: 100px;
+        }
+
 }
 
 

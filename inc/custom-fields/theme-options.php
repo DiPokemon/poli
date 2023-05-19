@@ -63,4 +63,32 @@ $basic_options_container = Container::make( 'theme_options', __( 'Theme options'
             ->set_width(50),
         Field::make( 'text', 'address_longitude', __( 'Longitude (for maps)', 'kstehno' ) )
             ->set_width(50),
-    ) );
+    ) )
+    
+    ->add_tab( __( 'Department-Hospital', 'kstehno' ), array(
+        Field::make( 'text', 'departments', __( 'Depart', 'kstehno' ) ),
+        Field::make( 'text', 'hospital', __( 'Hospital', 'kstehno' ) ),
+        
+        Field::make( 'complex', 'office_hospital', __( 'Ofices-Hospital', 'kstehno' ) )
+               ->add_fields( array(
+               Field::make( 'text', 'title_office_hospital', __( 'Title', 'kstehno' ) ),
+               Field::make( 'image', 'photo_office_hospital', __( 'Photo', 'kstehno' ) ),       
+               )),
+        // Field::make( 'text', 'address_index1', __( 'ZIP-Code', 'kstehno' ) )
+        //     ->set_width(50),
+        // Field::make( 'text', 'address_latitude1', __( 'Latitude (for maps)', 'kstehno' ) )
+        //     ->set_width(50),
+        // Field::make( 'text', 'address_longitude1', __( 'Longitude (for maps)', 'kstehno' ) )
+        //     ->set_width(50),
+    ) )
+
+
+    ->add_tab( __( 'Other-Departments', 'kstehno' ), array(
+        Field::make( 'text', 'other_departments', __( 'Other-depart', 'kstehno' ) ),
+
+        Field::make( 'complex', 'offices_other_departments', __( 'Other_Departments', 'kstehno' ) )
+               ->add_fields( array(
+               Field::make( 'text', 'title_other_departments', __( 'Title', 'kstehno' ) ),
+               Field::make( 'image', 'photo_other_departments', __( 'Photo', 'kstehno' ) ),       
+               )),
+    ) );           

@@ -23,6 +23,7 @@ Template Name: home
 <?php
 
 $depar = carbon_get_theme_option( $post->ID, 'office_hospital', 'complex' );
+
 ?>
 
 <!-- if ( ! empty( $depar ) ):  -->
@@ -34,8 +35,10 @@ $depar = carbon_get_theme_option( $post->ID, 'office_hospital', 'complex' );
         <div class="departmens_body">
             <div class="hospital_left_column">
                 <h3 class="hospital_subtitle"><a href="#" class="hospital_subtitle-link"><?php echo carbon_get_theme_option('hospital'); ?></a></h3>
-                <?php foreach ( $depar as $div ): ?>
-                <div class="hospital_items"><a href="#" class="hospital_items-link"><?php echo carbon_get_theme_option('title_office_hospital'); ?></a></div>
+                <?php foreach ($depar as $divv) : ?>
+                <div class="hospital_items"><a href="#" class="hospital_items-link"><?php echo $divv['title_office_hospital']; 
+                    ?></a>
+                </div>
                 <?php endforeach; ?>
             </div>
             <div class="Other_right_column">
@@ -47,6 +50,9 @@ $depar = carbon_get_theme_option( $post->ID, 'office_hospital', 'complex' );
 
 
 </section>
+
+
+
 
 <section class="important information">
 

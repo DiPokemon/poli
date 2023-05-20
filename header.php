@@ -5,6 +5,9 @@
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />   
+        <!-- <link rel="stylesheet" type="text/css" href="static/libs/slick/slick.css"/>
+        // Add the new slick-theme.css if you want the default styling
+        <link rel="stylesheet" type="text/css" href="static/libs/slick/slick-theme.css"/> -->
         <title>ГБУ РО “Городская Больница №4”</title> 
         
         <?php wp_head();?>

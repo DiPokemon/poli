@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: contakts
+Template Name: Шаблон страницы контактов
 */
 ?>
 

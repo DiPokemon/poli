@@ -32,13 +32,11 @@ Template Name: home
 
 
 <?php
+    //$depar = carbon_get_theme_option( $post->ID, 'office_hospital', 'complex' );
+    $departments = carbon_get_theme_option( 'office_hospital' ); //Переименовал переменную и исправил ее получение
 
-$depar = carbon_get_theme_option( $post->ID, 'office_hospital', 'complex' );
-
+    if ( ! empty( $departments ) ):
 ?>
-
-<!-- if ( ! empty( $depar ) ):  -->
-
 
 <section class="departments">
     <div class="departmens_container">
@@ -46,10 +44,10 @@ $depar = carbon_get_theme_option( $post->ID, 'office_hospital', 'complex' );
         <div class="departmens_body">
             <div class="hospital_left_column">
                 <h3 class="hospital_subtitle"><a href="#" class="hospital_subtitle-link"><?php echo carbon_get_theme_option('hospital'); ?></a></h3>
-                <?php foreach ($depar as $divv) : ?>
-                <div class="hospital_items"><a href="#" class="hospital_items-link"><?php echo $divv['title_office_hospital']; 
-                    ?></a>
-                </div>
+                <?php foreach ($departments as $department) : ?>
+                    <div class="hospital_items">
+                        <a href="#" class="hospital_items-link"><?php echo $department['title_office_hospital']; ?></a>
+                    </div>
                 <?php endforeach; ?>
             </div>
             <div class="Other_right_column">
@@ -58,9 +56,9 @@ $depar = carbon_get_theme_option( $post->ID, 'office_hospital', 'complex' );
             </div>
         </div>
     </div>
-
-
 </section>
+
+<?php endif; ?>
 
 
 

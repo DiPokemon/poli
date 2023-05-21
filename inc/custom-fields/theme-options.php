@@ -72,7 +72,8 @@ $basic_options_container = Container::make( 'theme_options', __( 'Theme options'
         Field::make( 'complex', 'office_hospital', __( 'Ofices-Hospital', 'kstehno' ) )
                ->add_fields( array(
                Field::make( 'text', 'title_office_hospital', __( 'Title', 'kstehno' ) ),
-               Field::make( 'image', 'photo_office_hospital', __( 'Photo', 'kstehno' ) ),       
+               Field::make( 'image', 'photo_office_hospital', __( 'Photo', 'kstehno' ) ),
+                ->set_value_type( 'url' ), //Добавил тип получения картинки - URL
                )),
         // Field::make( 'text', 'address_index1', __( 'ZIP-Code', 'kstehno' ) )
         //     ->set_width(50),

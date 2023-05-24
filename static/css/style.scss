@@ -257,9 +257,43 @@ background-color: $header_bg;
         }
 
 // ----Main-----------------------
-.slider {
-    border: 1px solid black;
+
+.main_banner{
+
+    .banner{
+        height: 300px;
+
+        img{
+            width: 1200px;
+        }
+
+        &.slick-active{
+            width: 1200px;
+        }
+    }
+
+    .main_banner_mob{
+        display: none;
+    }
+
+    .slick-prev{
+        z-index: 1;
+        left: 50%;
+        transform: translate(-650px, -50%);
+    }
+
+    .slick-next{
+        z-index: 1;
+        right: 50%;
+        transform: translate(650px, -50%);
+    }
+
+    .slick-prev, .slick-next{
+        background: black;
+        color: white;
+    }
 }
+
 
 .departmens_container {
         margin: 0 auto;

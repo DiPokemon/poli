@@ -109,6 +109,11 @@ hr {
   font-style: normal;
   font-stretch: normal;
 }
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,8 +363,33 @@ body {
   margin-right: 40px;
 }
 
-.slider {
-  border: 1px solid black;
+.main_banner .banner {
+  height: 300px;
+}
+.main_banner .banner img {
+  width: 1200px;
+}
+.main_banner .banner.slick-active {
+  width: 1200px;
+}
+.main_banner .main_banner_mob {
+  display: none;
+}
+.main_banner .slick-prev {
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translate(-650px, -50%);
+          transform: translate(-650px, -50%);
+}
+.main_banner .slick-next {
+  z-index: 1;
+  right: 50%;
+  -webkit-transform: translate(650px, -50%);
+          transform: translate(650px, -50%);
+}
+.main_banner .slick-prev, .main_banner .slick-next {
+  background: black;
+  color: white;
 }
 
 .departmens_container {

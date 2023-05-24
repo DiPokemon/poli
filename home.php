@@ -1,40 +1,42 @@
 <?php
 /*
-Template Name: home
+Template Name: Main page
 */
 ?>
 <?php get_header(); ?>
 
+<?php include 'template-parts/variables.php' ?>
 
-<section class="slider">
-<div class="your-class">
-  <div>your content</div>
-  <div>your content</div>
-  <div>your content</div>
-</div>
+<?php if ($main_banners) :?>
+    <section>
+        <div class="">
+            <div class="slider_wrapper">
+            <div class="main_banner">
+                <?php foreach( $main_banners as $banner ) : ?>
+                    <?php if ($banner['main_banner_url']) : ?>
+                        <a href="<?=$banner['main_banner_url']?>" class="banner">
+                            <img class="main_banner_desk" src="<?=$banner['main_banner_desk']?>" alt="<?=$banner['main_banner_alt']?>" title="<?=$banner['main_banner_title']?>">
+                            <img class="main_banner_mob" src="<?=$banner['main_banner_mob']?>" alt="<?=$banner['main_banner_alt']?>" title="<?=$banner['main_banner_title']?>">
+                        </a>
+                    <?php else : ?>
+                        <div class="banner">
+                            <img class="main_banner_desk" src="<?=$banner['main_banner_desk']?>" alt="<?=$banner['main_banner_alt']?>" title="<?=$banner['main_banner_title']?>">
+                            <img class="main_banner_mob" src="<?=$banner['main_banner_mob']?>" alt="<?=$banner['main_banner_alt']?>" title="<?=$banner['main_banner_title']?>">
+                        </div>
+                    <?php endif; ?>
+                <?php endforeach; ?>
 
-
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<div>Slider</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-</section>
+            </div>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
 
 
 
 
 <section class="departments">
-    <div class="departmens_container">
+    <div class="departmens_container container">
         <h2 class="departmens_title"><a href="#" class="departmens_title-link"><?php echo carbon_get_theme_option('departments'); ?></a></h2>
         <div class="departmens_body">
             <div class="hospital_left_column">

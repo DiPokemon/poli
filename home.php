@@ -43,7 +43,7 @@ Template Name: home
                 <?php
                 $posts = get_posts([
                     'numberposts' => -1,
-                    'category' => 7,
+                    'category' => 1,
                     'orderby' => 'ASC',
                     'post_type' => 'post',
                     'suppress_filter' => true
@@ -67,7 +67,30 @@ Template Name: home
 
             <div class="Other_right_column">
             <h3 class="other_office_subtitle"><a href="#" class="other_office_subtitle-link"><?= get_category( 5, ARRAY_A)['name']; ?></a></h3>
-                <div class="other_office_items"><a href="#" class="other_office_items-link"><?php echo carbon_get_theme_option('title_office_hospital'); ?></a></div>
+
+            <?php
+                $posts = get_posts([
+                    'numberposts' => -1,
+                    'category' => 5,
+                    'orderby' => 'ASC',
+                    'post_type' => 'post',
+                    'suppress_filter' => true
+                ]);
+
+
+
+                foreach ($posts as $post) {
+                    setup_postdata ($post);
+                    ?>
+                    <div class="other_office_items">
+                        <a href="#" class="other_office_items-link"><?php the_title(); ?></a>
+                    </div>
+                    <?php
+                }
+            wp_reset_postdata();
+            ?>
+
+
             </div>
         </div>
     </div>

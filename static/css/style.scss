@@ -294,7 +294,10 @@ background-color: $header_bg;
     }
 }
 
+.departments, .news {
+    margin-top: 50px;
 
+}
 .departmens_container {
         margin: 0 auto;
         max-width: 1200px;
@@ -309,7 +312,13 @@ background-color: $header_bg;
         }
 
 }
-
+.news_container {
+    margin: 0 auto;
+    max-width: 1200px;
+    .news_body {
+        display: flex;
+    }
+}
 
 
 @import "adaptive";

@@ -65,9 +65,9 @@ $basic_options_container = Container::make( 'theme_options', __( 'Theme options'
             ->set_width(50),
     ) )
     
-    ->add_tab( __( 'Department-Hospital', 'policlinic' ), array(
+    ->add_tab( __( 'Custom fields', 'policlinic' ), array(
         Field::make( 'text', 'departments', __( 'Depart', 'policlinic' ) ),
-        Field::make( 'text', 'hospital', __( 'Hospital', 'policlinic' ) ),
+        Field::make( 'image', 'custom_image', __( 'News image', 'policlinic' ) ),
         
         Field::make( 'complex', 'office_hospital', __( 'Ofices-Hospital', 'policlinic' ) )
                ->add_fields( array(

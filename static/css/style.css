@@ -392,6 +392,10 @@ body {
   color: white;
 }
 
+.departments, .news {
+  margin-top: 50px;
+}
+
 .departmens_container {
   margin: 0 auto;
   max-width: 1200px;
@@ -408,4 +412,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 100px;
+}
+
+.news_container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.news_container .news_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

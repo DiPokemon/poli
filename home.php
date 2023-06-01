@@ -191,10 +191,10 @@ Template Name: Main page
            
            <?php
                 // Получение значения кастомного поля из Theme Options
-                $image_news = carbon_get_theme_option('custom_image');
+                $image_news = carbon_get_theme_option('custom_image');                
             ?>                      
             
-                <img src="<?php echo esc_url($image_news); ?>" alt="Изображение">
+                 <img src="<?= $image_news; ?>" alt="Изображение">
             
             </div>
        </div>
@@ -253,18 +253,28 @@ Template Name: Main page
 <div class="contacts_container container">
         
         <h2 class="contacts_title">
-            <a href="#" class="contacts_title-link"><?php echo carbon_get_theme_option('contact'); ?></a>
+            <a href="#" class="contacts_title-link"><?= carbon_get_theme_option('contact'); ?></a>
         </h2>
         
         <div class="contacts_body">
             <div class="contacts_text">
-                <div class="contacts_line1">
-                    <div class="adress_left"><?php echo carbon_get_theme_option('adress1'); ?></div>
-                    <div class="adress_right"><?php echo carbon_get_theme_option('adress2'); ?></div>
+                <div>
+                    <span class="bold dark_green"></span><?= $adress_title ?>:</span>
+                    <span><?= $address_index ?></span>
+                    <span><?= $address_city ?></span>
+                    <span><?= $address_street ?></span>
+                    <span><?= $address_build ?></span>
                 </div>
+                        
+
+                <div class="contacts_line1">
+                    <div class="adress_left"><?= carbon_get_theme_option('adress1'); ?></div>
+                    <div class="adress_right"><?= carbon_get_theme_option('adress2'); ?></div>
+                </div>
+
                 <div class="contacts_line2">
-                    <div class="adress_left"><?php echo carbon_get_theme_option('head_doctor'); ?></div>
-                    <div class="adress_right"><?php echo carbon_get_theme_option('name_head_doctor'); ?></div>
+                    <div class="adress_left"><?= carbon_get_theme_option('head_doctor'); ?></div>
+                    <div class="adress_right"><?=carbon_get_theme_option('name_head_doctor'); ?></div>
                 </div>
                 <div class="contacts_line3">
                     <div class="adress_left">        
@@ -273,6 +283,19 @@ Template Name: Main page
                     </div>
                 </div>
                 <div class="contacts_departs">
+                    <ul>
+                        <li>
+                            <span>Главного врача:</span>
+                            <span><?= $head_doc_tel ?></span>
+                            <span>Факс: <?= $head_doc_fax ?></span>
+                            <span><?= $head_doc_email ?></span>
+                        </li>
+                        <?php foreach ($tests as $test) : ?>
+                            <li>
+                                <span></span>
+                            </li>
+                    </ul>
+
                     <!-- записи -->
                     <?php
                 $posts = get_posts([
@@ -297,22 +320,18 @@ Template Name: Main page
             ?>
                 </div>
 
-                <nav class="header_top_social social">
-                      <div class="social_item"><a href="#"><i class="fa-brands fa-odnoklassniki"></i></a></div>
-                      <div class="social_item"><a href="#"><i class="fa-brands fa-vk"></i></a></div> 
-                      <div class="social_item"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
-                      <div class="social_item"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
-                      <div class="social_item"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
-                </nav>
+                <?php get_template_part( 'template-parts/block', 'socials' ); ?>
+
+                
             </div>
             <div class="contacts_form">
             
-            <?php echo do_shortcode('[contact-form-7 id="67" title="Контактная форма 1"]'); ?>
+            <?= do_shortcode('[contact-form-7 id="67" title="Контактная форма 1"]'); ?>
             </div>
 
         </div>             
         <div class="map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A33a2a7bc07b169c86e649ae6c58e8143399888560efcdf4494892c443a5c2773&amp;width=1200&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A33a2a7bc07b169c86e649ae6c58e8143399888560efcdf4494892c443a5c2773&amp;width=1200&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
 
 

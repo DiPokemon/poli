@@ -6,9 +6,9 @@
 //   $description = carbon_get_theme_option( 'main_description' );
 //   $org_name = carbon_get_theme_option( 'org_name' );
 
-//   $contacts_main_phone_front = phone_front(carbon_get_theme_option( 'main_phone' ));
-//   $contacts_add_phone_front = phone_front(carbon_get_theme_option( 'second_phone' ));
-//   $contacts_main_phone_href = phone_href(carbon_get_theme_option( 'main_phone' ));
+//  $contacts_main_phone_front = phone_front(carbon_get_theme_option( 'main_phone' ));
+//  $contacts_add_phone_front = phone_front(carbon_get_theme_option( 'second_phone' ));
+//  $contacts_main_phone_href = phone_href(carbon_get_theme_option( 'main_phone' ));
 //   $contacts_add_phone_href = phone_href(carbon_get_theme_option( 'second_phone' ));
 
 //   $contacts_mail = carbon_get_theme_option( 'email' );

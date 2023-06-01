@@ -33,7 +33,7 @@ $basic_options_container = Container::make( 'theme_options', __( 'Theme options'
             ->set_attribute( 'placeholder', 'head doctor' ) 
             ->set_width(50), 
         Field::make( 'text', 'name_head_doctor', __( 'Name head doctor', 'policlinic' ) )
-            ->set_attribute( 'placeholder', 'Name head doctor' ) 
+            ->set_attribute( 'placeholder', __('Ivan', 'policlinic') ) 
             ->set_width(50),        
         
         
@@ -80,7 +80,8 @@ $basic_options_container = Container::make( 'theme_options', __( 'Theme options'
     ->add_tab( __( 'Custom fields', 'policlinic' ), array(
         Field::make( 'text', 'departments', __( 'Depart', 'policlinic' ) ),
         Field::make( 'text', 'contact', __( 'Contact', 'policlinic' ) ),
-        Field::make( 'image', 'custom_image', __( 'News image news', 'policlinic' ) ),
+        Field::make( 'image', 'custom_image', __( 'News image news', 'policlinic' ) )
+            ->set_value_type( 'url' ),
         
 
         Field::make( 'complex', 'office_hospital', __( 'Ofices-Hospital', 'policlinic' ) )

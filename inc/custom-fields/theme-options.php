@@ -23,11 +23,23 @@ $basic_options_container = Container::make( 'theme_options', __( 'Theme options'
         Field::make( 'text', 'visually_impaired', __( 'Add. text', 'policlinic' ) )
             ->set_attribute( 'placeholder', 'visually_impaired' ) 
             ->set_width(33),
+        Field::make( 'text', 'adress1', __( 'Add. adress', 'policlinic' ) )
+            ->set_attribute( 'placeholder', 'text' ) 
+            ->set_width(50), 
+        Field::make( 'text', 'adress2', __( 'Add. adress', 'policlinic' ) )
+            ->set_attribute( 'placeholder', 'text' ) 
+            ->set_width(50),    
+        Field::make( 'text', 'head_doctor', __( 'Head doctor', 'policlinic' ) )
+            ->set_attribute( 'placeholder', 'head doctor' ) 
+            ->set_width(50), 
+        Field::make( 'text', 'name_head_doctor', __( 'Name head doctor', 'policlinic' ) )
+            ->set_attribute( 'placeholder', 'Name head doctor' ) 
+            ->set_width(50),        
         
         
         
         
-        
+            
         Field::make( 'text', 'email', __( 'E-mail', 'policlinic' ) )
             ->set_attribute( 'placeholder', 'example@example.com' )
             ->set_width(33),
@@ -67,8 +79,10 @@ $basic_options_container = Container::make( 'theme_options', __( 'Theme options'
     
     ->add_tab( __( 'Custom fields', 'policlinic' ), array(
         Field::make( 'text', 'departments', __( 'Depart', 'policlinic' ) ),
-        Field::make( 'image', 'custom_image', __( 'News image', 'policlinic' ) ),
+        Field::make( 'text', 'contact', __( 'Contact', 'policlinic' ) ),
+        Field::make( 'image', 'custom_image', __( 'News image news', 'policlinic' ) ),
         
+
         Field::make( 'complex', 'office_hospital', __( 'Ofices-Hospital', 'policlinic' ) )
                ->add_fields( array(
                Field::make( 'text', 'title_office_hospital', __( 'Title', 'policlinic' ) ),

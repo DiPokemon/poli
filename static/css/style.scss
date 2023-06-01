@@ -261,7 +261,7 @@ background-color: $header_bg;
 .main_banner{
 
     .banner{
-        height: 300px;
+        height: 481px;
 
         img{
             width: 1200px;
@@ -289,13 +289,13 @@ background-color: $header_bg;
     }
 
     .slick-prev, .slick-next{
-        background: black;
+        // background: black;
         color: white;
     }
 }
 
-.departments, .news {
-    margin-top: 50px;
+.departments, .news, .important_information, .gallery, .contacts {
+    margin-top: 30px;
 
 }
 .departmens_container {
@@ -303,22 +303,404 @@ background-color: $header_bg;
         max-width: 1200px;
         display: flex;
         flex-direction: column;
+        
         .departmens_title {
+            .departmens_title-link {
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 48px;
+                /* identical to box height */
 
+                display: flex;
+                align-items: center;
+
+                color: $blue_h2;
+
+            }
         }
+
         .departmens_body {
             display: flex;
-            gap: 100px;
-        }
+            gap: 122px;
+            margin-top: 20px;
+            .hospital_left_column {
+                min-width: 448px;
+                background: $background_blue;
+                border-radius: 10px;
+                .hospital_subtitle {
+                    display: flex;
+                    gap: 15px;
+                    margin: 26px 0 15px 36px;
+                    .hospital_subtitle-link {
+                        font-family: $font_opensans;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        // line-height: 33px;
+                        display: flex;
+                        align-items: center;
 
-}
-.news_container {
-    margin: 0 auto;
-    max-width: 1200px;
-    .news_body {
+                        color: $header_social;
+                    }
+                }
+                
+                .hospital_items {
+                    margin-left: 36px;
+                    // margin-bottom: 16px;
+
+                }
+                
+                
+                .hospital_items_nav  {
+                    list-style: none;
+                    
+                }
+                .hospital_items_nav li:before {
+                    content:  "— ";
+                    position: relative;
+                    color: $header_social;
+                    
+                }
+                .hospital_items_nav li {
+                    margin-bottom: 12px;
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    // line-height: 22px;
+                    color: $header_social;
+                }
+                
+            }
+            .other_right_column {
+                min-width: 448px;
+                background: $background_blue;
+                border-radius: 10px;
+
+                .other_office_subtitle {
+                    display: flex;
+                    gap: 15px;
+                    margin: 26px 0 15px 36px;
+                    .other_office_subtitle-link {
+                        font-family: $font_opensans;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        // line-height: 33px;
+                        display: flex;
+                        align-items: center;
+                        color: $header_social;
+                    }
+                }
+                .other_office_items {
+                    margin-left: 36px;
+
+                }
+                .other_office_items_nav {
+                    list-style: none;
+                }
+                .other_office_items_nav li:before {
+                    content:  "— ";
+                    position: relative;
+                    color: $header_social;
+                }
+                .other_office_items_nav li {
+                    margin-bottom: 12px;
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    // line-height: 22px;
+                    color: $header_social;
+                }
+
+            }
+        }
+    }
+.important_information_container {
+    margin-bottom: 20px;
+    .important_information_title {
+           .important_information_title-link {
+        font-family: $font_opensans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        // line-height: 48px;
+        /* identical to box height */
+
         display: flex;
+        align-items: center;
+
+        color: $blue_h2;
+        }
     }
 }
 
 
+
+.news_container {
+    margin: 0 auto;
+    max-width: 1200px;
+    .news_title {
+        margin-bottom: 20px;
+        .news_title-link {
+            font-family: $font_opensans;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            // line-height: 48px;
+            /* identical to box height */
+
+            display: flex;
+            align-items: center;
+
+            color: $blue_h2;
+        }
+    }
+    .news_body {
+        display: flex;
+        gap: 64px;
+        .news_posts {
+            display: flex;
+            flex-direction: column;
+            .news_posts_items {
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid $border_line;
+                font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                
+            }
+        }
+    }
+    .news_buttom {
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+        .news_buttom-link {
+            background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+            border-radius: 50px;
+            padding: 12px 48px;
+            color: $white;
+            font-family: $font_opensans;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+
+        }
+    }
+}
+
+.gallery_container {
+    margin-bottom: 20px;
+    .gallery_title-link {
+        font-family: $font_opensans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        // line-height: 48px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        color: $blue_h2;
+    }
+}
+
+.contacts_title {
+    // margin-bottom: 20px;
+    .contacts_title-link {
+        font-family: $font_opensans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        // line-height: 48px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        color: $blue_h2;
+
+    }
+}
+.contacts_body {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    .contacts_text {
+        display: flex;
+        flex-direction: column;
+        .contacts_line1 {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 25px;
+            gap: 3px;
+            .adress_left {
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                // line-height: 25px;
+
+                color: $blue_h2;
+            }
+            .adress_right {
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                // line-height: 25px;
+
+                color: $blue_h2;
+            }
+        }
+        .contacts_line2 {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 25px;
+            gap: 3px;
+            .adress_left {
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                // line-height: 25px;
+
+                color: $blue_h2;
+            }
+            .adress_right {
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                // line-height: 25px;
+
+                color: $blue_h2;
+            }
+        }
+        .contacts_line3 {
+            display: flex;
+            .contacts_category-link {
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                // line-height: 25px;
+
+                color: $blue_h2;
+            }
+        }
+        .contacts_departs {
+            margin-top: 30px;
+            .contacts_posts_items {
+                margin-bottom: 15px;
+                .contacts_posts_items-link {
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    // line-height: 25px;
+    
+                    color: $header_social;
+                }
+            }
+        }
+        .social {
+            margin-top: 15px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            .social_item i {
+              color: $header_social;
+              font-size: 30px;
+            }
+        }
+    }
+    .contacts_form {
+        background: $background_cf;
+        border-radius: 20px;
+        min-width: 422px;
+        min-height: 498px;
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+        .wpcf7 {
+            margin-top: 39px;
+            margin-bottom: 39px;
+            .wpcf7-form {
+                .text_cf7_bottom {
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                    
+                    color: $text_cf7bottom;
+                    a {
+                        color: $text_cf7bottom;
+                        text-decoration: underline; 
+                    }
+                }
+                .wpcf7-submit {
+                    margin-top: 36px;
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    // line-height: 19px;
+                    text-align: center;
+                    font-family: 'Inter';
+                    background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                    border-radius: 50px;
+                }
+                .wpcf7-form-control-wrap {
+                    .wpcf7-list-item {
+                        margin: 0;
+                        input {
+                            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+                            border-radius: 2px;
+                        }
+                        
+                    }
+                    
+                    
+                    
+
+                    .wpcf7-text {
+                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 5px;
+                    margin-bottom: 16px;
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: $text_cf7;
+                    padding: 12px 0 13px 14px;
+                    }
+                }
+            }
+        }
+        .cf7_title {
+            font-family: $font_opensans;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            // line-height: 33px;
+            // display: flex;
+            // align-items: center;
+            color: $red;
+            margin-bottom: 22px;
+        }    
+    }
+    
+}
 @import "adaptive";

@@ -59,7 +59,10 @@ article > * + * {
 input,
 button,
 textarea,
-select {
+select,
+label {
+  margin: 0px;
+  padding: 0px;
   font: inherit;
 }
 

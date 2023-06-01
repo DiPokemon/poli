@@ -437,6 +437,12 @@ background-color: $header_bg;
         }
     }
 }
+.important_information {
+    .slick-prev,
+    .slick-next {
+        display: none;
+    }
+}
 
 
 

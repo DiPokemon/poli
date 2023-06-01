@@ -49,7 +49,7 @@
 .slick-prev:before,
 .slick-next:before {
   font-family: "slick";
-  font-size: 60px;
+  font-size: 160px;
   color: #45A6AF;
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
@@ -64,10 +64,10 @@
   right: -25px;
 }
 .slick-prev:before {
-  content: "←";
+  content: "‹";
 }
 [dir=rtl] .slick-prev:before {
-  content: "→";
+  content: "›";
 }
 
 .slick-next {
@@ -78,10 +78,10 @@
   right: auto;
 }
 .slick-next:before {
-  content: "→";
+  content: "›";
 }
 [dir=rtl] .slick-next:before {
-  content: "←";
+  content: "‹";
 }
 
 /* Dots */

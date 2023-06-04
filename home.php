@@ -309,8 +309,14 @@ Template Name: Main page
             ?>
                 </div>
 
-                <?php get_template_part( 'template-parts/block', 'socials' ); ?>
-
+                
+                <nav class="header_top_social social">
+                <div class="social_item"><a href="#"><i class="fa-brands fa-odnoklassniki"></i></a></div>
+                <div class="social_item"><a href="#"><i class="fa-brands fa-vk"></i></a></div> 
+                <div class="social_item"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="social_item"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+                <div class="social_item"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+                </nav>
                 
             </div>
             <div class="contacts_form">

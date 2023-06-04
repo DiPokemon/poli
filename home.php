@@ -283,18 +283,7 @@ Template Name: Main page
                     </div>
                 </div>
                 <div class="contacts_departs">
-                    <ul>
-                        <li>
-                            <span>Главного врача:</span>
-                            <span><?= $head_doc_tel ?></span>
-                            <span>Факс: <?= $head_doc_fax ?></span>
-                            <span><?= $head_doc_email ?></span>
-                        </li>
-                        <?php foreach ($tests as $test) : ?>
-                            <li>
-                                <span></span>
-                            </li>
-                    </ul>
+                    
 
                     <!-- записи -->
                     <?php

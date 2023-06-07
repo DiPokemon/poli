@@ -1,27 +1,25 @@
 @charset "UTF-8";
-
 // Default Variables
-
 // Slick icon entity codes outputs the following
 // "\2190" outputs ascii character "←"
 // "\2192" outputs ascii character "→"
 // "\2022" outputs ascii character "•"
-
 $slick-font-path: "./fonts/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
 $slick-arrow-color: white !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "\2039" !default;
-$slick-next-character: "\203A" !default;
+// $slick-prev-character: "\2039" !default;
+// $slick-next-character: "\203A" !default;
+$slick-prev-character: url("http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/left-arrow.svg") !default;
+$slick-next-character: url("http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/right-arrow.svg") !default;
 $slick-dot-character: "\2022" !default;
 $slick-dot-size: 6px !default;
 $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
 $slick-arrows: #45A6AF;
-
 @function slick-image-url($url) {
     @if function-exists(image-url) {
         @return image-url($url);
@@ -40,6 +38,7 @@ $slick-arrows: #45A6AF;
     }
 }
 
+
 /* Slider */
 
 .slick-list {
@@ -48,8 +47,10 @@ $slick-arrows: #45A6AF;
     }
 }
 
+
 /* Icons */
-@if $slick-font-family == "slick" {
+
+@if $slick-font-family=="slick" {
     @font-face {
         font-family: "slick";
         src: slick-font-url("slick.eot");
@@ -58,6 +59,7 @@ $slick-arrows: #45A6AF;
         font-style: normal;
     }
 }
+
 
 /* Arrows */
 
@@ -72,14 +74,15 @@ $slick-arrows: #45A6AF;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 50%;
+    top: 40%;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     padding: 0;
     border: none;
     outline: none;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         outline: none;
         background: transparent;
         color: transparent;
@@ -129,6 +132,7 @@ $slick-arrows: #45A6AF;
     }
 }
 
+
 /* Dots */
 
 .slick-dotted.slick-slider {
@@ -164,7 +168,8 @@ $slick-arrows: #45A6AF;
             color: transparent;
             padding: 5px;
             cursor: pointer;
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 outline: none;
                 &:before {
                     opacity: $slick-opacity-on-hover;

@@ -47,7 +47,7 @@ Template Name: Main page
         <div class="departmens_body">
             <div class="hospital_left_column">
                 <h3 class="hospital_subtitle">
-                    <img class="fanendoscope_img" src="/img/fanendoscope.png" alt="im" /> 
+                    <img class="fanendoscope_img" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/fanendoscope.png" alt="im" /> 
                     <a href="#" class="hospital_subtitle-link"><?= get_category( 1, ARRAY_A)['name']; ?></a>
                 </h3>
 
@@ -82,7 +82,7 @@ Template Name: Main page
 
             <div class="other_right_column">
             <h3 class="other_office_subtitle">
-                <img class="fanendoscope_img" src="/img/fanendoscope.png" alt="im" />
+                <img class="fanendoscope_img" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/fanendoscope.png" alt="im" />
                 <a href="#" class="other_office_subtitle-link"><?= get_category( 5, ARRAY_A)['name']; ?></a></h3>
 
             <?php
@@ -127,7 +127,7 @@ Template Name: Main page
 
         <?php if ($inf_important_banners) :?>
     <div>
-        <div class="">
+        <div class="slider_background">
             <div class="slider_wrapper">
             <div class="main_banner">
                 <?php foreach( $inf_important_banners as $banner ) : ?>
@@ -165,6 +165,9 @@ Template Name: Main page
        
        <div class="news_body">
            <div class="news_posts">
+           <ul class="news_posts_items1">
+                <li></li>
+                    </ul>
            <?php
                 $posts = get_posts([
                     'numberposts' => -1,
@@ -193,9 +196,7 @@ Template Name: Main page
                 // Получение значения кастомного поля из Theme Options
                 $image_news = carbon_get_theme_option('custom_image');                
             ?>                      
-            
-                 <img src="<?= $image_news; ?>" alt="Изображение">
-            
+            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/unsplash_2zDw14yCYqk.png" alt="Изображение">
             </div>
        </div>
        <div class="news_buttom">
@@ -219,31 +220,36 @@ Template Name: Main page
        </h3>
 </div>
 
-
-<?php if ($main_banners) :?>
-    <section>
-        <div class="">
-            <div class="slider_wrapper">
+<section>
+    <div class="slider_background_gallery">
+        <div class="slider_wrapper">
             <div class="main_banner">
-                <?php foreach( $main_banners as $banner ) : ?>
-                    <?php if ($banner['main_banner_url']) : ?>
-                        <a href="<?=$banner['main_banner_url']?>" class="banner">
-                            <img class="main_banner_desk" src="<?=$banner['main_banner_desk']?>" alt="<?=$banner['main_banner_alt']?>" title="<?=$banner['main_banner_title']?>">
-                            <img class="main_banner_mob" src="<?=$banner['main_banner_mob']?>" alt="<?=$banner['main_banner_alt']?>" title="<?=$banner['main_banner_title']?>">
-                        </a>
-                    <?php else : ?>
-                        <div class="banner">
-                            <img class="main_banner_desk" src="<?=$banner['main_banner_desk']?>" alt="<?=$banner['main_banner_alt']?>" title="<?=$banner['main_banner_title']?>">
-                            <img class="main_banner_mob" src="<?=$banner['main_banner_mob']?>" alt="<?=$banner['main_banner_alt']?>" title="<?=$banner['main_banner_title']?>">
-                        </div>
-                    <?php endif; ?>
-                <?php endforeach; ?>
-
-            </div>
+                <a href="#" class="banner">
+                    <img class="main_banner_desk" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/0150.png" alt="изображение" title="изображение">
+                    
+                </a>
+                <a href="#" class="banner" > 
+                    <img class="main_banner_desk" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/0070.png" alt="изображение" title="изображение">
+                    
+                </a>
+                <a href="#" class="banner">
+                    <img class="main_banner_desk" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/0150.png" alt="изображение" title="изображение">
+                    
+                </a>
+                <a href="#" class="banner">
+                    <img class="main_banner_desk" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/0070.png" alt="изображение" title="изображение">
+                    
+                </a>
+                
+                <!-- Добавьте другие ссылки с изображениями по аналогии -->
             </div>
         </div>
-    </section>
-<?php endif; ?>
+    </div>
+</section>
+
+
+
+
 
 </section>
 
@@ -301,7 +307,7 @@ Template Name: Main page
                     setup_postdata ($post);
                     ?>
                     <ul class="contacts_posts_items">
-                        <li><a href="#" class="contacts_posts_items-link"><?php the_title(); ?></a></li>
+                        <li><img class="plus_img" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/photo_2023-06-06_02-54-56.png" alt="im" /><a href="#" class="contacts_posts_items-link"><?php the_title(); ?></a></li>
                     </ul>
                     <?php
                 }

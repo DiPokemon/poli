@@ -78,7 +78,7 @@ Template Name: Шаблон страницы Новости
   </div>
 
 </section>
-
+<!--  -->
 <section class="important2">
   <div class="important2_container container">
        <h3 class="important2_title">Важная информация</h3>

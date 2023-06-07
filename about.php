@@ -62,7 +62,20 @@ Template Name: Шаблон страницы О больнице
 
 
       </div>
-      <div class="about_slider_top">Slider</div>
+      <div class="about_slider_top">
+        <div class="slider__item">
+            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/0090.png" alt="img">
+        </div>
+        <div class="slider__item">
+            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/0186.png" alt="img">
+        </div>
+        <div class="slider__item">
+            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/0055.png" alt="img">
+        </div>
+        <div class="slider__item">
+            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/0131.png" alt="img">
+        </div>
+      </div>
       <div class="text_bottom">
         Адрес: 344006, г. Ростов-на-Дону, пр. Богатяновский спуск, 27/160
       <br>
@@ -102,7 +115,18 @@ Template Name: Шаблон страницы О больнице
 
 </div>
       <h3 class="subtitle_top">Лицензии на осуществление медицинской деятельности</h3>
-      <div class="about_slider_bottom">Slider</div>
+      <div class="about_slider_bottom">
+        <div class="slider__item">
+            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group 247.jpg" alt="img">
+        </div>
+        <div class="slider__item">
+            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group 246.jpg" alt="img">
+        </div>
+        <div class="slider__item">
+            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group 245.jpg" alt="img">
+        </div>
+              
+       </div>
       <h3 class="subtitle_bottom">Общественный совет больницы</h3>
       <div class="block_row">
            <div class="block_item"><a href="#">Информация<br> на рассмотрения<br> жалоб 2015</a></div>

@@ -873,6 +873,63 @@ body {
 .about_container .about_slider_top {
   margin-top: 32px;
   margin-bottom: 32px;
+  /* Слайдер */
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+.about_container .about_slider_top .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.about_container .about_slider_top .slick-arrow.slick-next {
+  display: none;
+}
+.about_container .about_slider_bottom {
+  /* Слайдер */
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+.about_container .about_slider_bottom .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 53px;
+}
+.about_container .about_slider_bottom .slick-arrow.slick-next {
+  display: none;
 }
 .about_container .subtitle_top, .about_container .subtitle_bottom {
   margin-top: 32px;
@@ -926,6 +983,34 @@ body {
   color: #000000;
 }
 
+.news_prevention_slider {
+  /* Слайдер */
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+.news_prevention_slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.news_prevention_slider .slick-arrow.slick-next {
+  display: none;
+}
 .page_news_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1190,4 +1275,203 @@ body {
   padding: 13px 64px;
   color: #FFFFFF;
   max-width: 203px;
+}
+
+.othernews {
+  margin-bottom: 32px;
+}
+.othernews .othernews_container .othernews_title {
+  margin-top: 32px;
+  margin-bottom: 28px;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #013236;
+}
+.othernews .othernews_container .othernews_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.othernews .othernews_container .othernews_wrapper .othernews_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 44px;
+}
+.othernews .othernews_container .othernews_wrapper .othernews_body .othernews_text {
+  border-top: 1px solid #DCDCDC;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #000000;
+}
+.othernews .othernews_container .othernews_wrapper .othernews_body .othernews_text p {
+  padding-top: 30px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #DCDCDC;
+}
+.othernews .othernews_container .othernews_wrapper a {
+  background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+  border-radius: 50px;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  /* identical to box height */
+  text-align: center;
+  padding: 13px 48px;
+  color: #FFFFFF;
+  max-width: 203px;
+}
+
+.page_contacts .page_contacts_container .contacts_title {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+.page_contacts .page_contacts_container .page_contacts_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 36px;
+}
+.page_contacts .page_contacts_container .page_contacts_body .page_contacts_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.page_contacts .page_contacts_container .page_contacts_body .page_contacts_text .contacts_text_top {
+  margin-bottom: 29px;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 50px;
+  color: #013236;
+}
+.page_contacts .page_contacts_container .page_contacts_body .page_contacts_text .contacts_text_bottom {
+  margin-bottom: 36px;
+}
+.page_contacts .page_contacts_container .page_contacts_body .page_contacts_text .contacts_text_bottom ul {
+  list-style-image: url(http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group224.png);
+}
+.page_contacts .page_contacts_container .page_contacts_body .page_contacts_text .contacts_text_bottom ul li {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 40px;
+  color: #055D65;
+}
+.page_contacts .page_contacts_container .page_contacts_body .page_contacts_text .social {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page_contacts .page_contacts_container .page_contacts_body .page_contacts_text .social .social_item i {
+  color: #055D65;
+  font-size: 30px;
+}
+.page_contacts .page_contacts_container .page_contacts_body .contacts_form {
+  background: #FAF2F9;
+  border-radius: 20px;
+  min-width: 498px;
+  min-height: 422px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 14px;
+}
+.page_contacts .page_contacts_container .page_contacts_body .contacts_form .wpcf7 {
+  margin-top: 39px;
+  margin-bottom: 39px;
+}
+.page_contacts .page_contacts_container .page_contacts_body .contacts_form .wpcf7 .wpcf7-form .text_cf7_bottom {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1C3A2C;
+}
+.page_contacts .page_contacts_container .page_contacts_body .contacts_form .wpcf7 .wpcf7-form .text_cf7_bottom a {
+  color: #1C3A2C;
+  text-decoration: underline;
+}
+.page_contacts .page_contacts_container .page_contacts_body .contacts_form .wpcf7 .wpcf7-form .wpcf7-submit {
+  margin-top: 36px;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Inter";
+  background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+  border-radius: 50px;
+  color: #ffffff;
+  padding: 15px 60px 15px 60px;
+}
+.page_contacts .page_contacts_container .page_contacts_body .contacts_form .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-list-item {
+  margin: 0;
+}
+.page_contacts .page_contacts_container .page_contacts_body .contacts_form .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-list-item input {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+.page_contacts .page_contacts_container .page_contacts_body .contacts_form .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-text {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin-bottom: 16px;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #898989;
+  padding: 12px 0 13px 14px;
+}
+.page_contacts .page_contacts_container .page_contacts_body .contacts_form .cf7_title {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #E80B8B;
+  margin-bottom: 22px;
 }/*# sourceMappingURL=style.css.map */

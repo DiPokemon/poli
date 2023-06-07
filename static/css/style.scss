@@ -747,7 +747,95 @@ background-color: $header_bg;
     .about_slider_top {
         margin-top: 32px;
         margin-bottom: 32px;
+        /* Слайдер */
+        .slick-slider{}
+        /* Слайдер запущен */
+        .slick-slider.slick-initialized{}
+        /* Слайдер с точками */
+        .slick-slider.slick-dotted{}
+        /* Ограничивающая оболочка */
+        .slick-list {}
+        /* Лента слайдов */
+        .slick-track{
+            display: flex;
+            gap: 15px;
+        }
+        /* Слайд */
+        .slick-slide{}
+        /* Слайд активный (показывается) */
+        .slick-slide.slick-active{}
+        /* Слайд основной */
+        .slick-slide.slick-current{}
+        /* Слайд по центру */
+        .slick-slide.slick-center{}
+        /* Клонированный слайд */
+        .slick-slide.slick-cloned{}
+        /* Стрелка */
+        .slick-arrow{}
+        /* Стрелка влево */
+        .slick-arrow.slick-prev{}
+        /* Стрелка вправо */
+        .slick-arrow.slick-next{
+            display: none;
+        }
+        /* Стрелка не активная */
+        .slick-arrow.slick-disabled{}
+        /* Точки (булиты) */
+        .slick-dots{}
+        .slick-dots li{}
+        /* Активная точка */
+        .slick-dots li.slick-active{}
+        /* Элемент точки */
+        .slick-dots li button{}
     }  
+
+    .about_slider_bottom {
+       
+        /* Слайдер */
+        .slick-slider{}
+        /* Слайдер запущен */
+        .slick-slider.slick-initialized{}
+        /* Слайдер с точками */
+        .slick-slider.slick-dotted{}
+        /* Ограничивающая оболочка */
+        .slick-list {}
+        /* Лента слайдов */
+        .slick-track{
+            display: flex;
+            justify-content: flex-start;
+            gap: 53px;
+        }
+        /* Слайд */
+        .slick-slide{}
+        /* Слайд активный (показывается) */
+        .slick-slide.slick-active{}
+        /* Слайд основной */
+        .slick-slide.slick-current{}
+        /* Слайд по центру */
+        .slick-slide.slick-center{}
+        /* Клонированный слайд */
+        .slick-slide.slick-cloned{}
+        /* Стрелка */
+        .slick-arrow{}
+        /* Стрелка влево */
+        .slick-arrow.slick-prev{}
+        /* Стрелка вправо */
+        .slick-arrow.slick-next{
+            display: none;
+        }
+        /* Стрелка не активная */
+        .slick-arrow.slick-disabled{}
+        /* Точки (булиты) */
+        .slick-dots{}
+        .slick-dots li{}
+        /* Активная точка */
+        .slick-dots li.slick-active{}
+        /* Элемент точки */
+        .slick-dots li button{}
+    }  
+
+
+
     .subtitle_top, .subtitle_bottom {
         margin-top: 32px;
         margin-bottom: 20px;
@@ -792,6 +880,51 @@ background-color: $header_bg;
         }
     } 
 }   
+.news_prevention_slider {
+   /* Слайдер */
+   .slick-slider{}
+   /* Слайдер запущен */
+   .slick-slider.slick-initialized{}
+   /* Слайдер с точками */
+   .slick-slider.slick-dotted{}
+   /* Ограничивающая оболочка */
+   .slick-list {}
+   /* Лента слайдов */
+   .slick-track{
+       display: flex;
+    //    justify-content: flex-start;
+       gap: 15px;
+   }
+   /* Слайд */
+   .slick-slide{}
+   /* Слайд активный (показывается) */
+   .slick-slide.slick-active{}
+   /* Слайд основной */
+   .slick-slide.slick-current{}
+   /* Слайд по центру */
+   .slick-slide.slick-center{}
+   /* Клонированный слайд */
+   .slick-slide.slick-cloned{}
+   /* Стрелка */
+   .slick-arrow{}
+   /* Стрелка влево */
+   .slick-arrow.slick-prev{}
+   /* Стрелка вправо */
+   .slick-arrow.slick-next{
+       display: none;
+   }
+   /* Стрелка не активная */
+   .slick-arrow.slick-disabled{}
+   /* Точки (булиты) */
+   .slick-dots{}
+   .slick-dots li{}
+   /* Активная точка */
+   .slick-dots li.slick-active{}
+   /* Элемент точки */
+   .slick-dots li button{}
+}  
+
+
 .page_news_container {
     display: flex;
     flex-direction: column;
@@ -1056,6 +1189,208 @@ background-color: $header_bg;
                     max-width: 203px;
                 }
             }
+        }
+    }
+}
+.othernews {
+    margin-bottom: 32px;
+
+.othernews_container {
+    .othernews_title {
+        margin-top: 32px;
+        margin-bottom: 28px;
+        font-family: $font_opensans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        // line-height: 48px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        color: #013236;
+    }
+    .othernews_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    .othernews_body {
+        display: flex;
+        gap: 44px;
+        .othernews_text {
+            border-top: 1px solid #DCDCDC;
+            // border-bottom: 1px solid #DCDCDC;
+            font-family: $font_opensans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            /* identical to box height */
+
+            text-decoration-line: underline;
+
+            color: #000000;
+            p {
+                padding-top: 30px;
+                padding-bottom: 27px;
+                border-bottom: 1px solid #DCDCDC;
+
+            }
+        }
+        
+    }
+    a { background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+        border-radius: 50px;
+        font-family: $font_opensans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        // line-height: 25px;
+        /* identical to box height */
+        // margin-top: 24px;
+        text-align: center;
+        padding: 13px 48px;
+        color: #FFFFFF;
+        max-width: 203px;
+
+    }
+}
+}
+}
+.page_contacts {
+    .page_contacts_container {
+        .contacts_title {
+            margin-top: 28px;
+            margin-bottom: 28px;
+        }
+        .page_contacts_body {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 36px;
+            .page_contacts_text {
+                display: flex;
+                flex-direction: column;
+                .contacts_text_top {
+                    // margin-top: 28px;
+                    margin-bottom: 29px;
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    // font-weight: 700;
+                    font-size: 18px;
+                    line-height: 50px;
+
+                    color: #013236;
+
+                }
+                .contacts_text_bottom {
+                    margin-bottom: 36px;
+                    ul {
+                        list-style-image: url(http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group224.png);
+                        li {
+                            font-family: $font_opensans;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 40px;
+
+                            color: #055D65;
+                        }
+                       }
+                }
+                .social {
+                    margin-top: 15px;
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    .social_item i {
+                      color: $header_social;
+                      font-size: 30px;
+                    }
+                }
+            }
+            .contacts_form {
+                background: $background_cf;
+                border-radius: 20px;
+                min-width: 498px;
+                min-height: 422px;
+                display: flex;
+                justify-content: center;
+                margin-top: 14px;
+                .wpcf7 {
+                    margin-top: 39px;
+                    margin-bottom: 39px;
+                    .wpcf7-form {
+                        .text_cf7_bottom {
+                            font-family: $font_opensans;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 16px;
+                            
+                            color: $text_cf7bottom;
+                            a {
+                                color: $text_cf7bottom;
+                                text-decoration: underline; 
+                            }
+                        }
+                        .wpcf7-submit {
+                            margin-top: 36px;
+                            font-family: $font_opensans;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            // line-height: 19px;
+                            text-align: center;
+                            font-family: 'Inter';
+                            background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                            border-radius: 50px;
+                            color: #ffffff;
+                            padding: 15px 60px 15px 60px;
+                        }
+                        .wpcf7-form-control-wrap {
+                            .wpcf7-list-item {
+                                margin: 0;
+                                input {
+                                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+                                    border-radius: 2px;
+                                }
+                                
+                            }
+                            
+                            
+                            
+        
+                            .wpcf7-text {
+                            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+                            border-radius: 5px;
+                            margin-bottom: 16px;
+                            font-family: $font_opensans;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 20px;
+                            color: $text_cf7;
+                            padding: 12px 0 13px 14px;
+                            }
+                        }
+                    }
+                }
+                .cf7_title {
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    // line-height: 33px;
+                    // display: flex;
+                    // align-items: center;
+                    color: $red;
+                    margin-bottom: 22px;
+                }    
+            }
+            
+        
         }
     }
 }

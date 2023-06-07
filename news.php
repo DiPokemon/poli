@@ -16,8 +16,22 @@ Template Name: Шаблон страницы Новости
         <div class="container">
         <h3 class="prevention_title">Профилактика новой коронавирусной инфекции,<br> гриппа и ОРВИ</h3>
         </div>
-        <div class="prevention_slider">SLIDER</div>
+        
+        <div class="news_prevention_slider">
+        <div class="slider__item">
+            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group 274.jpg" alt="img">
+        </div>
+        <div class="slider__item">
+            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group 275.jpg" alt="img">
+        </div>
+        <div class="slider__item">
+            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group 273.jpg" alt="img">
+        </div>
+              
+        </div>
+        
     </div>
+    
 </section>
 
 <section>
@@ -108,7 +122,27 @@ Template Name: Шаблон страницы Новости
 
 </section>
 
+<section class="othernews">
+  <div class="othernews_container container">
+        <h3 class="othernews_title">Другие новости</h3>
+        <div class="othernews_wrapper">
+                <div class="othernews_body">
+                <div class="othernews_img">
+                    <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/unsplash_2zDw14yCYqk.png" alt="img">
+                </div>
+                <div class="othernews_text">
+                    <p>Порядок обращения за оказанием различных видов медицинской помощи</p>
+                    <p>Отделение врачебной косметологии</p>
+                    <p>17 сентября – Всемирный день безопасности пациентов</p>
+                    <p>Обращения к жителям Кировского района</p>
+                    
+                </div>
+                </div>
+            <a href="#">Все&nbsp;новости</a>
+        </div>
+  </div>
 
+</section>
 
 
 

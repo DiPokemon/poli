@@ -14,10 +14,45 @@ $background_cf: #FAF2F9;
 $text_cf7: #898989;
 $text_cf7bottom: #1C3A2C;
 $white: #ffffff;
+$black: #000000;
 $slick-arrows: #45A6AF;
 $slider_background: linear-gradient(180deg, #69C5CD 0%, #45A6AF 52.08%, #00616A 100%);
 $font_opensans: 'OpenSans';
 .container {
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.font_w700_s60 {
+    font-family: $font_opensans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        display: flex;
+        align-items: center;
+}
+.font_w700_s35 {
+    font-family: $font_opensans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+}
+.font_w600_s18 {
+    font-family: $font_opensans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+
+}
+.font_w400_s18 {
+    font-family: $font_opensans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
 }

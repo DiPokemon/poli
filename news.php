@@ -8,13 +8,13 @@ Template Name: Шаблон страницы Новости
 
 <section>
     <div class="page_news_container container">
-      <h2 class="page_news_title">Новости</h2>
+      <h2 class="page_news_title font_w700_s60">Новости</h2>
       <input type="text" maxlength= "12" placeholder="Поиск" class="searchbar">
       <!-- <i class="fa-light fa-magnifying-glass button"></i> -->
     </div>
     <div class="prevention">
         <div class="container">
-        <h3 class="prevention_title">Профилактика новой коронавирусной инфекции,<br> гриппа и ОРВИ</h3>
+        <h3 class="prevention_title font_w700_s35">Профилактика новой коронавирусной инфекции,<br> гриппа и ОРВИ</h3>
         </div>
         
         <div class="news_prevention_slider">
@@ -36,12 +36,12 @@ Template Name: Шаблон страницы Новости
 
 <section>
   <div class="announcement_container container">
-       <h3 class="announcement_title">Объявление для родственников</h3>
+       <h3 class="announcement_title font_w700_s35">Объявление для родственников</h3>
        <div class="announcement_body">
        <div class="announcement_img">
        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Frame 41 1.png" alt="img">
        </div>
-       <div class="announcement_text">
+       <div class="announcement_text font_w400_s18">
        <p>По вопросам, касающимся состояния здоровья пациентов, находящихся на лечении, родственники могут звонить по телефонам:
        </p>
        <br>
@@ -63,15 +63,15 @@ Template Name: Шаблон страницы Новости
 
 <section class="important1">
   <div class="important1_container container">
-       <h3 class="important1_title">Важная информация</h3>
+       <h3 class="important1_title font_w700_s35">Важная информация</h3>
        <div class="important1_body">
        <div class="important1_img">
        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/7.png" alt="img">
        </div>
        <div class="important1_text">
-       <p>Памятка о действиях в случае бессимптомного или легкого течения новой коронавирусной инфекции и острой респираторной вирусной инфекции
+       <p class="font_w400_s18">Памятка о действиях в случае бессимптомного или легкого течения новой коронавирусной инфекции и острой респираторной вирусной инфекции
        </p>
-       <a href="#">Памятка</a>
+       <a  href="#" class="font_w400_s18">Памятка</a>
        </div>
        </div>
 
@@ -81,12 +81,12 @@ Template Name: Шаблон страницы Новости
 <!--  -->
 <section class="important2">
   <div class="important2_container container">
-       <h3 class="important2_title">Важная информация</h3>
+       <h3 class="important2_title font_w700_s35">Важная информация</h3>
        <div class="important2_body">
        <div class="important2_img">
        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/4.png" alt="img">
        </div>
-       <div class="important2_text">
+       <div class="important2_text font_w400_s18">
         <br>
         
        <p> Уважаемые посетители!</p>
@@ -105,14 +105,14 @@ Template Name: Шаблон страницы Новости
 
 <section class="covid">
   <div class="covid_container container">
-       <h3 class="covid_title">Как проходит вакцинация от COVID-19</h3>
+       <h3 class="covid_title font_w700_s35">Как проходит вакцинация от COVID-19</h3>
        <div class="covid_body">
        <div class="covid_img">
        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/3.png" alt="img">
        </div>
-       <div class="covid_text">
+       <div class="covid_text font_w400_s18">
        <p>Как проходит вакцинация от COVID-19</p>
-       <a href="#">Открыть</a>
+       <a href="#" class="font_w400_s18">Открыть</a>
        <p>Российские вакцины против коронавируса</p>
        <a href="#">Открыть</a>
        </div>
@@ -124,13 +124,13 @@ Template Name: Шаблон страницы Новости
 
 <section class="othernews">
   <div class="othernews_container container">
-        <h3 class="othernews_title">Другие новости</h3>
+        <h3 class="othernews_title font_w700_s35">Другие новости</h3>
         <div class="othernews_wrapper">
                 <div class="othernews_body">
                 <div class="othernews_img">
                     <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/unsplash_2zDw14yCYqk.png" alt="img">
                 </div>
-                <div class="othernews_text">
+                <div class="othernews_text font_w600_s18">
                     <p>Порядок обращения за оказанием различных видов медицинской помощи</p>
                     <p>Отделение врачебной косметологии</p>
                     <p>17 сентября – Всемирный день безопасности пациентов</p>
@@ -138,7 +138,7 @@ Template Name: Шаблон страницы Новости
                     
                 </div>
                 </div>
-            <a href="#">Все&nbsp;новости</a>
+            <a href="#" class="font_w400_s18">Все&nbsp;новости</a>
         </div>
   </div>
 

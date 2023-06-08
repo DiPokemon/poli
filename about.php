@@ -8,9 +8,9 @@ Template Name: Шаблон страницы О больнице
 
 <section>
    <div class="about_container container">
-      <h2 class="about_title">О больнице</h2>
+      <h2 class="about_title font_w700_s60">О больнице</h2>
       <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/0254.png" alt="img">
-      <div class="text_top">
+      <div class="text_top font_w400_s18">
       История ее постройки МБУЗ «ГБ №4 г. Ростова-на-Дону» очень интересна. В день 25-летия царствования Александра II, желая увековечить его имя, благодарные евреи из капитала своей общины выделили деньги на строительство больницы на 30 кроватей и назвали ее «Александровской».
       <br>
       <br>
@@ -76,7 +76,7 @@ Template Name: Шаблон страницы О больнице
             <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/0131.png" alt="img">
         </div>
       </div>
-      <div class="text_bottom">
+      <div class="text_bottom font_w400_s18">
         Адрес: 344006, г. Ростов-на-Дону, пр. Богатяновский спуск, 27/160
       <br>
       <br>
@@ -114,7 +114,7 @@ Template Name: Шаблон страницы О больнице
 
 
 </div>
-      <h3 class="subtitle_top">Лицензии на осуществление медицинской деятельности</h3>
+      <h3 class="subtitle_top font_w700_s35">Лицензии на осуществление медицинской деятельности</h3>
       <div class="about_slider_bottom">
         <div class="slider__item">
             <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group 247.jpg" alt="img">
@@ -127,12 +127,12 @@ Template Name: Шаблон страницы О больнице
         </div>
               
        </div>
-      <h3 class="subtitle_bottom">Общественный совет больницы</h3>
+      <h3 class="subtitle_bottom font_w700_s35">Общественный совет больницы</h3>
       <div class="block_row">
-           <div class="block_item"><a href="#">Информация<br> на рассмотрения<br> жалоб 2015</a></div>
-           <div class="block_item"><a href="#">Информация<br> на рассмотрения<br> жалоб 2016</a></div>
-           <div class="block_item"><a href="#">Приказ 129 ОД</a></div>
-           <div class="block_item"><a href="#">Протокол №1</a></div>
+           <div class="block_item font_w600_s18"><a href="#">Информация<br> на рассмотрения<br> жалоб 2015</a></div>
+           <div class="block_item font_w600_s18"><a href="#">Информация<br> на рассмотрения<br> жалоб 2016</a></div>
+           <div class="block_item font_w600_s18"><a href="#">Приказ 129 ОД</a></div>
+           <div class="block_item font_w600_s18"><a href="#">Протокол №1</a></div>
 
       </div>
 

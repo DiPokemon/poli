@@ -1773,4 +1773,24 @@ body {
   text-align: center;
   color: #ffffff;
   margin: 0 52px 0 55px;
+}
+
+.appointment_container .appointment_title {
+  color: #013236;
+  margin: 28px 0;
+  line-height: 82px;
+}
+.appointment_container .appointment_href {
+  margin: 32px 0;
+}
+.appointment_container .appointment_href a {
+  color: #000000;
+}
+.appointment_container .appointment_subtitle2 {
+  line-height: 48px;
+  margin-bottom: 28px;
+}
+.appointment_container p {
+  line-height: 25px;
+  max-width: 1042px;
 }/*# sourceMappingURL=style.css.map */

@@ -1535,7 +1535,29 @@ body {
     }
     }
 
-
+// -------------------страница Зпись на приём---------------------
+.appointment_container {
+    .appointment_title {
+        color: $blue_h2;
+        margin: 28px 0;
+        line-height: 82px;
+    }
+    .appointment_href {
+        margin: 32px 0;
+        a {
+            color: $black;
+        }
+    }
+    .appointment_subtitle2 {
+        line-height: 48px;
+        margin-bottom: 28px;
+    }
+    p {
+        line-height: 25px;
+        max-width: 1042px;
+    }
+   
+}
 
 
 

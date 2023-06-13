@@ -1292,165 +1292,137 @@ body {
     }
 }
 
-// .page_contacts {
-//     .page_contacts_container {
-//         .contacts_title {
-//             margin-top: 28px;
-//             margin-bottom: 28px;
-//         }
-//         .page_contacts_body {
-//             display: flex;
-//             justify-content: space-between;
-//             margin-bottom: 36px;
-//             .page_contacts_text {
-//                 display: flex;
-//                 flex-direction: column;
-//                 .contacts_text_top {
-//                     // margin-top: 28px;
-//                     margin-bottom: 29px;
-//                     font-family: $font_opensans;
-//                     font-style: normal;
-//                     // font-weight: 700;
-//                     font-size: 18px;
-//                     line-height: 50px;
-//                     color: #013236;
-//                 }
-//                 .contacts_text_bottom {
-//                     margin-bottom: 36px;
-//                     ul {
-//                         list-style-image: url(http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group224.png);
-//                         li {
-//                             font-family: $font_opensans;
-//                             font-style: normal;
-//                             font-weight: 600;
-//                             font-size: 18px;
-//                             line-height: 40px;
-//                             color: #055D65;
-//                         }
-//                     }
-//                 }
-//                 .social {
-//                     margin-top: 15px;
-//                     display: flex;
-//                     gap: 15px;
-//                     align-items: center;
-//                     .social_item i {
-//                         color: $header_social;
-//                         font-size: 30px;
-//                     }
-//                 }
-//             }
-//             .contacts_form {
-//                 background: $background_cf;
-//                 border-radius: 20px;
-//                 min-width: 498px;
-//                 min-height: 422px;
-//                 display: flex;
-//                 justify-content: center;
-//                 margin-top: 14px;
-//                 .wpcf7 {
-//                     margin-top: 39px;
-//                     margin-bottom: 39px;
-//                     .wpcf7-form {
-//                         .text_cf7_bottom {
-//                             font-family: $font_opensans;
-//                             font-style: normal;
-//                             font-weight: 400;
-//                             font-size: 12px;
-//                             line-height: 16px;
-//                             color: $text_cf7bottom;
-//                             a {
-//                                 color: $text_cf7bottom;
-//                                 text-decoration: underline;
-//                             }
-//                         }
-//                         .wpcf7-submit {
-//                             margin-top: 36px;
-//                             font-family: $font_opensans;
-//                             font-style: normal;
-//                             font-weight: 500;
-//                             font-size: 16px;
-//                             // line-height: 19px;
-//                             text-align: center;
-//                             font-family: 'Inter';
-//                             background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-//                             border-radius: 50px;
-//                             color: #ffffff;
-//                             padding: 15px 60px 15px 60px;
-//                         }
-//                         .wpcf7-form-control-wrap {
-//                             .wpcf7-list-item {
-//                                 margin: 0;
-//                                 input {
-//                                     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
-//                                     border-radius: 2px;
-//                                 }
-//                             }
-//                             .wpcf7-text {
-//                                 box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
-//                                 border-radius: 5px;
-//                                 margin-bottom: 16px;
-//                                 font-family: $font_opensans;
-//                                 font-style: normal;
-//                                 font-weight: 400;
-//                                 font-size: 15px;
-//                                 line-height: 20px;
-//                                 color: $text_cf7;
-//                                 padding: 12px 0 13px 14px;
-//                             }
-//                         }
-//                     }
-//                 }
-//                 .cf7_title {
-//                     font-family: $font_opensans;
-//                     font-style: normal;
-//                     font-weight: 700;
-//                     font-size: 24px;
-//                     // line-height: 33px;
-//                     // display: flex;
-//                     // align-items: center;
-//                     color: $red;
-//                     margin-bottom: 22px;
-//                 }
-//             }
-//         }
-//     }
-// }
+
 // ----------------------Страница Отзывы-------------------
 
 .page_reviews {
     .page_reviews_container {
+        .reviews_title {
+            margin: 28px 0 28px 0;
+        }
+    .reviews_cf7 {
+        background: $background_cf;
+        border-radius: 20px;
+        max-width: 844px;
+        min-height: 422px;
         display: flex;
         flex-direction: column;
-        .reviews_title {
-            margin: 28px 0px;
+        margin-bottom: 32px;
+        .contact_form_title {
+            color: $red;
+            font-family: $font_opensans;
+            font-weight: 700;
+            font-size: 24px;
+            margin: 39px 0 28px 40px;
         }
-        .reviews_cf7 {
-            background: $background_cf;
-            border-radius: 20px;
-            max-width: 844px;
-            max-height: 422px;
-            margin-bottom: 32px;
-                    .contact_form_title {
-                        margin: 39px 0 28px 0px;
-                        font-family: 'Open Sans';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 35px;
-                        // line-height: 48px;
-                        display: flex;
-                        align-items: center;
-
-                        color: $red;
-                    }
-            p {
-                background: $background_cf;
-                border-radius: 20px;
-                margin: 0 40px 16px 40px;
-                // width: 100%;
-                max-width: 764px;
+        .pers_data {
+            margin-left: 40px;
+            font-size: 12px;
+            color: $blue_h2;
+            display: flex;
+            align-items: center;
+            a {
+                color: $blue_h2;
+                text-decoration: underline;
+            }
+            .wpcf7-list-item {
+                margin: 0 7px 0 0;
+                input {
+                    background: $white;
+                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 2px;
+                    width: 22px;
+                    height: 22px;
+                }
+               
+            }
+            .consent {
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                // line-height: 16px;
+                color: $text_cf7bottom;
             }
         }
+    }
+    
+    .wpcf7 {
+        
+        .wpcf7-form {
+            .text_cf7_bottom {
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: $text_cf7bottom;
+                a {
+                    color: $text_cf7bottom;
+                    text-decoration: underline;
+                }
+            }
+            .wpcf7-submit {
+                margin: 36px 0 0 40px;
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                // line-height: 19px;
+                text-align: center;
+                font-family: 'Inter';
+                background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                border-radius: 50px;
+                width: 203px;
+                height: 50px;
+                color: $white;
+                border-color: transparent;
+            }
+            .wpcf7-form-control-wrap {
+               
+
+                .wpcf7-form-control::placeholder {
+                                font-family: $font_opensans;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 25px;
+                                color: $text_cf7;
+                                padding: 12px 0 0 14px;
+                              }
+                .wpcf7-text {
+                    margin: 0 40px 16px 40px;
+                    min-width: 764px;
+                    min-height: 45px;
+                    background: $white;
+                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 5px;
+                    
+                }    
+                textarea {
+                    margin: 0 40px 26px 40px;
+                    min-width: 764px;
+                    max-height: 90px;
+                    background: $white;
+                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 5px;
+                } 
+
+            }
+        }
+    }
+    .cf7_title {
+        font-family: $font_opensans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        color: $red;
+        margin-bottom: 22px;
+    }
+           
+        
+            
+        
         .reviews_column {
             display: flex;
             flex-direction: column;
@@ -1472,8 +1444,97 @@ body {
             }
 
         }
+        .reviews_href {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 32px;
+        .page1 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                
+
+                color: $white;
+            }
+           
+        }
+        .page2 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        .page3 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        .page4 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        .page5 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+
+        .page_next {
+            background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .reviews_page {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: $red;
+        }
+        .reviews_page_next {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+
+            color: $white;
+            margin: 0 52px 0 55px;
+        }
+        }
     }
-}
+    }
+
 
 
 

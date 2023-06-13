@@ -41,12 +41,12 @@ Template Name: Шаблон страницы Отзывы
        </div>
    </div>
    <div class="reviews_href">
-        <a href="#" class="reviews_page1">1</a> 
-        <a href="#" class="reviews_page2">2</a>
-        <a href="#" class="reviews_page3">3</a>
-        <a href="#" class="reviews_page4">4</a>
-        <a href="#" class="reviews_page5">5</a>
-        <a href="#" class="reviews_page_next">Следующая</a>
+        <div class="page1"><a href="#" class="reviews_page">1</a></div> 
+        <div class="page2"><a href="#" class="reviews_page">2</a></div>
+        <div class="page3"><a href="#" class="reviews_page">3</a></div>
+        <div class="page4"><a href="#" class="reviews_page">4</a></div>
+        <div class="page5"><a href="#" class="reviews_page">5</a></div>
+        <div class="page_next"><a href="#" class="reviews_page_next">Следующая</a></div>
 
    </div>
 

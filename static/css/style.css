@@ -1476,7 +1476,14 @@ body {
   max-width: 203px;
 }
 
-.page_reviews .page_reviews_container {
+.page_reviews .page_reviews_container .reviews_title {
+  margin: 28px 0 28px 0;
+}
+.page_reviews .page_reviews_container .reviews_cf7 {
+  background: #FAF2F9;
+  border-radius: 20px;
+  max-width: 844px;
+  min-height: 422px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1484,36 +1491,145 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.page_reviews .page_reviews_container .reviews_title {
-  margin: 28px 0px;
-}
-.page_reviews .page_reviews_container .reviews_cf7 {
-  background: #FAF2F9;
-  border-radius: 20px;
-  max-width: 844px;
-  max-height: 422px;
   margin-bottom: 32px;
 }
 .page_reviews .page_reviews_container .reviews_cf7 .contact_form_title {
-  margin: 39px 0 28px 0px;
-  font-family: "Open Sans";
-  font-style: normal;
+  color: #E80B8B;
+  font-family: "OpenSans";
   font-weight: 700;
-  font-size: 35px;
+  font-size: 24px;
+  margin: 39px 0 28px 40px;
+}
+.page_reviews .page_reviews_container .reviews_cf7 .pers_data {
+  margin-left: 40px;
+  font-size: 12px;
+  color: #013236;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #E80B8B;
 }
-.page_reviews .page_reviews_container .reviews_cf7 p {
-  background: #FAF2F9;
-  border-radius: 20px;
+.page_reviews .page_reviews_container .reviews_cf7 .pers_data a {
+  color: #013236;
+  text-decoration: underline;
+}
+.page_reviews .page_reviews_container .reviews_cf7 .pers_data .wpcf7-list-item {
+  margin: 0 7px 0 0;
+}
+.page_reviews .page_reviews_container .reviews_cf7 .pers_data .wpcf7-list-item input {
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  width: 22px;
+  height: 22px;
+}
+.page_reviews .page_reviews_container .reviews_cf7 .pers_data .consent {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #1C3A2C;
+}
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .text_cf7_bottom {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1C3A2C;
+}
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .text_cf7_bottom a {
+  color: #1C3A2C;
+  text-decoration: underline;
+}
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-submit {
+  margin: 36px 0 0 40px;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Inter";
+  background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+  border-radius: 50px;
+  width: 203px;
+  height: 50px;
+  color: #ffffff;
+  border-color: transparent;
+}
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-form-control::-webkit-input-placeholder {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #898989;
+  padding: 12px 0 0 14px;
+}
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-form-control::-moz-placeholder {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #898989;
+  padding: 12px 0 0 14px;
+}
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-form-control:-ms-input-placeholder {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #898989;
+  padding: 12px 0 0 14px;
+}
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-form-control::-ms-input-placeholder {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #898989;
+  padding: 12px 0 0 14px;
+}
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-form-control::placeholder {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #898989;
+  padding: 12px 0 0 14px;
+}
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-text {
   margin: 0 40px 16px 40px;
-  max-width: 764px;
+  min-width: 764px;
+  min-height: 45px;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-form-control-wrap textarea {
+  margin: 0 40px 26px 40px;
+  min-width: 764px;
+  max-height: 90px;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.page_reviews .page_reviews_container .cf7_title {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #E80B8B;
+  margin-bottom: 22px;
 }
 .page_reviews .page_reviews_container .reviews_column {
   display: -webkit-box;
@@ -1544,4 +1660,117 @@ body {
 .page_reviews .page_reviews_container .reviews_column .reviews_item .reviews_item_text {
   margin: 0 40px 26px 40px;
   line-height: 25px;
+}
+.page_reviews .page_reviews_container .reviews_href {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.page_reviews .page_reviews_container .reviews_href .page1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page_reviews .page_reviews_container .reviews_href .page1 a {
+  color: #ffffff;
+}
+.page_reviews .page_reviews_container .reviews_href .page2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page_reviews .page_reviews_container .reviews_href .page3 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page_reviews .page_reviews_container .reviews_href .page4 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page_reviews .page_reviews_container .reviews_href .page5 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page_reviews .page_reviews_container .reviews_href .page_next {
+  background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page_reviews .page_reviews_container .reviews_href .reviews_page {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E80B8B;
+}
+.page_reviews .page_reviews_container .reviews_href .reviews_page_next {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 52px 0 55px;
 }/*# sourceMappingURL=style.css.map */

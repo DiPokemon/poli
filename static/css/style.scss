@@ -154,12 +154,24 @@ body {
                         display: flex;
                         align-items: center;
                         color: $white;
+                        position: relative;
+                        z-index: 100;
+                        // border: 1px solid $black;
                     }
                 }
             }
         }
     }
 }
+
+.menu-item-has-children .sub-menu {
+    display: none;
+  }
+
+
+
+
+
 
 .footer {
     background-color: $footer_bg;

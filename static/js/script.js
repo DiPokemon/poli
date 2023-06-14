@@ -17,3 +17,11 @@ $(document).ready(function(){
         slidesToShow: 3,
     });
 });
+
+// ---------------Выпадающее меню--------------------
+jQuery(document).ready(function($) {
+    $('.menu-item-has-children > a').click(function(e) {
+      e.preventDefault();
+      $(this).siblings('.sub-menu').slideToggle();
+    });
+  });

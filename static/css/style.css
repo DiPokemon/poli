@@ -344,6 +344,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #ffffff;
+  position: relative;
+  z-index: 100;
+}
+
+.menu-item-has-children .sub-menu {
+  display: none;
 }
 
 .footer {

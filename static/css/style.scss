@@ -145,18 +145,28 @@ body {
                 .menu-item {
                     margin-top: 18px;
                     margin-bottom: 18px;
-                    span {
-                        font-family: $font_opensans;
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 16px;
-                        line-height: 22px;
-                        display: flex;
-                        align-items: center;
-                        color: $white;
+                    .menu_link{
+                            span {
+                                font-family: $font_opensans;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 22px;
+                                display: flex;
+                                align-items: center;
+                                color: $white;
+                                position: relative;
+                                z-index: 100;
+                                // border: 1px solid $black;
+                            }
+                    } 
+                    .sub-menu {
+                        span {
+                        color: $black;
                         position: relative;
-                        z-index: 100;
-                        // border: 1px solid $black;
+                        z-index: 120;
+                        background: $font-blue;
+                              }
                     }
                 }
             }
@@ -1571,7 +1581,122 @@ body {
    
 }
 
+// --------------------Администрация-----------------------
 
+.administration_container {
+    .administration_title {
+        margin: 28px 0;
+        color: $blue_h2;
+    }
+    .administration_main {
+        margin-bottom: 32px;
+        background: linear-gradient(180deg, #51ACB5 0%, #45A6AF 52.08%, #00616A 100%);
+        display: flex;
+        .administration_main_image {
+            margin: 40px 40px;
+        }
+        .administration_main_text {
+            .administration_text_subtitle {
+                margin: 30px 0 20px 0;
+                color: $white;
+                line-height: 48px;
+            }
+            .administration_text {
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+                display: flex;
+                // align-items: center;
+
+                color: $white;
+            }
+        }
+    }
+    .administration_other {
+        margin: 0 auto;
+        margin-bottom: 28px;
+        max-width: 1110px;
+        max-height: 217px;
+        border: 1px solid $footer_text;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        .administration_position {
+            display: flex;
+            .administration_position_image {
+                margin: 30px 40px 30px 30px;
+            }
+            .administration_position_content {
+                display: flex;
+                flex-direction: column;
+                .administration_position_title {
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 34px;
+                    display: flex;
+                    align-items: center;
+                    color: $black;
+                    margin-top: 27px;
+                }
+                .administration_position_name {
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 34px;
+                    display: flex;
+                    align-items: center;
+                    color: $header_bg;
+                    margin-bottom: 20px;
+                    }
+                .administration_position_text {
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 25px;
+                    // display: flex;
+                    // align-items: center;
+
+                    color: $black;
+                }    
+            }
+        }
+    }
+    .administration_paycheck {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        // justify-content: center;
+        // align-items: center;
+        margin-bottom: 32px;
+        .administration_paycheck_item {
+            background: $light_blue;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            min-width: 306px;
+            min-height: 106px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+                margin: 0 31px;
+                line-height: 25px;
+                a {
+                color: $black;
+                }
+            }
+            .paychek_item6 {
+                margin: 0 20px;
+
+            }
+        }
+    }
+}
 
 
 

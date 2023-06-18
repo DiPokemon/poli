@@ -331,7 +331,7 @@ body {
   margin-top: 18px;
   margin-bottom: 18px;
 }
-.header_bottom .header_container .header_bottom_menu .menu_list .menu-item span {
+.header_bottom .header_container .header_bottom_menu .menu_list .menu-item .menu_link span {
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 600;
@@ -346,6 +346,12 @@ body {
   color: #ffffff;
   position: relative;
   z-index: 100;
+}
+.header_bottom .header_container .header_bottom_menu .menu_list .menu-item .sub-menu span {
+  color: #000000;
+  position: relative;
+  z-index: 120;
+  background: #055D65;
 }
 
 .menu-item-has-children .sub-menu {
@@ -1799,4 +1805,142 @@ body {
 .appointment_container p {
   line-height: 25px;
   max-width: 1042px;
+}
+
+.administration_container .administration_title {
+  margin: 28px 0;
+  color: #013236;
+}
+.administration_container .administration_main {
+  margin-bottom: 32px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#51ACB5), color-stop(52.08%, #45A6AF), to(#00616A));
+  background: linear-gradient(180deg, #51ACB5 0%, #45A6AF 52.08%, #00616A 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.administration_container .administration_main .administration_main_image {
+  margin: 40px 40px;
+}
+.administration_container .administration_main .administration_main_text .administration_text_subtitle {
+  margin: 30px 0 20px 0;
+  color: #ffffff;
+  line-height: 48px;
+}
+.administration_container .administration_main .administration_main_text .administration_text {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+}
+.administration_container .administration_other {
+  margin: 0 auto;
+  margin-bottom: 28px;
+  max-width: 1110px;
+  max-height: 217px;
+  border: 1px solid #BBDFE3;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.administration_container .administration_other .administration_position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.administration_container .administration_other .administration_position .administration_position_image {
+  margin: 30px 40px 30px 30px;
+}
+.administration_container .administration_other .administration_position .administration_position_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.administration_container .administration_other .administration_position .administration_position_content .administration_position_title {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  margin-top: 27px;
+}
+.administration_container .administration_other .administration_position .administration_position_content .administration_position_name {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #45A6AF;
+  margin-bottom: 20px;
+}
+.administration_container .administration_other .administration_position .administration_position_content .administration_position_text {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+.administration_container .administration_paycheck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 32px;
+}
+.administration_container .administration_paycheck .administration_paycheck_item {
+  background: #E5F2F4;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  min-width: 306px;
+  min-height: 106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.administration_container .administration_paycheck .administration_paycheck_item p {
+  margin: 0 31px;
+  line-height: 25px;
+}
+.administration_container .administration_paycheck .administration_paycheck_item p a {
+  color: #000000;
+}
+.administration_container .administration_paycheck .administration_paycheck_item .paychek_item6 {
+  margin: 0 20px;
 }/*# sourceMappingURL=style.css.map */

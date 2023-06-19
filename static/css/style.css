@@ -1295,10 +1295,11 @@ body {
 }
 
 .prevention {
+  padding-bottom: 32px;
   background: #F2F9FA;
 }
 .prevention .prevention_title {
-  margin-top: 28px;
+  padding-top: 28px;
   margin-bottom: 28px;
   line-height: 48px;
   color: #000000;
@@ -1344,9 +1345,9 @@ body {
   margin-top: 32px;
 }
 .important1 .important1_title {
-  margin-top: 28px;
+  padding-top: 28px;
   margin-bottom: 28px;
-  line-height: 48px;
+  line-height: 56px;
   /* identical to box height */
   color: #000000;
 }
@@ -1403,10 +1404,12 @@ body {
 
 .covid {
   background: #F2F9FA;
+  padding-top: 28px;
   margin-top: 32px;
+  padding-bottom: 32px;
 }
 .covid .covid_container .covid_title {
-  margin-top: 28px;
+  line-height: 56px;
   margin-bottom: 28px;
   /* identical to box height */
   color: #000000;
@@ -1419,11 +1422,15 @@ body {
 }
 .covid .covid_container .covid_body .covid_text {
   /* identical to box height */
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: start !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   color: #000000;
+  font-weight: 450 !important;
 }
 .covid .covid_container .covid_body .covid_text p {
   margin-top: 36px;
@@ -1470,9 +1477,8 @@ body {
   border-top: 1px solid #DCDCDC;
   line-height: 25px;
   /* identical to box height */
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: #000000;
+  text-decoration-line: underline;
+  color: #055D65;
   display: block;
 }
 .othernews .othernews_container .othernews_wrapper .othernews_body .othernews_text p {
@@ -2068,4 +2074,9 @@ body {
   line-height: 25px;
   margin: 0 0 30px 30px;
   font-weight: 500;
+}
+
+.news_slider {
+  width: 1626px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

@@ -57,7 +57,8 @@ Template Name: Main page
                 $posts = get_posts([
                     'numberposts' => -1,
                     'category' => 1,
-                    'orderby' => 'DESC',
+                    'orderby' => 'date',
+                    'order' => 'DESC',
                     'post_type' => 'post',
                     'suppress_filter' => true
                 ]);

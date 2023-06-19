@@ -145,29 +145,29 @@ body {
                 .menu-item {
                     margin-top: 18px;
                     margin-bottom: 18px;
-                    .menu_link{
-                            span {
-                                font-family: $font_opensans;
-                                font-style: normal;
-                                font-weight: 600;
-                                font-size: 16px;
-                                line-height: 22px;
-                                display: flex;
-                                align-items: center;
-                                color: $white;
-                                position: relative;
-                                z-index: 100;
-                                // border: 1px solid $black;
-                            }
-                    } 
+                    .menu_link {
+                        span {
+                            font-family: $font_opensans;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 22px;
+                            display: flex;
+                            align-items: center;
+                            color: $white;
+                            position: relative;
+                            z-index: 100;
+                            // border: 1px solid $black;
+                        }
+                    }
                     .sub-menu {
                         span {
-                        color: $white;
-                        position: relative;
-                        z-index: 120;
-                        background: $header_bg;
-                        border-radius: 5px;
-                              }
+                            color: $white;
+                            position: relative;
+                            z-index: 120;
+                            background: $header_bg;
+                            border-radius: 5px;
+                        }
                     }
                 }
             }
@@ -177,12 +177,7 @@ body {
 
 .menu-item-has-children .sub-menu {
     display: none;
-  }
-
-
-
-
-
+}
 
 .footer {
     background-color: $footer_bg;
@@ -894,8 +889,6 @@ body {
     padding-left: 6px;
 }
 
-
-
 // ----------О больнице---------
 .about_container {
     display: flex;
@@ -1034,10 +1027,7 @@ body {
     }
 }
 
-
 // ----------------Новости----------------
-
-
 .news_prevention_slider {
     /* Слайдер */
     .slick-slider {}
@@ -1125,9 +1115,10 @@ body {
 }
 
 .prevention {
+    padding-bottom: 32px;
     background: $background_blue;
     .prevention_title {
-        margin-top: 28px;
+        padding-top: 28px;
         margin-bottom: 28px;
         line-height: 48px;
         color: $black;
@@ -1170,9 +1161,9 @@ body {
     background: $background_cf;
     margin-top: 32px;
     .important1_title {
-        margin-top: 28px;
+        padding-top: 28px;
         margin-bottom: 28px;
-        line-height: 48px;
+        line-height: 56px;
         /* identical to box height */
         color: $black;
     }
@@ -1189,7 +1180,6 @@ body {
                 // display: flex;
                 // align-items: center;
                 color: $black;
-                
             }
             a {
                 max-width: 203px;
@@ -1230,10 +1220,12 @@ body {
 
 .covid {
     background: $background_blue;
+    padding-top: 28px;
     margin-top: 32px;
+    padding-bottom: 32px;
     .covid_container {
         .covid_title {
-            margin-top: 28px;
+            line-height: 56px;
             margin-bottom: 28px;
             // line-height: 48px;
             /* identical to box height */
@@ -1248,8 +1240,10 @@ body {
                 // line-height: 25px;
                 /* identical to box height */
                 // text-align: center;
+                align-items: start !important;
                 flex-direction: column;
                 color: $black;
+                font-weight: 450 !important;
                 p {
                     margin-top: 36px;
                 }
@@ -1292,7 +1286,7 @@ body {
                     line-height: 25px;
                     /* identical to box height */
                     text-decoration-line: underline;
-                    color: $black;
+                    color: $font_blue;
                     display: block;
                     p {
                         padding-top: 30px;
@@ -1315,137 +1309,124 @@ body {
     }
 }
 
-
 // ----------------------Страница Отзывы-------------------
-
 .page_reviews {
     .page_reviews_container {
         .reviews_title {
             margin: 28px 0 28px 0;
         }
-    .reviews_cf7 {
-        background: $background_cf;
-        border-radius: 20px;
-        max-width: 844px;
-        min-height: 422px;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 32px;
-        .contact_form_title {
-            color: $red;
-            font-family: $font_opensans;
-            font-weight: 700;
-            font-size: 24px;
-            margin: 39px 0 28px 40px;
-        }
-        .pers_data {
-            margin-left: 40px;
-            font-size: 12px;
-            color: $blue_h2;
+        .reviews_cf7 {
+            background: $background_cf;
+            border-radius: 20px;
+            max-width: 844px;
+            min-height: 422px;
             display: flex;
-            align-items: center;
-            a {
+            flex-direction: column;
+            margin-bottom: 32px;
+            .contact_form_title {
+                color: $red;
+                font-family: $font_opensans;
+                font-weight: 700;
+                font-size: 24px;
+                margin: 39px 0 28px 40px;
+            }
+            .pers_data {
+                margin-left: 40px;
+                font-size: 12px;
                 color: $blue_h2;
-                text-decoration: underline;
-            }
-            .wpcf7-list-item {
-                margin: 0 7px 0 0;
-                input {
-                    background: $white;
-                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
-                    border-radius: 2px;
-                    width: 22px;
-                    height: 22px;
-                }
-               
-            }
-            .consent {
-                font-family: $font_opensans;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 12px;
-                // line-height: 16px;
-                color: $text_cf7bottom;
-            }
-        }
-    }
-    
-    .wpcf7 {
-        
-        .wpcf7-form {
-            .text_cf7_bottom {
-                font-family: $font_opensans;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 16px;
-                color: $text_cf7bottom;
+                display: flex;
+                align-items: center;
                 a {
-                    color: $text_cf7bottom;
+                    color: $blue_h2;
                     text-decoration: underline;
                 }
-            }
-            .wpcf7-submit {
-                margin: 36px 0 0 40px;
-                font-family: $font_opensans;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                // line-height: 19px;
-                text-align: center;
-                font-family: 'Inter';
-                background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-                border-radius: 50px;
-                width: 203px;
-                height: 50px;
-                color: $white;
-                border-color: transparent;
-            }
-            .wpcf7-form-control-wrap {
-               
-
-                .wpcf7-form-control::placeholder {
-                                font-family: $font_opensans;
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 18px;
-                                line-height: 25px;
-                                color: $text_cf7;
-                                padding: 12px 0 0 14px;
-                              }
-                .wpcf7-text {
-                    margin: 0 40px 16px 40px;
-                    min-width: 764px;
-                    min-height: 45px;
-                    background: $white;
-                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
-                    border-radius: 5px;
-                    
-                }    
-                textarea {
-                    margin: 0 40px 26px 40px;
-                    min-width: 764px;
-                    max-height: 90px;
-                    background: $white;
-                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
-                    border-radius: 5px;
-                } 
-
+                .wpcf7-list-item {
+                    margin: 0 7px 0 0;
+                    input {
+                        background: $white;
+                        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+                        border-radius: 2px;
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+                .consent {
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    // line-height: 16px;
+                    color: $text_cf7bottom;
+                }
             }
         }
-    }
-    .cf7_title {
-        font-family: $font_opensans;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        color: $red;
-        margin-bottom: 22px;
-    }
-           
-        
-            
-        
+        .wpcf7 {
+            .wpcf7-form {
+                .text_cf7_bottom {
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $text_cf7bottom;
+                    a {
+                        color: $text_cf7bottom;
+                        text-decoration: underline;
+                    }
+                }
+                .wpcf7-submit {
+                    margin: 36px 0 0 40px;
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    // line-height: 19px;
+                    text-align: center;
+                    font-family: 'Inter';
+                    background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                    border-radius: 50px;
+                    width: 203px;
+                    height: 50px;
+                    color: $white;
+                    border-color: transparent;
+                }
+                .wpcf7-form-control-wrap {
+                    .wpcf7-form-control::placeholder {
+                        font-family: $font_opensans;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: $text_cf7;
+                        padding: 12px 0 0 14px;
+                    }
+                    .wpcf7-text {
+                        margin: 0 40px 16px 40px;
+                        min-width: 764px;
+                        min-height: 45px;
+                        background: $white;
+                        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+                        border-radius: 5px;
+                    }
+                    textarea {
+                        margin: 0 40px 26px 40px;
+                        min-width: 764px;
+                        max-height: 90px;
+                        background: $white;
+                        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        .cf7_title {
+            font-family: $font_opensans;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            color: $red;
+            margin-bottom: 22px;
+        }
         .reviews_column {
             display: flex;
             flex-direction: column;
@@ -1465,76 +1446,67 @@ body {
                     line-height: 25px;
                 }
             }
-
         }
         .reviews_href {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 32px;
-        .page1 {
-            width: 50px;
-            height: 50px;
-            border-radius: 50px;
-            background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
             display: flex;
-            align-items: center;
             justify-content: center;
-            a {
-                
-
-                color: $white;
+            gap: 10px;
+            margin-bottom: 32px;
+            .page1 {
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a {
+                    color: $white;
+                }
             }
-           
-        }
-        .page2 {
-            width: 50px;
-            height: 50px;
-            border-radius: 50px;
-            // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-           
-        }
-        .page3 {
-            width: 50px;
-            height: 50px;
-            border-radius: 50px;
-            // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-           
-        }
-        .page4 {
-            width: 50px;
-            height: 50px;
-            border-radius: 50px;
-            // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-           
-        }
-        .page5 {
-            width: 50px;
-            height: 50px;
-            border-radius: 50px;
-            // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-           
-        }
-
-        .page_next {
-            background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-        }
-        .reviews_page {
+            .page2 {
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .page3 {
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .page4 {
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .page5 {
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .page_next {
+                background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+            }
+            .reviews_page {
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 500;
@@ -1542,21 +1514,20 @@ body {
                 line-height: 19px;
                 text-align: center;
                 color: $red;
-        }
-        .reviews_page_next {
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 19px;
-            text-align: center;
-
-            color: $white;
-            margin: 0 52px 0 55px;
-        }
+            }
+            .reviews_page_next {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: $white;
+                margin: 0 52px 0 55px;
+            }
         }
     }
-    }
+}
 
 // -------------------страница Зпись на приём---------------------
 .appointment_container {
@@ -1579,11 +1550,9 @@ body {
         line-height: 25px;
         max-width: 1042px;
     }
-   
 }
 
 // --------------------Администрация-----------------------
-
 .administration_container {
     .administration_title {
         margin: 28px 0;
@@ -1610,7 +1579,6 @@ body {
                 line-height: 25px;
                 display: flex;
                 // align-items: center;
-
                 color: $white;
             }
         }
@@ -1653,7 +1621,7 @@ body {
                     align-items: center;
                     color: $header_bg;
                     margin-bottom: 20px;
-                    }
+                }
                 .administration_position_text {
                     font-family: $font_opensans;
                     font-style: normal;
@@ -1662,9 +1630,8 @@ body {
                     line-height: 25px;
                     // display: flex;
                     // align-items: center;
-
                     color: $black;
-                }    
+                }
             }
         }
     }
@@ -1688,94 +1655,89 @@ body {
                 margin: 0 31px;
                 line-height: 25px;
                 a {
-                color: $black;
+                    color: $black;
                 }
             }
             .paychek_item6 {
                 margin: 0 20px;
-
             }
         }
     }
 }
 
-
 // --------------------Вакансии-----------------------
 .vacancies_container {
-max-width: 1110px;
-
-.vacancies_title {
-    margin: 28px 0;
-    color: $blue_h2;
-}
-.vacancies_contact {
-    display: flex;
-    gap: 16px;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 32px;
-    .vacancies_contact_item {
-        background: $white;
-        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-        min-width: 360px;
-        min-height: 106px;
-        display: block;
-        line-height: 25px;
-        padding-top: 28px;
-        font-weight: 500;
+    max-width: 1110px;
+    .vacancies_title {
+        margin: 28px 0;
+        color: $blue_h2;
     }
-    .block1 {
-        padding: 28px 5px;
-    }
-    .block2 {
-        padding: 28px 32px;
-    }
-    .block3 {
-        padding: 28px 64px;
-    }
-}
-.vacancies_block {
-    
-    .vacancies_block_item {
-        background: $light_blue;
-        border: 1px solid $footer_text;
-        border-radius: 10px;
-        margin-bottom: 28px;
+    .vacancies_contact {
         display: flex;
-        flex-direction: column;
-        .vacancies_block_title {
-            margin: 27px 0 20px 30px;
-            font-family: $font_opensans;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 25px;
-            display: flex;
-            align-items: center;
-            color: $black;
-        }
-        .vacancies_block_text {
-            font-family: $font_opensans;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
+        gap: 16px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+        .vacancies_contact_item {
+            background: $white;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            min-width: 360px;
+            min-height: 106px;
+            display: block;
             line-height: 25px;
-            // display: flex;
-            // align-items: center;
-
-            color: $black;
-            padding: 0 0 30px 30px;
+            padding-top: 28px;
+            font-weight: 500;
+        }
+        .block1 {
+            padding: 28px 5px;
+        }
+        .block2 {
+            padding: 28px 32px;
+        }
+        .block3 {
+            padding: 28px 64px;
         }
     }
-}
-.vacancies_data {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 32px;
-    p {
-        color: $black;
+    .vacancies_block {
+        .vacancies_block_item {
+            background: $light_blue;
+            border: 1px solid $footer_text;
+            border-radius: 10px;
+            margin-bottom: 28px;
+            display: flex;
+            flex-direction: column;
+            .vacancies_block_title {
+                margin: 27px 0 20px 30px;
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 25px;
+                display: flex;
+                align-items: center;
+                color: $black;
+            }
+            .vacancies_block_text {
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                // display: flex;
+                // align-items: center;
+                color: $black;
+                padding: 0 0 30px 30px;
+            }
+        }
     }
-}
+    .vacancies_data {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        p {
+            color: $black;
+        }
+    }
 }
 
 // --------------------------Реквизиты------------------------
@@ -1809,11 +1771,9 @@ max-width: 1110px;
     }
 }
 
-
-
-
-
-
-
+.news_slider {
+    width: 1626px;
+    margin: 0 auto;
+}
 
 @import "adaptive";

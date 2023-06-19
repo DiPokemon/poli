@@ -1777,7 +1777,36 @@ max-width: 1110px;
 }
 }
 
-
+// --------------------------Реквизиты------------------------
+.requisites_container {
+    .requisites_title {
+        margin: 28px 0;
+        color: $blue_h2;
+    }
+    .requisites_block {
+        display: flex;
+        flex-direction: column;
+        .requisites_item {
+            max-width: 899px;
+            background: $white;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-bottom: 32px;
+            .requisites_item_title {
+                margin: 34px 0 40px 30px;
+            }
+            .requisites_item_subtitle {
+                margin: 0 0 40px 30px;
+                line-height: 25px;
+            }
+            .requisites_item_text {
+                line-height: 25px;
+                margin: 0 0 30px 30px;
+                font-weight: 500;
+            }
+        }
+    }
+}
 
 
 

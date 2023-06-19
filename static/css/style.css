@@ -2033,4 +2033,38 @@ body {
 }
 .vacancies_container .vacancies_data p {
   color: #000000;
+}
+
+.requisites_container .requisites_title {
+  margin: 28px 0;
+  color: #013236;
+}
+.requisites_container .requisites_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.requisites_container .requisites_block .requisites_item {
+  max-width: 899px;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+.requisites_container .requisites_block .requisites_item .requisites_item_title {
+  margin: 34px 0 40px 30px;
+}
+.requisites_container .requisites_block .requisites_item .requisites_item_subtitle {
+  margin: 0 0 40px 30px;
+  line-height: 25px;
+}
+.requisites_container .requisites_block .requisites_item .requisites_item_text {
+  line-height: 25px;
+  margin: 0 0 30px 30px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

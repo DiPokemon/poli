@@ -1699,8 +1699,83 @@ body {
 }
 
 
+// --------------------Вакансии-----------------------
+.vacancies_container {
+max-width: 1110px;
 
+.vacancies_title {
+    margin: 28px 0;
+    color: $blue_h2;
+}
+.vacancies_contact {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    .vacancies_contact_item {
+        background: $white;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        min-width: 360px;
+        min-height: 106px;
+        display: block;
+        line-height: 25px;
+        padding-top: 28px;
+        font-weight: 500;
+    }
+    .block1 {
+        padding: 28px 5px;
+    }
+    .block2 {
+        padding: 28px 32px;
+    }
+    .block3 {
+        padding: 28px 64px;
+    }
+}
+.vacancies_block {
+    
+    .vacancies_block_item {
+        background: $light_blue;
+        border: 1px solid $footer_text;
+        border-radius: 10px;
+        margin-bottom: 28px;
+        display: flex;
+        flex-direction: column;
+        .vacancies_block_title {
+            margin: 27px 0 20px 30px;
+            font-family: $font_opensans;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            color: $black;
+        }
+        .vacancies_block_text {
+            font-family: $font_opensans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            // display: flex;
+            // align-items: center;
 
+            color: $black;
+            padding: 0 0 30px 30px;
+        }
+    }
+}
+.vacancies_data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    p {
+        color: $black;
+    }
+}
+}
 
 
 

@@ -1943,4 +1943,94 @@ body {
 }
 .administration_container .administration_paycheck .administration_paycheck_item .paychek_item6 {
   margin: 0 20px;
+}
+
+.vacancies_container {
+  max-width: 1110px;
+}
+.vacancies_container .vacancies_title {
+  margin: 28px 0;
+  color: #013236;
+}
+.vacancies_container .vacancies_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+.vacancies_container .vacancies_contact .vacancies_contact_item {
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  min-width: 360px;
+  min-height: 106px;
+  display: block;
+  line-height: 25px;
+  padding-top: 28px;
+  font-weight: 500;
+}
+.vacancies_container .vacancies_contact .block1 {
+  padding: 28px 5px;
+}
+.vacancies_container .vacancies_contact .block2 {
+  padding: 28px 32px;
+}
+.vacancies_container .vacancies_contact .block3 {
+  padding: 28px 64px;
+}
+.vacancies_container .vacancies_block .vacancies_block_item {
+  background: #E5F2F4;
+  border: 1px solid #BBDFE3;
+  border-radius: 10px;
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.vacancies_container .vacancies_block .vacancies_block_item .vacancies_block_title {
+  margin: 27px 0 20px 30px;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+.vacancies_container .vacancies_block .vacancies_block_item .vacancies_block_text {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  padding: 0 0 30px 30px;
+}
+.vacancies_container .vacancies_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 32px;
+}
+.vacancies_container .vacancies_data p {
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */

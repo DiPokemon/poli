@@ -348,10 +348,11 @@ body {
   z-index: 100;
 }
 .header_bottom .header_container .header_bottom_menu .menu_list .menu-item .sub-menu span {
-  color: #000000;
+  color: #ffffff;
   position: relative;
   z-index: 120;
-  background: #055D65;
+  background: #45A6AF;
+  border-radius: 5px;
 }
 
 .menu-item-has-children .sub-menu {

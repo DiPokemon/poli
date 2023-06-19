@@ -162,10 +162,11 @@ body {
                     } 
                     .sub-menu {
                         span {
-                        color: $black;
+                        color: $white;
                         position: relative;
                         z-index: 120;
-                        background: $font-blue;
+                        background: $header_bg;
+                        border-radius: 5px;
                               }
                     }
                 }

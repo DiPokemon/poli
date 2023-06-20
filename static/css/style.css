@@ -1845,10 +1845,10 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #ffffff;
+}
+.administration_container .administration_main .administration_main_text .administration_text .admin_contact_information {
+  font-weight: 400;
 }
 .administration_container .administration_other {
   margin: 0 auto;
@@ -1927,6 +1927,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 15px;
+  padding-left: 45px;
   margin-bottom: 32px;
 }
 .administration_container .administration_paycheck .administration_paycheck_item {
@@ -2045,6 +2046,7 @@ body {
 }
 .vacancies_container .vacancies_data p {
   color: #000000;
+  font-weight: 450;
 }
 
 .requisites_container .requisites_title {

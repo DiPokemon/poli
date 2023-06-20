@@ -1129,10 +1129,10 @@ body {
   max-width: 844px;
   line-height: 25px;
   color: #000000;
+  font-weight: 450;
 }
 .about_container .about_slider_top {
   margin-top: 32px;
-  margin-bottom: 32px;
   /* Слайдер */
   /* Слайдер запущен */
   /* Слайдер с точками */
@@ -1156,6 +1156,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+  margin-left: -15px;
+}
+.about_container .about_slider_top .slick-track img {
+  width: 289px;
 }
 .about_container .about_slider_top .slick-arrow.slick-next {
   display: none;
@@ -1187,6 +1191,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 53px;
+  margin-left: -53px;
 }
 .about_container .about_slider_bottom .slick-arrow.slick-next {
   display: none;
@@ -1194,7 +1199,7 @@ body {
 .about_container .subtitle_top,
 .about_container .subtitle_bottom {
   margin-top: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   /* identical to box height */
   color: #000000;
 }

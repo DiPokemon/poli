@@ -1586,9 +1586,12 @@ body {
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 25px;
-                display: flex;
+                // display: flex;
                 // align-items: center;
                 color: $white;
+                .admin_contact_information {
+                    font-weight: 400;
+                }
             }
         }
     }
@@ -1650,6 +1653,7 @@ body {
         gap: 15px;
         // justify-content: center;
         // align-items: center;
+        padding-left: 45px;
         margin-bottom: 32px;
         .administration_paycheck_item {
             background: $light_blue;
@@ -1745,6 +1749,7 @@ body {
         margin-bottom: 32px;
         p {
             color: $black;
+            font-weight: 450;
         }
     }
 }

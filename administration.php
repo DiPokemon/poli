@@ -15,7 +15,7 @@ Template Name: Шаблон страницы Администрация
             </div>
             <div class="administration_main_text">
                 <h3 class="administration_text_subtitle font_w700_s35">Главный врач:<br>к.м.н. Пакус Дмитрий Игоревич</h3>
-                <div class="administration_text">Телефон: 263-30-90, факс: 227-76-05<br> E-mail: gb4com@mail.ru<br> Кабинет № 30<br><br> Часы работы: понедельник – пятница: с 08:00 до 16:00<br> Часы приема граждан:<br> четверг: с 16:00 до 18:00<br> вторник: с 16:00 до 18:00</div>
+                <div class="administration_text">Телефон: <span class="admin_contact_information">263-30-90</span>, факс: <span class="admin_contact_information">227-76-05</span><br> E-mail: <span class="admin_contact_information">gb4com@mail.ru</span><br> Кабинет № 30<br><br> Часы работы:<span class="admin_contact_information"> понедельник – пятница: с 08:00 до 16:00</span><br> Часы приема граждан:<span class="admin_contact_information"><br> четверг: с 16:00 до 18:00<br> вторник: с 16:00 до 18:00</span></div>
             </div>
         </div>
         <div class="administration_other">

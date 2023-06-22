@@ -5,7 +5,7 @@ Template Name: Шаблон страницы Вакансии
 ?>
 <?php get_header(); ?>
 <?php include 'template-parts/variables.php' ?>
-
+<!--  -->
 
 <section class="vacancies">
     <div class="container">

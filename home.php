@@ -216,30 +216,31 @@ Template Name: Main page
 
 <section class="gallery">
 <div class="gallery_container container">
-       <h3 class="gallery_title"><a href="#" class="gallery_title-link"><?= get_category( 12, ARRAY_A)['name']; ?></a>
-       </h3>
+       <h3 class="gallery_title"><a href="#" class="gallery_title_link"><?= get_category( 12, ARRAY_A)['name']; ?></a></h3>
 </div>
 
 <section>
+    <?php if ($gallery_banners) :?>
     <div class="slider_background_gallery">
         <div class="slider_wrapper">
             <div class="main_banner">
-                <a href="#" class="banner">
-                    <img class="main_banner_desk" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/0150.png" alt="изображение" title="изображение">
+                <?php foreach( $gallery_banners as $banner) : ?>
+                    <?php if ($banner['gallery_banner_url']) :?>
+                        <a href="<?=$banner['gallery_banner_url']?>" class="banner">
+                            <img class="main_banner_desk" src="<?=$banner['gallery_banner_desk']?>" alt="<?=$banner['gallery_banner_alt']?>" title="<?=$banner['gallery_banner_title']?>">
+                            <img class="main_banner_mob" src="<?=$banner['gallery_banner_mob']?>" alt="<?=$banner['gallery_banner_alt']?>" title="<?=$banner['gallery_banner_title']?>">
                     
-                </a>
-                <a href="#" class="banner" > 
-                    <img class="main_banner_desk" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/0070.png" alt="изображение" title="изображение">
-                    
-                </a>
-                <a href="#" class="banner">
-                    <img class="main_banner_desk" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/0150.png" alt="изображение" title="изображение">
-                    
-                </a>
-                <a href="#" class="banner">
-                    <img class="main_banner_desk" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/0070.png" alt="изображение" title="изображение">
-                    
-                </a>
+                         </a>
+                    <?php else : ?>
+                        <div class='banner'>
+                            <img class="main_banner_desk" src="<?=$banner['gallery_banner_desk']?>" alt="<?=$banner['gallery_banner_alt']?>" title="<?=$banner['gallery_banner_title']?>">
+                            <img class="main_banner_mob" src="<?=$banner['gallery_banner_mob']?>" alt="<?=$banner['gallery_banner_alt']?>" title="<?=$banner['gallery_banner_title']?>">
+                        </div>
+
+                    <?php endif; ?>
+                <?php endforeach; ?>
+    <?php endif; ?>
+
                 
                 <!-- Добавьте другие ссылки с изображениями по аналогии -->
             </div>

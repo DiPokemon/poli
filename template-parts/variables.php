@@ -40,5 +40,8 @@
   //Main page fields
   $main_banners = carbon_get_the_post_meta( 'main_banners' );
   $inf_important_banners = carbon_get_the_post_meta('inf_important_banners');
-  
+  $gallery_banners = carbon_get_the_post_meta('gallery_banners');
+
+  //About page fields
+  $about_ambulances = carbon_get_the_post_meta('about_ambulance');
 ?>

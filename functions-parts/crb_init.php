@@ -13,4 +13,5 @@ function register_custom_fields() {
     require get_template_directory() . '/inc/custom-fields/page-options.php';
     //require get_template_directory() . '/inc/custom-fields/product-options.php';
     //require get_template_directory() . '/inc/custom-fields/category-options.php';
+    require get_template_directory() . '/inc/custom-fields/about_page.php';
 }

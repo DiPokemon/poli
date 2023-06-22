@@ -18,10 +18,22 @@ $(document).ready(function(){
     });
 });
 
-// ---------------Выпадающее меню--------------------
+// ---------------Выпадающее меню при нажатии--------------------
+// jQuery(document).ready(function($) {
+//     $('.menu-item-has-children > a').click(function(e) {
+//       e.preventDefault();
+//       $(this).siblings('.sub-menu').slideToggle();
+//     });
+//   });
+
+// ----------------Выпадающее меню при наведении------------------
 jQuery(document).ready(function($) {
-    $('.menu-item-has-children > a').click(function(e) {
-      e.preventDefault();
-      $(this).siblings('.sub-menu').slideToggle();
-    });
+    $('.menu-item-has-children').hover(
+      function() {
+        $(this).find('.sub-menu').stop().slideDown();
+      },
+      function() {
+        $(this).find('.sub-menu').stop().slideUp();
+      }
+    );
   });

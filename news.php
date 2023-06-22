@@ -16,7 +16,7 @@ Template Name: Шаблон страницы Новости
         <div class="container">
         <h3 class="prevention_title font_w700_s35">Профилактика новой коронавирусной инфекции,<br> гриппа и ОРВИ</h3>
         </div>
-        
+        <div class="news_slider">
         <div class="news_prevention_slider">
         <div class="slider__item">
             <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group 274.jpg" alt="img">
@@ -29,7 +29,7 @@ Template Name: Шаблон страницы Новости
         </div>
               
         </div>
-        
+</div>
     </div>
     
 </section>

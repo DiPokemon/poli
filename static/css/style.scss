@@ -1077,7 +1077,10 @@ body {
     /* Элемент точки */
     .slick-dots li button {}
 }
-
+.news_slider {
+    width: 1626px;
+    margin: 0 auto;
+}
 .page_news_container {
     display: flex;
     flex-direction: column;
@@ -1777,9 +1780,78 @@ body {
     }
 }
 
-.news_slider {
-    width: 1626px;
-    margin: 0 auto;
+// ------------------Информация по правам пациентов-----------------------
+
+.page_information_container {
+    .page_information_title {
+        line-height: 82px;
+        color: $black;
+        margin: 28px 0;
+    }
+    input {
+        min-width: 1200px;
+        min-height: 71px;
+        background: $white;
+        border: 2px solid $header_bg;
+        border-radius: 50px;
+        margin-bottom: 32px;
+        
+    }
+    ::-webkit-input-placeholder {
+        padding-left: 79px;
+        font-family: $font_opensans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        // line-height: 27px;
+        display: flex;
+        align-items: center;
+        color: $text_cf7;
+    }
+    .page_information_subtitle {
+        line-height: 48px;
+        color: $black;
+        margin-bottom: 28px;
+    }
+    .page_information_block {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        .page_information_item {
+            display: flex;
+            flex-direction: column;
+            h4 {
+                margin: 0 0 8px 0;
+                padding: 0;
+            }
+            .page_information_list {
+                margin: 0;
+                padding: 0 0 0 8px;
+                list-style-type: none;
+                li {
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                    
+                    span {
+                        line-height: 25px;
+                        a {
+                            color: $black;
+                        }
+                    }
+                   
+                }
+                
+                
+            }
+            .telefon {
+                list-style-type: disc;
+                padding-left: 50px;
+                line-height: 25px;
+            }
+
+        }
+    }
 }
 
 @import "adaptive";

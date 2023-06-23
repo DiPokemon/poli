@@ -43,6 +43,8 @@ $basic_options_container = Container::make( 'theme_options', __( 'Theme options'
         Field::make( 'text', 'email', __( 'E-mail', 'policlinic' ) )
             ->set_attribute( 'placeholder', 'example@example.com' )
             ->set_width(33),
+        Field::make( 'text', 'fax', __( 'факс', 'policlinic' ) )
+            ->set_width(33),
         Field::make( 'text', 'vk', __( 'VKontakte', 'policlinic' ) )
             ->set_attribute( 'placeholder', 'vk.com/example' )
             ->set_width(33),

@@ -44,4 +44,8 @@
 
   //About page fields
   $about_ambulances = carbon_get_the_post_meta('about_ambulance');
+  $about_banners = carbon_get_the_post_meta('about_banners');
+  $licenses = carbon_get_the_post_meta('licenses');
+  $text_information = carbon_get_the_post_meta('text_information');
+  $bottom_slider = carbon_get_the_post_meta('bottom_slider');
 ?>

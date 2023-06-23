@@ -15,38 +15,42 @@ Template Name: Шаблон страницы О больнице
 
       <img src="<?=$about_ambulance['about_page_image']?>" />
 
+      <?php endforeach; ?>
+    <?php endif; ?>
+<?php if ($text_information) :?>
+  <?php foreach($text_information as $text_information):?>
       <div class="text_top font_w400_s18">
-          <?=$about_ambulance['about_info'] ?>
+          <p> <?=$text_information['text_paragraph'] ?> </p>
+        </div>
+        <br>
+        <?php endforeach; ?>
+      <?php endif; ?>
+<?php if ($about_banners) :?>
+  <div class="about_slider_top">
+  <?php foreach($about_banners as $banner):?>
+      <div class="slider__item">
+          <div>
+            <img class="about_banner_desk" src="<?=$banner['about_banner_desk']?>" alt="<?=$banner['about_banner_alt']?>" title="<?=$banner['about_banner_title']?>" width="290" height="430">
+      </div>
+    </div>
 
-      
-      </div>
-  <?php endforeach; ?>
-<?php endif; ?>
-      <div class="about_slider_top">
-        <div class="slider__item">
-            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/0090.png" alt="img">
-        </div>
-        <div class="slider__item">
-            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/0186.png" alt="img">
-        </div>
-        <div class="slider__item">
-            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/0055.png" alt="img">
-        </div>
-        <div class="slider__item">
-            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/0131.png" alt="img">
-        </div>
-      </div>
+    <?php endforeach;?>
+  </div>
+<?php endif;?>
+
+
+
       <div class="text_bottom font_w400_s18">
-        Адрес: 344006, г. Ростов-на-Дону, пр. Богатяновский спуск, 27/160
+        Адрес: <?= carbon_get_theme_option('adress2'); ?>
       <br>
       <br>
-        Главный врач: к.м.н., Пакус Дмитрий Игоревич
+        Главный врач: <?= carbon_get_theme_option('name_head_doctor'); ?>
       <br>
       <br> 
         Справочные: 
       <br>
       
-        Главного врача: 263-30-90, факс: 227-76-05, e-mail: gb4com@mail.ru
+        Главного врача: <?= carbon_get_theme_option('wa'); ?>, факс: <?= carbon_get_theme_option('fax'); ?>, e-mail: <?= carbon_get_theme_option('email'); ?>
       <br>
       
         Приемное отделение: 263-50-64
@@ -76,23 +80,33 @@ Template Name: Шаблон страницы О больнице
 </div>
       <h3 class="subtitle_top font_w700_s35">Лицензии на осуществление медицинской деятельности</h3>
       <div class="about_slider_bottom">
+        <?php if ($licenses) :?>
+          <?php foreach($licenses as $license) :?>
         <div class="slider__item">
-            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group 247.jpg" alt="img">
+            <a href="<?=$license['license_link']?>"> <img src="<?=$license['license_image']?>" alt="img"></a>
         </div>
-        <div class="slider__item">
-            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group 246.jpg" alt="img">
-        </div>
-        <div class="slider__item">
-            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group 245.jpg" alt="img">
-        </div>
-              
+          <?php endforeach ;?>
+        <?php endif ;?>
        </div>
+
       <h3 class="subtitle_bottom font_w700_s35">Общественный совет больницы</h3>
-      <div class="block_row">
-           <div class="block_item font_w600_s18"><a href="#">Информация<br> на рассмотрения<br> жалоб 2015</a></div>
-           <div class="block_item font_w600_s18"><a href="#">Информация<br> на рассмотрения<br> жалоб 2016</a></div>
-           <div class="block_item font_w600_s18"><a href="#">Приказ 129 ОД</a></div>
-           <div class="block_item font_w600_s18"><a href="#">Протокол №1</a></div>
+      <style>
+        .block_item {
+          width: 290px; 
+          height: 110px; 
+          text-align: center; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      </style>
+      <div class="block_row" style="width: 290px; height: 110px;">
+           <?php if ($bottom_slider) :?>
+            <?php foreach($bottom_slider as $slider) :?>
+              <div class="block_item font_w600_s18"><a href="<?=$slider['url']?>"><?=$slider['title']?></a></div>
+              <?php endforeach ;?>
+        <?php endif ;?> 
+
 
       </div>
 

@@ -48,4 +48,7 @@
   $licenses = carbon_get_the_post_meta('licenses');
   $text_information = carbon_get_the_post_meta('text_information');
   $bottom_slider = carbon_get_the_post_meta('bottom_slider');
+  // appointments page fields
+  $appointments = carbon_get_the_post_meta('appointments');
+  $rules = carbon_get_the_post_meta('rules');
 ?>

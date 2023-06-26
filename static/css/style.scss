@@ -2069,4 +2069,47 @@ body {
     }
 }
 
+// ----------------------Портал ГОСУСЛУГИ---------------
+
+
+.page_gosuslugi_container {
+.page_gosuslugi_title {
+    margin: 28px 0 4px 0;
+}
+.page_gosuslugi_subtitle {
+    margin: 0 0 28px 0;
+}
+img {
+    margin-bottom: 32px;
+}
+}
+
+
+// ----------------Результаты СОУТ-------------
+.page_sout_container {
+    .page_sout_title {
+        margin: 28px 0;
+    }
+    .sout_block {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        margin-bottom: 32px;
+        
+        .sout_item {
+            border-radius: 10px;
+            background: $light_blue;
+            box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.20);
+            width: 380px;
+            min-height: 106px;
+            display: flex;
+            justify-content: center;
+            line-height: 25px;
+            a {
+                color: $black;
+            }
+        }
+    }
+}
+
 @import "adaptive";

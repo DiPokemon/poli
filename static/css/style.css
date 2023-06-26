@@ -2348,4 +2348,46 @@ body {
 }
 .page_information_container .tabs_block .block_item a {
   color: #000000;
+}
+
+.page_gosuslugi_container .page_gosuslugi_title {
+  margin: 28px 0 4px 0;
+}
+.page_gosuslugi_container .page_gosuslugi_subtitle {
+  margin: 0 0 28px 0;
+}
+.page_gosuslugi_container img {
+  margin-bottom: 32px;
+}
+
+.page_sout_container .page_sout_title {
+  margin: 28px 0;
+}
+.page_sout_container .sout_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+.page_sout_container .sout_block .sout_item {
+  border-radius: 10px;
+  background: #E5F2F4;
+  -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  width: 380px;
+  min-height: 106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 25px;
+}
+.page_sout_container .sout_block .sout_item a {
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */

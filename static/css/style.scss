@@ -1822,12 +1822,18 @@ body {
         display: flex;
         flex-direction: column;
         gap: 28px;
+        margin-bottom: 32px;
         .page_information_item {
             display: flex;
             flex-direction: column;
+            max-width: 997px;
             h4 {
-                margin: 0 0 8px 0;
+                margin: 0 0 5px 0;
                 padding: 0;
+                line-height: 25px;
+            }
+            p {
+                margin-bottom: 8px;
             }
             .page_information_list {
                 margin: 0;
@@ -1855,6 +1861,210 @@ body {
                 line-height: 25px;
             }
 
+        }
+    }
+    .page_information_reminder {
+        display: flex;
+        // flex-direction: row;
+        gap: 44px;
+        align-items: center;
+        margin-bottom: 32px;
+        .reminder_content {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            .reminder_bottom {
+                
+                    background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                    border-radius: 50px;
+                    // margin-top: 24px;
+                    padding: 13px 64px;
+                    color: $white;
+                    max-width: 203px;
+                    a {
+                        color: $white;
+                    }
+                
+            }
+        }
+    }
+
+   
+    
+    .slider_time_limits {
+        margin-bottom: 32px;
+        /* Слайдер */
+        .slick-slider {}
+        /* Слайдер запущен */
+        .slick-slider.slick-initialized {}
+        /* Слайдер с точками */
+        .slick-slider.slick-dotted {}
+        /* Ограничивающая оболочка */
+        .slick-list {}
+        /* Лента слайдов */
+        .slick-track {
+            display: flex;
+            justify-content: flex-start;
+            gap: 15px;
+        }
+        /* Слайд */
+        .slick-slide {}
+        /* Слайд активный (показывается) */
+        .slick-slide.slick-active {}
+        /* Слайд основной */
+        .slick-slide.slick-current {}
+        /* Слайд по центру */
+        .slick-slide.slick-center {}
+        /* Клонированный слайд */
+        .slick-slide.slick-cloned {}
+        /* Стрелка */
+        .slick-arrow {}
+        /* Стрелка влево */
+        .slick-arrow.slick-prev {}
+        /* Стрелка вправо */
+        .slick-arrow.slick-next {
+            display: none;
+        }
+        /* Стрелка не активная */
+        .slick-arrow.slick-disabled {}
+        /* Точки (булиты) */
+        .slick-dots {}
+        .slick-dots li {}
+        /* Активная точка */
+        .slick-dots li.slick-active {}
+        /* Элемент точки */
+        .slick-dots li button {}
+    }
+    .slider_patient_routing {
+        margin-bottom: 32px;
+        /* Слайдер */
+        .slick-slider {}
+        /* Слайдер запущен */
+        .slick-slider.slick-initialized {}
+        /* Слайдер с точками */
+        .slick-slider.slick-dotted {}
+        /* Ограничивающая оболочка */
+        .slick-list {}
+        /* Лента слайдов */
+        .slick-track {
+            display: flex;
+            justify-content: flex-start;
+            gap: 15px;
+            margin: 0;
+        }
+        /* Слайд */
+        .slick-slide {}
+        /* Слайд активный (показывается) */
+        .slick-slide.slick-active {}
+        /* Слайд основной */
+        .slick-slide.slick-current {}
+        /* Слайд по центру */
+        .slick-slide.slick-center {}
+        /* Клонированный слайд */
+        .slick-slide.slick-cloned {}
+        /* Стрелка */
+        .slick-arrow {}
+        /* Стрелка влево */
+        .slick-arrow.slick-prev {}
+        /* Стрелка вправо */
+        .slick-arrow.slick-next {
+            display: none;
+        }
+        /* Стрелка не активная */
+        .slick-arrow.slick-disabled {}
+        /* Точки (булиты) */
+        .slick-dots {}
+        .slick-dots li {}
+        /* Активная точка */
+        .slick-dots li.slick-active {}
+        /* Элемент точки */
+        .slick-dots li button {}
+
+    }
+    .slider_free_medical {
+        margin-bottom: 32px;
+        /* Слайдер */
+        .slick-slider {}
+        /* Слайдер запущен */
+        .slick-slider.slick-initialized {}
+        /* Слайдер с точками */
+        .slick-slider.slick-dotted {}
+        /* Ограничивающая оболочка */
+        .slick-list {}
+        /* Лента слайдов */
+        .slick-track {
+            display: flex;
+            justify-content: flex-start;
+            gap: 15px;
+            margin: 0;
+        }
+        /* Слайд */
+        .slick-slide {}
+        /* Слайд активный (показывается) */
+        .slick-slide.slick-active {}
+        /* Слайд основной */
+        .slick-slide.slick-current {}
+        /* Слайд по центру */
+        .slick-slide.slick-center {}
+        /* Клонированный слайд */
+        .slick-slide.slick-cloned {}
+        /* Стрелка */
+        .slick-arrow {}
+        /* Стрелка влево */
+        .slick-arrow.slick-prev {}
+        /* Стрелка вправо */
+        .slick-arrow.slick-next {
+            display: none;
+        }
+        /* Стрелка не активная */
+        .slick-arrow.slick-disabled {}
+        /* Точки (булиты) */
+        .slick-dots {}
+        .slick-dots li {}
+        /* Активная точка */
+        .slick-dots li.slick-active {}
+        /* Элемент точки */
+        .slick-dots li button {}
+
+    }
+    .insurance_organizations_block {
+        display: flex;
+        // justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        .block_item {
+            // min-width: 23%;
+            line-height: 25px;
+            justify-content: center;
+            background: #E5F2F4;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            width: 380px;
+            min-height: 106px;
+            a {
+                color: $black;
+            }
+        }
+    }
+    .tabs_block {
+        display: flex;
+        // justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        .block_item {
+            // min-width: 23%;
+            line-height: 25px;
+            justify-content: center;
+            background: #E5F2F4;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            width: 380px;
+            min-height: 106px;
+            a {
+                color: $black;
+            }
         }
     }
 }

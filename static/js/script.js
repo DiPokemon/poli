@@ -18,6 +18,27 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+	$('.slider_time_limits').slick({
+        arrows: false,
+        slidesToShow: 3,
+    });
+});
+
+$(document).ready(function(){
+	$('.slider_patient_routing').slick({
+        arrows: false,
+        slidesToShow: 3,
+    });
+});
+
+$(document).ready(function(){
+	$('.slider_free_medical').slick({
+        arrows: false,
+        slidesToShow: 3,
+    });
+});
+
 // ---------------Выпадающее меню при нажатии--------------------
 // jQuery(document).ready(function($) {
 //     $('.menu-item-has-children > a').click(function(e) {

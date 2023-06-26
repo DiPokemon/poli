@@ -2128,6 +2128,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 28px;
+  margin-bottom: 32px;
 }
 .page_information_container .page_information_block .page_information_item {
   display: -webkit-box;
@@ -2137,10 +2138,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 997px;
 }
 .page_information_container .page_information_block .page_information_item h4 {
-  margin: 0 0 8px 0;
+  margin: 0 0 5px 0;
   padding: 0;
+  line-height: 25px;
+}
+.page_information_container .page_information_block .page_information_item p {
+  margin-bottom: 8px;
 }
 .page_information_container .page_information_block .page_information_item .page_information_list {
   margin: 0;
@@ -2166,4 +2172,180 @@ body {
   list-style-type: disc;
   padding-left: 50px;
   line-height: 25px;
+}
+.page_information_container .page_information_reminder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 44px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+.page_information_container .page_information_reminder .reminder_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.page_information_container .page_information_reminder .reminder_content .reminder_bottom {
+  background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+  border-radius: 50px;
+  padding: 13px 64px;
+  color: #ffffff;
+  max-width: 203px;
+}
+.page_information_container .page_information_reminder .reminder_content .reminder_bottom a {
+  color: #ffffff;
+}
+.page_information_container .slider_time_limits {
+  margin-bottom: 32px;
+  /* Слайдер */
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+.page_information_container .slider_time_limits .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 15px;
+}
+.page_information_container .slider_time_limits .slick-arrow.slick-next {
+  display: none;
+}
+.page_information_container .slider_patient_routing {
+  margin-bottom: 32px;
+  /* Слайдер */
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+.page_information_container .slider_patient_routing .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 15px;
+  margin: 0;
+}
+.page_information_container .slider_patient_routing .slick-arrow.slick-next {
+  display: none;
+}
+.page_information_container .slider_free_medical {
+  margin-bottom: 32px;
+  /* Слайдер */
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+.page_information_container .slider_free_medical .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 15px;
+  margin: 0;
+}
+.page_information_container .slider_free_medical .slick-arrow.slick-next {
+  display: none;
+}
+.page_information_container .insurance_organizations_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.page_information_container .insurance_organizations_block .block_item {
+  line-height: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #E5F2F4;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 380px;
+  min-height: 106px;
+}
+.page_information_container .insurance_organizations_block .block_item a {
+  color: #000000;
+}
+.page_information_container .tabs_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.page_information_container .tabs_block .block_item {
+  line-height: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #E5F2F4;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 380px;
+  min-height: 106px;
+}
+.page_information_container .tabs_block .block_item a {
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */

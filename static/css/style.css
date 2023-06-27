@@ -1489,8 +1489,12 @@ body {
   border-top: 1px solid #DCDCDC;
   line-height: 25px;
   /* identical to box height */
+<<<<<<< HEAD
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+=======
+  text-decoration-line: underline;
+>>>>>>> 6fcfd2b3b5975c38e370ed643d53b5eed030e3ed
   color: #055D65;
   display: block;
 }
@@ -1811,6 +1815,7 @@ body {
   color: #013236;
   margin: 28px 0;
   line-height: 82px;
+<<<<<<< HEAD
 }
 .appointment_container .important2_body {
   display: -webkit-box;
@@ -1822,6 +1827,8 @@ body {
   line-height: 25px;
   color: #000000;
   display: block;
+=======
+>>>>>>> 6fcfd2b3b5975c38e370ed643d53b5eed030e3ed
 }
 .appointment_container .appointment_href {
   margin: 32px 0;
@@ -2375,6 +2382,10 @@ body {
 }
 .page_gosuslugi_container .page_gosuslugi_subtitle {
   margin: 0 0 28px 0;
+<<<<<<< HEAD
+=======
+  line-height: 1.5;
+>>>>>>> 6fcfd2b3b5975c38e370ed643d53b5eed030e3ed
 }
 .page_gosuslugi_container img {
   margin-bottom: 32px;

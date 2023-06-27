@@ -11,12 +11,18 @@ Template Name: Шаблон страницы Запись на приём
         <h2 class="appointment_title font_w700_s60">Запись на прием</h2>
         <div class="important2_container container">
        <h3 class="important2_title font_w700_s35">Важная информация</h3>
+       
+       
+       
        <div class="important2_body">
+       
        <div class="important2_img">
            <?php if ('$appointments') :?>
             <?php foreach ($appointments as $appointment) :?>
        <img src="<?= $appointment['appointment_image'] ?>" alt="img">
        </div>
+       
+       
        <div class="important2_text font_w400_s18">
         <br>
         

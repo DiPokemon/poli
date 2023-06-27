@@ -1536,13 +1536,29 @@ body {
     }
 }
 
-// -------------------страница Зпись на приём---------------------
+// -------------------страница Запись на приём---------------------
 .appointment_container {
     .appointment_title {
         color: $blue_h2;
         margin: 28px 0;
         line-height: 82px;
     }
+    .important2_body {
+        display: flex;
+        gap: 44px;
+        .important2_text {
+            line-height: 25px;
+            // display: flex;
+            // align-items: center;
+            color: $black;
+            display: block;
+        }
+    }
+
+
+
+
+
     .appointment_href {
         margin: 32px 0;
         a {

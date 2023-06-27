@@ -1380,7 +1380,7 @@ body {
                         color: $text_cf7bottom;
                         text-decoration: underline;
                     }
-                }
+                } //
                 .wpcf7-submit {
                     margin: 36px 0 0 40px;
                     font-family: $font_opensans;
@@ -1809,9 +1809,6 @@ body {
         align-items: center;
         color: $text_cf7;
     }
-
-    
-    
     .fa.fa-light.fa-magnifying-glass {
         position: absolute;
         color: $red;
@@ -1819,7 +1816,6 @@ body {
         margin-left: -1160px;
         margin-top: 18px;
     }
-
     .page_information_subtitle {
         line-height: 48px;
         color: $black;

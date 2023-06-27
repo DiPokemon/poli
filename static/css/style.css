@@ -1286,12 +1286,6 @@ body {
   min-height: 71px;
   margin-bottom: 32px;
 }
-.page_news_container input .button {
-  height: 5px;
-  position: absolute;
-  top: 1.5rem;
-  left: 1rem;
-}
 .page_news_container ::-webkit-input-placeholder {
   padding-left: 79px;
   font-family: "OpenSans";
@@ -1303,6 +1297,13 @@ body {
   -webkit-box-align: center;
           align-items: center;
   color: #898989;
+}
+.page_news_container .fa.fa-light.fa-magnifying-glass {
+  position: absolute;
+  color: #E80B8B;
+  font-size: 32px;
+  margin-left: -1160px;
+  margin-top: 18px;
 }
 
 .prevention {
@@ -2113,6 +2114,13 @@ body {
   -webkit-box-align: center;
           align-items: center;
   color: #898989;
+}
+.page_information_container .fa.fa-light.fa-magnifying-glass {
+  position: absolute;
+  color: #E80B8B;
+  font-size: 32px;
+  margin-left: -1160px;
+  margin-top: 18px;
 }
 .page_information_container .page_information_subtitle {
   line-height: 48px;

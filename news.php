@@ -9,8 +9,22 @@ Template Name: Шаблон страницы Новости
 <section>
     <div class="page_news_container container">
       <h2 class="page_news_title font_w700_s60">Новости</h2>
-      <input type="text" maxlength= "12" placeholder="Поиск" class="searchbar">
-      <!-- <i class="fa-light fa-magnifying-glass button"></i> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      
+          <form>
+            
+              <input type="search" placeholder="Поиск">
+              <a href="#"><i class="fa fa-light fa-magnifying-glass"></i></a>
+             
+            
+          </form>
+
+
+
+
+
+      <!-- <input type="text" maxlength= "12" placeholder="Поиск" class="searchbar"> -->
+      
     </div>
     <div class="prevention">
         <div class="container">

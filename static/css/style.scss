@@ -1098,17 +1098,6 @@ body {
         width: 100%;
         min-height: 71px;
         margin-bottom: 32px;
-        .button {
-            height: 5px;
-            position: absolute;
-            top: 1.5rem;
-            left: 1rem;
-            // transition: all .1s;
-            // transition-delay: .1s;
-        }
-        // .button:hover {
-        // cursor: pointer;
-        // }
     }
      ::-webkit-input-placeholder {
         padding-left: 79px;
@@ -1120,6 +1109,13 @@ body {
         display: flex;
         align-items: center;
         color: $text_cf7;
+    }
+    .fa.fa-light.fa-magnifying-glass {
+        position: absolute;
+        color: $red;
+        font-size: 32px;
+        margin-left: -1160px;
+        margin-top: 18px;
     }
 }
 
@@ -1813,6 +1809,17 @@ body {
         align-items: center;
         color: $text_cf7;
     }
+
+    
+    
+    .fa.fa-light.fa-magnifying-glass {
+        position: absolute;
+        color: $red;
+        font-size: 32px;
+        margin-left: -1160px;
+        margin-top: 18px;
+    }
+
     .page_information_subtitle {
         line-height: 48px;
         color: $black;

@@ -10,7 +10,11 @@ Template Name: Шаблон страницы Информация по прав�
 <section class="page_information">
 <div class="page_information_container container">
     <h2 class="page_information_title font_w700_s60">Информация по правам пациентов</h2>
-    <input type="text" maxlength= "12" placeholder="Поиск" class="searchbar">
+    <form>
+              <input type="search" placeholder="Поиск">
+              <a href="#"><i class="fa fa-light fa-magnifying-glass"></i></a>
+    </form>
+    <!-- <input type="text" maxlength= "12" placeholder="Поиск" class="searchbar"> -->
     <h3 class="page_information_subtitle font_w700_s35">Контакты вышестоящих органов</h3>
     <div class="page_information_block">
         <div class="page_information_item">

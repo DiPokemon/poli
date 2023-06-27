@@ -1050,7 +1050,7 @@ body {
         gap: 15px;
     }
     /* Слайд */
-    .slick-slide {}
+    // .slick-slide {}
     /* Слайд активный (показывается) */
     .slick-slide.slick-active {}
     /* Слайд основной */
@@ -1380,7 +1380,7 @@ body {
                         color: $text_cf7bottom;
                         text-decoration: underline;
                     }
-                } //
+                }
                 .wpcf7-submit {
                     margin: 36px 0 0 40px;
                     font-family: $font_opensans;

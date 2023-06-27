@@ -217,7 +217,7 @@ Template Name: Main page
 
 <section class="gallery">
 <div class="gallery_container container">
-       <h3 class="gallery_title"><a href="#" class="gallery_title_link"><?= get_category( 12, ARRAY_A)['name']; ?></a></h3>
+       <h3 class="gallery_title font_w700_s35"><a href="#" class="gallery_title-link"><?= get_category( 12, ARRAY_A)['name']; ?></a></h3>
 </div>
 
 <section>

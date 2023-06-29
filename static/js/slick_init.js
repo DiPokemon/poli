@@ -1,6 +1,8 @@
 $(document).ready(function () {       
     $('.slider_wrapper').each(function (index, sliderWrap) {
-        var $main_banner = $(sliderWrap).find('.main_banner');            
+
+        var $main_banner = $(sliderWrap).find('.main_banner');
+        var $main_gallery = $(sliderWrap).find('.main_gallery');
 
         $main_banner.slick({
             infinite: true,
@@ -24,6 +26,15 @@ $(document).ready(function () {
                 },
             ]
         });
+
+        $main_gallery.slick({
+            infinite: true,
+            autoplay: false,
+            slidesToShow: 2,
+            centerMode: true,
+            slidesToScroll: 1,
+            variableWidth: true,
+        })
 
     }); 
 });

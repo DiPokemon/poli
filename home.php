@@ -224,7 +224,16 @@ Template Name: Main page
     <?php if ($gallery_banners) :?>
     <div class="slider_background_gallery">
         <div class="slider_wrapper">
-            <div class="main_banner">
+            
+            <div class="main_gallery">
+                <?php foreach( $gallery_banners as $banner) : ?>
+                    <?php if($banner):?>
+                        <img src="<?=$banner['gallery_banner_desk']?>" alt="<?=$banner['gallery_banner_alt']?>" title="<?=$banner['gallery_banner_title']?>" class="gallery_slide">
+                    <?php endif ?>                    
+                <?php endforeach ?>
+            </div>
+
+            <!--<div class="main_banner">
                 <?php foreach( $gallery_banners as $banner) : ?>
                     <?php if ($banner['gallery_banner_url']) :?>
                         <a href="<?=$banner['gallery_banner_url']?>" class="banner">
@@ -241,6 +250,7 @@ Template Name: Main page
                     <?php endif; ?>
                 <?php endforeach; ?>
     <?php endif; ?>
+                    -->
 
                 
                 <!-- Добавьте другие ссылки с изображениями по аналогии -->

@@ -1489,8 +1489,7 @@ body {
   border-top: 1px solid #DCDCDC;
   line-height: 25px;
   /* identical to box height */
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #055D65;
   display: block;
 }
@@ -2706,4 +2705,47 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media (max-width: 1200px) {
+  .header_container,
+  .container {
+    padding: 0px 10px;
+  }
+  .header_middle .header_container .site_identification .logo_text-link,
+  .header_middle .header_container .site_identification .header_phone i,
+  .header_middle .header_container .site_identification .header_phone-link,
+  .header_middle .header_container .site_identification .visually_impaired-link {
+    font-size: 16px;
+  }
+  .header_middle .header_container .site_identification .header_phone,
+  .header_middle .header_container .site_identification .visually_impaired {
+    margin-left: 0;
+  }
+  .header_bottom .header_bottom_menu .menu_list {
+    gap: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .header_top .header_top_menu .menu_list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+  .header_top .header_top_social {
+    gap: 15px;
+  }
+  .header_middle .header_container .site_identification .logo_text {
+    width: 154px;
+  }
+  .header_middle .header_container .site_identification .logo_text .logo_text-link {
+    line-height: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .header_bottom .header_bottom_menu .menu_list .menu-item .menu_link span {
+    font-weight: 500;
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

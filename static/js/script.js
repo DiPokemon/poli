@@ -29,14 +29,12 @@ $(document).ready(function(){
 	$('.slider_patient_routing').slick({
         arrows: false,
         slidesToShow: 3,
-    });
-});
-
-$(document).ready(function(){
-	$('.slider_free_medical').slick({
-        arrows: false,
-        slidesToShow: 3,
-    });
+  });
+  
+  $('.slider_free_medical').slick({
+    arrows: false,
+    slidesToShow: 3,
+  });
 });
 
 // ---------------Выпадающее меню при нажатии--------------------

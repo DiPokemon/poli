@@ -15,4 +15,8 @@ function register_custom_fields() {
     //require get_template_directory() . '/inc/custom-fields/category-options.php';
     require get_template_directory() . '/inc/custom-fields/about_page.php';
     require get_template_directory() . '/inc/custom-fields/appointment_options.php';
+    require get_template_directory() . '/inc/custom-fields/administration_options.php';
+    require get_template_directory() . '/inc/custom-fields/vacancies_options.php';
+    require get_template_directory() . '/inc/custom-fields/requisites_options.php';
+    require get_template_directory() . '/inc/custom-fields/reviews_option.php';
 }

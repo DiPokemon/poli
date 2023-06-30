@@ -15,14 +15,7 @@ Container::make('post_meta', __('About Page Fields', 'policlinic'))
                     ->help_text('Информация о больнице')
                     ->set_width(80)
             )),
-        Field::make('complex', 'text_information', __('абзац текста'))
-            ->add_fields('text_information', __('абзац текста'),array(
-                Field::make('textarea', 'text_paragraph', __('paragraph of text'))
-                    ->set_rows(3)
-                    ->help_text('Информация о больнице')
-                    ->set_width(80),
-
-            )),
+        
         Field::make('complex', 'about_banners', __('About banners'))
             ->add_fields('about_banner_items', __('Banner'),array(
                 Field::make('image', 'about_banner_desk', __('Banner for desktop'))

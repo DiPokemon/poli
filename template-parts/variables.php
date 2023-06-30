@@ -51,4 +51,16 @@
   // appointments page fields
   $appointments = carbon_get_the_post_meta('appointments');
   $rules = carbon_get_the_post_meta('rules');
+  // administration
+  $head_doctor = carbon_get_the_post_meta('head_doctor');
+  $staff_members = carbon_get_the_post_meta('staff_members');
+  $bottom_slider = carbon_get_the_post_meta('bottom_slider');
+  // vacansies
+  $vacancies = carbon_get_the_post_meta('vacancies');
+  $general_inf = carbon_get_the_post_meta('general_inf');
+  $bottom_inf = carbon_get_the_post_meta('bottom_inf');
+  // requisites
+  $requisite_items = carbon_get_the_post_meta('requisite_items');
+  //reviews
+  $reviews_items = carbon_get_the_post_meta('reviews_items');
 ?>

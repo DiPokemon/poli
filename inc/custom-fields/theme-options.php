@@ -57,6 +57,12 @@ $basic_options_container = Container::make( 'theme_options', __( 'Theme options'
         Field::make( 'text', 'inst', __( 'Instagram', 'policlinic' ) )
             ->set_attribute( 'placeholder', 'instagram.com/example' )
             ->set_width(33),
+        Field::make( 'text', 'twitter', __( 'Twitter', 'policlinic' ) )
+            ->set_attribute( 'placeholder', 'Twitter.com/example' )
+            ->set_width(33),
+        Field::make( 'text', 'ok', __( 'Odnoklasniki', 'policlinic' ) )
+            ->set_attribute( 'placeholder', 'ok.ru/example' )
+            ->set_width(33),
         Field::make( 'text', 'fb', __( 'Facebook', 'policlinic' ) )
             ->set_attribute( 'placeholder', 'facebook.com/example' )
             ->set_width(33),

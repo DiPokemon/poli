@@ -11,75 +11,30 @@ Template Name: Шаблон страницы Вакансии
     <div class="container">
     <div class="vacancies_container ">
         <h2 class="vacancies_title font_w700_s60">Вакансии</h2>
-        <div class="vacancies_contact">
-            <div class="vacancies_contact_item font_w600_s18 block1"><b>Наименование юридического лица:</b><br>ГБУ РО «Городская больница №4»</div>
-            <div class="vacancies_contact_item font_w600_s18 block2"><b>Адрес: </b>344006 г. Ростов-на-Дону<br> ул. Богатяновский спуск 27/160</div>
-            <div class="vacancies_contact_item font_w600_s18 block3"><b>Контактный телефон:</b><br>227-76-05 – отдел кадров</div>  
+        <div class="vacancies_contact" >
+            <?php foreach ($general_inf as $general) :?>
+            <div class="vacancies_contact_item font_w600_s18 block1"><b>Наименование юридического лица:</b><br><?=$general['org_name']?></div>
+            <div class="vacancies_contact_item font_w600_s18 block2" style="width: 360px; height: 109px;"><b>Адрес: </b> <?=$general['addres']?></div>
+            <div class="vacancies_contact_item font_w600_s18 block3"><b>Контактный телефон:</b><br><?=$general['number']?></div>  
+            <?php endforeach ;?>
         </div>
         <div class="vacancies_block">
+            <?php foreach ($vacancies as $vacancie) :?>
             <div class="vacancies_block_item">
-                <h3 class="vacancies_block_title">Врач-эндоскопист</h3>
-                <div class="vacancies_block_text"><b>Необходимое количество работников: </b> 1 человек <br>
-                    <b>Характер работы: </b> постоянная <br>
-                    <b>Заработная плата: </b> от 30 000 рублей <br>
-                    <b>Режим работы: </b> скользящий график <br>
-                    <b>Профессионально-квалификационные требования, образование, дополнительные навыки, опыт работы: </b><br>
-                    Наличие сертификата (аккредитация)учеба по ковид – 36 балл</div>
-
-            </div>
-            <div class="vacancies_block_item">
-                <h3 class="vacancies_block_title">Медицинская сестра врача-эндоскописта</h3>
-                <div class="vacancies_block_text"><b>Необходимое количество работников: </b> 1 человек <br>
-                    <b>Характер работы: </b> постоянная <br>
-                    <b>Заработная плата: </b> от 20 000 рублей <br>
-                    <b>Режим работы: </b> скользящий график <br>
-                    <b>Профессионально-квалификационные требования, образование, дополнительные навыки, опыт работы: </b><br>
-                    Наличие сертификата (аккредитация)учеба по ковид – 36 балл</div>
-
-            </div>
-            <div class="vacancies_block_item">
-                <h3 class="vacancies_block_title">Медицинская сестра по массажу</h3>
-                <div class="vacancies_block_text"><b>Необходимое количество работников: </b> 1 человек <br>
-                    <b>Характер работы: </b> постоянная <br>
-                    <b>Заработная плата: </b> от 20 000 рублей <br>
-                    <b>Режим работы: </b> скользящий график <br>
-                    <b>Профессионально-квалификационные требования, образование, дополнительные навыки, опыт работы: </b><br>
-                    Наличие сертификата (аккредитация)учеба по ковид – 36 балл</div>
-
-            </div>
-            <div class="vacancies_block_item">
-                <h3 class="vacancies_block_title">Рентгенолаборант</h3>
-                <div class="vacancies_block_text"><b>Необходимое количество работников: </b> 1 человек <br>
-                    <b>Характер работы: </b> постоянная <br>
-                    <b>Заработная плата: </b> от 16 000 до 30 000 рублей <br>
-                    <b>Режим работы: </b> скользящий график <br>
-                    <b>Профессионально-квалификационные требования, образование, дополнительные навыки, опыт работы: </b><br>
-                    Наличие сертификата (аккредитация)учеба по ковид – 36 балл</div>
-
-            </div>
-            <div class="vacancies_block_item">
-                <h3 class="vacancies_block_title">Инструктор по лечебной физкультуре</h3>
-                <div class="vacancies_block_text"><b>Необходимое количество работников: </b> 1 человек <br>
-                    <b>Характер работы: </b> постоянная <br>
-                    <b>Заработная плата: </b> от 20 000 рублей <br>
-                    <b>Режим работы: </b> скользящий график <br>
-                    <b>Профессионально-квалификационные требования, образование, дополнительные навыки, опыт работы: </b><br>
-                    Наличие сертификата (аккредитация)учеба по ковид  – 36 балл</div>
-
-            </div>
-            <div class="vacancies_block_item">
-                <h3 class="vacancies_block_title">Уборщик служебных помещений</h3>
-                <div class="vacancies_block_text"><b>Необходимое количество работников: </b> 5 человек <br>
-                    <b>Характер работы: </b> постоянная <br>
-                    <b>Заработная плата: </b> от 21 000 рублей <br>
-                    <b>Режим работы: </b> скользящий график <br>
+                <h3 class="vacancies_block_title"><?=$vacancie['title']?></h3>
+                <div class="vacancies_block_text"><b>Необходимое количество работников: </b><?=$vacancie['looking_for']?><br>
+                    <b>Характер работы: </b><?=$vacancie['job_type']?><br>
+                    <b>Заработная плата: </b><?=$vacancie['salary']?><br>
+                    <b>Режим работы: </b><?=$vacancie['schedule']?><br>
+                    <b><?=$vacancie['qualification']?></div>
                 </div>
-
-            </div>
+                <?php endforeach ;?>
         </div>
         <div class="vacancies_data">
             <p class="font_w400_s18">«26» декабря 2022 г.</p>
-            <p class="font_w400_s18">Начальник отдела кадров ____________ Темборовская Л.Н.</p>
+                <?php foreach($bottom_inf as $inf) :?>
+            <p class="font_w400_s18">Начальник отдела кадров ____________<?=$inf['hr']?></p>
+                <?php endforeach ;?>
         </div>
     </div>
 </div>

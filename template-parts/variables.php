@@ -63,4 +63,19 @@
   $requisite_items = carbon_get_the_post_meta('requisite_items');
   //reviews
   $reviews_items = carbon_get_the_post_meta('reviews_items');
+  //top header
+  $sout = carbon_get_the_post_meta('sout');
+  $contacts =carbon_get_the_post_meta('contacts');
+  $information = carbon_get_the_post_meta('information');
+  $guarantee = carbon_get_the_post_meta('guarantee');
+  $waiting_time = carbon_get_the_post_meta('waiting_time'); 
+  $waiting_time_image = carbon_get_the_post_meta('waiting_time_image');
+  $routing = carbon_get_the_post_meta('routing');
+  $routing_image = carbon_get_the_post_meta('routing_image');
+  $guarantee2 = carbon_get_the_post_meta('guarantee2');
+  $information = carbon_get_the_post_meta('information');
+  $bottom_slider_items = carbon_get_the_post_meta('bottom_slider_items');
+  $bottom_slider2 = carbon_get_the_post_meta('bottom_slider2');
+  $bottom_slider_items2 = carbon_get_the_post_meta('bottom_slider_items2');
+  $gosuslugi = carbon_get_the_post_meta('gosuslugi');
 ?>

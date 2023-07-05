@@ -15,12 +15,8 @@ Template Name: Шаблон страницы О больнице
 
       <img src="<?=$about_ambulance['about_page_image']?>" />
 
-      <?php endforeach; ?>
-    <?php endif; ?>
-<?php if ($text_information) :?>
-  <?php foreach($text_information as $text_information):?>
       <div class="text_top font_w400_s18">
-          <p> <?=$text_information['text_paragraph'] ?> </p>
+          <p> <?=nl2br(htmlspecialchars($about_ambulance['about_info']))?> </p>
         </div>
         <br>
         <?php endforeach; ?>

@@ -9,146 +9,42 @@ Template Name: Шаблон страницы Администрация
 <section class="administration">
     <div class="administration_container container">
         <h2 class="administration_title font_w700_s60">Администрация</h2>
+        <?php foreach($head_doctor as $head) :?>
+
         <div class="administration_main">
             <div class="administration_main_image">
-            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/3(1).png" alt="img">
+            <img src="<?=$head['doctor_image']?>" alt="img" style="width: 238px; height: 300px;">
             </div>
             <div class="administration_main_text">
-                <h3 class="administration_text_subtitle font_w700_s35">Главный врач:<br>к.м.н. Пакус Дмитрий Игоревич</h3>
-                <div class="administration_text">Телефон: <span class="admin_contact_information">263-30-90</span>, факс: <span class="admin_contact_information">227-76-05</span><br> E-mail: <span class="admin_contact_information">gb4com@mail.ru</span><br> Кабинет № 30<br><br> Часы работы:<span class="admin_contact_information"> понедельник – пятница: с 08:00 до 16:00</span><br> Часы приема граждан:<span class="admin_contact_information"><br> четверг: с 16:00 до 18:00<br> вторник: с 16:00 до 18:00</span></div>
+                <h3 class="administration_text_subtitle font_w700_s35">Главный врач:<br><?=$head['doctor_name']?></h3>
+                <div class="administration_text">Телефон: <span class="admin_contact_information"><?=$head['number']?></span>, факс: <span class="admin_contact_information"><?=$head['fax']?></span><br> E-mail: <span class="admin_contact_information"><?=$head['enail']?></span><br> Кабинет № <?=$head['room_number']?><br><br> Часы работы:<span class="admin_contact_information"> <?=$head['working_hours']?></span><br> Часы приема граждан:<span class="admin_contact_information"><br><?=nl2br(htmlspecialchars($head['business_hours']))?></span></div>
             </div>
         </div>
+        <?php endforeach ;?>
+
+        <?php foreach($staff_members as $staff) :?>
+
         <div class="administration_other">
             <div class="administration_position">
-                <div class="administration_position_image"><img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/1.png" alt="img"></div>
+                <div class="administration_position_image"><img src="<?=$staff['picture']?>" alt="img" style="width: 132px; height: 157px;"></div>
                 <div class="administration_position_content">
-                    <div class="administration_position_title">Зам. главного врача по медицинской части</div>
-                    <div class="administration_position_name">Домашенко Наталия Николаевна</div>
-                    <div class="administration_position_text"><b>Телефон:</b> 263-57-61<br><b>Кабинет № 29</b><br> <b>Часы работы:</b> понедельник – пятница: с 08:00 до 16:00</div>
+                    <div class="administration_position_title"><?=$staff['job']?></div>
+                    <div class="administration_position_name"><?=$staff['name']?></div>
+                    <div class="administration_position_text"><b>Телефон:</b> <?=$staff['number']?><br><b>Кабинет № <?=$staff['room_number']?></b><br> <b>Часы работы:</b><?=nl2br(htmlspecialchars($staff['working_hours']))?></div>
 
                 </div>
             </div>
         </div>
-        <div class="administration_other">
-            <div class="administration_position">
-                <div class="administration_position_image"><img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/1.png" alt="img"></div>
-                <div class="administration_position_content">
-                    <div class="administration_position_title">Зам. главного врача по организационно-методической работе</div>
-                    <div class="administration_position_name">Шалимова Лариса Юрьевна</div>
-                    <div class="administration_position_text"><b>Телефон:</b> 263-55-82<br><b>Кабинет № 43</b><br> <b>Часы работы:</b> понедельник – пятница: с 09:00 до 17:00</div>
+        <?php endforeach ;?>
 
-                </div>
+        <div class="administration_paycheck" >
+        <?php if ($bottom_slider) :?>
+            <?php foreach($bottom_slider as $slider) :?>
+            <div class="administration_paycheck_item" style="width: 360px; height: 109px;">
+                <div class="block_item font_w600_s18"><a href="<?=$slider['url']?>"><?=$slider['title']?></a></div>
             </div>
-        </div>
-        <div class="administration_other">
-            <div class="administration_position">
-                <div class="administration_position_image"><img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/1.png" alt="img"></div>
-                <div class="administration_position_content">
-                    <div class="administration_position_title">Зам. главного врача по материально-техническому обеспечению</div>
-                    <div class="administration_position_name">Лагерь Вера Павловна</div>
-                    <div class="administration_position_text"><b>Телефон:</b> 227-74-37<br><b>Кабинет № 41а</b><br> <b>Часы работы:</b> понедельник – пятница: с 08:00 до 16:00</div>
-
-                </div>
-            </div>
-        </div>
-        <div class="administration_other">
-            <div class="administration_position">
-                <div class="administration_position_image"><img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/1.png" alt="img"></div>
-                <div class="administration_position_content">
-                    <div class="administration_position_title"> Зам. главного врача по поликлинике</div>
-                    <div class="administration_position_name"></div>
-                    <div class="administration_position_text"><b>Телефон:</b> 227-74-36<br><b>Кабинет № 38</b><br> <b>Часы работы:</b> понедельник – пятница: с 08:00 до 16:00</div>
-
-                </div>
-            </div>
-        </div>
-        <div class="administration_other">
-            <div class="administration_position">
-                <div class="administration_position_image"><img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/1.png" alt="img"></div>
-                <div class="administration_position_content">
-                    <div class="administration_position_title">Зам. главного врача по административно-хозяйственной части</div>
-                    <div class="administration_position_name">Воробьева Надежда Игоревна</div>
-                    <div class="administration_position_text"><b>Телефон:</b> 263-36-95<br><b>Кабинет № 42</b><br> <b>Часы работы:</b> понедельник – пятница: с 09:00 до 17:00</div>
-
-                </div>
-            </div>
-        </div>
-        <div class="administration_other">
-            <div class="administration_position">
-                <div class="administration_position_image"><img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/1.png" alt="img"></div>
-                <div class="administration_position_content">
-                    <div class="administration_position_title">Зам. главного врача по гражданской обороне</div>
-                    <div class="administration_position_name"></div>
-                    <div class="administration_position_text"><b>Телефон:</b> 263-30-90<br><b>Кабинет № </b><br> <b>Часы работы:</b> понедельник – пятница: с 09:00 до 17:00</div>
-
-                </div>
-            </div>
-        </div>
-        <div class="administration_other">
-            <div class="administration_position">
-                <div class="administration_position_image"><img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/1.png" alt="img"></div>
-                <div class="administration_position_content">
-                    <div class="administration_position_title">Зам. главного врача по экономическим вопросам</div>
-                    <div class="administration_position_name">Болдырева Наталья Владимировна</div>
-                    <div class="administration_position_text"><br><b>Кабинет № 44</b><br> <b>Часы работы:</b> понедельник – пятница: с 09:00 до 17:00</div>
-
-                </div>
-            </div>
-        </div>
-        <div class="administration_other">
-            <div class="administration_position">
-                <div class="administration_position_image"><img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/1.png" alt="img"></div>
-                <div class="administration_position_content">
-                    <div class="administration_position_title">Главный бухгалтер </div>
-                    <div class="administration_position_name">Бочарникова Екатерина Михайловна</div>
-                    <div class="administration_position_text"><b>Телефон:</b> 227-76-95<br><b>Кабинет № 38</b><br> <b>Часы работы:</b> понедельник – пятница: с 09:00 до 17:00</div>
-
-                </div>
-            </div>
-        </div>
-        <div class="administration_other">
-            <div class="administration_position">
-                <div class="administration_position_image"><img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/1.png" alt="img"></div>
-                <div class="administration_position_content">
-                    <div class="administration_position_title"> Зам. главного врача по общим вопросам</div>
-                    <div class="administration_position_name">Чайхорский Самир Магомедович</div>
-                    <div class="administration_position_text"><b>Телефон:</b> 263-36-95<br><b>Кабинет № 42</b><br> <b>Часы работы:</b> понедельник – пятница: с 09:00 до 17:00</div>
-
-                </div>
-            </div>
-        </div>
-        <div class="administration_other">
-            <div class="administration_position">
-                <div class="administration_position_image"><img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/1.png" alt="img"></div>
-                <div class="administration_position_content">
-                    <div class="administration_position_title">Зам. главного врача по КЭР</div>
-                    <div class="administration_position_name">Коссаковская Ольга Юрьевна</div>
-                    <div class="administration_position_text"><b>Телефон:</b> 263-36-95<br><b>Кабинет № 33</b><br> <b>Часы работы:</b> понедельник – пятница: с 08:00 до 16:00</div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="administration_paycheck">
-            <div class="administration_paycheck_item">
-                <p class="font_w600_s18"><a href="#">Заработная плата в 2016 г.<br> по приказу № 39</a></p>
-            </div>
-            <div class="administration_paycheck_item">
-                <p class="font_w600_s18"><a href="#">Заработная плата в 2023 г.</a></p>
-            </div>
-            <div class="administration_paycheck_item">
-                <p class="font_w600_s18"><a href="#">Заработная плата в 2017 г.</a></p>
-            </div>
-            <div class="administration_paycheck_item">
-                <p class="font_w600_s18"><a href="#">Заработная плата в 2018 г.</a></p>
-            </div>
-            <div class="administration_paycheck_item">
-                <p class="font_w600_s18"><a href="#">Заработная плата зам.<br> руководителя и главного<br> врача за 2020 г.</a></p>
-            </div>
-            <div class="administration_paycheck_item">
-                <p class="font_w600_s18 paychek_item6"><a href="#">Среднемесячная заработная<br> плата руководителя<br> 
-                               и заместителей за 2021 г.</a></p>
-            </div>    
+            <?php endforeach ;?>
+        <?php endif ;?> 
         </div>
     </div>
 </section>

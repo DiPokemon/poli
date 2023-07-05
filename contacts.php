@@ -66,14 +66,14 @@ Template Name: Шаблон страницы контактов
 
                 
                 <nav class="header_top_social social">
-                <div class="social_item"><a href="#"><i class="fa-brands fa-odnoklassniki"></i></a></div>
-                <div class="social_item"><a href="#"><i class="fa-brands fa-vk"></i></a></div> 
-                <div class="social_item"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
-                <div class="social_item"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
-                <div class="social_item"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+                <div class="social_item"><a href="<?= carbon_get_theme_option('ok')?>"><i class="fa-brands fa-odnoklassniki"></i></a></div>
+                <div class="social_item"><a href="<?= carbon_get_theme_option('vk')?>"><i class="fa-brands fa-vk"></i></a></div> 
+                <div class="social_item"><a href="<?= carbon_get_theme_option('inst')?>"><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="social_item"><a href="<?= carbon_get_theme_option('twitter')?>"><i class="fa-brands fa-twitter"></i></a></div>
+                <div class="social_item"><a href="<?= carbon_get_theme_option('fb')?>"><i class="fa-brands fa-facebook"></i></a></div>
                 </nav>
-                
-            </div>
+
+                </div>
             <div class="contacts_form">
             
             <?= do_shortcode('[contact-form-7 id="67" title="Контактная форма 1"]'); ?>

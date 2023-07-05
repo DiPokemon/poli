@@ -1489,7 +1489,8 @@ body {
   border-top: 1px solid #DCDCDC;
   line-height: 25px;
   /* identical to box height */
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #055D65;
   display: block;
 }
@@ -2709,21 +2710,25 @@ body {
 
 @media (max-width: 1200px) {
   .header_container,
-  .container {
+.container {
     padding: 0px 10px;
   }
   .header_middle .header_container .site_identification .logo_text-link,
-  .header_middle .header_container .site_identification .header_phone i,
-  .header_middle .header_container .site_identification .header_phone-link,
-  .header_middle .header_container .site_identification .visually_impaired-link {
+.header_middle .header_container .site_identification .header_phone i,
+.header_middle .header_container .site_identification .header_phone-link,
+.header_middle .header_container .site_identification .visually_impaired-link {
     font-size: 16px;
   }
   .header_middle .header_container .site_identification .header_phone,
-  .header_middle .header_container .site_identification .visually_impaired {
+.header_middle .header_container .site_identification .visually_impaired {
     margin-left: 0;
   }
   .header_bottom .header_bottom_menu .menu_list {
     gap: 10px;
+  }
+  .page_information_container input {
+    min-width: 1000px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 1024px) {
@@ -2742,10 +2747,21 @@ body {
   .header_middle .header_container .site_identification .logo_text .logo_text-link {
     line-height: 20px;
   }
+  .page_information_container input {
+    min-width: 870px;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 900px) {
   .header_bottom .header_bottom_menu .menu_list .menu-item .menu_link span {
     font-weight: 500;
     font-size: 15px;
+  }
+  .page_gosuslugi .page_gosuslugi_container img {
+    width: 95%;
+  }
+  .page_information_container input {
+    min-width: 750px;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */

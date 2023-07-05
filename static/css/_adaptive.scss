@@ -29,6 +29,13 @@
             }
         }
     }
+    .page_information_container {
+        
+        input {min-width: 1000px;
+            margin: 0 auto;
+
+        }
+    }
 }
 
 @media(max-width: 1024px){
@@ -63,7 +70,13 @@
             }                
         }
     }
+    .page_information_container {
+        
+        input {min-width: 870px;
+            margin: 0 auto;
 
+        }
+    }
     
 }
 
@@ -82,6 +95,21 @@
             }
         }
     }
+    .page_gosuslugi {
+    .page_gosuslugi_container {
+        img {
+            width: 95%;
+        }
+    }
+    }
+    .page_information_container {
+        
+        input {min-width: 750px;
+            margin: 0 auto;
+
+        }
+    }
+    
 }
 
 

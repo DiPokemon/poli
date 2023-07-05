@@ -19,4 +19,5 @@ function register_custom_fields() {
     require get_template_directory() . '/inc/custom-fields/vacancies_options.php';
     require get_template_directory() . '/inc/custom-fields/requisites_options.php';
     require get_template_directory() . '/inc/custom-fields/reviews_option.php';
+    require get_template_directory() . '/inc/custom-fields/top_header.php';
 }

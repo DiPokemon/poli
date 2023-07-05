@@ -315,7 +315,7 @@ body {
         gap: 122px;
         margin-top: 20px;
         .hospital_left_column {
-            min-width: 448px;
+            // min-width: 448px;
             background: $background_blue;
             border-radius: 10px;
             .hospital_subtitle {
@@ -356,7 +356,7 @@ body {
             }
         }
         .other_right_column {
-            min-width: 448px;
+            // min-width: 448px;
             background: $background_blue;
             border-radius: 10px;
             .other_office_subtitle {
@@ -836,7 +836,7 @@ body {
 }
 
 .gallery {
-    .main_banner {
+    .gallery_banner {
         .banner {
             height: 328px;
             margin-right: 22px;
@@ -860,14 +860,14 @@ body {
         background: $background_blue;
         padding-top: 69px;
     }
-    .slick-dots {
-        display: none !important;
-    }
+    // .slick-dots {
+    //     display: none !important;
+    // }
     .slick-arrow {
         display: none !important;
     }
     .slider_wrapper {
-        width: 1920px;
+        max-width: 1920px;
         margin: 0 auto;
     }
 }

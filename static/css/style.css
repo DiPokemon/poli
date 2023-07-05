@@ -509,7 +509,6 @@ body {
   margin-top: 20px;
 }
 .departmens_container .departmens_body .hospital_left_column {
-  min-width: 448px;
   background: #F2F9FA;
   border-radius: 10px;
 }
@@ -553,7 +552,6 @@ body {
   color: #055D65;
 }
 .departmens_container .departmens_body .other_right_column {
-  min-width: 448px;
   background: #F2F9FA;
   border-radius: 10px;
 }
@@ -1050,21 +1048,21 @@ body {
   color: #E80B8B;
 }
 
-.gallery .main_banner .banner {
+.gallery .gallery_banner .banner {
   height: 328px;
   margin-right: 22px;
 }
-.gallery .main_banner .banner img {
+.gallery .gallery_banner .banner img {
   width: 491px;
   border-radius: 10px;
 }
-.gallery .main_banner .banner.slick-active {
+.gallery .gallery_banner .banner.slick-active {
   width: 491px;
 }
-.gallery .main_banner .slick-prev {
+.gallery .gallery_banner .slick-prev {
   display: none;
 }
-.gallery .main_banner .slick-next {
+.gallery .gallery_banner .slick-next {
   display: none;
 }
 .gallery .slider_background_gallery {
@@ -1072,14 +1070,11 @@ body {
   background: #F2F9FA;
   padding-top: 69px;
 }
-.gallery .slick-dots {
-  display: none !important;
-}
 .gallery .slick-arrow {
   display: none !important;
 }
 .gallery .slider_wrapper {
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -2739,6 +2734,15 @@ body {
   .header_top .header_top_social {
     gap: 15px;
   }
+  .header_top {
+    background-color: #E5F2F4;
+  }
+  .header_top .header_container {
+    gap: 10px;
+  }
+  .header_top .header_container .header_top_menu .menu_list {
+    gap: 20px;
+  }
   .header_middle .header_container .site_identification .logo_text {
     width: 154px;
   }
@@ -2746,9 +2750,48 @@ body {
     line-height: 20px;
   }
 }
+@media (max-width: 1160px) {
+  .header_bottom .header_container .header_bottom_menu .menu_list {
+    gap: 10px;
+  }
+}
+@media (max-width: 1040px) {
+  .departmens_container .departmens_body {
+    gap: 20px;
+  }
+  .contacts_body .contacts_form {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 1140px) {
+  .footer_menu .menu_list span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 960px) {
+  .footer_menu .menu_list {
+    gap: 20px;
+  }
+}
+@media (max-width: 940px) {
+  .other_right_column,
+  .hospital_left_column {
+    width: 50%;
+  }
+}
+.departmens_container .departmens_body .other_right_column .other_office_items_nav {
+  list-style: none;
+}
+
 @media (max-width: 900px) {
-  .header_bottom .header_bottom_menu .menu_list .menu-item .menu_link span {
+  .header_bottom .header_container .header_bottom_menu .menu_list .menu-item .menu_link span {
     font-weight: 500;
     font-size: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .departmens_container .departmens_body .other_right_column .other_office_items_nav {
+    width: auto;
   }
 }/*# sourceMappingURL=style.css.map */

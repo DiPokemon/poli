@@ -224,7 +224,7 @@ Template Name: Main page
     <?php if ($gallery_banners) :?>
     <div class="slider_background_gallery">
         <div class="slider_wrapper">
-            <div class="main_banner">
+            <div class="gallery_banner">
                 <?php foreach( $gallery_banners as $banner) : ?>
                     <?php if ($banner['gallery_banner_url']) :?>
                         <a href="<?=$banner['gallery_banner_url']?>" class="banner">

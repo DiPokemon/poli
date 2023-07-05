@@ -1004,21 +1004,21 @@ body {
   height: 7px;
 }
 
-.important_information .main_banner .banner {
+.important_information .information_banner .banner {
   height: 351px;
   margin-right: 38.5px;
 }
-.important_information .main_banner .banner img {
+.important_information .information_banner .banner img {
   width: 590px;
   border-radius: 10px;
 }
-.important_information .main_banner .banner.slick-active {
+.important_information .information_banner .banner.slick-active {
   width: 590px;
 }
-.important_information .main_banner .slick-prev {
+.important_information .information_banner .slick-prev {
   display: none;
 }
-.important_information .main_banner .slick-next {
+.important_information .information_banner .slick-next {
   display: none;
 }
 
@@ -1029,11 +1029,14 @@ body {
   padding-top: 63px;
 }
 .slider_background .slider_wrapper {
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 .slider_background .slider_wrapper .slick-arrow {
   display: none !important;
+}
+.slider_background .slick-slide {
+  margin-right: 32px;
 }
 .slider_background .slick-dots li button:before {
   top: 62px;

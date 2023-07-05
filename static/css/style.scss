@@ -779,7 +779,7 @@ body {
 }
 
 .important_information {
-    .main_banner {
+    .information_banner {
         .banner {
             height: 351px;
             margin-right: 38.5px;
@@ -804,16 +804,18 @@ body {
     height: 481px;
     background: $slider_background;
     padding-top: 63px;
+    // max-width: 1920px;
+    // margin: 0 auto;
     .slider_wrapper {
-        width: 1920px;
+        max-width: 1920px;
         margin: 0 auto;
         .slick-arrow {
             display: none !important;
         }
     }
-    // .slick-slide {
-    //     margin-right: 32px;
-    // }
+    .slick-slide {
+        margin-right: 32px;
+    }
     .slick-dots {
         li button:before {
             top: 62px;
@@ -1556,11 +1558,6 @@ body {
             padding-right: 20px;
         }
     }
-
-
-
-
-
     .appointment_href {
         margin: 32px 0;
         a {

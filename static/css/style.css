@@ -1230,6 +1230,8 @@ body {
 
 .news_prevention_slider {
   /* Слайдер */
+  max-width: 1626px;
+  margin: 0 auto;
   /* Слайдер запущен */
   /* Слайдер с точками */
   /* Ограничивающая оболочка */
@@ -1276,35 +1278,9 @@ body {
   margin-top: 28px;
   margin-bottom: 28px;
 }
-.page_news_container input {
-  background: #ffffff;
-  border: 2px solid #45A6AF;
-  border-radius: 50px;
-  width: 100%;
-  min-height: 71px;
-  margin-bottom: 32px;
-}
-.page_news_container ::-webkit-input-placeholder {
-  padding-left: 79px;
-  font-family: "OpenSans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  color: #898989;
-}
-.page_news_container .fa.fa-light.fa-magnifying-glass {
-  position: absolute;
-  color: #E80B8B;
-  font-size: 32px;
-  margin-left: -1160px;
-  margin-top: 18px;
-}
 
 .prevention {
+  margin-top: 32px;
   padding-bottom: 32px;
   background: #F2F9FA;
 }
@@ -1563,6 +1539,15 @@ body {
   font-size: 12px;
   color: #1C3A2C;
 }
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .page_reviews .page_reviews_container .wpcf7 .wpcf7-form .text_cf7_bottom {
   font-family: "OpenSans";
   font-style: normal;
@@ -1590,7 +1575,24 @@ body {
   color: #ffffff;
   border-color: transparent;
 }
-.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-form-control::-webkit-input-placeholder {
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-form-control::-webkit-input-placeholder {
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 400;
@@ -1599,7 +1601,7 @@ body {
   color: #898989;
   padding: 12px 0 0 14px;
 }
-.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-form-control::-moz-placeholder {
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-form-control::-moz-placeholder {
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 400;
@@ -1608,7 +1610,7 @@ body {
   color: #898989;
   padding: 12px 0 0 14px;
 }
-.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-form-control:-ms-input-placeholder {
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-form-control:-ms-input-placeholder {
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 400;
@@ -1617,7 +1619,7 @@ body {
   color: #898989;
   padding: 12px 0 0 14px;
 }
-.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-form-control::-ms-input-placeholder {
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-form-control::-ms-input-placeholder {
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 400;
@@ -1626,7 +1628,7 @@ body {
   color: #898989;
   padding: 12px 0 0 14px;
 }
-.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-form-control::placeholder {
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-form-control::placeholder {
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 400;
@@ -1635,18 +1637,22 @@ body {
   color: #898989;
   padding: 12px 0 0 14px;
 }
-.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-text {
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin: 0 40px 16px 40px;
-  min-width: 764px;
   min-height: 45px;
   background: #ffffff;
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
 }
-.page_reviews .page_reviews_container .wpcf7 .wpcf7-form .wpcf7-form-control-wrap textarea {
+.page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap textarea {
   margin: 0 40px 26px 40px;
-  min-width: 764px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   max-height: 90px;
   background: #ffffff;
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
@@ -1859,6 +1865,7 @@ body {
   line-height: 48px;
 }
 .administration_container .administration_main .administration_main_text .administration_text {
+  margin: 0 10px 20px 0;
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 700;
@@ -1873,7 +1880,7 @@ body {
   margin: 0 auto;
   margin-bottom: 28px;
   max-width: 1110px;
-  max-height: 217px;
+  min-height: 217px;
   border: 1px solid #BBDFE3;
   border-radius: 10px;
   display: -webkit-box;
@@ -1966,12 +1973,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.administration_container .administration_paycheck .administration_paycheck_item .block_item {
+  margin: 0 10px;
+}
+.administration_container .administration_paycheck .administration_paycheck_item .block_item a {
+  color: #000000;
+  line-height: 25px;
+}
 .administration_container .administration_paycheck .administration_paycheck_item p {
   margin: 0 31px;
   line-height: 25px;
-}
-.administration_container .administration_paycheck .administration_paycheck_item p a {
-  color: #000000;
 }
 .administration_container .administration_paycheck .administration_paycheck_item .paychek_item6 {
   margin: 0 20px;
@@ -2107,37 +2118,11 @@ body {
   color: #000000;
   margin: 28px 0;
 }
-.page_information_container input {
-  min-width: 1200px;
-  min-height: 71px;
-  background: #ffffff;
-  border: 2px solid #45A6AF;
-  border-radius: 50px;
-  margin-bottom: 32px;
-}
-.page_information_container ::-webkit-input-placeholder {
-  padding-left: 79px;
-  font-family: "OpenSans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  color: #898989;
-}
-.page_information_container .fa.fa-light.fa-magnifying-glass {
-  position: absolute;
-  color: #E80B8B;
-  font-size: 32px;
-  margin-left: -1160px;
-  margin-top: 18px;
-}
 .page_information_container .page_information_subtitle {
   line-height: 48px;
   color: #000000;
   margin-bottom: 28px;
+  margin-top: 32px;
 }
 .page_information_container .page_information_block {
   display: -webkit-box;
@@ -2724,10 +2709,6 @@ body {
   .header_bottom .header_bottom_menu .menu_list {
     gap: 10px;
   }
-  .page_information_container input {
-    min-width: 1000px;
-    margin: 0 auto;
-  }
 }
 @media (max-width: 1024px) {
   .header_top .header_top_menu .menu_list {
@@ -2753,10 +2734,6 @@ body {
   }
   .header_middle .header_container .site_identification .logo_text .logo_text-link {
     line-height: 20px;
-  }
-  .page_information_container input {
-    min-width: 870px;
-    margin: 0 auto;
   }
 }
 @media (max-width: 1160px) {
@@ -2785,7 +2762,7 @@ body {
 }
 @media (max-width: 940px) {
   .other_right_column,
-  .hospital_left_column {
+.hospital_left_column {
     width: 50%;
   }
 }
@@ -2798,18 +2775,22 @@ body {
     font-weight: 500;
     font-size: 15px;
   }
-<<<<<<< HEAD
-  .page_gosuslugi .page_gosuslugi_container img {
-    width: 95%;
-  }
-  .page_information_container input {
-    min-width: 750px;
-    margin: 0 auto;
-=======
 }
 @media (max-width: 800px) {
   .departmens_container .departmens_body .other_right_column .other_office_items_nav {
     width: auto;
->>>>>>> a6be3cb0c6f5ac92eb6a780dd88bf12ebbc7555c
+  }
+}
+@media (max-width: 1140px) {
+  .for-flex img {
+    margin-left: 10px;
+  }
+  .announcement_container .announcement_text {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 850px) {
+  .page_gosuslugi_container img {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

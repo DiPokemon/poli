@@ -11,13 +11,13 @@ Template Name: Шаблон страницы Вакансии
     <div class="container">
     <div class="vacancies_container ">
         <h2 class="vacancies_title font_w700_s60">Вакансии</h2>
+        <?php foreach ($general_inf as $general) :?>
         <div class="vacancies_contact" >
-            <?php foreach ($general_inf as $general) :?>
             <div class="vacancies_contact_item font_w600_s18 block1"><b>Наименование юридического лица:</b><br><?=$general['org_name']?></div>
             <div class="vacancies_contact_item font_w600_s18 block2" style="width: 360px; height: 109px;"><b>Адрес: </b> <?=$general['addres']?></div>
             <div class="vacancies_contact_item font_w600_s18 block3"><b>Контактный телефон:</b><br><?=$general['number']?></div>  
-            <?php endforeach ;?>
         </div>
+        <?php endforeach ;?>
         <div class="vacancies_block">
             <?php foreach ($vacancies as $vacancie) :?>
             <div class="vacancies_block_item">

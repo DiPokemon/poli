@@ -31,41 +31,14 @@ Template Name: Отделения Городской больницы №4
             <!-- card serction -->
 
             <div class="container">
-
                 <div class="display-flex">
+                    <?php foreach($depart_hospital as $item) :?>
                     <div class="card-text-img"> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/1.jpg"   alt="">
-                        <p ><br><br>Общая информация</p>
+                            <a href="<?=$item['url']?>"><img src="<?=$item['image']?>"   alt="img"></a>
+                            <p> <br><br><?=$item['name']?></p>
+                        </div>
+                        <?php endforeach ;?>
                     </div>
-                    <div class="card-text-img"> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/2.jpg"   alt="">
-                        <p ><br><br>Приемное отделение</p>
-                    </div>
-                    <div class="card-text-img"> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/3.jpg"   alt="">
-                        <p><br>Взрослый и детский <br>травмпункт</p>
-                    </div>
-                    <div class="card-text-img"> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/4.jpg"   alt="">
-                        <p><br>Городской <br> эндокринологический центр</p>
-                    </div>
-                    <div class="card-text-img"> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/5.jpg"   alt="">
-                        <p><br>Терапевтическое <br>отделение</p>
-                    </div>
-                    <div class="card-text-img"> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/6.jpg"   alt="">
-                        <p><br>Кардиологическое <br>отделение</p>
-                    </div>
-                    <div class="card-text-img"> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/7.jpg"   alt="">
-                        <p><br>Неврологическое<br> отделение</p>
-                    </div>
-                    <div class="card-text-img"> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/8.jpg"   alt="">
-                        <p><br>Нефрологическое <br>отделение</p>
-                    </div>
-                </div>
             </div>
         <div class="container">
 
@@ -77,38 +50,14 @@ Template Name: Отделения Городской больницы №4
             <!-- card serction -->
 
             <div class="container">
-
                 <div class="display-flex">
+                    <?php foreach($other_departs as $item) :?>
                     <div class="card-text-img"> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/9.jpg"   alt="">
-                        <p ><br><br>КДЛ</p>
+                        <a href="<?=$item['url']?>"><img src="<?=$item['image']?>"   alt="img"></a>
+                            <p> <br><br><?=$item['name']?></p>
+                        </div>
+                        <?php endforeach ;?>
                     </div>
-                    <div class="card-text-img"> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/10.jpg"   alt="">
-                        <p ><br><br>ФТО</p>
-                    </div>
-                    <div class="card-text-img "> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/11.jpg"   alt="">
-                        <p ><br><br>УЗИ</p>
-                    </div>
-                    <div class="card-text-img"> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/12.jpg"   alt="">
-                        <p ><br><br>Рентген</p>
-                    </div>
-                    <div class="card-text-img"> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/13.jpg"   alt="">
-                        <p ><br><br>Эндоскопия</p>
-                    </div>
-                    <div class="card-text-img"> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/14.jpg"   alt="">
-                        <p >Диспансеризация <br> определенных групп <br>взрослого населения</p>
-                    </div>
-                    <div class="card-text-img"> 
-                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/15.jpg"   alt="">
-                        <p ><br><br>Платные услуги</p>
-                    </div>
-
-                </div>
             </div>
         </div>
 

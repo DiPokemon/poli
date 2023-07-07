@@ -78,4 +78,18 @@
   $bottom_slider2 = carbon_get_the_post_meta('bottom_slider2');
   $bottom_slider_items2 = carbon_get_the_post_meta('bottom_slider_items2');
   $gosuslugi = carbon_get_the_post_meta('gosuslugi');
+  // departs
+  $depart_hospital = carbon_get_the_post_meta('depart_hospital');
+  $other_departs = carbon_get_the_post_meta('other_departs');
+  $general_information = carbon_get_the_post_meta('general_information');
+  $floor_information =  carbon_get_the_post_meta('floor_information');
+  $more_information = carbon_get_the_post_meta('more_information');
+  $images = carbon_get_the_post_meta('images');
+  $receptions = carbon_get_the_post_meta('receptions');
+  $receptions_staff = carbon_get_the_post_meta('receptions_staff');
+  $travmpunkt_staff = carbon_get_the_post_meta('travmpunkt_staff');
+  $head_of_department = carbon_get_the_post_meta('head_of_department');
+  $general_inf2 = carbon_get_the_post_meta('general_inf2');
+  $profile = carbon_get_the_post_meta('profile');
+  $travmpunkt_image = carbon_get_the_post_meta('travmpunkt_image');
 ?>

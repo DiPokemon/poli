@@ -64,12 +64,11 @@ Template Name: Шаблон страницы Информация по прав�
         <?php endif ;?>
     <?php endforeach ;?>
     <div class="slider_time_limits">
-        <div class="slider__item">
         <?php foreach($waiting_time_image as $item) :?>
+        <div class="slider__item">
             <img src="<?=$item['image']?>" alt="img">
-        <?php endforeach ?>
-            
         </div>
+        <?php endforeach ?>
     </div> 
     <?php foreach($routing as $item) :?>
         <?php if (!empty($item['title'])) :?>
@@ -77,11 +76,11 @@ Template Name: Шаблон страницы Информация по прав�
         <?php endif ;?>
     <?php endforeach ?>
     <div class="slider_patient_routing">
-    <div class="slider__item">
         <?php foreach($routing_image as $item) :?>
-            <img src="<?=$item['image']?>" alt="img">
-            <?php endforeach ?>
+    <div class="slider__item">
+            <img width="379px" height="537px" src="<?=$item['image']?>" alt="img">
         </div>
+        <?php endforeach ?>
     </div>
     <?php foreach($guarantee2 as $guarantee):?>
         <?php if (!empty($guarantee['title'])) :?>
@@ -89,28 +88,28 @@ Template Name: Шаблон страницы Информация по прав�
         <?php endif ;?>
     <?php endforeach ?>
     <div class="slider_free_medical">
-    <div class="slider__item">
         <?php foreach($guarantee2 as $guarantee):?>
+        <div class="slider__item">
             <img src="<?=$guarantee['image']?>" alt="img">
-        <?php endforeach ;?>
         </div>
+        <?php endforeach ;?>
     </div>  
     <?php foreach($information as $item) :?>
         <h3 class="page_information_subtitle font_w700_s35"><?=$item['head_title']?></h3> 
     <?php endforeach ;?> 
+    <?php foreach($bottom_slider_items as $item) :?>
     <div class="insurance_organizations_block">
-        <?php foreach($bottom_slider_items as $item) :?>
         <div class="block_item font_w600_s18"><a href="<?=$item['url']?>"><?=$item['title']?></a></div>
-        <?php endforeach ;?> 
     </div>
+    <?php endforeach ;?> 
     <?php foreach($bottom_slider2 as $item) :?>
         <h3 class="page_information_subtitle font_w700_s35"><?=$item['head_title']?></h3>
     <?php endforeach ;?> 
     <?php foreach($bottom_slider_items2 as $item) :?>
     <div class="tabs_block">
         <div class="block_item font_w600_s18"  ><a href="<?=$item['url']?>"><?=$item['title']?></a></div>
-    <?php endforeach ;?> 
     </div>
+    <?php endforeach ;?> 
 
     <style>
         .block_item {
@@ -122,6 +121,7 @@ Template Name: Шаблон страницы Информация по прав�
           align-items: center;
         }
     </style>
+    
 
 
 

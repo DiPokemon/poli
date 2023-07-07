@@ -29,6 +29,7 @@ Container::make('post_meta', __('About Page Fields', 'policlinic'))
                 Field::make('text', 'about_banner_title', __('Title'))
                     ->set_width(20),
                 Field::make('text', 'about_banner_url', __('URL'))
+                    ->set_attribute('type', 'url')
                     ->set_width(20),
             )),
         Field::make('complex', 'licenses', __('Лицензии на осуществление медицинской деятельности'))

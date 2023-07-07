@@ -96,15 +96,14 @@ Template Name: Шаблон страницы О больнице
           align-items: center;
         }
       </style>
-      <div class="block_row" style="width: 290px; height: 110px;">
-           <?php if ($bottom_slider) :?>
+     
+          <?php if ($bottom_slider) :?>
             <?php foreach($bottom_slider as $slider) :?>
-              <div class="block_item font_w600_s18"><a href="<?=$slider['url']?>"><?=$slider['title']?></a></div>
-              <?php endforeach ;?>
-        <?php endif ;?> 
-
-
-      </div>
+              <div class="block_row" style="width: 290px; height: 110px;">
+                <div class="block_item font_w600_s18"><a href="<?=$slider['url']?>"><?=$slider['title']?></a></div>
+              </div>
+            <?php endforeach ;?>
+          <?php endif ;?> 
 
 
       

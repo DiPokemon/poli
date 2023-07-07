@@ -106,7 +106,7 @@ Template Name: Шаблон страницы Информация по прав�
     </div>  
     
     
-    <?php foreach($information as $item) :?>
+    <?php foreach($information2 as $item) :?>
         <h3 class="page_information_subtitle font_w700_s35"><?=$item['head_title']?></h3> 
     <?php endforeach ;?> 
     

@@ -96,7 +96,7 @@ Container::make('post_meta', 'guarantee2')
 Container::make('post_meta','bottom_slider')
     ->show_on_template('information.php')
     ->add_fields(array(    
-        Field::make('complex', 'information', __('Информация о страховых медицинских организациях'))
+        Field::make('complex', 'information2', __('Информация о страховых медицинских организациях'))
             ->add_fields('information', __('Информация о страховых медицинских организациях'),array(
                 Field::make('text', 'head_title', __('Заголовок'))
                     ->set_width(20),

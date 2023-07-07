@@ -73,7 +73,7 @@
   $routing = carbon_get_the_post_meta('routing');
   $routing_image = carbon_get_the_post_meta('routing_image');
   $guarantee2 = carbon_get_the_post_meta('guarantee2');
-  $information = carbon_get_the_post_meta('information');
+  $information2 = carbon_get_the_post_meta('information2');
   $bottom_slider_items = carbon_get_the_post_meta('bottom_slider_items');
   $bottom_slider2 = carbon_get_the_post_meta('bottom_slider2');
   $bottom_slider_items2 = carbon_get_the_post_meta('bottom_slider_items2');

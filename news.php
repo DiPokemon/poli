@@ -9,7 +9,7 @@ Template Name: Шаблон страницы Новости
 <section>
     <div class="page_news_container container">
       <h2 class="page_news_title font_w700_s60">Новости</h2>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       
           <form>
             
@@ -17,7 +17,17 @@ Template Name: Шаблон страницы Новости
               <a href="#"><i class="fa fa-light fa-magnifying-glass"></i></a>
              
             
-          </form>
+          </form> -->
+
+          <div class="for-flex">
+                <div class="search">
+                    <button type="submit" class="search-button">
+                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/Vector.png"
+                            alt="Search" class="search-icon">
+                    </button>
+                    <input type="text" placeholder="Поиск" class="search-input">
+                </div>
+            </div>
 
 
 
@@ -30,7 +40,8 @@ Template Name: Шаблон страницы Новости
         <div class="container">
         <h3 class="prevention_title font_w700_s35">Профилактика новой коронавирусной инфекции,<br> гриппа и ОРВИ</h3>
         </div>
-        <div class="news_slider">
+        <!-- <div class="news_slider"> -->
+        <div class="slider_wrapper">  
         <div class="news_prevention_slider">
         <div class="slider__item">
             <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group 274.jpg" alt="img">
@@ -40,6 +51,9 @@ Template Name: Шаблон страницы Новости
         </div>
         <div class="slider__item">
             <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group 273.jpg" alt="img">
+        </div>
+        <div class="slider__item">
+            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/Group 275.jpg" alt="img">
         </div>
               
         </div>

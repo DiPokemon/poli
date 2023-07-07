@@ -10,10 +10,20 @@ Template Name: Шаблон страницы Информация по прав�
 <section class="page_information">
 <div class="page_information_container container">
     <h2 class="page_information_title font_w700_s60">Информация по правам пациентов</h2>
-    <form>
+    <!-- <form>
               <input type="search" placeholder="Поиск">
               <a href="#"><i class="fa fa-light fa-magnifying-glass"></i></a>
-    </form>
+    </form> -->
+
+    <div class="for-flex">
+                <div class="search">
+                    <button type="submit" class="search-button">
+                        <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/Vector.png"
+                            alt="Search" class="search-icon">
+                    </button>
+                    <input type="text" placeholder="Поиск" class="search-input">
+                </div>
+            </div>
     <!-- <input type="text" maxlength= "12" placeholder="Поиск" class="searchbar"> -->
     <h3 class="page_information_subtitle font_w700_s35">Контакты вышестоящих органов</h3>
     <div class="page_information_block">

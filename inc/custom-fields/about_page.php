@@ -45,7 +45,7 @@ Container::make('post_meta', __('About Page Fields', 'policlinic'))
 
             )),
         Field::make('complex', 'bottom_slider', __('Общественный совет больницы'))
-            ->add_fields('bottom_slider', __('нижний Slider'),array(
+            ->add_fields('bottom_slider', __('нижний блок с ссылками'),array(
                 Field::make('text', 'title', __('Заголовок'))
                     ->set_width(20),
                 Field::make('text', 'url', __('ссылка '))

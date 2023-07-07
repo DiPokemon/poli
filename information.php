@@ -104,24 +104,32 @@ Template Name: Шаблон страницы Информация по прав�
         </div>
         <?php endforeach ;?>
     </div>  
+    
+    
     <?php foreach($information as $item) :?>
         <h3 class="page_information_subtitle font_w700_s35"><?=$item['head_title']?></h3> 
     <?php endforeach ;?> 
-    <?php foreach($bottom_slider_items as $item) :?>
+    
     <div class="insurance_organizations_block">
+    <?php foreach($bottom_slider_items as $item) :?>
+   
         <div class="block_item font_w600_s18"><a href="<?=$item['url']?>"><?=$item['title']?></a></div>
-    </div>
+    
     <?php endforeach ;?> 
+    </div>
+
     <?php foreach($bottom_slider2 as $item) :?>
         <h3 class="page_information_subtitle font_w700_s35"><?=$item['head_title']?></h3>
     <?php endforeach ;?> 
-    <?php foreach($bottom_slider_items2 as $item) :?>
+    
     <div class="tabs_block">
+    <?php foreach($bottom_slider_items2 as $item) :?>
+    
         <div class="block_item font_w600_s18"  ><a href="<?=$item['url']?>"><?=$item['title']?></a></div>
-    </div>
+    
     <?php endforeach ;?> 
-
-    <style>
+    </div>
+    <!-- <style>
         .block_item {
           width: 290px; 
           height: 110px; 
@@ -130,7 +138,7 @@ Template Name: Шаблон страницы Информация по прав�
           justify-content: center;
           align-items: center;
         }
-    </style>
+    </style> -->
     
 
 

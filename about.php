@@ -86,7 +86,7 @@ Template Name: Шаблон страницы О больнице
        </div>
 
       <h3 class="subtitle_bottom font_w700_s35">Общественный совет больницы</h3>
-      <style>
+      <!-- <style>
         .block_item {
           width: 290px; 
           height: 110px; 
@@ -95,16 +95,17 @@ Template Name: Шаблон страницы О больнице
           justify-content: center;
           align-items: center;
         }
-      </style>
-     
+      </style> -->
+          <div class="block_row">
           <?php if ($bottom_slider) :?>
             <?php foreach($bottom_slider as $slider) :?>
-              <div class="block_row" style="width: 290px; height: 110px;">
-                <div class="block_item font_w600_s18"><a href="<?=$slider['url']?>"><?=$slider['title']?></a></div>
-              </div>
+
+      <div class="block_item font_w600_s18"><a href="<?=$slider['url']?>"><?=$slider['title']?></a></div>
+              
             <?php endforeach ;?>
           <?php endif ;?> 
-
+          
+          </div>
 
       
 

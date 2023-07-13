@@ -92,4 +92,6 @@
   $general_inf2 = carbon_get_the_post_meta('general_inf2');
   $profile = carbon_get_the_post_meta('profile');
   $travmpunkt_image = carbon_get_the_post_meta('travmpunkt_image');
+  $news_slider = carbon_get_the_post_meta('news_slider');
+  $news_feed = carbon_get_the_post_meta('news_feed');
 ?>

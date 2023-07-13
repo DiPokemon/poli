@@ -1168,6 +1168,24 @@ body {
             li {
                 line-height: 2;
             }
+            p {
+                margin-top: 81px;
+                line-height: 25px;
+                // display: flex;
+                // align-items: center;
+                color: $black;
+            }
+            a {
+                max-width: 203px;
+                background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                border-radius: 50px;
+                margin-bottom: 113px;
+                padding: 13px 64px;
+                // line-height: 25px;
+                /* identical to box height */
+                // text-align: center;
+                flex-basis: content;
+                color: $white;
         }
     }
 }
@@ -1212,6 +1230,7 @@ body {
     }
 }
 
+
 .important2_container {
     .important2_title {
         margin-top: 32px;
@@ -1229,17 +1248,36 @@ body {
             // align-items: center;
             color: $black;
             display: block;
+            p {
+                margin-top: 81px;
+                line-height: 25px;
+                // display: flex;
+                // align-items: center;
+                color: $black;
+            }
+            a {
+                max-width: 203px;
+                background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                border-radius: 50px;
+                margin-bottom: 113px;
+                padding: 13px 64px;
+                // line-height: 25px;
+                /* identical to box height */
+                // text-align: center;
+                flex-basis: content;
+                color: $white;
+            }
         }
     }
 }
 
-.covid {
+.important3 {
     background: $background_blue;
     padding-top: 28px;
     margin-top: 32px;
     padding-bottom: 32px;
-    .covid_container {
-        .covid_title {
+    .important3_container {
+        .important3_title {
             line-height: 56px;
             margin-bottom: 28px;
             // line-height: 48px;
@@ -1248,10 +1286,10 @@ body {
             // align-items: center;
             color: $black;
         }
-        .covid_body {
+        .important3_body {
             display: flex;
             gap: 44px;
-            .covid_text {
+            .important3_text {
                 // line-height: 25px;
                 /* identical to box height */
                 // text-align: center;
@@ -1260,17 +1298,23 @@ body {
                 color: $black;
                 font-weight: 450 !important;
                 p {
-                    margin-top: 36px;
+                    margin-top: 81px;
+                    line-height: 25px;
+                    // display: flex;
+                    // align-items: center;
+                    color: $black;
                 }
                 a {
+                    max-width: 203px;
                     background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
                     border-radius: 50px;
+                    margin-bottom: 113px;
+                    padding: 13px 64px;
                     // line-height: 25px;
                     /* identical to box height */
-                    margin-top: 24px;
-                    padding: 13px 64px;
+                    // text-align: center;
+                    flex-basis: content;
                     color: $white;
-                    max-width: 203px;
                 }
             }
         }

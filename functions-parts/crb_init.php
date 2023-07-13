@@ -24,5 +24,6 @@ function register_custom_fields() {
     require get_template_directory() . '/inc/custom-fields/depart_stacionar_options.php';
     require get_template_directory() . '/inc/custom-fields/reception_options.php';
     require get_template_directory() . '/inc/custom-fields/travmpunkt_options.php';
+    require get_template_directory() . '/inc/custom-fields/news_options.php';
 
 }

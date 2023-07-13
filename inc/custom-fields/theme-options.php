@@ -47,6 +47,7 @@ $basic_options_container = Container::make( 'theme_options', __( 'Theme options'
             ->set_width(33),
         Field::make( 'text', 'vk', __( 'VKontakte', 'policlinic' ) )
             ->set_attribute( 'placeholder', 'vk.com/example' )
+            ->set_attribute('type', 'url')
             ->set_width(33),
         Field::make( 'text', 'tg', __( 'Telegram', 'policlinic' ) )
             ->set_attribute( 'placeholder', 'example' )
@@ -56,15 +57,19 @@ $basic_options_container = Container::make( 'theme_options', __( 'Theme options'
             ->set_width(33),
         Field::make( 'text', 'inst', __( 'Instagram', 'policlinic' ) )
             ->set_attribute( 'placeholder', 'instagram.com/example' )
+            ->set_attribute('type', 'url')
             ->set_width(33),
         Field::make( 'text', 'twitter', __( 'Twitter', 'policlinic' ) )
             ->set_attribute( 'placeholder', 'Twitter.com/example' )
+            ->set_attribute('type', 'url')
             ->set_width(33),
         Field::make( 'text', 'ok', __( 'Odnoklasniki', 'policlinic' ) )
             ->set_attribute( 'placeholder', 'ok.ru/example' )
+            ->set_attribute('type', 'url')
             ->set_width(33),
         Field::make( 'text', 'fb', __( 'Facebook', 'policlinic' ) )
             ->set_attribute( 'placeholder', 'facebook.com/example' )
+            ->set_attribute('type', 'url')
             ->set_width(33),
         Field::make( 'text', 'cf7', __( 'Contact form', 'policlinic' ) )
             ->set_attribute( 'placeholder', '[contact-form-7 id="1" title="Contact form 1"]' )  

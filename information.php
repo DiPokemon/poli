@@ -33,7 +33,6 @@ Template Name: Шаблон страницы Информация по прав�
             <?php endforeach ?>
                 <ul class="page_information_list">
                     <?php
-                    // Assuming $contactsData is an array containing the data for the "contacts" container
 
                     foreach ($contacts as $contact) {
                         $title = $contact['title'];
@@ -129,16 +128,7 @@ Template Name: Шаблон страницы Информация по прав�
     
     <?php endforeach ;?> 
     </div>
-    <!-- <style>
-        .block_item {
-          width: 290px; 
-          height: 110px; 
-          text-align: center; 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-    </style> -->
+    
     
 
 

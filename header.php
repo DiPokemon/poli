@@ -47,11 +47,11 @@
                        
                     <!-- </nav> -->
                     <nav class="header_top_social social">
-                      <div class="social_item"><a href="#"><i class="fa-brands fa-odnoklassniki"></i></a></div>
-                      <div class="social_item"><a href="#"><i class="fa-brands fa-vk"></i></a></div> 
-                      <div class="social_item"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
-                      <div class="social_item"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
-                      <div class="social_item"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+                      <div class="social_item"><a href="<?php echo carbon_get_theme_option('ok'); ?>"><i class="fa-brands fa-odnoklassniki"></i></a></div>
+                      <div class="social_item"><a href="<?php echo carbon_get_theme_option('vk'); ?>"><i class="fa-brands fa-vk"></i></a></div> 
+                      <div class="social_item"><a href="<?php echo carbon_get_theme_option('inst'); ?>"><i class="fa-brands fa-instagram"></i></a></div>
+                      <div class="social_item"><a href="<?php echo carbon_get_theme_option('twitter'); ?>"><i class="fa-brands fa-twitter"></i></a></div>
+                      <div class="social_item"><a href="<?php echo carbon_get_theme_option('fb'); ?>"><i class="fa-brands fa-facebook"></i></a></div>
                     
                     
                     

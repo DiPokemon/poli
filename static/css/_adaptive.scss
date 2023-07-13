@@ -74,7 +74,7 @@
                     .menu-item {
                         .menu_link {
                             span {
-                                // font-weight: 500;
+                                font-weight: 500;
                                 // font-size: 15px;
                             }
                         }
@@ -200,4 +200,15 @@
     }
 
 }
+
+
+
+
+// otdelenia 
+@media(max-width: 850px){
+    .display-flex{
+        margin-bottom: 100px !important;
+    }
+}
+
 

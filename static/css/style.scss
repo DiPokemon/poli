@@ -2171,6 +2171,7 @@ body {
         gap: 15px;
         align-items: center;
         margin-bottom: 32px;
+        flex-wrap: wrap;
         .sout_item {
             border-radius: 10px;
             background: $light_blue;

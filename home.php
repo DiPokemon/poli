@@ -130,7 +130,7 @@ Template Name: Main page
     <div>
         <div class="slider_background">
             <div class="slider_wrapper">
-            <div class="main_banner">
+            <div class="main_important_info">
                 <?php foreach( $inf_important_banners as $banner ) : ?>
                     <?php if ($banner['main_banner_url']) : ?>
                         <a href="<?=$banner['inf_important_banner_url']?>" class="banner">

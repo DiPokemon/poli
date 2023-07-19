@@ -618,10 +618,10 @@ body {
   display: none;
 }
 .important_information .information_important_info .slick-list {
-  margin: 0 -32x !important;
+  margin: 0 -16x !important;
 }
 .important_information .information_important_info .banner {
-  margin: 0 32px !important;
+  margin: 0 16px !important;
 }
 .important_information .information_important_info .banner img {
   width: 100%;

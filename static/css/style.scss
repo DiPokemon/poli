@@ -414,6 +414,15 @@ body {
         }
     }
 
+    
+}
+
+.important_information {
+    .slick-prev,
+    .slick-next {
+        display: none;
+    }
+
     .information_important_info{
         .banner{
             img{
@@ -422,13 +431,6 @@ body {
             }
 
         }
-    }
-}
-
-.important_information {
-    .slick-prev,
-    .slick-next {
-        display: none;
     }
 }
 

@@ -612,14 +612,14 @@ body {
           align-items: center;
   color: #013236;
 }
-.important_information_container .information_important_info .banner img {
-  width: 100%;
-  border-radius: 10px;
-}
 
 .important_information .slick-prev,
 .important_information .slick-next {
   display: none;
+}
+.important_information .information_important_info .banner img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .news_container {

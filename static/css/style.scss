@@ -819,7 +819,8 @@ body {
 }
 
 .slider_background {
-    height: 481px;
+    max-height: 481px;
+    height: 25vw;
     background: $slider_background;
     padding-top: 63px;
     // max-width: 1920px;

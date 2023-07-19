@@ -1031,7 +1031,8 @@ body {
 }
 
 .slider_background {
-  height: 481px;
+  max-height: 481px;
+  height: 25vw;
   background: -webkit-gradient(linear, left top, left bottom, from(#69C5CD), color-stop(52.08%, #45A6AF), to(#00616A));
   background: linear-gradient(180deg, #69C5CD 0%, #45A6AF 52.08%, #00616A 100%);
   padding-top: 63px;

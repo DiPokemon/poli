@@ -6,7 +6,7 @@ $(document).ready(function() {
         var $information_banner = $(sliderWrap).find('.information_banner');
 
 
-        var $main_important_info = $(sliderWrap).find('.main_important_info');
+        var $main_important_info = $(sliderWrap).find('.information_important_info');
 
         $main_banner.slick({
             infinite: true,

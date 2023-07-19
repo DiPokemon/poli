@@ -60,5 +60,23 @@ Template Name: Приемное отделение стационара
 
 
     </div>
+
+
 </section>
+
+<style>
+
+  @media (max-width:1122px) {
+    .header-card{
+        width: 100%;
+    }
+    .cards-for-text{
+        
+        margin-right:0px;
+        width: 100%;
+    }
+    
+  }
+
+</style>
 <?php get_footer(); ?>

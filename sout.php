@@ -10,10 +10,9 @@ Template Name: Шаблон страницы Результаты СОУТ
     <div class="page_sout_container container">
         <h2 class="page_sout_title font_w700_s60">Результаты СОУТ</h2>
         <div class="sout_block">
-            <div class="sout_item font_w600_s18"><a href="#">Перечень мероприятий<br> Городская больница №4<br> города Ростова-на-Дону</a></div>
-            <div class="sout_item font_w600_s18"><a href="#">Результаты СОУТ 2022</a></div>
-            <div class="sout_item font_w600_s18"><a href="#">Результаты СОУТ</a></div>
-        </div>
+            <?php foreach($sout as $sout) :?>
+            <div class="sout_item font_w600_s18"><a href="<?=$sout['url']?>"></a><?=$sout['title']?></div>
+            <?php endforeach ;?>
     </div>
 </section>
 

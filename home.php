@@ -130,7 +130,7 @@ Template Name: Main page
     <div>
         <div class="slider_background">
             <div class="slider_wrapper">
-            <div class="main_important_info">
+            <div class="information_important_info">
                 <?php foreach( $inf_important_banners as $banner ) : ?>
                     <?php if ($banner['main_banner_url']) : ?>
                         <a href="<?=$banner['inf_important_banner_url']?>" class="banner">
@@ -224,16 +224,7 @@ Template Name: Main page
     <?php if ($gallery_banners) :?>
     <div class="slider_background_gallery">
         <div class="slider_wrapper">
-            
-            <div class="main_gallery">
-                <?php foreach( $gallery_banners as $banner) : ?>
-                    <?php if($banner):?>
-                        <img src="<?=$banner['gallery_banner_desk']?>" alt="<?=$banner['gallery_banner_alt']?>" title="<?=$banner['gallery_banner_title']?>" class="gallery_slide">
-                    <?php endif ?>                    
-                <?php endforeach ?>
-            </div>
-
-            <!--<div class="main_banner">
+            <div class="gallery_banner">
                 <?php foreach( $gallery_banners as $banner) : ?>
                     <?php if ($banner['gallery_banner_url']) :?>
                         <a href="<?=$banner['gallery_banner_url']?>" class="banner">
@@ -250,7 +241,7 @@ Template Name: Main page
                     <?php endif; ?>
                 <?php endforeach; ?>
     <?php endif; ?>
-                    -->
+                    
 
                 
                 <!-- Добавьте другие ссылки с изображениями по аналогии -->
@@ -329,11 +320,11 @@ Template Name: Main page
 
                 
                 <nav class="header_top_social social">
-                <div class="social_item"><a href="#"><i class="fa-brands fa-odnoklassniki"></i></a></div>
-                <div class="social_item"><a href="#"><i class="fa-brands fa-vk"></i></a></div> 
-                <div class="social_item"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
-                <div class="social_item"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
-                <div class="social_item"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+                <div class="social_item"><a href="<?= carbon_get_theme_option('ok')?>"><i class="fa-brands fa-odnoklassniki"></i></a></div>
+                <div class="social_item"><a href="<?= carbon_get_theme_option('vk')?>"><i class="fa-brands fa-vk"></i></a></div> 
+                <div class="social_item"><a href="<?= carbon_get_theme_option('inst')?>"><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="social_item"><a href="<?= carbon_get_theme_option('twitter')?>"><i class="fa-brands fa-twitter"></i></a></div>
+                <div class="social_item"><a href="<?= carbon_get_theme_option('fb')?>"><i class="fa-brands fa-facebook"></i></a></div>
                 </nav>
                 
             </div>

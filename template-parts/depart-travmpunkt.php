@@ -87,4 +87,42 @@ Template Name: Взрослый и детский травмпункт
 
         </div>
     </section>
+
+
+    <style>
+        @media (max-width:1122px) {
+    .header-card{
+        width: 100%;
+    }
+    .cards-for-text{
+        
+        margin-right:0px;
+        width: 100%;
+    }
+    
+  }
+       @media (max-width:1212px) {
+    .header-card img {
+      width: 150px;
+         }
+
+   .card-img img{
+        width:500px;
+    }
+    .cards{
+        justify-content:center !important;
+
+    }
+ }
+ @media (max-width:1045px){
+   .card-img img{
+        width:400px;
+    }
+ }
+ @media (max-width:845px){
+   .card-img img{
+        width:320px;
+    }
+ }
+    </style>
     <?php get_footer(); ?>

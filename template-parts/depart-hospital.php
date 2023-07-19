@@ -66,5 +66,20 @@ Template Name: Отделения Городской больницы №4
 
 
     </section>
+
+
+
+
+
+    
+    <style>
+        @media(max-width: 1200px){
+                   .display-flex{
+                    justify-content: center !important; 
+
+        }
+        }
+ 
+    </style>
     
     <?php get_footer(); ?>

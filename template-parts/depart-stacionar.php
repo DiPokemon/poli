@@ -46,5 +46,28 @@ Template Name: Общая информация о стационаре
 
 
     </div>
+    <style>
+ @media (max-width:1212px) {
+  .twise-card  img{
+        width:500px;
+    }
+    .cards{
+        justify-content:flex-start;
+    }
+ }
+ @media (max-width:1045px){
+   .twise-card img{
+        width:400px;
+    }
+ }
+ @media (max-width:845px){
+  .twise-card  img{
+        width:320px;
+    }
+ }
+
+
+
+    </style>
 </section>
 <?php get_footer(); ?>

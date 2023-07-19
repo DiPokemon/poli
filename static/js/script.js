@@ -2,6 +2,24 @@ $(document).ready(function(){
 	$('.about_slider_top').slick({
         arrows: false,
         slidesToShow: 4,
+        responsive: [
+          {
+              breakpoint: 1200,
+              settings: {
+                arrows: false,
+                centerMode: false,
+                slidesToShow: 3,
+              }
+          },
+          {
+            breakpoint: 900,
+            settings: {
+              arrows: false,
+              centerMode: false,
+              slidesToShow: 2,
+            }
+        },
+      ]
     });
 });
 $(document).ready(function(){
@@ -13,8 +31,16 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$('.news_prevention_slider').slick({
-        arrows: false,
-        slidesToShow: 3,
+        // arrows: false,
+        // slidesToShow: 3,
+        infinite: true,
+            autoplay: false,
+            slidesToShow: 1,
+            centerMode: true,
+            slidesToScroll: 1,
+            variableWidth: true,
+            dots: false,
+            centerPadding: '0px',
     });
 });
 
@@ -22,13 +48,44 @@ $(document).ready(function(){
 	$('.slider_time_limits').slick({
         arrows: false,
         slidesToShow: 3,
+        responsive: [
+          {
+              breakpoint: 1200,
+              settings: {
+                arrows: false,
+                centerMode: false,
+                slidesToShow: 2,
+                centerPadding: '10px',
+              }
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              arrows: false,
+              centerMode: false,
+              slidesToShow: 1,
+              centerPadding: '10px',
+            }
+        },
+      ]
+      
     });
 });
 
 $(document).ready(function(){
 	$('.slider_patient_routing').slick({
         arrows: false,
-        slidesToShow: 3,
+        slidesToShow: 2,
+        responsive: [
+          {
+              breakpoint: 800,
+              settings: {
+                arrows: false,
+                centerMode: false,
+                slidesToShow: 1
+              }
+          },
+      ]
   });
   
   $('.slider_free_medical').slick({

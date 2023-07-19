@@ -15,14 +15,7 @@ Container::make('post_meta', __('About Page Fields', 'policlinic'))
                     ->help_text('Информация о больнице')
                     ->set_width(80)
             )),
-        Field::make('complex', 'text_information', __('абзац текста'))
-            ->add_fields('text_information', __('абзац текста'),array(
-                Field::make('textarea', 'text_paragraph', __('paragraph of text'))
-                    ->set_rows(3)
-                    ->help_text('Информация о больнице')
-                    ->set_width(80),
-
-            )),
+        
         Field::make('complex', 'about_banners', __('About banners'))
             ->add_fields('about_banner_items', __('Banner'),array(
                 Field::make('image', 'about_banner_desk', __('Banner for desktop'))
@@ -36,6 +29,7 @@ Container::make('post_meta', __('About Page Fields', 'policlinic'))
                 Field::make('text', 'about_banner_title', __('Title'))
                     ->set_width(20),
                 Field::make('text', 'about_banner_url', __('URL'))
+                    ->set_attribute('type', 'url')
                     ->set_width(20),
             )),
         Field::make('complex', 'licenses', __('Лицензии на осуществление медицинской деятельности'))
@@ -51,7 +45,7 @@ Container::make('post_meta', __('About Page Fields', 'policlinic'))
 
             )),
         Field::make('complex', 'bottom_slider', __('Общественный совет больницы'))
-            ->add_fields('bottom_slider', __('нижний Slider'),array(
+            ->add_fields('bottom_slider', __('нижний блок с ссылками'),array(
                 Field::make('text', 'title', __('Заголовок'))
                     ->set_width(20),
                 Field::make('text', 'url', __('ссылка '))

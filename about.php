@@ -15,12 +15,8 @@ Template Name: Шаблон страницы О больнице
 
       <img src="<?=$about_ambulance['about_page_image']?>" />
 
-      <?php endforeach; ?>
-    <?php endif; ?>
-<?php if ($text_information) :?>
-  <?php foreach($text_information as $text_information):?>
       <div class="text_top font_w400_s18">
-          <p> <?=$text_information['text_paragraph'] ?> </p>
+          <p> <?=nl2br(htmlspecialchars($about_ambulance['about_info']))?> </p>
         </div>
         <br>
         <?php endforeach; ?>
@@ -90,7 +86,7 @@ Template Name: Шаблон страницы О больнице
        </div>
 
       <h3 class="subtitle_bottom font_w700_s35">Общественный совет больницы</h3>
-      <style>
+      <!-- <style>
         .block_item {
           width: 290px; 
           height: 110px; 
@@ -99,17 +95,17 @@ Template Name: Шаблон страницы О больнице
           justify-content: center;
           align-items: center;
         }
-      </style>
-      <div class="block_row" style="width: 290px; height: 110px;">
-           <?php if ($bottom_slider) :?>
+      </style> -->
+          <div class="block_row">
+          <?php if ($bottom_slider) :?>
             <?php foreach($bottom_slider as $slider) :?>
-              <div class="block_item font_w600_s18"><a href="<?=$slider['url']?>"><?=$slider['title']?></a></div>
-              <?php endforeach ;?>
-        <?php endif ;?> 
 
-
-      </div>
-
+      <div class="block_item font_w600_s18"><a href="<?=$slider['url']?>"><?=$slider['title']?></a></div>
+              
+            <?php endforeach ;?>
+          <?php endif ;?> 
+          
+          </div>
 
       
 

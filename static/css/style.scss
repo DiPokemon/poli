@@ -424,13 +424,19 @@ body {
     }
 
     .information_important_info{
+
+        .slick-list{
+            margin: 0 -32x;
+        }
         .banner{
+            margin: 0 32px;
             img{
                 width: 100%;
                 border-radius: 10px;
             }
-
         }
+
+
     }
 }
 
@@ -825,9 +831,9 @@ body {
             display: none !important;
         }
     }
-    .slick-slide {
-        margin-right: 32px;
-    }
+    // .slick-slide {
+    //     margin-right: 32px;
+    // }
     .slick-dots {
         li button:before {
             top: 62px;

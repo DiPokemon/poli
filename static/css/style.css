@@ -617,6 +617,12 @@ body {
 .important_information .slick-next {
   display: none;
 }
+.important_information .information_important_info .slick-list {
+  margin: 0 -32x;
+}
+.important_information .information_important_info .banner {
+  margin: 0 32px;
+}
 .important_information .information_important_info .banner img {
   width: 100%;
   border-radius: 10px;
@@ -1036,9 +1042,6 @@ body {
 }
 .slider_background .slider_wrapper .slick-arrow {
   display: none !important;
-}
-.slider_background .slick-slide {
-  margin-right: 32px;
 }
 .slider_background .slick-dots li button:before {
   top: 62px;

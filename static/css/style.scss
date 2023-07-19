@@ -413,6 +413,16 @@ body {
             color: $blue_h2;
         }
     }
+
+    .information_important_info{
+        .banner{
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+
+        }
+    }
 }
 
 .important_information {

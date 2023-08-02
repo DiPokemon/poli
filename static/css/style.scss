@@ -819,15 +819,21 @@ body {
 }
 
 .slider_background {
-    max-height: 481px;
-    height: 25vw;
+    // display:inline-flex;
+    // align-items: center;
+    // max-height: 481px;
+    height: 27vw;
     background: $slider_background;
-    padding-top: 63px;
+    padding-top: 50px;
+    // padding-bottom: 63px;
     // max-width: 1920px;
     // margin: 0 auto;
     .slider_wrapper {
         max-width: 1920px;
         margin: 0 auto;
+        img {
+            width: 100%;
+        }
         .slick-arrow {
             display: none !important;
         }

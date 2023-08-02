@@ -484,7 +484,7 @@ body {
         display: flex;
         justify-content: center;
         .news_buttom-link {
-            background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+            background: linear-gradient(45deg, $red 0%, $pink 100%);
             border-radius: 50px;
             padding: 12px 48px;
             color: $white;

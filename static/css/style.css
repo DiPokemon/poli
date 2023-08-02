@@ -693,7 +693,7 @@ body {
           justify-content: center;
 }
 .news_container .news_buttom .news_buttom-link {
-  background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+  background: linear-gradient(45deg, #E80B8B 0%, #FF8ED0 100%);
   border-radius: 50px;
   padding: 12px 48px;
   color: #ffffff;

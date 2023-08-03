@@ -460,6 +460,10 @@ body {
     .news_body {
         display: flex;
         gap: 64px;
+        img {
+            width: 380px;
+            // height: 328px;
+        }
         .news_posts {
             display: flex;
             flex-direction: column;

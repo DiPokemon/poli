@@ -655,6 +655,9 @@ body {
   display: flex;
   gap: 64px;
 }
+.news_container .news_body img {
+  width: 380px;
+}
 .news_container .news_body .news_posts {
   display: -webkit-box;
   display: -ms-flexbox;

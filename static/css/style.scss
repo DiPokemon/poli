@@ -485,6 +485,7 @@ body {
     }
     .news_buttom {
         margin-top: 24px;
+        margin-bottom: 32px;
         display: flex;
         justify-content: center;
         .news_buttom-link {
@@ -1237,9 +1238,9 @@ body {
         .important1_text {
             display: inline-flex;
             flex-direction: column;
-            gap: 24px;
+            // gap: 24px;
             p {
-                margin-top: 81px;
+                // margin-top: 81px;
                 line-height: 25px;
                 // display: flex;
                 // align-items: center;
@@ -1247,6 +1248,7 @@ body {
             }
             a {
                 max-width: 203px;
+                max-height: 50px;
                 background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
                 border-radius: 50px;
                 margin-bottom: 113px;
@@ -1280,7 +1282,7 @@ body {
             color: $black;
             display: block;
             p {
-                margin-top: 81px;
+                // margin-top: 81px;
                 line-height: 25px;
                 // display: flex;
                 // align-items: center;

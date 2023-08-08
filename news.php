@@ -124,6 +124,14 @@ foreach ($news_feed as $item) :
        </h3>
        
        <div class="news_body">
+       <div class="news_img">
+           
+           <?php
+                // Получение значения кастомного поля из Theme Options
+                $image_news = carbon_get_theme_option('custom_image');                
+            ?>                      
+            <img width="430" height="328" src="<?=$image_news ?>" alt="Изображение">
+            </div>
            <div class="news_posts">
            <ul class="news_posts_items1">
                 <li></li>
@@ -151,12 +159,6 @@ foreach ($news_feed as $item) :
             ?>
            </div>
            
-           <?php
-                // Получение значения кастомного поля из Theme Options
-                $image_news = carbon_get_theme_option('custom_image');                
-            ?>                      
-            <img width="430" height="328" src="<?=$image_news ?>" alt="Изображение">
-            </div>
        </div>
        <div class="news_buttom">
        <a href="#" class="news_buttom-link">Все новости</a>

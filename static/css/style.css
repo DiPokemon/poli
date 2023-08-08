@@ -1331,15 +1331,16 @@ body {
 }
 .announcement_container .announcement_body .announcement_text {
   line-height: 25px;
-  padding-top: 48px;
   color: #000000;
   display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .announcement_container .announcement_body .announcement_text li {
   line-height: 2;
 }
 .announcement_container .announcement_body .announcement_text p {
-  margin-top: 81px;
   line-height: 25px;
   color: #000000;
 }

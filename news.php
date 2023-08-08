@@ -150,7 +150,6 @@ foreach ($news_feed as $item) :
             wp_reset_postdata();
             ?>
            </div>
-           <div class="news_img">
            
            <?php
                 // Получение значения кастомного поля из Theme Options

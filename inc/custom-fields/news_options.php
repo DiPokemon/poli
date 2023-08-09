@@ -36,7 +36,11 @@ Container::make('post_meta', 'Новости')
                         Field::make('text', 'button', 'Открыть')
                             ->set_width(50)
                             ->set_attribute('type', 'url'),
-                            ))
+                    )),
+                    Field::make('textarea', 'content-dop', 'Информация доп ')
+                    ->set_rows(4)
+                    ->set_width(50),
+
                 
                     )),
     ))

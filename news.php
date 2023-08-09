@@ -105,6 +105,9 @@ foreach ($news_feed as $item) :
             <?php endforeach; ?>
           </div>
         <?php endif; ?>
+        <?php if (!empty($item['content-dop'])) : ?>
+          <p class="<?= $current_title_class ?> font_w400_s18"><?= nl2br(htmlspecialchars($item['content-dop'])) ?></p>
+        <?php endif; ?>
       </div>
     </div>
   </div>

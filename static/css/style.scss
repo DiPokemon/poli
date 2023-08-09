@@ -414,8 +414,6 @@ body {
             color: $blue_h2;
         }
     }
-
-    
 }
 
 .important_information {
@@ -423,21 +421,17 @@ body {
     .slick-next {
         display: none;
     }
-
-    .information_important_info{
-
-        .slick-list{
+    .information_important_info {
+        .slick-list {
             margin: 0 -16x!important;
         }
-        .banner{
+        .banner {
             margin: 0 16px!important;
-            img{
+            img {
                 width: 100%;
                 border-radius: 10px;
             }
         }
-
-
     }
 }
 
@@ -1047,7 +1041,6 @@ body {
     }
     .block_row {
         display: flex;
-        
         gap: 10px;
         margin-bottom: 32px;
         flex-wrap: wrap;
@@ -1171,7 +1164,6 @@ body {
     .prevention_slider {
         min-height: 300px;
         margin-bottom: 32px;
-        
     }
 }
 
@@ -1218,10 +1210,10 @@ body {
                 // text-align: center;
                 flex-basis: content;
                 color: $white;
-             }
+            }
         }
     }
-}    
+}
 
 .important1 {
     background: $background_cf;
@@ -1263,7 +1255,6 @@ body {
         }
     }
 }
-
 
 .important2_container {
     .important2_title {
@@ -1492,33 +1483,33 @@ body {
                         flex-grow: 1;
                         display: flex;
                         .wpcf7-form-control::placeholder {
-                        font-family: $font_opensans;
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 18px;
-                        line-height: 25px;
-                        color: $text_cf7;
-                        padding: 12px 0 0 14px;
-                    }
-                    .wpcf7-text {
-                        flex-grow: 1;
-                        margin: 0 40px 16px 40px;
-                        // width: 100%;
-                        min-height: 45px;
-                        background: $white;
-                        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
-                        border-radius: 5px;
-                    }
-                    textarea {
-                        margin: 0 40px 26px 40px;
-                        flex-grow: 1;
-                        max-height: 90px;
-                        background: $white;
-                        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
-                        border-radius: 5px;
+                            font-family: $font_opensans;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 25px;
+                            color: $text_cf7;
+                            padding: 12px 0 0 14px;
+                        }
+                        .wpcf7-text {
+                            flex-grow: 1;
+                            margin: 0 40px 16px 40px;
+                            // width: 100%;
+                            min-height: 45px;
+                            background: $white;
+                            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+                            border-radius: 5px;
+                        }
+                        textarea {
+                            margin: 0 40px 26px 40px;
+                            flex-grow: 1;
+                            max-height: 90px;
+                            background: $white;
+                            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+                            border-radius: 5px;
+                        }
                     }
                 }
-            }
             }
         }
         .cf7_title {
@@ -1750,7 +1741,6 @@ body {
                     // display: flex;
                     // align-items: center;
                     color: $black;
-                    
                 }
             }
         }
@@ -1775,7 +1765,6 @@ body {
             .block_item {
                 margin: 0 10px;
                 a {
-                    
                     color: $black;
                     line-height: 25px;
                 }
@@ -1783,7 +1772,6 @@ body {
             p {
                 margin: 0 31px;
                 line-height: 25px;
-                
             }
             .paychek_item6 {
                 margin: 0 20px;
@@ -2229,7 +2217,6 @@ body {
 //     margin: 0;
 //     padding: 0;
 // }
-
 .search {
     display: flex;
     justify-content: center;
@@ -2296,7 +2283,6 @@ body {
 .for-margin {
     margin-top: 32px;
 }
-
 
 .for-margin {
     p {
@@ -2491,7 +2477,7 @@ body {
     font-size: 18px;
     font-family: "Open Sans";
     position: relative;
-    margin-top: 122px;
+    margin-top: 105px;
 }
 
 .depart-travmpunkt {
@@ -2501,6 +2487,5 @@ body {
         justify-content: flex-start;
     }
 }
-
 
 @import "adaptive";

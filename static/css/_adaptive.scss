@@ -28,6 +28,24 @@
     }
 }
 
+@media(max-width: 1210px) {
+    .twise-card {
+        img {
+            width: 400px;
+            height: 300px;
+        }
+    }
+}
+
+@media(max-width: 840px) {
+    .twise-card {
+        img {
+            width: 350px;
+            height: 250px;
+        }
+    }
+}
+
 @media(max-width: 1024px) {
     .header_top {
         .header_top_menu {
@@ -201,8 +219,11 @@
 
 // otdelenia 
 @media(max-width: 850px) {
+    // .display-flex {
+    //     margin-bottom: 100px !important;
+    // }
     .display-flex {
-        margin-bottom: 100px !important;
+        flex-wrap: wrap;
     }
 }
 
@@ -218,5 +239,7 @@
         height: 70vw;
     }
 }
+
+@media(max-width: 1090px) {}
 
 // ------------------------

@@ -157,6 +157,9 @@
             }
         }
     }
+    .administration_paycheck {
+        padding-left: 12px;
+    }
 }
 
 // @media(max-width: 900px) {
@@ -175,15 +178,11 @@
 //         }
 //     }
 // }
-
-
-
 @media(max-width: 1140px) {
     .for-flex {
         img {
             margin-left: 10px;
         }
-       
     }
     .announcement_container {
         .announcement_text {
@@ -198,31 +197,26 @@
             width: 100%;
         }
     }
-
 }
 
-
-
-
 // otdelenia 
-@media(max-width: 850px){
-    .display-flex{
+@media(max-width: 850px) {
+    .display-flex {
         margin-bottom: 100px !important;
     }
 }
 
 //-------- slider important home page 
-@media(max-width: 1024px){
-.slider_background {
-    height: 38vw;
+@media(max-width: 1024px) {
+    .slider_background {
+        height: 38vw;
+    }
 }
 
-}
-
-@media(max-width: 767px){
+@media(max-width: 767px) {
     .slider_background {
         height: 70vw;
     }
-    
-    }
-    // ------------------------
+}
+
+// ------------------------

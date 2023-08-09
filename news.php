@@ -100,8 +100,7 @@ foreach ($news_feed as $item) :
           <div>
             <?php foreach ($item['buttons'] as $button) : ?>
               <?php if (!empty($button['button_text']) && !empty($button['button'])) : ?>
-                <p class="<?= $current_title_class ?> font_w400_s18"><?= nl2br(htmlspecialchars($button['button_text'])) ?></p>
-                <a href="<?= $button['button'] ?>" class="<?= $current_title_class ?> font_w400_s18">Открыть</a>
+                <a href="<?= $button['button'] ?>" class="<?= $current_title_class ?> font_w400_s18"><?= nl2br(htmlspecialchars($button['button_text'])) ?></a>
               <?php endif; ?>
             <?php endforeach; ?>
           </div>

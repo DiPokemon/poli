@@ -2585,7 +2585,7 @@ body {
 
 .search-input {
   width: 90%;
-  height: 100%;
+  height: 50%;
   border: none;
   outline: none;
   font-size: 20px;
@@ -2674,8 +2674,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-bottom: 28px;
 }
 
@@ -2729,7 +2727,7 @@ body {
   font-size: 18px;
   font-family: "Open Sans";
   position: relative;
-  margin-top: 122px;
+  margin-top: 105px;
 }
 
 .depart-travmpunkt .cards {
@@ -2738,6 +2736,11 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.twise-card img {
+  width: 585px;
+  height: 389px;
 }
 
 @media (max-width: 1200px) {
@@ -2757,6 +2760,18 @@ body {
   }
   .header_bottom .header_bottom_menu .menu_list {
     gap: 10px;
+  }
+}
+@media (max-width: 1210px) {
+  .twise-card img {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (max-width: 840px) {
+  .twise-card img {
+    width: 350px;
+    height: 250px;
   }
 }
 @media (max-width: 1024px) {
@@ -2851,7 +2866,8 @@ body {
 }
 @media (max-width: 850px) {
   .display-flex {
-    margin-bottom: 100px !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media (max-width: 1024px) {

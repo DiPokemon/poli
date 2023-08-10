@@ -1359,6 +1359,7 @@ body {
     .important3_title {
         margin-top: 32px;
         margin-bottom: 28px;
+        padding-top: 28px;
         // line-height: 48px;
         /* identical to box height */
         color: $black;
@@ -2188,9 +2189,9 @@ body {
             box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
             // flex-basis: 380px;
-            max-width: 380px;
+            width: 32%;
             // flex-shrink: 2;
-            flex-grow: 1;
+            // flex-grow: 1;
             min-height: 106px;
             padding: 0 20px;
             a {
@@ -2212,8 +2213,8 @@ body {
             background: #E5F2F4;
             box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
-            max-width: 380px;
-            flex-grow: 1;
+            width: 32%;
+            // flex-grow: 1;
             min-height: 106px;
             padding: 0 20px;
             a {

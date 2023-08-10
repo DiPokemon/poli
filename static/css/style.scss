@@ -162,11 +162,17 @@ body {
                         }
                     }
                     .sub-menu {
+                        position: absolute;
+                        background: $header_bg;
+                        z-index: 1;
+                        border-radius: 5px;
+                        margin-top: 10px;
+                        padding: 5px;
                         span {
                             color: $white;
                             position: relative;
                             z-index: 120;
-                            background: $header_bg;
+                            // background: $header_bg;
                             border-radius: 5px;
                         }
                     }

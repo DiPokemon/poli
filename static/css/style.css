@@ -349,11 +349,18 @@ body {
   position: relative;
   z-index: 100;
 }
+.header_bottom .header_container .header_bottom_menu .menu_list .menu-item .sub-menu {
+  position: absolute;
+  background: #45A6AF;
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 5px;
+}
 .header_bottom .header_container .header_bottom_menu .menu_list .menu-item .sub-menu span {
   color: #ffffff;
   position: relative;
   z-index: 120;
-  background: #45A6AF;
   border-radius: 5px;
 }
 

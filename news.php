@@ -66,14 +66,15 @@ Template Name: Шаблон страницы Новости
 
 
 <?php
-$section_classes = ["announcement_container","important1", "important2_container", ]; // Define an array of section classes
+$section_classes = ["announcement_container","important1", "important2_container","important3_container" ]; // Define an array of section classes
 $class_index = 0; // Initialize the class index
-$body_classes = ["announcement_body","important1_body", "important2_body", ];
+$body_classes = ["announcement_body","important1_body", "important2_body","important3_body" ];
 $body_index = 0;
-$title_classes = ["announcement_title","important1_title", "important2_title", ];
+$title_classes = ["announcement_title","important1_title", "important2_title","important3_title" ];
 $title_index = 0;
-$text_classes = ["announcement_text","important1_text", "important2_text", ];
+$text_classes = ["announcement_text","important1_text", "important2_text","important3_text" ];
 $text_index = 0;
+
 
 foreach ($news_feed as $item) :
   $section_class = $section_classes[$class_index];

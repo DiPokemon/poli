@@ -1168,6 +1168,7 @@ body {
 }
 
 .announcement_container {
+    // background-color: #FF8ED0;
     display: flex;
     flex-direction: column;
     .announcement_title {
@@ -1203,7 +1204,7 @@ body {
                 max-width: 203px;
                 background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
                 border-radius: 50px;
-                margin-bottom: 113px;
+                // margin-bottom: 113px;
                 padding: 13px 64px;
                 // line-height: 25px;
                 /* identical to box height */
@@ -1296,51 +1297,102 @@ body {
     }
 }
 
-.important3 {
-    background: $background_blue;
-    padding-top: 28px;
-    margin-top: 32px;
-    padding-bottom: 32px;
-    .important3_container {
-        .important3_title {
-            line-height: 56px;
-            margin-bottom: 28px;
-            // line-height: 48px;
-            /* identical to box height */
+// .important3 {
+//     background: $background_blue;
+//     padding-top: 28px;
+//     margin-top: 32px;
+//     padding-bottom: 32px;
+//     .important3_container {
+//         display: flex;
+//         .important3_title {
+//             line-height: 56px;
+//             margin-bottom: 28px;
+//             // line-height: 48px;
+//             /* identical to box height */
+//             // display: flex;
+//             // align-items: center;
+//             color: $black;
+//         }
+//         .important3_body {
+//             display: flex;
+//             flex-direction: row;
+//             gap: 44px;
+//             .important3_text {
+//                 // line-height: 25px;
+//                 /* identical to box height */
+//                 // text-align: center;
+//                 align-items: start !important;
+//                 flex-direction: column;
+//                 color: $black;
+//                 font-weight: 450 !important;
+//                 p {
+//                     margin-top: 81px;
+//                     line-height: 25px;
+//                     // display: flex;
+//                     // align-items: center;
+//                     color: $black;
+//                 }
+//                 a {
+//                     max-width: 203px;
+//                     background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+//                     border-radius: 50px;
+//                     margin-bottom: 113px;
+//                     padding: 13px 64px;
+//                     // line-height: 25px;
+//                     /* identical to box height */
+//                     // text-align: center;
+//                     flex-basis: content;
+//                     color: $white;
+//                 }
+//             }
+//         }
+//     }
+// }
+.important3_container {
+    // background-color: #FF8ED0;
+    background-color: #F2F9FA;
+    display: flex;
+    flex-direction: column;
+    .important3_title {
+        margin-top: 32px;
+        margin-bottom: 28px;
+        // line-height: 48px;
+        /* identical to box height */
+        color: $black;
+    }
+    .important3_body {
+        display: flex;
+        gap: 44px;
+        // .announcement_img {}
+        .important3_text {
+            line-height: 25px;
             // display: flex;
             // align-items: center;
+            // padding-top: 48px;
             color: $black;
-        }
-        .important3_body {
-            display: flex;
-            gap: 44px;
-            .important3_text {
+            display: block;
+            align-items: center;
+            li {
+                line-height: 2;
+            }
+            p {
+                // margin-top: 81px;
+                line-height: 25px;
+                // display: flex;
+                // align-items: center;
+                color: $black;
+            }
+            a {
+                max-width: 203px;
+                background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                border-radius: 50px;
+                // margin-bottom: 113px;
+                padding: 13px 64px;
                 // line-height: 25px;
                 /* identical to box height */
                 // text-align: center;
-                align-items: start !important;
-                flex-direction: column;
-                color: $black;
-                font-weight: 450 !important;
-                p {
-                    margin-top: 81px;
-                    line-height: 25px;
-                    // display: flex;
-                    // align-items: center;
-                    color: $black;
-                }
-                a {
-                    max-width: 203px;
-                    background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-                    border-radius: 50px;
-                    margin-bottom: 113px;
-                    padding: 13px 64px;
-                    // line-height: 25px;
-                    /* identical to box height */
-                    // text-align: center;
-                    flex-basis: content;
-                    color: $white;
-                }
+                flex-basis: content;
+                color: $white;
             }
         }
     }

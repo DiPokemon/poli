@@ -2131,13 +2131,17 @@ body {
         margin-bottom: 63px;
         flex-wrap: wrap;
         .block_item {
+            display: flex;
             // min-width: 23%;
             line-height: 25px;
             justify-content: center;
             background: #E5F2F4;
             box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
-            width: 380px;
+            // flex-basis: 380px;
+            max-width: 380px;
+            // flex-shrink: 2;
+            flex-grow: 1;
             min-height: 106px;
             padding: 0 20px;
             a {
@@ -2153,12 +2157,14 @@ body {
         flex-wrap: wrap;
         .block_item {
             // min-width: 23%;
+            display: flex;
             line-height: 25px;
             justify-content: center;
             background: #E5F2F4;
             box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
-            width: 380px;
+            max-width: 380px;
+            flex-grow: 1;
             min-height: 106px;
             padding: 0 20px;
             a {
@@ -2192,7 +2198,7 @@ body {
         gap: 15px;
         align-items: center;
         margin-bottom: 32px;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         .sout_item {
             border-radius: 10px;
             background: $light_blue;

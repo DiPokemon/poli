@@ -1513,7 +1513,8 @@ body {
   border-top: 1px solid #DCDCDC;
   line-height: 25px;
   /* identical to box height */
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #055D65;
   display: block;
 }
@@ -2367,6 +2368,9 @@ body {
       flex-wrap: wrap;
 }
 .page_information_container .insurance_organizations_block .block_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   line-height: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2375,7 +2379,10 @@ body {
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  width: 380px;
+  max-width: 380px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   min-height: 106px;
   padding: 0 20px;
 }
@@ -2392,6 +2399,9 @@ body {
       flex-wrap: wrap;
 }
 .page_information_container .tabs_block .block_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   line-height: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2400,7 +2410,10 @@ body {
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  width: 380px;
+  max-width: 380px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   min-height: 106px;
   padding: 0 20px;
 }
@@ -2431,8 +2444,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 32px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .page_sout_container .sout_block .sout_item {
   border-radius: 10px;
@@ -2754,17 +2765,17 @@ body {
 
 @media (max-width: 1200px) {
   .header_container,
-  .container {
+.container {
     padding: 0px 10px;
   }
   .header_middle .header_container .site_identification .logo_text-link,
-  .header_middle .header_container .site_identification .header_phone i,
-  .header_middle .header_container .site_identification .header_phone-link,
-  .header_middle .header_container .site_identification .visually_impaired-link {
+.header_middle .header_container .site_identification .header_phone i,
+.header_middle .header_container .site_identification .header_phone-link,
+.header_middle .header_container .site_identification .visually_impaired-link {
     font-size: 16px;
   }
   .header_middle .header_container .site_identification .header_phone,
-  .header_middle .header_container .site_identification .visually_impaired {
+.header_middle .header_container .site_identification .visually_impaired {
     margin-left: 0;
   }
   .header_bottom .header_bottom_menu .menu_list {
@@ -2838,7 +2849,7 @@ body {
 }
 @media (max-width: 940px) {
   .other_right_column,
-  .hospital_left_column {
+.hospital_left_column {
     width: 50%;
   }
 }

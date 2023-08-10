@@ -93,35 +93,27 @@ foreach ($news_feed as $item) :
         <img width="430" height="280" src="<?= $item['feed_image'] ?>" alt="img">
       </div>
       <div class="<?= $current_text_class ?>">
-        <?php if (!empty($item['content'])) : ?>
-          <p class="<?= $current_title_class ?> font_w400_s18"><?= nl2br(htmlspecialchars($item['content'])) ?></p>
-        <?php endif; ?>
-        <!-- Блок кнопки с допконтентом -->
-        <?php if (isset($item['buttons']) && is_array($item['buttons'])) : ?>
-          <div>
+      <?php if (!empty($item['content'])) : ?>
+        <p class="<?= $current_title_class ?> font_w400_s18"><?= nl2br(htmlspecialchars($item['content'])) ?></p>
+      <?php endif; ?>
 
-          <?php
-// Получение всех ключей из первой новости для отладки
-$keys = array_keys($news_feed[3]);
-echo '<pre>';
-print_r($keys);
-echo '</pre>';
-?>
-
-
-            <?php foreach ($item['buttons'] as $button) : ?>
-              <?php if (!empty($button['button_text']) && !empty($button['button'])) : ?>
-                <a href="<?= $button['button'] ?>" class="<?= $current_title_class ?> font_w400_s18"><?= nl2br(htmlspecialchars($button['button_text'])) ?></a>
+      <?php if (isset($item['buttons']) && is_array($item['buttons'])) : ?>
+        <div>
+          <?php foreach ($item['buttons'] as $button) : ?>
+            <?php if (!empty($button['button_text']) && !empty($button['button'])) : ?>
+              <a href="<?= $button['button'] ?>" class="<?= $current_title_class ?> font_w400_s18"><?= nl2br(htmlspecialchars($button['button_text'])) ?></a>
+              <?php if (!empty($button['content-dop'])) : ?>
+                <p class="<?= $current_title_class ?> font_w400_s18"><?= nl2br(htmlspecialchars($button['content-dop'])) ?></p>
               <?php endif; ?>
-              <?php if (!empty($item['content_dop'])) : ?>
-                <p class="<?= $current_title_class ?> font_w400_s18"><?= nl2br(htmlspecialchars($item['content_dop'])) ?></p>
-              <?php endif; ?>
-            <?php endforeach; ?>
-          </div>
-        <?php endif; ?>
-        <!-- -------------------- -->
-        
-      </div>
+            <?php endif; ?>
+          <?php endforeach; ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if (!empty($item['content-dop'])) : ?>
+        <p class="<?= $current_title_class ?> font_w400_s18"><?= nl2br(htmlspecialchars($item['content-dop'])) ?></p>
+      <?php endif; ?>
+
     </div>
   </div>
 </section>

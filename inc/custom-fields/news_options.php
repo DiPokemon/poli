@@ -19,7 +19,7 @@ Container::make('post_meta', 'Новости')
                             ->set_attribute('type', 'url'),
              ))
              )),
-        Field::make('complex', 'news_feed', 'все новости') 
+             Field::make('complex', 'news_feed', 'все новости') 
              ->add_fields('news_feed', 'новости', array(
                 Field::make('image', 'feed_image', 'img')
                     ->set_width(25)
@@ -29,9 +29,6 @@ Container::make('post_meta', 'Новости')
                 Field::make('textarea', 'content', 'Информация')
                     ->set_rows(4)
                     ->set_width(50),
-                
-                
-                
                 Field::make('complex', 'buttons', 'ссылки',)
                     ->add_fields('buttons',array(
                         Field::make('text', 'button_text',)
@@ -39,12 +36,14 @@ Container::make('post_meta', 'Новости')
                         Field::make('text', 'button', 'Открыть')
                             ->set_width(50)
                             ->set_attribute('type', 'url'),
-                        Field::make('textarea', 'content_dop', 'Информация-доп')
+                        Field::make('textarea', 'content-dop', 'Информация доп ')
                             ->set_rows(4)
-                            ->set_width(50),    
-                    ))
-                
-            )),
+                            ->set_width(50)
+
+                    )),
+
+
+                    )),
     ))
 
 

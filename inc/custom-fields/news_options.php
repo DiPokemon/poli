@@ -29,6 +29,9 @@ Container::make('post_meta', 'Новости')
                 Field::make('textarea', 'content', 'Информация')
                     ->set_rows(4)
                     ->set_width(50),
+                
+                
+                
                 Field::make('complex', 'buttons', 'ссылки',)
                     ->add_fields('buttons',array(
                         Field::make('text', 'button_text',)
@@ -36,9 +39,9 @@ Container::make('post_meta', 'Новости')
                         Field::make('text', 'button', 'Открыть')
                             ->set_width(50)
                             ->set_attribute('type', 'url'),
-                            ))
+                    ))
                 
-                    )),
+            )),
     ))
 
 

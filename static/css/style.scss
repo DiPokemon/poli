@@ -1349,10 +1349,7 @@ body {
 //     }
 // }
 .important3_container {
-    // background-color: #FF8ED0;
-    background-color: #F2F9FA;
-    display: flex;
-    flex-direction: column;
+    background-color: $background_blue;
     .important3_title {
         margin-top: 32px;
         margin-bottom: 28px;
@@ -1363,18 +1360,12 @@ body {
     .important3_body {
         display: flex;
         gap: 44px;
-        // .announcement_img {}
         .important3_text {
             line-height: 25px;
             // display: flex;
             // align-items: center;
-            // padding-top: 48px;
             color: $black;
             display: block;
-            align-items: center;
-            li {
-                line-height: 2;
-            }
             p {
                 // margin-top: 81px;
                 line-height: 25px;

@@ -5,8 +5,7 @@ Template Name: Взрослый и детский травмпункт
 ?>
 <?php get_header(); ?>
 <?php include 'template-parts/variables.php' ?>
-
-    <section>
+<section>
         <div class="container depart-travmpunkt">
             <div class="title-depart">
                 <h1>Взрослый и детский травмпункт</h1>
@@ -87,4 +86,5 @@ Template Name: Взрослый и детский травмпункт
 
         </div>
     </section>
+    
     <?php get_footer(); ?>

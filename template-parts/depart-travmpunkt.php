@@ -1,10 +1,10 @@
 <?php
 /*
-Template Name: Взрослый и детский травмпункт
+Template Name: Взрослый и детский травмпункт V2
 */
 ?>
 <?php get_header(); ?>
-<?php include 'template-parts/variables.php' ?>
+<?php include 'variables.php' ?>
 
     <section>
         <div class="container depart-travmpunkt">

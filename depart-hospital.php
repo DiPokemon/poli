@@ -31,7 +31,7 @@ Template Name: Отделения Городской больницы №4
             <!-- card serction -->
 
             <div class="container">
-                <div class="display-flex">
+                <div class="display-flex-hospital">
                     <?php foreach($depart_hospital as $item) :?>
                     <div class="card-text-img"> 
                             <a href="<?=$item['url']?>"><img src="<?=$item['image']?>"   alt="img"></a>
@@ -50,7 +50,7 @@ Template Name: Отделения Городской больницы №4
             <!-- card serction -->
 
             <div class="container">
-                <div class="display-flex">
+                <div class="display-flex-hospital">
                     <?php foreach($other_departs as $item) :?>
                     <div class="card-text-img"> 
                         <a href="<?=$item['url']?>"><img src="<?=$item['image']?>"   alt="img"></a>

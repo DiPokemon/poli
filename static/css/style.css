@@ -1513,8 +1513,7 @@ body {
   border-top: 1px solid #DCDCDC;
   line-height: 25px;
   /* identical to box height */
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #055D65;
   display: block;
 }
@@ -2586,7 +2585,7 @@ body {
 
 .search-input {
   width: 90%;
-  height: 100%;
+  height: 50%;
   border: none;
   outline: none;
   font-size: 20px;
@@ -2675,6 +2674,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 28px;
+}
+
+.display-flex-hospital {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 28px;
@@ -2730,7 +2736,7 @@ body {
   font-size: 18px;
   font-family: "Open Sans";
   position: relative;
-  margin-top: 122px;
+  margin-top: 105px;
 }
 
 .depart-travmpunkt .cards {
@@ -2741,23 +2747,40 @@ body {
           justify-content: flex-start;
 }
 
+.twise-card img {
+  width: 585px;
+  height: 389px;
+}
+
 @media (max-width: 1200px) {
   .header_container,
-.container {
+  .container {
     padding: 0px 10px;
   }
   .header_middle .header_container .site_identification .logo_text-link,
-.header_middle .header_container .site_identification .header_phone i,
-.header_middle .header_container .site_identification .header_phone-link,
-.header_middle .header_container .site_identification .visually_impaired-link {
+  .header_middle .header_container .site_identification .header_phone i,
+  .header_middle .header_container .site_identification .header_phone-link,
+  .header_middle .header_container .site_identification .visually_impaired-link {
     font-size: 16px;
   }
   .header_middle .header_container .site_identification .header_phone,
-.header_middle .header_container .site_identification .visually_impaired {
+  .header_middle .header_container .site_identification .visually_impaired {
     margin-left: 0;
   }
   .header_bottom .header_bottom_menu .menu_list {
     gap: 10px;
+  }
+}
+@media (max-width: 1210px) {
+  .twise-card img {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (max-width: 840px) {
+  .twise-card img {
+    width: 350px;
+    height: 250px;
   }
 }
 @media (max-width: 1024px) {
@@ -2815,7 +2838,7 @@ body {
 }
 @media (max-width: 940px) {
   .other_right_column,
-.hospital_left_column {
+  .hospital_left_column {
     width: 50%;
   }
 }
@@ -2833,6 +2856,9 @@ body {
   .departmens_container .departmens_body .other_right_column .other_office_items_nav {
     width: auto;
   }
+  .administration_paycheck {
+    padding-left: 12px;
+  }
 }
 @media (max-width: 1140px) {
   .for-flex img {
@@ -2849,7 +2875,8 @@ body {
 }
 @media (max-width: 850px) {
   .display-flex {
-    margin-bottom: 100px !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media (max-width: 1024px) {

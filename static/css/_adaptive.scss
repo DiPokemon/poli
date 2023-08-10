@@ -28,6 +28,24 @@
     }
 }
 
+@media(max-width: 1210px) {
+    .twise-card {
+        img {
+            width: 400px;
+            height: 300px;
+        }
+    }
+}
+
+@media(max-width: 840px) {
+    .twise-card {
+        img {
+            width: 350px;
+            height: 250px;
+        }
+    }
+}
+
 @media(max-width: 1024px) {
     .header_top {
         .header_top_menu {
@@ -157,6 +175,9 @@
             }
         }
     }
+    .administration_paycheck {
+        padding-left: 12px;
+    }
 }
 
 // @media(max-width: 900px) {
@@ -175,15 +196,11 @@
 //         }
 //     }
 // }
-
-
-
 @media(max-width: 1140px) {
     .for-flex {
         img {
             margin-left: 10px;
         }
-       
     }
     .announcement_container {
         .announcement_text {
@@ -198,31 +215,31 @@
             width: 100%;
         }
     }
-
 }
 
-
-
-
 // otdelenia 
-@media(max-width: 850px){
-    .display-flex{
-        margin-bottom: 100px !important;
+@media(max-width: 850px) {
+    // .display-flex {
+    //     margin-bottom: 100px !important;
+    // }
+    .display-flex {
+        flex-wrap: wrap;
     }
 }
 
 //-------- slider important home page 
-@media(max-width: 1024px){
-.slider_background {
-    height: 38vw;
+@media(max-width: 1024px) {
+    .slider_background {
+        height: 38vw;
+    }
 }
 
-}
-
-@media(max-width: 767px){
+@media(max-width: 767px) {
     .slider_background {
         height: 70vw;
     }
-    
-    }
-    // ------------------------
+}
+
+@media(max-width: 1090px) {}
+
+// ------------------------

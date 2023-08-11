@@ -60,6 +60,7 @@ Template Name: Шаблон страницы Отзывы
 
       <?php endwhile; ?>
    </div>
+   <?php the_posts_pagination(); ?>
    <?php wp_reset_query(); ?>
 </section>
 

@@ -38,6 +38,30 @@ Template Name: Шаблон страницы Отзывы
 
 </section>
 
+<section>
+   <?php
+      $reviews_category = get_category_by_slug( 'reviews' );
+      $cat_reviews_id = $reviews_category->term_id;
+      $args = array(
+
+         'cat' => $cat_reviews_id,
+         'post_type' => 'post',
+         'posts_per_page' => 7
+      ); 
+   ?>
+   <?php query_posts($args); ?>
+   <div class="news_anons">
+      <?php while (have_posts()) : the_post(); ?>
+
+         <div class="reviews_item">
+            <div class="reviews_item_title"><?=the_title()?></div>
+            <div class="reviews_item_text"><?=the_content();?></div>
+         </div>
+
+      <?php endwhile; ?>
+   </div>
+   <?php wp_reset_query(); ?>
+</section>
 
 
 

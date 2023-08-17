@@ -13,9 +13,9 @@ Template Name: Шаблон страницы Вакансии
         <h2 class="vacancies_title font_w700_s60">Вакансии</h2>
         <?php foreach ($general_inf as $general) :?>
         <div class="vacancies_contact" >
-            <div class="vacancies_contact_item font_w600_s18 block1"><b>Наименование юридического лица:</b><br><?=$general['org_name']?></div>
-            <div class="vacancies_contact_item font_w600_s18 block2" ><b>Адрес: </b> <?=$general['addres']?></div>
-            <div class="vacancies_contact_item font_w600_s18 block3"><b>Контактный телефон:</b><br><?=$general['number']?></div>  
+            <div class="vacancies_contact_item font_w600_s18 block1"><span><b>Наименование юридического лица:</b><br><?=$general['org_name']?></span></div>
+            <div class="vacancies_contact_item font_w600_s18 block2" ><span><b>Адрес: </b> <?=$general['addres']?></span></div>
+            <div class="vacancies_contact_item font_w600_s18 block3"><span><b>Контактный телефон:</b><br><?=$general['number']?></span></div>  
         </div>
         <?php endforeach ;?>
         <div class="vacancies_block">

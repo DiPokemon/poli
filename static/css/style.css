@@ -2046,7 +2046,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 16px;
+  gap: 15px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2062,15 +2062,21 @@ body {
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  max-width: 360px;
+  max-width: 365px;
   min-height: 106px;
-  display: block;
   line-height: 25px;
   padding-top: 28px;
   font-weight: 500;
 }
+.vacancies_container .vacancies_contact .vacancies_contact_item span {
+  font-family: "OpenSans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .vacancies_container .vacancies_contact .block1 {
-  padding: 28px 5px;
+  padding: 28px 7px;
 }
 .vacancies_container .vacancies_contact .block2 {
   padding: 28px 32px;
@@ -2419,7 +2425,9 @@ body {
   margin: 0 0 28px 0;
   line-height: 1.5;
 }
+
 .page_gosuslugi_container img {
+  width: 789px;
   margin-bottom: 32px;
 }
 
@@ -2666,6 +2674,10 @@ body {
 .cards-for-text .job-title {
   color: #45A6AF;
   font-size: 12px;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .cards-for-text .acreditation-title {
   line-height: 2;

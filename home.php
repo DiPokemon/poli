@@ -47,7 +47,7 @@ Template Name: Main page
         <div class="departmens_body">
             <div class="hospital_left_column">
                 <h3 class="hospital_subtitle">
-                    <img class="fanendoscope_img" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/fanendoscope.png" alt="im" /> 
+                    <img class="fanendoscope_img" src="http://test-dev1.ru/wp-content/uploads/2023/05/fanendoscope.png" alt="im" /> 
                     <a href="#" class="hospital_subtitle-link"><?= get_category( 1, ARRAY_A)['name']; ?></a>
                 </h3>
 
@@ -83,7 +83,7 @@ Template Name: Main page
 
             <div class="other_right_column">
             <h3 class="other_office_subtitle">
-                <img class="fanendoscope_img" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/fanendoscope.png" alt="im" />
+                <img class="fanendoscope_img" src="http://test-dev1.ru/wp-content/uploads/2023/05/fanendoscope.png" alt="im" />
                 <a href="#" class="other_office_subtitle-link"><?= get_category( 5, ARRAY_A)['name']; ?></a></h3>
 
             <?php
@@ -197,7 +197,7 @@ Template Name: Main page
                 // Получение значения кастомного поля из Theme Options
                 $image_news = carbon_get_theme_option('custom_image');                
             ?>                      
-            <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/05/unsplash_2zDw14yCYqk.png" alt="Изображение">
+            <img src="http://test-dev1.ru/wp-content/uploads/2023/05/unsplash_2zDw14yCYqk.png" alt="Изображение">
             </div>
        </div>
        <div class="news_buttom">
@@ -310,7 +310,7 @@ Template Name: Main page
                     setup_postdata ($post);
                     ?>
                     <ul class="contacts_posts_items">
-                        <li><img class="plus_img" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/photo_2023-06-06_02-54-56.png" alt="im" /><a href="#" class="contacts_posts_items-link"><?php the_title(); ?></a></li>
+                        <li><img class="plus_img" src="http://test-dev1.ru/wp-content/uploads/2023/06/photo_2023-06-06_02-54-56.png" alt="im" /><a href="#" class="contacts_posts_items-link"><?php the_title(); ?></a></li>
                     </ul>
                     <?php
                 }

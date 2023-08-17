@@ -64,10 +64,10 @@
   right: -25px;
 }
 .slick-prev:before {
-  content: url("http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/left-arrow.svg");
+  content: url("http://test-dev1.ru/wp-content/uploads/2023/06/left-arrow.svg");
 }
 [dir=rtl] .slick-prev:before {
-  content: url("http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/right-arrow.svg");
+  content: url("http://test-dev1.ru/wp-content/uploads/2023/06/right-arrow.svg");
 }
 
 .slick-next {
@@ -78,10 +78,10 @@
   right: auto;
 }
 .slick-next:before {
-  content: url("http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/right-arrow.svg");
+  content: url("http://test-dev1.ru/wp-content/uploads/2023/06/right-arrow.svg");
 }
 [dir=rtl] .slick-next:before {
-  content: url("http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/left-arrow.svg");
+  content: url("http://test-dev1.ru/wp-content/uploads/2023/06/left-arrow.svg");
 }
 
 /* Dots */

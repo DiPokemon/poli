@@ -14,7 +14,7 @@ Template Name: Приемное отделение стационара
         <div class="for-flex">
             <div class="search">
                 <button type="submit" class="search-button">
-                    <img src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/otdelenie/Vector.png"
+                    <img src="http://test-dev1.ru/wp-content/uploads/otdelenie/Vector.png"
                         alt="Search" class="search-icon">
                 </button>
                 <input type="text" placeholder="Поиск" class="search-input">

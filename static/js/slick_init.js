@@ -63,7 +63,7 @@ $(document).ready(function() {
             autoplay: true,
             slidesToShow: 3,
             arrows: false,
-            dots: false,
+            dots: true,
             responsive: [
                 {
                     breakpoint: 1024,

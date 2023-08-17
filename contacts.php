@@ -56,7 +56,7 @@ Template Name: Шаблон страницы контактов
                     setup_postdata ($post);
                     ?>
                     <ul class="contacts_posts_items">
-                        <li><img class="plus_img" src="http://ce40725-wordpress-sxtw3.tw1.ru/wp-content/uploads/2023/06/photo_2023-06-06_02-54-56.png" alt="im" /><a href="#" class="contacts_posts_items-link"><?php the_title(); ?></a></li>
+                        <li><img class="plus_img" src="http://test-dev1.ru/wp-content/uploads/2023/06/photo_2023-06-06_02-54-56.png" alt="im" /><a href="#" class="contacts_posts_items-link"><?php the_title(); ?></a></li>
                     </ul>
                     <?php
                 }

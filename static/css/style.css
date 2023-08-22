@@ -2064,7 +2064,7 @@ body {
   border-radius: 10px;
   max-width: 365px;
   min-height: 106px;
-  line-height: 25px;
+  display: block;
   padding-top: 28px;
   font-weight: 500;
 }

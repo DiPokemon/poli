@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Шаблон страницы Отзывы
+Template Name: Шаблон страницы Отзывы_old
 */
 ?>
 <?php get_header(); ?>

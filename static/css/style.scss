@@ -1857,10 +1857,19 @@ body {
             display: block;
             // line-height: 25px;
             padding-top: 28px;
-            font-weight: 500;
+            // font-weight: 500;
+
+            .vacancies_contact_item_top {
+                color: $black;
+                font-family: $font_opensans;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
             
             
-            span {
+             .vacancies_contact_item_down {
                 font-family: $font_opensans;
                 font-size: 18px;
                 font-style: normal;

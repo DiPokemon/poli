@@ -342,6 +342,7 @@ Template Name: Main page
 
 
 </div>
+
 </section>
 
 

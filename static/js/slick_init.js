@@ -31,7 +31,7 @@ $(document).ready(function() {
 
         $gallery_banner.slick({
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             slidesToShow: 1,
             centerMode: true,
             slidesToScroll: 1,
@@ -64,17 +64,17 @@ $(document).ready(function() {
             slidesToShow: 3,
             arrows: false,
             dots: true,
-            responsive: [
-                {
+            // variableWidth: true,
+            responsive: [{
                     breakpoint: 1024,
                     settings: {
-                      slidesToShow: 2
+                        slidesToShow: 2
                     }
                 },
                 {
                     breakpoint: 768,
                     settings: {
-                      slidesToShow: 1
+                        slidesToShow: 1
                     }
                 },
             ]

@@ -111,12 +111,11 @@ body {
                     align-items: center;
                 }
             }
-            .header_phone-link,
-            .visually_impaired-link {
-                font-family: 'OpenSansCondensed';
+            .header_phone-link {
+                font-family: 'OpenSans';
                 font-style: normal;
                 font-weight: 700;
-                font-size: 20px;
+                font-size: 21px;
                 line-height: 29px;
                 display: flex;
                 align-items: center;
@@ -124,7 +123,18 @@ body {
                 color: $red;
             }
             .visually_impaired-link {
-                letter-spacing: -2px;
+                font-family: 'OpenSansCondensed';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                // line-height: 29px;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                color: $red;
+            }
+            .visually_impaired-link {
+                letter-spacing: 0.8px;
             }
         }
     }
@@ -741,13 +751,14 @@ body {
 
 .site_identification {
     .header_phone {
-        margin-left: 37.75px;
+        margin-left: 25.75px;
+        margin-right: 13px;
     }
 }
 
 .site_identification {
     .visually_impaired {
-        margin-left: 34px;
+        margin-left: 20px;
     }
 }
 
@@ -1522,7 +1533,7 @@ body {
                     font-size: 16px;
                     // line-height: 19px;
                     text-align: center;
-                    font-family:'InterMedium';
+                    font-family: 'InterMedium';
                     background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
                     border-radius: 50px;
                     width: 203px;
@@ -1574,9 +1585,6 @@ body {
             color: $red;
             margin-bottom: 22px;
         }
-        
-        
-        
         .reviews_column {
             display: flex;
             flex-direction: column;
@@ -1597,13 +1605,9 @@ body {
                 }
             }
         }
-
         .pagination {
             margin: 0 auto;
         }
-
-
-
         .reviews_href {
             display: flex;
             justify-content: center;
@@ -1868,7 +1872,6 @@ body {
             // line-height: 25px;
             padding-top: 28px;
             // font-weight: 500;
-
             .vacancies_contact_item_top {
                 color: $black;
                 font-family: $font_opensans;
@@ -1877,9 +1880,7 @@ body {
                 font-weight: 700;
                 line-height: normal;
             }
-            
-            
-             .vacancies_contact_item_down {
+            .vacancies_contact_item_down {
                 font-family: $font_opensans;
                 font-size: 18px;
                 font-style: normal;
@@ -2265,10 +2266,10 @@ body {
         margin: 0 0 28px 0;
         line-height: 1.5;
     }
-   
 }
+
 .page_gosuslugi_container img {
-	width: 789px;
+    width: 789px;
     margin-bottom: 32px;
 }
 

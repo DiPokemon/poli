@@ -1574,6 +1574,9 @@ body {
             color: $red;
             margin-bottom: 22px;
         }
+        
+        
+        
         .reviews_column {
             display: flex;
             flex-direction: column;
@@ -1594,6 +1597,13 @@ body {
                 }
             }
         }
+
+        .pagination {
+            margin: 0 auto;
+        }
+
+
+
         .reviews_href {
             display: flex;
             justify-content: center;

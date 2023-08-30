@@ -18,7 +18,7 @@ Template Name: Шаблон страницы Отзывы_old
        </div>
     <?php endforeach ;?>  
    </div>
-   <div class="reviews_href">
+   <!-- <div class="reviews_href">
         <div class="page1"><a href="#" class="reviews_page">1</a></div> 
         <div class="page2"><a href="#" class="reviews_page">2</a></div>
         <div class="page3"><a href="#" class="reviews_page">3</a></div>
@@ -26,9 +26,41 @@ Template Name: Шаблон страницы Отзывы_old
         <div class="page5"><a href="#" class="reviews_page">5</a></div>
         <div class="page_next"><a href="#" class="reviews_page_next">Следующая</a></div>
 
-   </div>
+   </div> -->
 
 
+   <?php
+$reviews_category = get_category_by_slug('reviews');
+$cat_reviews_id = $reviews_category->term_id;
+
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+$args = array(
+   'cat' => $cat_reviews_id,
+   'post_type' => 'post',
+   'posts_per_page' => 7,
+   'paged' => $paged
+);
+
+$reviews_query = new WP_Query($args);
+?>
+
+<div class="reviews_column">
+   <?php while ($reviews_query->have_posts()) : $reviews_query->the_post(); ?>
+
+      <div class="reviews_item">
+         <div class="reviews_item_title font_w400_s18"><?= the_title() ?></div>
+         <div class="reviews_item_text font_w400_s18"><?= the_content(); ?></div>
+      </div>
+
+   <?php endwhile; ?>
+</div>
+
+<div class="pagination">
+   <?php echo paginate_links(array('total' => $reviews_query->max_num_pages, 'current' => $paged)); ?>
+</div>
+
+<?php wp_reset_postdata(); ?>
 
 
 
@@ -36,33 +68,19 @@ Template Name: Шаблон страницы Отзывы_old
 </div>
 
 
+   
+   
+
+
+
+
+
+
 </section>
 
-<section>
-   <?php
-      $reviews_category = get_category_by_slug( 'reviews' );
-      $cat_reviews_id = $reviews_category->term_id;
-      $args = array(
 
-         'cat' => $cat_reviews_id,
-         'post_type' => 'post',
-         'posts_per_page' => 7
-      ); 
-   ?>
-   <?php query_posts($args); ?>
-   <div class="news_anons">
-      <?php while (have_posts()) : the_post(); ?>
 
-         <div class="reviews_item">
-            <div class="reviews_item_title"><?=the_title()?></div>
-            <div class="reviews_item_text"><?=the_content();?></div>
-         </div>
 
-      <?php endwhile; ?>
-   </div>
-   <?php the_posts_pagination(); ?>
-   <?php wp_reset_query(); ?>
-</section>
 
 
 

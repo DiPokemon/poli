@@ -1760,6 +1760,9 @@ body {
   margin: 0 40px 26px 40px;
   line-height: 25px;
 }
+.page_reviews .page_reviews_container .pagination {
+  margin: 0 auto;
+}
 .page_reviews .page_reviews_container .reviews_href {
   display: -webkit-box;
   display: -ms-flexbox;

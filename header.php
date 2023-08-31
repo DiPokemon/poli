@@ -8,7 +8,7 @@
         <!-- <link rel="stylesheet" type="text/css" href="static/libs/slick/slick.css"/>
         // Add the new slick-theme.css if you want the default styling
         <link rel="stylesheet" type="text/css" href="static/libs/slick/slick-theme.css"/> -->
-        <title>ГБУ РО “Городская Больница №4”</title> 
+        <!-- <title>ГБУ РО “Городская Больница №4”</title>  -->
         
         <?php wp_head();?>
         
@@ -150,3 +150,46 @@
         </header>
     
         <main>
+
+
+        <style>
+.header_bottom_menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header_bottom_menu li {
+  position: relative;
+  display: inline-block;
+}
+
+.header_bottom_menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Стилизация выпадающих подменю */
+.header_bottom_menu .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Изменяем top на 0 */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.header_bottom_menu .sub-menu li {
+  width: 200px;
+}
+
+/* Стилизация третьего уровня меню */
+.header_bottom_menu .sub-menu .sub-menu {
+  top: 0;
+  left: 100%;
+}
+.sub-menu .menu-item{
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+</style>

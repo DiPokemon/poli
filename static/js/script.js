@@ -1,115 +1,113 @@
-$(document).ready(function(){
-	$('.about_slider_top').slick({
+$(document).ready(function() {
+    $('.about_slider_top').slick({
         arrows: false,
         slidesToShow: 4,
-        responsive: [
-          {
-              breakpoint: 1200,
-              settings: {
-                arrows: false,
-                centerMode: false,
-                slidesToShow: 3,
-              }
-          },
-          {
-            breakpoint: 900,
-            settings: {
-              arrows: false,
-              centerMode: false,
-              slidesToShow: 2,
-            }
-        },
-      ]
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    slidesToShow: 2,
+                }
+            },
+        ]
     });
 });
-$(document).ready(function(){
-	$('.about_slider_bottom').slick({
+$(document).ready(function() {
+    $('.about_slider_bottom').slick({
         arrows: false,
         slidesToShow: 3,
     });
 });
 
-$(document).ready(function(){
-	$('.news_prevention_slider').slick({
+$(document).ready(function() {
+    $('.news_prevention_slider').slick({
         // arrows: false,
         // slidesToShow: 3,
         infinite: true,
-            autoplay: false,
-            slidesToShow: 1,
-            centerMode: true,
-            slidesToScroll: 1,
-            variableWidth: true,
-            dots: false,
-            centerPadding: '0px',
+        autoplay: false,
+        slidesToShow: 1,
+        centerMode: true,
+        slidesToScroll: 1,
+        variableWidth: true,
+        dots: false,
+        centerPadding: '0px',
     });
 });
 
-$(document).ready(function(){
-	$('.slider_time_limits').slick({
+$(document).ready(function() {
+    $('.slider_time_limits').slick({
         arrows: false,
         slidesToShow: 3,
-        responsive: [
-          {
-              breakpoint: 1200,
-              settings: {
-                arrows: false,
-                centerMode: false,
-                slidesToShow: 2,
-                centerPadding: '10px',
-              }
-          },
-          {
-            breakpoint: 800,
-            settings: {
-              arrows: false,
-              centerMode: false,
-              slidesToShow: 1,
-              centerPadding: '10px',
-            }
-        },
-      ]
-      
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    slidesToShow: 2,
+                    centerPadding: '10px',
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    slidesToShow: 1,
+                    centerPadding: '10px',
+                }
+            },
+        ]
+
     });
 });
 
-$(document).ready(function(){
-	$('.slider_patient_routing').slick({
+$(document).ready(function() {
+    $('.slider_patient_routing').slick({
         arrows: false,
         slidesToShow: 2,
-        responsive: [
-          {
-              breakpoint: 800,
-              settings: {
+        responsive: [{
+            breakpoint: 800,
+            settings: {
                 arrows: false,
                 centerMode: false,
                 slidesToShow: 1
-              }
-          },
-      ]
-  });
-  
-  $('.slider_free_medical').slick({
-    arrows: false,
-    slidesToShow: 3,
-  });
+            }
+        }, ]
+    });
+
+    $('.slider_free_medical').slick({
+        arrows: false,
+        slidesToShow: 3,
+    });
 });
 
-// ---------------Выпадающее меню при нажатии--------------------
-// jQuery(document).ready(function($) {
-//     $('.menu-item-has-children > a').click(function(e) {
-//       e.preventDefault();
-//       $(this).siblings('.sub-menu').slideToggle();
-//     });
-//   });
 
-// ----------------Выпадающее меню при наведении------------------
-jQuery(document).ready(function($) {
-    $('.menu-item-has-children').hover(
-      function() {
-        $(this).find('.sub-menu').stop().slideDown();
-      },
-      function() {
-        $(this).find('.sub-menu').stop().slideUp();
-      }
-    );
-  });
+
+// Получаем все элементы меню с подменю
+const menuItemsWithSubmenus = document.querySelectorAll('.header_bottom_menu li.menu-item-has-children');
+
+// Добавляем обработчики событий для наведения и ухода мыши
+menuItemsWithSubmenus.forEach(menuItem => {
+    let timeoutId; // Здесь будем хранить идентификатор таймаута
+
+    menuItem.addEventListener('mouseenter', () => {
+        clearTimeout(timeoutId); // Очищаем предыдущий таймаут
+        menuItem.querySelector('.sub-menu').style.display = 'block';
+    });
+
+    menuItem.addEventListener('mouseleave', () => {
+        // Добавляем небольшую задержку перед скрытием подменю
+        timeoutId = setTimeout(() => {
+            menuItem.querySelector('.sub-menu').style.display = 'none';
+        }, 300); // Здесь 300 миллисекунд – это время задержки
+    });
+});

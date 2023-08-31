@@ -5,6 +5,12 @@ use Carbon_Fields\Field;
 Container::make('post_meta', 'reception fields')
     ->show_on_template('depart-reception.php')
     ->add_fields(array(
+
+
+        Field::make('text', 'custom_title', 'Заголовок отделения')  // Добавляем текстовое поле для заголовка
+        ->set_width(100),
+
+
         Field::make('complex', 'receptions')
             ->add_fields('reception_fields', 'Заведующий отделением', array(
                 Field::make('text', 'job_title', ' должность')

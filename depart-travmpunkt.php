@@ -8,7 +8,7 @@ Template Name: Взрослый и детский травмпункт
 <section>
         <div class="container depart-travmpunkt">
             <div class="title-depart">
-                <h1>Взрослый и детский травмпункт</h1>
+                <h1><?php echo get_the_title(); ?></h1>
             </div>
             <?php foreach($head_of_department as $item) :?>
             <div class="header-card">

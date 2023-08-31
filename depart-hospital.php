@@ -10,7 +10,7 @@ Template Name: Отделения Городской больницы №4
     <section>
         <div class="container">
             <div class="title-depart">
-                <h1>Отделения Городской больницы №4 </h1>
+                <h1><?php echo get_the_title(); ?></h1>
             </div>
             <div class="for-flex">
                 <div class="search">

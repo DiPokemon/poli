@@ -9,7 +9,7 @@ Template Name: Общая информация о стационаре
     <section>
     <div class="container stacionar-depart">
         <div class="title-depart">
-            <h1>Общая информация о стационаре</h1>
+            <h1><?php echo get_the_title(); ?></h1>
         </div>
         <?php foreach($general_information as $item) :?>
         <div>

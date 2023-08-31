@@ -1876,8 +1876,8 @@ body {
             background: $light_blue;
             box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
-            min-width: 306px;
-            min-height: 106px;
+            max-width: 306px;
+            max-height: 106px;
             display: flex;
             justify-content: center;
             align-items: center;

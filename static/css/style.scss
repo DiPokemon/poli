@@ -1608,18 +1608,15 @@ body {
                 }
             }
         }
-        
         .pagination {
             margin: 0 auto;
             display: flex;
             justify-content: center;
             gap: 10px;
             margin-bottom: 32px;
-
             .page-numbers {
-                font-family:'InterMedium';
+                font-family: 'InterMedium';
                 text-align: center;
-                
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
@@ -1631,13 +1628,11 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: $red; 
-            } 
-
+                color: $red;
+            }
             .current {
-                font-family:'InterMedium';
+                font-family: 'InterMedium';
                 text-align: center;
-                
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
@@ -1650,37 +1645,32 @@ body {
                 align-items: center;
                 justify-content: center;
                 color: $white;
-                
             }
-
             .next {
-                font-family:'InterMedium';
+                font-family: 'InterMedium';
                 text-align: center;
-                
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
                 width: 203px;
                 height: 50px;
-                flex-shrink: 0; 
+                flex-shrink: 0;
                 display: flex;
                 border-radius: 50px;
                 color: $white;
                 background: linear-gradient(45deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(45deg, #E80B8B 0%, #FF8ED0 100%);
             }
-
             .prev {
-                font-family:'InterMedium';
+                font-family: 'InterMedium';
                 text-align: center;
-                
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
                 width: 203px;
                 height: 50px;
-                flex-shrink: 0; 
+                flex-shrink: 0;
                 display: flex;
                 border-radius: 50px;
                 color: $white;
@@ -2659,3 +2649,71 @@ body {
 }
 
 @import "adaptive";
+// выпадающее меню
+.header_bottom_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header_bottom_menu {
+    li {
+        position: relative;
+        display: inline-block;
+    }
+}
+
+.header_bottom_menu {
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+}
+
+
+/* Стилизация выпадающих подменю */
+
+.header_bottom_menu {
+    .sub-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        /* Изменяем top на 0 */
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+    }
+}
+
+.header_bottom_menu {
+    .sub-menu {
+        li {
+            width: 200px;
+        }
+    }
+}
+
+
+/* Стилизация третьего уровня меню */
+
+.header_bottom_menu {
+    .sub-menu {
+        .sub-menu {
+            top: 0;
+            left: 100%;
+        }
+    }
+}
+
+.sub-menu {
+    .menu-item {
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+}
+
+// карта
+.map {
+    max-height: 100vh;
+    overflow: hidden;
+}

@@ -1541,8 +1541,7 @@ body {
   border-top: 1px solid #DCDCDC;
   line-height: 25px;
   /* identical to box height */
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #055D65;
   display: block;
 }
@@ -2791,17 +2790,17 @@ body {
 
 @media (max-width: 1200px) {
   .header_container,
-.container {
+  .container {
     padding: 0px 10px;
   }
   .header_middle .header_container .site_identification .logo_text-link,
-.header_middle .header_container .site_identification .header_phone i,
-.header_middle .header_container .site_identification .header_phone-link,
-.header_middle .header_container .site_identification .visually_impaired-link {
+  .header_middle .header_container .site_identification .header_phone i,
+  .header_middle .header_container .site_identification .header_phone-link,
+  .header_middle .header_container .site_identification .visually_impaired-link {
     font-size: 16px;
   }
   .header_middle .header_container .site_identification .header_phone,
-.header_middle .header_container .site_identification .visually_impaired {
+  .header_middle .header_container .site_identification .visually_impaired {
     margin-left: 0;
   }
   .header_bottom .header_bottom_menu .menu_list {
@@ -2875,7 +2874,7 @@ body {
 }
 @media (max-width: 940px) {
   .other_right_column,
-.hospital_left_column {
+  .hospital_left_column {
     width: 50%;
   }
 }
@@ -2925,4 +2924,50 @@ body {
   .slider_background {
     height: 70vw;
   }
+}
+.header_bottom_menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header_bottom_menu li {
+  position: relative;
+  display: inline-block;
+}
+
+.header_bottom_menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Стилизация выпадающих подменю */
+.header_bottom_menu .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  /* Изменяем top на 0 */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.header_bottom_menu .sub-menu li {
+  width: 200px;
+}
+
+/* Стилизация третьего уровня меню */
+.header_bottom_menu .sub-menu .sub-menu {
+  top: 0;
+  left: 100%;
+}
+
+.sub-menu .menu-item {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.map {
+  max-height: 100vh;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */

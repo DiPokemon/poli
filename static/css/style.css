@@ -2036,7 +2036,7 @@ body {
           align-items: center;
 }
 .administration_container .administration_paycheck .administration_paycheck_item .block_item {
-  margin: 0 10px;
+  margin: 0 30px;
 }
 .administration_container .administration_paycheck .administration_paycheck_item .block_item a {
   color: #000000;
@@ -2778,7 +2778,7 @@ body {
   font-size: 18px;
   font-family: "Open Sans";
   position: relative;
-  margin-top: 105px;
+  margin-top: 82px;
 }
 
 .depart-travmpunkt .cards {

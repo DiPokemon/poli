@@ -2742,6 +2742,12 @@ body {
 .info-style li {
   margin-left: 15px;
 }
+.info-style ul {
+  padding-left: 20px;
+}
+.info-style ul li {
+  padding-bottom: 8px;
+}
 
 .info-style b {
   font-family: "Open Sans";

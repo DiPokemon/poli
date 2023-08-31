@@ -17,7 +17,7 @@ Template Name: Общая информация о стационаре
         </div>
         <?php endforeach ;?>
         <div class="for-margin">
-            <p> <span class="adress"><span>В состав стационара входят:</span></br></p>
+        <?php foreach($part_of as $item) :?> <p> <span class="adress"><span><?=nl2br(htmlspecialchars($item['part_of_information']))?></span></br></p><?php endforeach ;?>
             <?php foreach($floor_information as $item) :?><p> <?=$item['information'] ?> </p> <?php endforeach ;?>
         </span>
         </div>

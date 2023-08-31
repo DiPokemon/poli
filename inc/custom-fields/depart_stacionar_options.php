@@ -12,6 +12,13 @@ Container::make('post_meta', 'Stacionar Fields')
                 Field::make('text', 'argument','argument')
                     ->set_width(30),
             )),
+            Field::make('complex', 'part_of', 'В состав входят')
+            ->add_fields('part_of', 'В состав входят',array(
+                Field::make('text', 'part_of_information', 'part_of_information')
+                    
+            )),
+
+
         
         Field::make('complex', 'floor_information', 'состав стационара')
             ->add_fields('floor_information', 'состав стационара',array(

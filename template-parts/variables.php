@@ -94,4 +94,6 @@
   $travmpunkt_image = carbon_get_the_post_meta('travmpunkt_image');
   $news_slider = carbon_get_the_post_meta('news_slider');
   $news_feed = carbon_get_the_post_meta('news_feed');
+  $part_of = carbon_get_the_post_meta('part_of');
+  
 ?>

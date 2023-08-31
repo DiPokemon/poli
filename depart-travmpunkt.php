@@ -47,10 +47,12 @@ Template Name: Взрослый и детский травмпункт
                   </div>
                   <div class="info-style">
                      <h3><b> Профиль: </b></h3>
+                     <ul> 
                   <?php foreach($profile as $item) :?>
-                    <p class="info-text"><li><?=nl2br(htmlspecialchars($item['profile']))?></li></p>
-                        <br>
+                  <p class="info-text"><li><?=nl2br(htmlspecialchars($item['profile']))?></li></p>
+         
                      <?php endforeach ;?>
+                     </ul>
 
                   </div>
                </div>

@@ -125,7 +125,7 @@ hr {
   font-family: "InterMedium";
   src: url("../fonts/Inter-Medium.eot");
   src: url("../fonts/Inter-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.ttf") format("truetype");
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
 }
@@ -1541,7 +1541,8 @@ body {
   border-top: 1px solid #DCDCDC;
   line-height: 25px;
   /* identical to box height */
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #055D65;
   display: block;
 }
@@ -1559,6 +1560,15 @@ body {
   max-width: 203px;
 }
 
+.page_reviews .page_reviews_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .page_reviews .page_reviews_container .reviews_title {
   margin: 28px 0 28px 0;
 }
@@ -1776,8 +1786,6 @@ body {
 }
 .page_reviews .page_reviews_container .pagination {
   margin: 0 auto;
-}
-.page_reviews .page_reviews_container .reviews_href {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1787,108 +1795,83 @@ body {
   gap: 10px;
   margin-bottom: 32px;
 }
-.page_reviews .page_reviews_container .reviews_href .page1 {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.page_reviews .page_reviews_container .reviews_href .page1 a {
-  color: #ffffff;
-}
-.page_reviews .page_reviews_container .reviews_href .page2 {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.page_reviews .page_reviews_container .reviews_href .page3 {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.page_reviews .page_reviews_container .reviews_href .page4 {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.page_reviews .page_reviews_container .reviews_href .page5 {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.page_reviews .page_reviews_container .reviews_href .page_next {
-  background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-  border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.page_reviews .page_reviews_container .reviews_href .reviews_page {
-  font-family: "Inter";
+.page_reviews .page_reviews_container .pagination .page-numbers {
+  font-family: "InterMedium";
+  text-align: center;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
+  line-height: normal;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #E80B8B;
 }
-.page_reviews .page_reviews_container .reviews_href .reviews_page_next {
-  font-family: "Inter";
+.page_reviews .page_reviews_container .pagination .current {
+  font-family: "InterMedium";
+  text-align: center;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
+  line-height: normal;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #ffffff;
-  margin: 0 52px 0 55px;
+}
+.page_reviews .page_reviews_container .pagination .next {
+  font-family: "InterMedium";
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 203px;
+  height: 50px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50px;
+  color: #ffffff;
+  background: linear-gradient(45deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(45deg, #E80B8B 0%, #FF8ED0 100%);
+}
+.page_reviews .page_reviews_container .pagination .prev {
+  font-family: "InterMedium";
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 203px;
+  height: 50px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50px;
+  color: #ffffff;
+  background: linear-gradient(45deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(45deg, #E80B8B 0%, #FF8ED0 100%);
 }
 
 .appointment_container .appointment_title {
@@ -2808,17 +2791,17 @@ body {
 
 @media (max-width: 1200px) {
   .header_container,
-  .container {
+.container {
     padding: 0px 10px;
   }
   .header_middle .header_container .site_identification .logo_text-link,
-  .header_middle .header_container .site_identification .header_phone i,
-  .header_middle .header_container .site_identification .header_phone-link,
-  .header_middle .header_container .site_identification .visually_impaired-link {
+.header_middle .header_container .site_identification .header_phone i,
+.header_middle .header_container .site_identification .header_phone-link,
+.header_middle .header_container .site_identification .visually_impaired-link {
     font-size: 16px;
   }
   .header_middle .header_container .site_identification .header_phone,
-  .header_middle .header_container .site_identification .visually_impaired {
+.header_middle .header_container .site_identification .visually_impaired {
     margin-left: 0;
   }
   .header_bottom .header_bottom_menu .menu_list {
@@ -2892,7 +2875,7 @@ body {
 }
 @media (max-width: 940px) {
   .other_right_column,
-  .hospital_left_column {
+.hospital_left_column {
     width: 50%;
   }
 }

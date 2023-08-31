@@ -1462,6 +1462,8 @@ body {
 // ----------------------Страница Отзывы-------------------
 .page_reviews {
     .page_reviews_container {
+        display: flex;
+        flex-direction: column;
         .reviews_title {
             margin: 28px 0 28px 0;
         }
@@ -1606,15 +1608,40 @@ body {
                 }
             }
         }
+        
         .pagination {
             margin: 0 auto;
-        }
-        .reviews_href {
             display: flex;
             justify-content: center;
             gap: 10px;
             margin-bottom: 32px;
-            .page1 {
+
+            .page-numbers {
+                font-family:'InterMedium';
+                text-align: center;
+                
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                width: 50px;
+                height: 50px;
+                // border-radius: 50px;
+                // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $red; 
+            } 
+
+            .current {
+                font-family:'InterMedium';
+                text-align: center;
+                
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
                 width: 50px;
                 height: 50px;
                 border-radius: 50px;
@@ -1622,71 +1649,104 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                a {
-                    color: $white;
-                }
-            }
-            .page2 {
-                width: 50px;
-                height: 50px;
-                border-radius: 50px;
-                // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .page3 {
-                width: 50px;
-                height: 50px;
-                border-radius: 50px;
-                // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .page4 {
-                width: 50px;
-                height: 50px;
-                border-radius: 50px;
-                // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .page5 {
-                width: 50px;
-                height: 50px;
-                border-radius: 50px;
-                // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .page_next {
-                background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
-                border-radius: 50px;
-                display: flex;
-                align-items: center;
-            }
-            .reviews_page {
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 19px;
-                text-align: center;
-                color: $red;
-            }
-            .reviews_page_next {
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 19px;
-                text-align: center;
                 color: $white;
-                margin: 0 52px 0 55px;
+                
             }
+
+            .next {
+                font-family:'InterMedium';
+                text-align: center;
+                
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                width: 203px;
+                height: 50px;
+                flex-shrink: 0; 
+                display: flex;
+                border-radius: 50px;
+                color: $white;
+                background: linear-gradient(45deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(45deg, #E80B8B 0%, #FF8ED0 100%);
+            }
+
+            .prev {
+                font-family:'InterMedium';
+                text-align: center;
+                
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                width: 203px;
+                height: 50px;
+                flex-shrink: 0; 
+                display: flex;
+                border-radius: 50px;
+                color: $white;
+                background: linear-gradient(45deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(45deg, #E80B8B 0%, #FF8ED0 100%);
+            }
+            // .page2 {
+            //     width: 50px;
+            //     height: 50px;
+            //     border-radius: 50px;
+            //     // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            // }
+            // .page3 {
+            //     width: 50px;
+            //     height: 50px;
+            //     border-radius: 50px;
+            //     // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            // }
+            // .page4 {
+            //     width: 50px;
+            //     height: 50px;
+            //     border-radius: 50px;
+            //     // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            // }
+            // .page5 {
+            //     width: 50px;
+            //     height: 50px;
+            //     border-radius: 50px;
+            //     // background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            // }
+            // .next {
+            //     background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%), linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+            //     border-radius: 50px;
+            //     display: flex;
+            //     align-items: center;
+            // }
+            // .reviews_page {
+            //     font-family: 'Inter';
+            //     font-style: normal;
+            //     font-weight: 500;
+            //     font-size: 16px;
+            //     line-height: 19px;
+            //     text-align: center;
+            //     color: $red;
+            // }
+            // .reviews_page_next {
+            //     font-family: 'Inter';
+            //     font-style: normal;
+            //     font-weight: 500;
+            //     font-size: 16px;
+            //     line-height: 19px;
+            //     text-align: center;
+            //     color: $white;
+            //     margin: 0 52px 0 55px;
+            // }
         }
     }
 }

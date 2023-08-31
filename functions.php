@@ -171,3 +171,13 @@ function register_post_types()
 	));
 }
 
+
+
+
+function custom_pagination_output($output) {
+    // Заменяем "Далее" на "Следующая" в HTML-коде пагинации
+    $output = str_replace('Далее', 'Следующая', $output);
+    return $output;
+}
+
+add_filter('wp_link_pages_link', 'custom_pagination_output');

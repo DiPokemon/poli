@@ -2807,6 +2807,14 @@ body {
     gap: 10px;
   }
 }
+@media (max-width: 1260px) {
+  .slick-prev {
+    display: none !important;
+  }
+  .slick-next {
+    display: none !important;
+  }
+}
 @media (max-width: 1210px) {
   .twise-card img {
     width: 400px;

@@ -9,7 +9,7 @@ Template Name: Приемное отделение стационара
     <section>
     <div class="container">
         <div class="title-depart">
-        <h1><?php echo carbon_get_post_meta(get_the_ID(), 'custom_title'); ?></h1>
+        <h1><?php echo get_the_title(); ?></h1>
         </div>
         <div class="for-flex">
             <div class="search">

@@ -57,8 +57,23 @@ $reviews_query = new WP_Query($args);
 </div>
 
 <div class="pagination">
-   <?php echo paginate_links(array('total' => $reviews_query->max_num_pages, 'current' => $paged)); ?>
+
+<?php
+   echo paginate_links(array(
+      'total' => $reviews_query->max_num_pages,
+      'current' => $paged,
+      'prev_text' => __('Предыдущая', 'default'),
+      'next_text' => __('Следующая', 'default')
+   ));
+   ?>
+
+
+
+
+   
 </div>
+
+
 
 <?php wp_reset_postdata(); ?>
 

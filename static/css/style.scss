@@ -1557,7 +1557,7 @@ body {
                             font-size: 18px;
                             line-height: 25px;
                             color: $text_cf7;
-                            padding: 12px 0 0 14px;
+                            // padding: 12px 0 0 14px;
                         }
                         .wpcf7-text {
                             flex-grow: 1;
@@ -1567,6 +1567,7 @@ body {
                             background: $white;
                             box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
                             border-radius: 5px;
+                            padding-left: 10px;
                         }
                         textarea {
                             margin: 0 40px 26px 40px;
@@ -1575,7 +1576,13 @@ body {
                             background: $white;
                             box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
                             border-radius: 5px;
+                            padding: 10px;
                         }
+                        // textarea::placeholder {
+                        //     color: red;
+                        //     font-size: 1.2em;
+                            
+                        //   }
                     }
                 }
             }

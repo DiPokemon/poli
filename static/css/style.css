@@ -1541,7 +1541,8 @@ body {
   border-top: 1px solid #DCDCDC;
   line-height: 25px;
   /* identical to box height */
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #055D65;
   display: block;
 }
@@ -1685,7 +1686,6 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: #898989;
-  padding: 12px 0 0 14px;
 }
 .page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-form-control::-moz-placeholder {
   font-family: "OpenSans";
@@ -1694,7 +1694,6 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: #898989;
-  padding: 12px 0 0 14px;
 }
 .page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-form-control:-ms-input-placeholder {
   font-family: "OpenSans";
@@ -1703,7 +1702,6 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: #898989;
-  padding: 12px 0 0 14px;
 }
 .page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-form-control::-ms-input-placeholder {
   font-family: "OpenSans";
@@ -1712,7 +1710,6 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: #898989;
-  padding: 12px 0 0 14px;
 }
 .page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-form-control::placeholder {
   font-family: "OpenSans";
@@ -1721,7 +1718,6 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: #898989;
-  padding: 12px 0 0 14px;
 }
 .page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-text {
   -webkit-box-flex: 1;
@@ -1733,6 +1729,7 @@ body {
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
+  padding-left: 10px;
 }
 .page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap textarea {
   margin: 0 40px 26px 40px;
@@ -1744,6 +1741,7 @@ body {
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
+  padding: 10px;
 }
 .page_reviews .page_reviews_container .cf7_title {
   font-family: "OpenSans";
@@ -2796,17 +2794,17 @@ body {
 
 @media (max-width: 1200px) {
   .header_container,
-  .container {
+.container {
     padding: 0px 10px;
   }
   .header_middle .header_container .site_identification .logo_text-link,
-  .header_middle .header_container .site_identification .header_phone i,
-  .header_middle .header_container .site_identification .header_phone-link,
-  .header_middle .header_container .site_identification .visually_impaired-link {
+.header_middle .header_container .site_identification .header_phone i,
+.header_middle .header_container .site_identification .header_phone-link,
+.header_middle .header_container .site_identification .visually_impaired-link {
     font-size: 16px;
   }
   .header_middle .header_container .site_identification .header_phone,
-  .header_middle .header_container .site_identification .visually_impaired {
+.header_middle .header_container .site_identification .visually_impaired {
     margin-left: 0;
   }
   .header_bottom .header_bottom_menu .menu_list {
@@ -2888,7 +2886,7 @@ body {
 }
 @media (max-width: 940px) {
   .other_right_column,
-  .hospital_left_column {
+.hospital_left_column {
     width: 50%;
   }
 }

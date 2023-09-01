@@ -46,7 +46,7 @@ Template Name: Шаблон страницы Информация по прав�
                             if (!empty($plusImg)) {
                                 echo '<span class="plus_img"><img src="' .$plusImg . '" alt="Plus Image"></span>';
                             }
-                            echo '<span class="font_w400_s18">' . nl2br(htmlspecialchars($content)) . '</span>';
+                            echo '<span class="font_w400_s18">' . $content . '</span>';
                             echo '</li>';
                         }
 

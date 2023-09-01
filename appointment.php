@@ -26,7 +26,7 @@ Template Name: Шаблон страницы Запись на приём
        <div class="important2_text font_w400_s18">
         <br>
         
-       <p><?=nl2br(htmlspecialchars($appointment['important_text']))?></p>
+       <p><?=$appointment['important_text']?></p>
        <br>
        <p>Телефон для записи на прием и консультаций:<br><b><?=$appointment['phone_number']?></b></p>
        

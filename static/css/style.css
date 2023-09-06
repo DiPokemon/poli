@@ -1183,6 +1183,9 @@ body {
   color: #000000;
   font-weight: 450;
 }
+.about_container .addstyle {
+  display: block;
+}
 .about_container .about_slider_top {
   margin-top: 32px;
   /* Слайдер */

@@ -8,7 +8,7 @@ Template Name: Шаблон страницы Результаты СОУТ
 
 <section class="page_sout">
     <div class="page_sout_container container">
-        <h2 class="page_sout_title font_w700_s60">Результаты СОУТ</h2>
+        <h2 class="page_sout_title font_w700_s60"><?php the_title(); ?></h2>
         <div class="sout_block">
             <?php foreach($sout as $sout) :?>
             <div class="sout_item font_w600_s18"><a href="<?=$sout['url']?>"></a><?=$sout['title']?></div>

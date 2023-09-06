@@ -8,9 +8,9 @@ Template Name: Шаблон страницы Запись на приём
 
 <section class="appointment">
     <div class="appointment_container container">
-        <h2 class="appointment_title font_w700_s60">Запись на прием</h2>
+        <h2 class="appointment_title font_w700_s60"><?php the_title(); ?></h2>
         <div class="important2_container container">
-       <h3 class="important2_title font_w700_s35">Важная информация</h3>
+       <h3 class="important2_title font_w700_s35"><?php echo carbon_get_the_post_meta('sub_title_importent_inf'); ?></h3>
        
        
        
@@ -37,7 +37,7 @@ Template Name: Шаблон страницы Запись на приём
         <p class="appointment_href font_w400_s18">Электронная регистратура:  <b><a href="<?=$appointment['registration_url']?>"><?=$appointment['registration_url']?></a></b></p>
             <?php endforeach ;?>
            <?php endif ;?>
-        <h2 class="appointment_subtitle2 font_w700_s35">Правила записи на первичный прием/ консультацию/ обследование</h2>
+        <h2 class="appointment_subtitle2 font_w700_s35"><?php echo carbon_get_the_post_meta('sub_title_rules'); ?></h2>
         <p class="font_w400_s18"> Первичный прием граждан осуществляется по территориальному принципу прикрепления населения. 
                 Подача заявки гражданином на прием может быть выполнена одним из следующих способов:
                 <br>

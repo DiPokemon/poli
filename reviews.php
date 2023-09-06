@@ -8,7 +8,7 @@ Template Name: Шаблон страницы Отзывы_old
 
 <section class="page_reviews">
 <div class="page_reviews_container container">
-   <div class="reviews_title font_w700_s60">Отзывы</div>
+   <div class="reviews_title font_w700_s60"><?php the_title(); ?></div>
    <div class="reviews_cf7"><?php echo do_shortcode( '[contact-form-7 id="82" title="Контактная форма для страницы Отзывы"]' ); ?></div>
    <div class="reviews_column font_w400_s18">
     <?php foreach($reviews_items as $items) :?>

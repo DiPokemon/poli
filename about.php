@@ -11,7 +11,7 @@ Template Name: Шаблон страницы О больнице
 <?php if ($about_ambulances) :?>
   <?php foreach($about_ambulances as $about_ambulance):?>
    <div class="about_container container">
-      <h2 class="about_title font_w700_s60">О больнице</h2>
+      <h2 class="about_title font_w700_s60"><?php the_title(); ?></h2>
 
       <img src="<?=$about_ambulance['about_page_image']?>" />
 

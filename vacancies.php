@@ -10,7 +10,7 @@ Template Name: Шаблон страницы Вакансии
 <section class="vacancies">
     <div class="container">
     <div class="vacancies_container ">
-        <h2 class="vacancies_title font_w700_s60">Вакансии</h2>
+        <h2 class="vacancies_title font_w700_s60"><?php the_title(); ?></h2>
         <?php foreach ($general_inf as $general) :?>
         <div class="vacancies_contact" >
             <div class="vacancies_contact_item  block1"><p class="vacancies_contact_item_top">Наименование юридического лица:</p> <span class="vacancies_contact_item_down"><?=$general['org_name']?></span></div>

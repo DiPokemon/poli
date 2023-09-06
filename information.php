@@ -9,7 +9,7 @@ Template Name: Шаблон страницы Информация по прав�
 
 <section class="page_information">
 <div class="page_information_container container">
-    <h2 class="page_information_title font_w700_s60">Информация по правам пациентов</h2>
+    <h2 class="page_information_title font_w700_s60"><?php the_title(); ?></h2>
     <!-- <form>
               <input type="search" placeholder="Поиск">
               <a href="#"><i class="fa fa-light fa-magnifying-glass"></i></a>

@@ -9,7 +9,7 @@ Template Name: Шаблон страницы Реквизиты
 
 <section class="requisites">
 <div class="requisites_container container">
-    <h2 class="requisites_title font_w700_s60">Реквизиты</h2>
+    <h2 class="requisites_title font_w700_s60"><?php the_title(); ?></h2>
     <div class="requisites_block">
         <?php foreach($requisite_items as $requisite) :?>
         <div class="requisites_item">

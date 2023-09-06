@@ -23,7 +23,7 @@ Template Name: Отделения Городской больницы №4
             </div>
 
             <div class="title-stacionar">
-                <h2>Стационар</h2>
+                <h2><?= get_category( 1, ARRAY_A)['name']; ?></h2>
             </div>
         </div>
 
@@ -43,7 +43,7 @@ Template Name: Отделения Городской больницы №4
         <div class="container">
 
             <div class="title-otherdepart">
-                <h2>Другие отделения</h2>
+                <h2><?= get_category( 5, ARRAY_A)['name']; ?></h2>
             </div>
 
 

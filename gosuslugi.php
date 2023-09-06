@@ -9,7 +9,7 @@ Template Name: Шаблон страницы Портал ГОСУСЛУГИ
 
 <section class="page_gosuslugi">
 <div class="page_gosuslugi_container container">
-<h2 class="page_gosuslugi_title font_w700_s60">Портал ГОСУСЛУГИ</h2>
+<h2 class="page_gosuslugi_title font_w700_s60"><?php the_title(); ?></h2>
     <?php foreach($gosuslugi as $item) :?>
 <h3 class="page_gosuslugi_subtitle font_w700_s35"><?=$item['title']?></h3>
 <img  src="<?=$item['image']?>" alt="img" width="789px">

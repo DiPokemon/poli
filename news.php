@@ -8,7 +8,7 @@ Template Name: Шаблон страницы Новости
 
 <section>
     <div class="page_news_container container">
-      <h2 class="page_news_title font_w700_s60">Новости</h2>
+      <h2 class="page_news_title font_w700_s60"><?php the_title(); ?></h2>
       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       
           <form>

@@ -25,7 +25,7 @@ Template Name: Шаблон страницы Информация по прав�
                 </div>
             </div>
     <!-- <input type="text" maxlength= "12" placeholder="Поиск" class="searchbar"> -->
-    <h3 class="page_information_subtitle font_w700_s35">Контакты вышестоящих органов</h3>
+    <h3 class="page_information_subtitle font_w700_s35"><?php echo carbon_get_the_post_meta('sub_title_information'); ?></h3>
     <div class="page_information_block">
         <div class="page_information_item">
             <?php foreach($contacts as $contact) :?>

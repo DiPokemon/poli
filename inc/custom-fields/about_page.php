@@ -13,6 +13,10 @@ Container::make('post_meta', __('About Page Fields', 'policlinic'))
                 Field::make('textarea', 'about_info', 'about ambulance')
                     ->set_rows(4)
                     ->help_text('Информация о больнице')
+                    ->set_width(80),
+                Field::make('textarea', 'about_info2', 'about ambulance')
+                    ->set_rows(4)
+                    ->help_text('Информация о больнице2')
                     ->set_width(80)
             )),
         

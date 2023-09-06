@@ -18,6 +18,8 @@ Container::make('post_meta', 'Результаты СОУТ')
 Container::make('post_meta', 'information for patients')
     ->show_on_template('information.php')
     ->add_fields(array(
+        Field::make('text', 'sub_title_information', ' подзаголовок')
+                        ->set_width(20),
         Field::make('complex', 'contacts', 'Контакты вышестоящих органов')
             ->add_fields(array(
                 Field::make('text', 'title', 'Заголовок')

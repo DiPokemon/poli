@@ -74,7 +74,7 @@ Template Name: Шаблон страницы О больнице
 
 
 </div>
-      <h3 class="subtitle_top font_w700_s35">Лицензии на осуществление медицинской деятельности</h3>
+      <h3 class="subtitle_top font_w700_s35"><?php echo carbon_get_the_post_meta('sub_title_licenses'); ?></h3>
       <div class="about_slider_bottom">
         <?php if ($licenses) :?>
           <?php foreach($licenses as $license) :?>
@@ -85,7 +85,7 @@ Template Name: Шаблон страницы О больнице
         <?php endif ;?>
        </div>
 
-      <h3 class="subtitle_bottom font_w700_s35">Общественный совет больницы</h3>
+      <h3 class="subtitle_bottom font_w700_s35"><?php echo carbon_get_the_post_meta('sub_title_hospital'); ?></h3>   
       <!-- <style>
         .block_item {
           width: 290px; 

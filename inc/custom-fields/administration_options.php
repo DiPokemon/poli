@@ -8,6 +8,20 @@ Container::make('post_meta', __('Administration Page Fields'))
     ->add_fields(array(
         Field::make('complex', 'head_doctor', 'Главный врач:')
             ->add_fields('head_doctor', 'Главный врач', array(
+                Field::make('text', 'sub_title_position', 'должность')
+                        ->set_width(20),
+                Field::make('text', 'sub_title_telefon', 'телефон')
+                        ->set_width(20),
+                Field::make('text', 'sub_title_fax', 'факс')
+                        ->set_width(20),
+                Field::make('text', 'sub_title_email', 'емайл')
+                        ->set_width(20),
+                Field::make('text', 'sub_title_room', 'кабинет')
+                        ->set_width(20),
+                Field::make('text', 'sub_title_work_hours', 'часы работы')
+                        ->set_width(20),
+                Field::make('text', 'sub_title_office_hours', 'часы приёма граждан')
+                        ->set_width(20),                                                
                 Field::make('image', 'doctor_image', 'Head doctors image')
                     ->set_value_type('url')
                     ->set_width(25),

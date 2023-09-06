@@ -8,7 +8,7 @@ Template Name: Шаблон страницы Администрация
 
 <section class="administration">
     <div class="administration_container container">
-        <h2 class="administration_title font_w700_s60">Администрация</h2>
+        <h2 class="administration_title font_w700_s60"><?php the_title(); ?></h2>
         <?php foreach($head_doctor as $head) :?>
 
         <div class="administration_main">

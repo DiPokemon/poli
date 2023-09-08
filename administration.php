@@ -16,8 +16,8 @@ Template Name: Шаблон страницы Администрация
             <img src="<?=$head['doctor_image']?>" alt="img" style="width: 238px; height: 300px;">
             </div>
             <div class="administration_main_text">
-                <h3 class="administration_text_subtitle font_w700_s35">Главный врач:<br><?=$head['doctor_name']?></h3>
-                <div class="administration_text">Телефон: <span class="admin_contact_information"><?=$head['number']?></span>, факс: <span class="admin_contact_information"><?=$head['fax']?></span><br> E-mail: <span class="admin_contact_information"><?=$head['enail']?></span><br> Кабинет № <?=$head['room_number']?><br><br> Часы работы:<span class="admin_contact_information"> <?=$head['working_hours']?></span><br> Часы приема граждан:<span class="admin_contact_information"><br><?=nl2br(htmlspecialchars($head['business_hours']))?></span></div>
+                <h3 class="administration_text_subtitle font_w700_s35"><?=$head['sub_title_position']?><br><?=$head['doctor_name']?></h3>
+                <div class="administration_text"><?=$head['sub_title_telefon']?><span class="admin_contact_information"><?=$head['phone_number']?></span><?=$head['sub_title_fax']?><span class="admin_contact_information"><?=$head['fax']?></span><br><?=$head['sub_title_email']?><span class="admin_contact_information"><?=$head['email']?></span><br> <?=$head['sub_title_room']?><?=$head['room_number']?><br><br><?=$head['sub_title_work_hours']?><span class="admin_contact_information"> <?=$head['working_hours']?></span><br><?=$head['sub_title_office_hours']?><span class="admin_contact_information"><br><?=nl2br(htmlspecialchars($head['business_hours']))?></span></div>
             </div>
         </div>
         <?php endforeach ;?>
@@ -30,7 +30,7 @@ Template Name: Шаблон страницы Администрация
                 <div class="administration_position_content">
                     <div class="administration_position_title"><?=$staff['job']?></div>
                     <div class="administration_position_name"><?=$staff['name']?></div>
-                    <div class="administration_position_text"><b>Телефон:</b> <?=$staff['number']?><br><b>Кабинет № <?=$staff['room_number']?></b><br> <b>Часы работы:</b><?=nl2br(htmlspecialchars($staff['working_hours']))?></div>
+                    <div class="administration_position_text"><b><?=$staff['sub_title_number']?></b> <?=$staff['number']?><br><b><?=$staff['sub_title_room_num']?><?=$staff['room_num']?></b><br> <b><?=$staff['sub_title_working_hours']?></b><?=nl2br(htmlspecialchars($staff['working_hours']))?></div>
 
                 </div>
             </div>

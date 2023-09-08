@@ -27,26 +27,26 @@ Template Name: Взрослый и детский травмпункт
             <div class="info">
                <div class="info-style ">
                      <?php foreach($general_inf2 as $item) :?>
-                        <p><span>Расположение:</span> <?=$item['location']?></p>
+                        <p><span><?=$item['sub_title_location']?></span> <?=$item['location']?></p>
                      </div>
                      <div class="info-style">
-                        <h3><b>Телефон:</b> </h3>
+                        <h3><b><?=$item['sub_title_number_adults']?></b> </h3>
                         <p><li><?=$item['number_adults']?></li></p>
                         <p><li><?=$item['number_children']?></li></p>
                      </div>
                      <div class="info-style">
-                        <h3><b>Режим работы:</b></h3>
+                        <h3><b><?=$item['sub_title_working_hours_adults']?></b></h3>
                         <p><li><?=$item['working_hours_adults']?></li></p>
                         <p><li><?=$item['working_hours_children']?></li></p>
                      </div>
                      <div class="info-style">
-                        <h3><b> Контингент обслуживания:</b></h3>
+                        <h3><b> <?=$item['sub_title_content_adults']?></b></h3>
                         <p><li><?=$item['content_adults']?></li></p>
                         <p><li><?=$item['content_children']?></li></p>
                         <?php endforeach ;?>
                   </div>
                   <div class="info-style">
-                     <h3><b> Профиль: </b></h3>
+                     <h3><b> <?php echo carbon_get_the_post_meta('sub_title_profile'); ?> </b></h3>
                      <ul> 
                   <?php foreach($profile as $item) :?>
                   <p class="info-text"><li><?=nl2br(htmlspecialchars($item['profile']))?></li></p>

@@ -16,14 +16,20 @@ Container::make('post_meta', __('Appointments'))
                     ->set_width(10),
                 Field::make('textarea', 'important_text', 'Важная информация')
                     ->set_width(40),
-                Field::make('text', 'phone_number', 'Телефон для записи на прием и консультаций')
+                Field::make('text', 'sub_title_phone_number', 'Телефон для записи на прием и консультаций')
+                    ->set_width(20),
+                Field::make('text', 'phone_number', 'Номер')
                     ->set_width(20)
                     ->help_text('+7 (***) ***-**-**'),
-                Field::make('text', 'registration_url', 'Электронная регистратура')
+                Field::make('text', 'sub_title_registration_url', 'Электронная регистратура')
+                    ->set_width(20),
+                Field::make('text', 'registration_url', 'URL')
                     ->set_width(20),
             )),
         Field::make('text', 'sub_title_rules', ' подзаголовок')
             ->set_width(20),    
+        Field::make('text', 'sub_title_rules_info', ' текст')
+            ->set_width(20),   
         Field::make('complex', 'rules', 'Правила записи на первичный прием/ консультацию/ обследование')
             ->add_fields('rules', 'Правила записи', array(
                 

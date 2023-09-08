@@ -28,18 +28,18 @@ Template Name: Шаблон страницы Запись на приём
         
        <p><?=$appointment['important_text']?></p>
        <br>
-       <p>Телефон для записи на прием и консультаций:<br><b><?=$appointment['phone_number']?></b></p>
+       <p><?=$appointment['sub_title_phone_number']?><br><b><?=$appointment['phone_number']?></b></p>
        
        </div>
        </div>
 
   </div>
-        <p class="appointment_href font_w400_s18">Электронная регистратура:  <b><a href="<?=$appointment['registration_url']?>"><?=$appointment['registration_url']?></a></b></p>
+        <p class="appointment_href font_w400_s18"><?=$appointment['sub_title_registration_url']?><b><a href="<?=$appointment['registration_url']?>"><?=$appointment['registration_url']?></a></b></p>
             <?php endforeach ;?>
            <?php endif ;?>
         <h2 class="appointment_subtitle2 font_w700_s35"><?php echo carbon_get_the_post_meta('sub_title_rules'); ?></h2>
-        <p class="font_w400_s18"> Первичный прием граждан осуществляется по территориальному принципу прикрепления населения. 
-                Подача заявки гражданином на прием может быть выполнена одним из следующих способов:
+        <p class="font_w400_s18"> <?php echo carbon_get_the_post_meta('sub_title_rules_info'); ?>
+
                 <br>
                 <br>
                 <?php if ($rules):?>

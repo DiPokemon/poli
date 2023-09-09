@@ -197,7 +197,7 @@ Template Name: Main page
                 // Получение значения кастомного поля из Theme Options
                 $image_news = carbon_get_theme_option('custom_image');                
             ?>                      
-            <img src="http://test-dev1.ru/wp-content/uploads/2023/05/unsplash_2zDw14yCYqk.png" alt="Изображение">
+            <img  src="<?=$image_news ?>" alt="Изображение">
             </div>
        </div>
        <div class="news_buttom">

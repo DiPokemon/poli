@@ -2619,7 +2619,12 @@ body {
 .info-style b {
     font-family: "Open Sans";
 }
-
+.info-style_width {
+    max-width: 946px;
+}
+.info-style_width_profile {
+    max-width: 934px;
+}
 .card-text-img {
     margin: 6px;
     width: 288px;

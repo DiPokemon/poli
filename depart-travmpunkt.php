@@ -40,12 +40,17 @@ Template Name: Взрослый и детский травмпункт
                         <p><li><?=$item['working_hours_children']?></li></p>
                      </div>
                      <div class="info-style">
+                        <h3><b><?=$item['sub_title_working_hours_adults_repeat']?></b></h3>
+                        <p><li><?=$item['working_hours_adults_repeat']?></li></p>
+                        <p><li><?=$item['working_hours_children_repeat']?></li></p>
+                     </div>
+                     <div class="info-style info-style_width">
                         <h3><b> <?=$item['sub_title_content_adults']?></b></h3>
                         <p><li><?=$item['content_adults']?></li></p>
                         <p><li><?=$item['content_children']?></li></p>
                         <?php endforeach ;?>
                   </div>
-                  <div class="info-style">
+                  <div class="info-style info-style_width_profile">
                      <h3><b> <?php echo carbon_get_the_post_meta('sub_title_profile'); ?> </b></h3>
                      <ul> 
                   <?php foreach($profile as $item) :?>

@@ -35,12 +35,18 @@ Container::make('post_meta', 'reception fields')
                         ->set_width(33),
                     Field::make('text','working_hours_children', 'Режим работы детский :')
                         ->set_width(33),
+                    Field::make('text','sub_title_working_hours_adults_repeat', 'Режим работы (повторного приёма):')
+                        ->set_width(33),    
+                    Field::make('text','working_hours_adults_repeat', 'Режим работы взрослый:')
+                        ->set_width(33),
+                    Field::make('text','working_hours_children_repeat', 'Режим работы детский :')
+                        ->set_width(33),    
                     Field::make('text','sub_title_content_adults', 'Контингент обслуживания взрослый:')
-                        ->set_width(50),    
+                        ->set_width(33),    
                     Field::make('text','content_adults', 'Контингент обслуживания взрослый:')
-                        ->set_width(50),
+                        ->set_width(33),
                     Field::make('text','content_children', 'Контингент обслуживания детский:')
-                        ->set_width(50)
+                        ->set_width(33)
                     )),
             Field::make('text','sub_title_profile', 'Профиль:')
                     ->set_width(100),        

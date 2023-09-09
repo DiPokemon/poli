@@ -169,7 +169,7 @@ foreach ($news_feed as $item) :
            
        </div>
        <div class="news_buttom">
-       <a href="#" class="news_buttom-link">Все новости</a>
+       <a href="#" class="news_buttom-link"><?php echo carbon_get_theme_option('botton_text'); ?></a>
        </div>
 
 

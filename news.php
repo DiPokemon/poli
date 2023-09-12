@@ -26,7 +26,7 @@ Template Name: Шаблон страницы Новости
                             alt="Search" class="search-icon">
                     </button>
                     <!-- <input type="text" placeholder="Поиск" class="search-input"> -->
-                    <?= do_shortcode('[ivory-search id="288" title="AJAX Search Form"]'); ?>
+                    <?= do_shortcode('[ivory-search id="392" title="AJAX Search Form"]'); ?>
                 </div>
             </div>
 

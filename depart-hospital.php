@@ -18,7 +18,7 @@ Template Name: Отделения Городской больницы №4
                         <img src="http://test-dev1.ru/wp-content/uploads/otdelenie/Vector.png"
                             alt="Search" class="search-icon">
                     </button>
-                    <input type="text" placeholder="Поиск" class="search-input">
+                    <?= do_shortcode('[ivory-search id="392" title="AJAX Search Form"]'); ?>
                 </div>
             </div>
 

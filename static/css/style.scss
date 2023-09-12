@@ -959,9 +959,6 @@ body {
     .addstyle {
         display: block;
     }
-
-
-
     .about_slider_top {
         margin-top: 32px;
         // margin-bottom: 32px;
@@ -1587,7 +1584,6 @@ body {
                         // textarea::placeholder {
                         //     color: red;
                         //     font-size: 1.2em;
-                            
                         //   }
                     }
                 }
@@ -2486,7 +2482,7 @@ body {
     margin-right: 11px;
 }
 
-.search-input {
+.is-search-input {
     width: 90%;
     height: 50%;
     border: none;
@@ -2495,6 +2491,12 @@ body {
     font-size: 20px;
     padding-bottom: 22px;
     padding-top: 22px;
+}
+
+.search {
+    .is-search-form {
+        width: 90% !important;
+    }
 }
 
 .header-card {
@@ -2619,12 +2621,15 @@ body {
 .info-style b {
     font-family: "Open Sans";
 }
+
 .info-style_width {
     max-width: 946px;
 }
+
 .info-style_width_profile {
     max-width: 934px;
 }
+
 .card-text-img {
     margin: 6px;
     width: 288px;

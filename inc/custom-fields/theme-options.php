@@ -95,7 +95,9 @@ $basic_options_container = Container::make( 'theme_options', __( 'Theme options'
         Field::make( 'text', 'contact', __( 'Contact', 'policlinic' ) ),
         Field::make( 'image', 'custom_image', __( 'News image news', 'policlinic' ) )
             ->set_value_type( 'url' ),
-        Field::make( 'text', 'botton_text', __( 'Текст кнопки', 'policlinic' ) ),    
+        Field::make( 'text', 'botton_text', __( 'Текст кнопки', 'policlinic' ) ), 
+        Field::make('text', 'url_news', 'url')
+                    ->set_attribute('type', 'url'),   
         
 
         Field::make( 'complex', 'office_hospital', __( 'Ofices-Hospital', 'policlinic' ) )

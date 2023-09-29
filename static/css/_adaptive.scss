@@ -251,4 +251,72 @@
 
 @media(max-width: 1090px) {}
 
-// ------------------------
+// ------------------------Главная страница мобилка----------
+
+@media(max-width: 767px) {
+
+    .contacts_body {
+        display: flex;
+        flex-direction: column;
+    }
+    .news_body {
+
+    .news_img {
+        display: block;
+    }
+}
+
+}
+
+@media(max-width: 550px) {
+
+.departmens_body {
+        display: flex;
+        flex-direction: column;
+        .hospital_left_column {
+            width: 100%;
+        }
+        .other_right_column {
+            width: 100%;
+        }
+}
+
+
+
+}
+
+// ----Title-----
+
+
+
+
+// -----------Администрация------
+
+@media(max-width: 796px) {
+
+    .administration_paycheck_item {
+        display: flex;
+        flex-grow: 1;
+        max-width: 700px;
+        margin-right: 30px;
+    }
+
+
+}
+@media(max-width: 560px) {
+
+    .administration_main {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media(max-width: 500px) {
+
+    .administration_position {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}

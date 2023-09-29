@@ -40,7 +40,7 @@ Template Name: Шаблон страницы Администрация
         <div class="administration_paycheck" >
         <?php if ($bottom_slider) :?>
             <?php foreach($bottom_slider as $slider) :?>
-            <div class="administration_paycheck_item" style="width: 360px; height: 109px;">
+            <div class="administration_paycheck_item">
                 <div class="block_item font_w600_s18"><a href="<?=$slider['url']?>"><?=$slider['title']?></a></div>
             </div>
             <?php endforeach ;?>

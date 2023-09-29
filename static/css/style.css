@@ -2982,6 +2982,10 @@ body {
   .departmens_body .other_right_column {
     width: 100%;
   }
+  .departmens_title-link {
+    font-family: "OpenSans";
+    font-size: 25px;
+  }
 }
 @media (max-width: 796px) {
   .administration_paycheck_item {

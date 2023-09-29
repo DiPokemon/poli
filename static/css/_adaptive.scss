@@ -264,13 +264,14 @@
     .news_img {
         display: block;
     }
-}
+    }
+
 
 }
 
 @media(max-width: 550px) {
 
-.departmens_body {
+        .departmens_body {
         display: flex;
         flex-direction: column;
         .hospital_left_column {
@@ -279,8 +280,11 @@
         .other_right_column {
             width: 100%;
         }
-}
-
+        }
+        .departmens_title-link {
+            font-family: $font_opensans;
+            font-size: 25px;
+        }
 
 
 }

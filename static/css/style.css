@@ -890,7 +890,6 @@ body {
 .contacts_body .contacts_form {
   background: #FAF2F9;
   border-radius: 20px;
-  width: 498px;
   height: 422px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -899,6 +898,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 32px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .contacts_body .contacts_form .contact_form_title {
   color: #E80B8B;
@@ -967,6 +969,7 @@ body {
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
+  margin-left: 40px;
 }
 .contacts_body .wpcf7 .wpcf7-form .wpcf7-form-control-wrap .wpcf7-text {
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
@@ -980,7 +983,7 @@ body {
   line-height: 20px;
   color: #898989;
   padding: 12px 0 13px 14px;
-  width: 418px;
+  width: 100%;
   border-color: transparent;
 }
 .contacts_body .cf7_title {
@@ -2953,6 +2956,11 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .header_top_social {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
   .contacts_body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2963,7 +2971,15 @@ body {
             flex-direction: column;
   }
   .news_body .news_img {
-    display: block;
+    display: none;
+  }
+  .news_body .contacts_text {
+    width: 100%;
+  }
+}
+@media (min-width: 767px) {
+  .contacts_text {
+    margin-right: 68px;
   }
 }
 @media (max-width: 550px) {
@@ -2982,9 +2998,17 @@ body {
   .departmens_body .other_right_column {
     width: 100%;
   }
-  .departmens_title-link {
-    font-family: "OpenSans";
-    font-size: 25px;
+  .departmens_title-link, .important_information_title-link, .news_title-link, .gallery_title-link, .contacts_title-link {
+    font-size: 25px !important;
+  }
+  .hospital_subtitle-link, .other_office_subtitle-link, .fa-brands {
+    font-size: 18px !important;
+  }
+  .hospital_items-link, .other_office_items-link, .news_posts_items-link, .adress_left, .adress_right, .contacts_departs {
+    font-size: 14px;
+  }
+  .slider_background {
+    height: 80vw;
   }
 }
 @media (max-width: 796px) {

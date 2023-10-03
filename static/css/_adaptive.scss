@@ -250,6 +250,14 @@
 }
 
 @media(max-width: 1090px) {}
+// ------------------------Header мобилка------------------
+@media(max-width: 767px) {
+    .header_top_social
+        {
+        display: none !important;
+        }
+     
+}
 
 // ------------------------Главная страница мобилка----------
 
@@ -262,11 +270,22 @@
     .news_body {
 
     .news_img {
-        display: block;
+        display: none;
+    }
+    .contacts_text {
+        width: 100%;
+        
     }
     }
 
 
+}
+
+@media(min-width: 767px) {
+    .contacts_text {
+        margin-right: 68px;
+        
+    }
 }
 
 @media(max-width: 550px) {
@@ -281,11 +300,19 @@
             width: 100%;
         }
         }
-        .departmens_title-link {
-            font-family: $font_opensans;
-            font-size: 25px;
+        .departmens_title-link, .important_information_title-link, .news_title-link, .gallery_title-link, .contacts_title-link {
+            // font-family: $font_opensans;
+            font-size: 25px !important;
         }
-
+        .hospital_subtitle-link, .other_office_subtitle-link, .fa-brands {
+            font-size: 18px !important;
+        }
+        .hospital_items-link, .other_office_items-link, .news_posts_items-link, .adress_left, .adress_right, .contacts_departs {
+            font-size: 14px;
+        }
+        .slider_background {
+            height: 80vw;
+        }
 
 }
 

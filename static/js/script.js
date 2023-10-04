@@ -18,6 +18,14 @@ $(document).ready(function() {
                     slidesToShow: 2,
                 }
             },
+            {
+                breakpoint: 570,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    slidesToShow: 1,
+                }
+            },
         ]
     });
 });
@@ -25,6 +33,31 @@ $(document).ready(function() {
     $('.about_slider_bottom').slick({
         arrows: false,
         slidesToShow: 3,
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 570,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                slidesToShow: 1,
+            }
+        },
+    ]
     });
 });
 

@@ -1073,15 +1073,17 @@ body {
         margin-bottom: 32px;
         flex-wrap: wrap;
         .block_item {
-            // min-width: 23%;
+            width: 23%;
+            min-width: 150px;
             line-height: 25px;
             justify-content: center;
             background: #E5F2F4;
             box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
-            max-width: 289px;
+            // max-width: 289px;
             min-height: 108px;
-            padding: 0 60px;
+            padding-left: 60px;
+            padding-right: 60px;
             a {
                 color: $black;
             }
@@ -1893,11 +1895,13 @@ body {
             background: $light_blue;
             box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
-            width: 360px;
+            // width: 360px;
             height: 109px;
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 28%;
+            
             .block_item {
                 margin: 0 30px;
                 a {
@@ -1925,7 +1929,7 @@ body {
     }
     .vacancies_contact {
         display: flex;
-        gap: 15px;
+        gap: 10px;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 32px;
@@ -1934,30 +1938,32 @@ body {
             background: $white;
             box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
-            max-width: 365px;
-            min-height: 106px;
+            // max-width: 365px;
+            width: 32%;
+            height: 106px;
             display: block;
+            
             // line-height: 25px;
             padding-top: 28px;
             // font-weight: 500;
             .vacancies_contact_item_top {
                 color: $black;
                 font-family: $font_opensans;
-                font-size: 18px;
+                font-size: 17px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
             }
             .vacancies_contact_item_down {
                 font-family: $font_opensans;
-                font-size: 18px;
+                font-size: 17px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
             }
         }
         .block1 {
-            padding: 28px 7px;
+            padding-left: 28px 15px;
         }
         .block2 {
             padding: 28px 32px;

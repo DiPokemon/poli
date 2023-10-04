@@ -316,29 +316,100 @@
 
 }
 
-// ----Title-----
+// ----О больнице-----
+@media(max-width: 906px) {
+    .block_row{
+    .block_item {
+       width: 30% !important;
+    }
+}
+}
+
+
+
+
+
+@media(max-width: 767px) {
+        .about_title {
+            font-size: 40px;
+        }
+        .subtitle_top, .subtitle_bottom {
+            font-size: 25px;
+        }
+        .block_row {
+        .block_item {
+            font-size: 14px;
+        }
+    }
+    }
+
+    @media(max-width: 620px) {
+        .block_row {
+        .block_item {
+            
+            width: 48% !important;
+        }
+    }
+    }
+    @media(max-width: 450px) {
+        .block_row {
+        .block_item {
+            
+            width: 100% !important;
+        }
+    }
+    }
+
+
 
 
 
 
 // -----------Администрация------
-
-@media(max-width: 796px) {
-
-    .administration_paycheck_item {
-        display: flex;
-        flex-grow: 1;
-        max-width: 700px;
-        margin-right: 30px;
+@media(max-width: 1034px) {
+        .block_item {
+            font-size: 14px;
+        } 
+        .administration_paycheck_item {
+            width: 32% !important;
+        }
+        .administration_paycheck {
+            padding-left: 0 !important;
+        }
+    }
+    @media(max-width: 907px) {
+        .administration_paycheck_item {
+            width: 48% !important;
+        }
     }
 
 
+
+@media(max-width: 767px) {
+    .administration_title {
+    font-size: 40px;
+    }
+    .administration_text_subtitle {
+        font-size: 25px;
+    }
+    .administration_text {
+        font-size: 14px !important;
+    }
+    .administration_position_title, .administration_position_name {
+        font-size: 22px !important;
+    }
 }
+
+
+
 @media(max-width: 560px) {
 
     .administration_main {
         display: flex;
         flex-direction: column;
+    }
+    .administration_main_text {
+        margin-left: 15px;
     }
 
 }
@@ -347,6 +418,57 @@
     .administration_position {
         display: flex;
         flex-direction: column;
+    }
+    .administration_position_content {
+        margin-left: 15px;
+    }
+    .administration_paycheck_item {
+        width: 99% !important;
+    }
+    .administration_title {
+        font-size: 35px;
+        }
+
+}
+
+// -----------Вакансии----------------
+
+@media(max-width: 1027px) {
+    .vacancies_contact_item_top, .vacancies_contact_item_down {
+        font-size: 14px !important;
+
+    }
+    .block1, .block2, .block3 {
+        justify-content: center !important;
+    }
+}
+@media(max-width: 767px) {
+    .vacancies_contact_item {
+        width: 49% !important;
+        display: flex !important;
+        flex-direction: column;
+        
+    }
+    .vacancies_title {
+        font-size: 40px;
+    } 
+    .vacancies_block_title {
+        font-size: 20px !important;
+    }
+    .vacancies_block_text {
+        font-size: 14px !important;
+    }
+    .block1 {
+        padding: 28px 20px !important;
+    }
+    .vacancies_data {
+        display: none !important;
+    }
+}
+@media(max-width: 519px) {
+    .vacancies_contact_item {
+        width: 99% !important;
+        align-items: center;
     }
 
 

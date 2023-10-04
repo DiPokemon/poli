@@ -3156,6 +3156,36 @@ body {
     font-size: 14px !important;
   }
 }
+@media (max-width: 767px) {
+  .title-depart h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .title-depart h1 {
+    font-size: 28px;
+  }
+  .title-stacionar h2 {
+    font-size: 23px;
+  }
+  .title-otherdepart h2 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 767px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .header_bottom_menu ul {
   list-style: none;
   padding: 0;

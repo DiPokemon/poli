@@ -514,3 +514,29 @@
 }
 
 }
+
+// ----------------Запись на приём-------------
+
+@media(max-width: 767px) {
+    .appointment_title {
+        font-size: 40px;
+    }
+    .important2_body {
+        display: flex;
+        flex-direction: column;
+    }
+    .important2_title, .appointment_subtitle2  {
+        font-size: 24px;
+    } 
+
+    
+
+}
+@media(max-width: 450px) {
+.important2_img img {
+    // width: 100vw !important;
+    // min-width: 100vw !important;
+    width: 100%;
+    }
+
+}

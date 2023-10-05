@@ -633,6 +633,8 @@ body {
             }
         }
     }
+
+    // ---------Contact form home page------------
     .contacts_form {
         background: $background_cf;
         border-radius: 20px;
@@ -1480,6 +1482,8 @@ body {
         .reviews_title {
             margin: 28px 0 28px 0;
         }
+
+        // ---------------Contact form page Reviews-------
         .reviews_cf7 {
             background: $background_cf;
             border-radius: 20px;
@@ -1573,6 +1577,7 @@ body {
                             // padding: 12px 0 0 14px;
                         }
                         .wpcf7-text {
+                            display: flex;
                             flex-grow: 1;
                             margin: 0 40px 16px 40px;
                             // width: 100%;

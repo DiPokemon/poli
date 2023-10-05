@@ -540,3 +540,15 @@
     }
 
 }
+
+// ----------Отзывы----------
+@media(max-width: 630px) {
+    .reviews_title {
+        font-size: 40px;
+    } 
+    .prev, .next {
+        display: none !important;
+    }
+}
+
+

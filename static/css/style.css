@@ -1728,6 +1728,9 @@ body {
   color: #898989;
 }
 .page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -3206,6 +3209,14 @@ body {
 @media (max-width: 450px) {
   .important2_img img {
     width: 100%;
+  }
+}
+@media (max-width: 630px) {
+  .reviews_title {
+    font-size: 40px;
+  }
+  .prev, .next {
+    display: none !important;
   }
 }
 .header_bottom_menu ul {

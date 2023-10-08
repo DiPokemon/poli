@@ -137,6 +137,9 @@ body {
                 letter-spacing: 0.8px;
             }
         }
+        .site_identification_mobil {
+            display: none;
+        }
     }
 }
 
@@ -1577,7 +1580,7 @@ body {
                             // padding: 12px 0 0 14px;
                         }
                         .wpcf7-text {
-                            display: flex;
+                            // display: flex;
                             flex-grow: 1;
                             margin: 0 40px 16px 40px;
                             // width: 100%;
@@ -1587,6 +1590,8 @@ body {
                             border-radius: 5px;
                             padding-left: 10px;
                         }
+                    
+                    
                         textarea {
                             margin: 0 40px 26px 40px;
                             flex-grow: 1;
@@ -2696,8 +2701,7 @@ body {
     }
 }
 
-@import "adaptive";
-// выпадающее меню
+
 .header_bottom_menu ul {
     list-style: none;
     padding: 0;
@@ -2770,6 +2774,7 @@ body {
 
 
 
+@import "adaptive";
 
 
 

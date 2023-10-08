@@ -338,6 +338,9 @@ body {
 .header_middle .header_container .site_identification .visually_impaired-link {
   letter-spacing: 0.8px;
 }
+.header_middle .header_container .site_identification_mobil {
+  display: none;
+}
 
 .header_bottom {
   background-color: #45A6AF;
@@ -1728,9 +1731,6 @@ body {
   color: #898989;
 }
 .page_reviews .page_reviews_container .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -2815,6 +2815,53 @@ body {
   height: 389px;
 }
 
+.header_bottom_menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header_bottom_menu li {
+  position: relative;
+  display: inline-block;
+}
+
+.header_bottom_menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Стилизация выпадающих подменю */
+.header_bottom_menu .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  /* Изменяем top на 0 */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.header_bottom_menu .sub-menu li {
+  width: 200px;
+}
+
+/* Стилизация третьего уровня меню */
+.header_bottom_menu .sub-menu .sub-menu {
+  top: 0;
+  left: 100%;
+}
+
+.sub-menu .menu-item {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.map {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 @media (max-width: 1200px) {
   .header_container,
 .container {
@@ -2961,8 +3008,125 @@ body {
   }
 }
 @media (max-width: 767px) {
-  .header_top_social {
+  .social_header {
     display: none !important;
+  }
+  .site_identification {
+    display: none !important;
+  }
+  .site_identification_mobil {
+    min-height: 54px;
+    margin: 0 8px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site_identification_mobil .logo_img {
+    margin-right: 5px;
+  }
+  .site_identification_mobil .logo_img img {
+    width: 34px;
+    height: 34px;
+  }
+  .site_identification_mobil .logo_text {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site_identification_mobil .logo_text a {
+    color: #E80B8B;
+    font-family: "OpenSans";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .site_identification_mobil .visually_impaired_mobil {
+    margin-right: 5px;
+  }
+  .site_identification_mobil .header_phone_mobil {
+    margin-right: 5px;
+  }
+  .header_bottom {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .footer_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer_container .footer_general {
+    min-height: 63px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .footer_container .footer_general .logo_img {
+    margin: 0;
+  }
+  .footer_container .footer_general .logo_img img {
+    width: 43px;
+    height: 43px;
+  }
+  .footer_container .footer_general .logo_text {
+    width: 100%;
+  }
+  .footer_container .footer_general .logo_text a {
+    color: #E80B8B;
+    font-family: "OpenSans";
+    font-size: 13.398px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .footer_container .footer_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 19px;
+  }
+  .footer_container .footer_menu .menu_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+  .footer_container .footer_menu .menu_list .menu-item {
+    width: 33%;
+  }
+  .footer_container .footer_menu .menu_list .menu-item .menu_link span {
+    color: #BBDFE3;
+    font-family: "OpenSans";
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
 }
 @media (max-width: 767px) {
@@ -3218,50 +3382,4 @@ body {
   .prev, .next {
     display: none !important;
   }
-}
-.header_bottom_menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.header_bottom_menu li {
-  position: relative;
-  display: inline-block;
-}
-
-.header_bottom_menu a {
-  text-decoration: none;
-  color: #333;
-}
-
-/* Стилизация выпадающих подменю */
-.header_bottom_menu .sub-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  /* Изменяем top на 0 */
-  left: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-}
-
-.header_bottom_menu .sub-menu li {
-  width: 200px;
-}
-
-/* Стилизация третьего уровня меню */
-.header_bottom_menu .sub-menu .sub-menu {
-  top: 0;
-  left: 100%;
-}
-
-.sub-menu .menu-item {
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
-}
-
-.map {
-  max-height: 100vh;
-  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */

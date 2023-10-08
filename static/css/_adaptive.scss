@@ -252,13 +252,124 @@
 @media(max-width: 1090px) {}
 // ------------------------Header мобилка------------------
 @media(max-width: 767px) {
-    .header_top_social
+    .social_header
         {
         display: none !important;
         }
+        // .logo_img {
+        //     display: none;
+        // }
+        // .logo_img {
+        //     img {
+        //     width: 34px;
+        //     height: 34px;
+        //     }
+        // }
+        .site_identification {
+            display: none !important;
+        }
+        .site_identification_mobil {
+            min-height: 54px;
+            margin: 0 8px;
+            display: flex !important;
+            align-items: center;
+            .logo_img {
+                margin-right: 5px;
+                img {
+                    width: 34px;
+                    height: 34px;
+                }
+            } 
+            .logo_text {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                a {
+                    color: $red;
+                    font-family: $font_opensans;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+            .visually_impaired_mobil {
+                margin-right: 5px;
+            }
+            .header_phone_mobil {
+                margin-right: 5px;
+            }
+        }
+        .header_bottom {
+            display: none;
+        }
      
 }
+// --------------------Footer мобилка---------------------
+@media(max-width: 767px) {
+        .footer_container {
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            .footer_general {
+                min-height: 63px;
+                align-items: center;
+                gap: 10px;
+                .logo_img {
+                    margin: 0;
+                    img {
+                        width: 43px;
+                        height: 43px;
+                    }
+                }
+                .logo_text {
+                    width: 100%;
+                    a {
+                    color: $red;
+                    font-family: $font_opensans;
+                    font-size: 13.398px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    }
+                }
+            }
+            .footer_menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 19px;
+                .menu_list {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                    .menu-item {
+                        width: 33%;
+                        // align-items: center;
+                        // justify-content: center;
+                        .menu_link {
+                            span {
+                            color: $footer_text;
+                            font-family: $font_opensans;
+                            font-size: 9px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
+
+
+
+
+
+
+}
 // ------------------------Главная страница мобилка----------
 
 @media(max-width: 767px) {

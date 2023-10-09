@@ -634,6 +634,15 @@ body {
   font-size: 16px;
   color: #055D65;
 }
+.departmens_container .departmens_bottom {
+  display: none;
+}
+.departmens_container .hospital_left_mobil {
+  display: none;
+}
+.departmens_container .other_right_mobil {
+  display: none;
+}
 
 .important_information_container {
   margin-bottom: 20px;
@@ -889,6 +898,9 @@ body {
 .contacts_body .contacts_text .social .social_item i {
   color: #055D65;
   font-size: 30px;
+}
+.contacts_body .cf_wrapper_mobil .contacts_form {
+  display: none !important;
 }
 .contacts_body .contacts_form {
   background: #FAF2F9;
@@ -3008,6 +3020,12 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .header_container {
+    width: 100% !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
   .social_header {
     display: none !important;
   }
@@ -3056,6 +3074,11 @@ body {
   }
   .header_bottom {
     display: none;
+  }
+}
+@media (max-width: 450px) {
+  .header_top_menu span {
+    font-size: 8px !important;
   }
 }
 @media (max-width: 767px) {
@@ -3152,32 +3175,106 @@ body {
   }
 }
 @media (max-width: 550px) {
+  .hospital_left_mobil {
+    display: block !important;
+  }
+  .hospital_left_desktop {
+    display: none;
+  }
+  .other_right_mobil {
+    display: block !important;
+  }
+  .other_right_desktop {
+    display: none;
+  }
   .departmens_body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    gap: 5px !important;
+    margin: 0 8px !important;
   }
-  .departmens_body .hospital_left_column {
-    width: 100%;
+  .departmens_body .hospital_left_column, .departmens_body .other_right_column {
+    padding-bottom: 5px !important;
   }
-  .departmens_body .other_right_column {
-    width: 100%;
+  .departmens_body .hospital_left_column .hospital_subtitle, .departmens_body .hospital_left_column .other_office_subtitle, .departmens_body .other_right_column .hospital_subtitle, .departmens_body .other_right_column .other_office_subtitle {
+    margin: 10px 0 9px 5px !important;
+  }
+  .departmens_body .hospital_left_column .hospital_subtitle .fanendoscope_img, .departmens_body .hospital_left_column .other_office_subtitle .fanendoscope_img, .departmens_body .other_right_column .hospital_subtitle .fanendoscope_img, .departmens_body .other_right_column .other_office_subtitle .fanendoscope_img {
+    display: none;
+  }
+  .departmens_body .hospital_left_column .hospital_items, .departmens_body .hospital_left_column .other_office_items, .departmens_body .other_right_column .hospital_items, .departmens_body .other_right_column .other_office_items {
+    margin-left: 5px !important;
+  }
+  .departmens_body .hospital_left_column .hospital_items li, .departmens_body .hospital_left_column .other_office_items li, .departmens_body .other_right_column .hospital_items li, .departmens_body .other_right_column .other_office_items li {
+    margin-bottom: 10px !important;
+  }
+  .departmens_bottom {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin: 21px 7px 12px 7px !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 50px;
+    background: linear-gradient(40deg, #E80B8B 0%, #FF8ED0 100%);
+    padding: 11px 120px;
+  }
+  .departmens_bottom .departmens_bottom_link {
+    color: #ffffff;
+    text-align: center;
+    /* Мобилка/Основной */
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
   .departmens_title-link, .important_information_title-link, .news_title-link, .gallery_title-link, .contacts_title-link {
-    font-size: 25px !important;
+    font-size: 22px !important;
+    margin: 25px 0px 10px 8px !important;
   }
   .hospital_subtitle-link, .other_office_subtitle-link, .fa-brands {
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
   .hospital_items-link, .other_office_items-link, .news_posts_items-link, .adress_left, .adress_right, .contacts_departs {
     font-size: 14px;
   }
   .slider_background {
     height: 80vw;
+  }
+  .news_body {
+    margin: 0 8px !important;
+  }
+  .news_buttom {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .news_buttom .news_buttom-link {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-family: "OpenSans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .contacts_body .contacts_text {
+    margin-left: 7px !important;
+    margin-right: 7px !important;
+  }
+  .contacts_body .contacts_departs {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+  .cf_wrapper {
+    display: none !important;
+  }
+  .cf_wrapper_mobil {
+    display: block !important;
   }
 }
 @media (max-width: 906px) {

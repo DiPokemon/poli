@@ -52,8 +52,9 @@ Template Name: Main page
                 </h3>
 
 
-
+                <div class="hospital_left_desktop">
                 <?php
+                
                 $posts = get_posts([
                     'numberposts' => -1,
                     'category' => 1,
@@ -77,7 +78,37 @@ Template Name: Main page
                 }
                 wp_reset_postdata();
                 ?>
+                </div>
+
+                <div class="hospital_left_mobil">
+                <?php
                 
+                $posts = get_posts([
+                    'numberposts' => 4,
+                    'category' => 1,
+                    'orderby' => 'date',
+                    'order' => 'DESC',
+                    'post_type' => 'post',
+                    'suppress_filter' => true
+                ]);
+
+
+
+                foreach ($posts as $post) {
+                    setup_postdata ($post);
+                    ?>
+                    <div class="hospital_items">
+                        <ul class="hospital_items_nav">
+                        <li><a href="#" class="hospital_items-link"><?php the_title(); ?></a></li>
+                        </ul>
+                    </div>
+                    <?php
+                }
+                wp_reset_postdata();
+                ?>
+                </div>
+
+
             </div>
 
 
@@ -86,6 +117,7 @@ Template Name: Main page
                 <img class="fanendoscope_img" src="http://test-dev1.ru/wp-content/uploads/2023/05/fanendoscope.png" alt="im" />
                 <a href="#" class="other_office_subtitle-link"><?= get_category( 5, ARRAY_A)['name']; ?></a></h3>
 
+            <div class="other_right_desktop">    
             <?php
                 $posts = get_posts([
                     'numberposts' => -1,
@@ -109,9 +141,39 @@ Template Name: Main page
                 }
             wp_reset_postdata();
             ?>
+            </div>
+
+            <div class="other_right_mobil">    
+            <?php
+                $posts = get_posts([
+                    'numberposts' => 5,
+                    'category' => 5,
+                    'orderby' => 'DESC',
+                    'post_type' => 'post',
+                    'suppress_filter' => true
+                ]);
+
+
+
+                foreach ($posts as $post) {
+                    setup_postdata ($post);
+                    ?>
+                    <div class="other_office_items">
+                        <ul class="other_office_items_nav">
+                        <li><a href="#" class="other_office_items-link"><?php the_title(); ?></a></li>
+                        </ul>
+                    </div>
+                    <?php
+                }
+            wp_reset_postdata();
+            ?>
+            </div>
 
 
             </div>
+        </div>
+        <div class="departmens_bottom">
+        <a href="#" class="departmens_bottom_link">Все отделения</a>
         </div>
     </div>
 </section>
@@ -328,15 +390,24 @@ Template Name: Main page
                 </nav>
                 
             </div>
+            <div class="cf_wrapper">
             <div class="contacts_form">
             
             <?= do_shortcode('[contact-form-7 id="67" title="Контактная форма 1"]'); ?>
+            </div>
             </div>
 
         </div>             
         <div class="map">
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A33a2a7bc07b169c86e649ae6c58e8143399888560efcdf4494892c443a5c2773&amp;width=1200&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
+
+        <div class="cf_wrapper_mobil">
+        <div class="contacts_form">
+            
+            <?= do_shortcode('[contact-form-7 id="67" title="Контактная форма 1"]'); ?>
+            </div>
+            </div>
 
 
 

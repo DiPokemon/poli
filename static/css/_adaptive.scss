@@ -252,6 +252,12 @@
 @media(max-width: 1090px) {}
 // ------------------------Header мобилка------------------
 @media(max-width: 767px) {
+    .header_container {
+        width: 100% !important;
+        justify-content: center !important;
+        
+    }
+    
     .social_header
         {
         display: none !important;
@@ -304,6 +310,15 @@
             display: none;
         }
      
+}
+@media(max-width: 450px) {
+
+        .header_top_menu {
+            span {
+                font-size: 8px !important;
+            }
+        }
+
 }
 // --------------------Footer мобилка---------------------
 @media(max-width: 767px) {
@@ -400,29 +415,108 @@
 }
 
 @media(max-width: 550px) {
+        .hospital_left_mobil {
+            display: block !important;
+        }
+        .hospital_left_desktop {
+            display: none;
+        }
+        .other_right_mobil {
+            display: block !important;
+        }
+        .other_right_desktop {
+            display: none;
+        }
 
         .departmens_body {
-        display: flex;
-        flex-direction: column;
-        .hospital_left_column {
-            width: 100%;
+            gap: 5px !important; 
+            margin: 0 8px !important;
+            .hospital_left_column, .other_right_column {
+                padding-bottom: 5px !important;
+                .hospital_subtitle, .other_office_subtitle {
+                    margin: 10px 0 9px 5px !important;
+                    .fanendoscope_img {
+                        display: none;
+                    }
+                }
+                .hospital_items, .other_office_items {
+                    margin-left: 5px !important;
+                    li {
+                        margin-bottom: 10px !important;
+                    }
+                }
+            }
+            
         }
-        .other_right_column {
-            width: 100%;
-        }
+        .departmens_bottom {
+            display: flex !important;
+            margin: 21px 7px 12px 7px !important;
+            justify-content: center;
+            border-radius: 50px;
+            background: linear-gradient(40deg, #E80B8B 0%, #FF8ED0 100%);
+            padding: 11px 120px;
+            .departmens_bottom_link {
+                color: $white;
+                text-align: center;
+                /* Мобилка/Основной */
+                font-family: $font_opensans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
         }
         .departmens_title-link, .important_information_title-link, .news_title-link, .gallery_title-link, .contacts_title-link {
             // font-family: $font_opensans;
-            font-size: 25px !important;
+            font-size: 22px !important;
+            margin: 25px 0px 10px 8px !important;
         }
         .hospital_subtitle-link, .other_office_subtitle-link, .fa-brands {
-            font-size: 18px !important;
+            font-size: 16px !important;
         }
         .hospital_items-link, .other_office_items-link, .news_posts_items-link, .adress_left, .adress_right, .contacts_departs {
             font-size: 14px;
         }
         .slider_background {
             height: 80vw;
+        }
+        // -----Блок новости----------
+        .news_body {
+            margin: 0 8px !important;
+        }
+        .news_buttom {
+            display: flex !important;
+            justify-content: center;
+            
+            .news_buttom-link {
+                width: 100%;
+                color: $white;
+                text-align: center;
+                font-family: $font_opensans;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                
+            }
+        }
+        .contacts_body {
+        .contacts_text {
+            margin-left: 7px !important;
+            margin-right: 7px !important;
+
+        }
+        .contacts_departs {
+            margin-left: 15px !important;
+            margin-right: 15px !important;
+        }
+        }
+        .cf_wrapper {
+            display: none !important;
+        }
+        .cf_wrapper_mobil {
+            display: block !important;
         }
 
 }

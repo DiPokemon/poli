@@ -648,11 +648,7 @@ body {
     }
 
     // ---------Contact form home page------------
-    .cf_wrapper_mobil {
-        .contacts_form {
-        display: none !important;
-    }
-    }
+  
     .contacts_form {
         background: $background_cf;
         border-radius: 20px;
@@ -764,7 +760,125 @@ body {
         margin-bottom: 22px;
     }
 }
+.contacts_container {
+  .cf_wrapper_mobil {
+    display: none;
+    margin-left: -10px;
+    margin-right: -10px;
+    }
+    .contacts_form {
+        background: $background_cf;
+        // border-radius: 20px;
+        // max-width: 498px;
+        height: 422px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        flex: 1;
+       
+        .contact_form_title {
+            color: #E80B8B;
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            margin-top: 5px;
+            margin-bottom: 22px;
+        }
+        .pers_data {
+            font-size: 12px;
+            color: $blue_h2;
+            display: flex;
+            a {
+                color: $blue_h2;
+                text-decoration: underline;
+            }
+        }
+    }
+    input[name="privacy"] {
+        width: 22px;
+        height: 22px;
+    }
+    .consent {
+        padding-left: 7px;
+        p {
+            padding-top: 5px;
+        }
+    }
+    .wpcf7 {
+        margin-top: 10px;
+        margin-bottom: 39px;
+        .wpcf7-form {
+            .text_cf7_bottom {
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: $text_cf7bottom;
+                a {
+                    color: $text_cf7bottom;
+                    text-decoration: underline;
+                }
+            }
+            .wpcf7-submit {
+                margin-top: 36px;
+                font-family: $font_opensans;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                // line-height: 19px;
+                text-align: center;
+                background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
+                border-radius: 50px;
+                width: 100%;
+                height: 50px;
+                color: $white;
+                border-color: transparent;
+            }
+            .wpcf7-form-control-wrap {
+               
+                .wpcf7-list-item {
+                    margin: 0;
+                    input {
+                        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+                        border-radius: 2px;
+                        // margin-left: 40px;
+                    }
+                }
+                .wpcf7-text {
+                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 5px;
+                    margin-bottom: 16px;
+                    // margin-left: 40px;
+                    // margin-right: 40px;
+                    font-family: $font_opensans;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: $text_cf7;
+                    padding: 12px 0 13px 14px;
+                    // width: 418px;
+                    width: 100%;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+    .cf7_title {
+        font-family: $font_opensans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        // line-height: 33px;
+        // display: flex;
+        // align-items: center;
+        color: $red;
+        margin-bottom: 22px;
+    }
 
+}
 // site_identification
 .logo_text {
     width: 370px;

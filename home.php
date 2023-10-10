@@ -390,12 +390,13 @@ Template Name: Main page
                 </nav>
                 
             </div>
-            <div class="cf_wrapper">
-            <div class="contacts_form">
             
+            <div class="contacts_form">
+            <div class="cf_wrapper">
             <?= do_shortcode('[contact-form-7 id="67" title="Контактная форма 1"]'); ?>
             </div>
             </div>
+            
 
         </div>             
         <div class="map">
@@ -404,8 +405,9 @@ Template Name: Main page
 
         <div class="cf_wrapper_mobil">
         <div class="contacts_form">
+        
+        <?= do_shortcode('[contact-form-7 id="67" title="Контактная форма 1"]'); ?>
             
-            <?= do_shortcode('[contact-form-7 id="67" title="Контактная форма 1"]'); ?>
             </div>
             </div>
 

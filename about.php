@@ -22,7 +22,7 @@ Template Name: Шаблон страницы О больнице
         <?php endforeach; ?>
       <?php endif; ?>
 <?php if ($about_banners) :?>
-  <div class="about_slider_top">
+  <!-- <div class="about_slider_top">
   <?php foreach($about_banners as $banner):?>
       <div class="slider__item">
           <div>
@@ -31,7 +31,7 @@ Template Name: Шаблон страницы О больнице
     </div>
 
     <?php endforeach;?>
-  </div>
+  </div> -->
 <?php endif;?>
 
 

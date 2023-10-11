@@ -1101,6 +1101,15 @@ body {
     .addstyle {
         display: block;
     }
+    .about_image_block {
+        display: flex;
+        gap: 10px;
+        // flex-wrap: wrap;
+    }
+    
+    
+    
+    
     .about_slider_top {
         margin-top: 32px;
         // margin-bottom: 32px;
@@ -1149,6 +1158,14 @@ body {
         /* Элемент точки */
         .slick-dots li button {}
     }
+
+
+
+
+
+
+
+
     .about_slider_bottom {
         /* Слайдер */
         .slick-slider {}

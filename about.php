@@ -21,6 +21,8 @@ Template Name: Шаблон страницы О больнице
         <br>
         <?php endforeach; ?>
       <?php endif; ?>
+
+<!--------------------------------------------------  -->
 <?php if ($about_banners) :?>
   <!-- <div class="about_slider_top">
   <?php foreach($about_banners as $banner):?>
@@ -33,7 +35,30 @@ Template Name: Шаблон страницы О больнице
     <?php endforeach;?>
   </div> -->
 <?php endif;?>
+<!-- ------------------------------------------------ -->
 
+
+<?php
+$about_banners = carbon_get_the_post_meta('about_banners');
+
+if ($about_banners) {
+    echo '<div class="about_image_block">';
+    foreach ($about_banners as $banner) {
+        // echo '<div class="about_image_item">';
+        // echo '<div>';
+        echo '<img class="about_banner_desk" src="' . esc_url($banner['about_banner_desk']) . '" alt="' . esc_attr($banner['about_banner_alt']) . '" title="' . esc_attr($banner['about_banner_title']) . '" width="290" height="430">';
+        // echo '</div>';
+        // echo '</div>';
+    }
+    echo '</div>';
+}
+?>
+
+
+
+
+
+<!-- ------------------------------------------------- -->
 
 
       <div class="text_bottom font_w400_s18">

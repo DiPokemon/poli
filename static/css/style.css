@@ -1317,6 +1317,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  margin-bottom: 32px;
+}
+.about_container .about_image_block .about_image_item {
+  max-width: 289px;
+  max-height: 432px;
+}
+.about_container .about_image_block .about_image_item img {
+  width: 100%;
+  height: 100%;
 }
 .about_container .about_slider_top {
   margin-top: 32px;
@@ -1396,8 +1405,6 @@ body {
   display: flex;
   gap: 10px;
   margin-bottom: 32px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .about_container .block_row .block_item {
   width: 23%;
@@ -3408,13 +3415,34 @@ body {
   }
 }
 @media (max-width: 620px) {
+  .about_image_block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about_image_block .about_image_item {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .about_image_block .about_image_item:nth-child(even) {
+    margin-right: 0 !important;
+  }
+  .block_row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .block_row .block_item {
     width: 48% !important;
   }
 }
 @media (max-width: 450px) {
   .block_row .block_item {
-    width: 100% !important;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 13px;
+    max-height: 60px !important;
+    padding-left: 39px !important;
+    padding-right: 39px !important;
   }
 }
 @media (max-width: 1034px) {
@@ -3475,7 +3503,11 @@ body {
     margin-left: 15px;
   }
   .administration_paycheck_item {
-    width: 99% !important;
+    height: 72px !important;
+  }
+  .administration_paycheck_item a {
+    font-size: 10px !important;
+    line-height: 15px !important;
   }
   .administration_title {
     font-size: 35px;

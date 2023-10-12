@@ -549,7 +549,20 @@
     }
 
     @media(max-width: 620px) {
+        .about_image_block {
+            flex-wrap: wrap;
+            .about_image_item {
+                flex-basis: 48%;
+            }
+        }
+        .about_image_block {
+           .about_image_item:nth-child(even) {
+            margin-right: 0 !important;
+            }
+        }
+        
         .block_row {
+            flex-wrap: wrap;
         .block_item {
             
             width: 48% !important;
@@ -560,7 +573,13 @@
         .block_row {
         .block_item {
             
-            width: 100% !important;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 13px;
+            max-height: 60px !important;
+            padding-left: 39px !important;
+            padding-right: 39px !important;
         }
     }
     }
@@ -628,12 +647,18 @@
         margin-left: 15px;
     }
     .administration_paycheck_item {
-        width: 99% !important;
+        
+        
+        height: 72px !important;
+        a {
+            font-size: 10px !important;
+            line-height: 15px !important;
+        }
     }
     .administration_title {
         font-size: 35px;
         }
-
+    
 }
 
 // -----------Вакансии----------------

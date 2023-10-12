@@ -46,7 +46,7 @@ if ($about_banners) {
     foreach ($about_banners as $banner) {
         // echo '<div class="about_image_item">';
         // echo '<div>';
-        echo '<img class="about_banner_desk" src="' . esc_url($banner['about_banner_desk']) . '" alt="' . esc_attr($banner['about_banner_alt']) . '" title="' . esc_attr($banner['about_banner_title']) . '" width="290" height="430">';
+        echo '<div class="about_image_item"><img class="about_banner_desk" src="' . esc_url($banner['about_banner_desk']) . '" alt="' . esc_attr($banner['about_banner_alt']) . '" title="' . esc_attr($banner['about_banner_title']) . '" width="290" height="430"></div>';
         // echo '</div>';
         // echo '</div>';
     }

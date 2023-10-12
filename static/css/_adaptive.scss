@@ -251,7 +251,7 @@
 
 @media(max-width: 1090px) {}
 // ------------------------Header мобилка------------------
-@media(max-width: 767px) {
+@media(max-width: 790px) {
     .header_container {
         width: 100% !important;
         justify-content: center !important;
@@ -293,7 +293,7 @@
                 a {
                     color: $red;
                     font-family: $font_opensans;
-                    font-size: 10px;
+                    font-size: 12px;
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
@@ -313,6 +313,13 @@
 }
 @media(max-width: 450px) {
 
+    .site_identification_mobil {
+        .logo_text {
+            a {
+                font-size: 10px;
+            }
+        }
+    }
         .header_top_menu {
             span {
                 font-size: 8px !important;
@@ -521,13 +528,18 @@
 
 }
 
-// ----О больнице-----
+// ----О больнице mobilka-----
 @media(max-width: 906px) {
     .block_row{
     .block_item {
        width: 30% !important;
     }
 }
+    .about_slider_bottom {
+        .slick-track {
+            margin-left: 0 !important;
+        } 
+    }
 }
 
 

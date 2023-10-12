@@ -1060,6 +1060,10 @@ body {
   margin-top: 10px;
   margin-bottom: 39px;
 }
+.contacts_container .wpcf7 .wpcf7-form {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .contacts_container .wpcf7 .wpcf7-form .text_cf7_bottom {
   font-family: "OpenSans";
   font-style: normal;
@@ -3140,7 +3144,7 @@ body {
     height: 70vw;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 790px) {
   .header_container {
     width: 100% !important;
     -webkit-box-pack: center !important;
@@ -3182,7 +3186,7 @@ body {
   .site_identification_mobil .logo_text a {
     color: #E80B8B;
     font-family: "OpenSans";
-    font-size: 10px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -3198,6 +3202,9 @@ body {
   }
 }
 @media (max-width: 450px) {
+  .site_identification_mobil .logo_text a {
+    font-size: 10px;
+  }
   .header_top_menu span {
     font-size: 8px !important;
   }
@@ -3401,6 +3408,9 @@ body {
 @media (max-width: 906px) {
   .block_row .block_item {
     width: 30% !important;
+  }
+  .about_slider_bottom .slick-track {
+    margin-left: 0 !important;
   }
 }
 @media (max-width: 767px) {

@@ -48,7 +48,7 @@ Template Name: Приемное отделение стационара
         </div>
 
 
-
+        <div class="wrapper_display-flex">
         <div class="display-flex">
         <?php $count = 0; ?>
         <?php foreach($receptions_staff as $item) :?>
@@ -65,6 +65,7 @@ Template Name: Приемное отделение стационара
                 </div><div class="display-flex">
             <?php endif; ?>
         <?php endforeach ;?>
+        </div>
         </div>
 
 

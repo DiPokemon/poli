@@ -756,6 +756,26 @@
 // }
 
 // }
+// -------------Приёмное отделение стационара--------------------
+
+
+@media(max-width: 450px) {
+.display-flex {
+    .cards-for-text {
+        h3 {
+            font-size: 16px !important;
+        }
+        span {
+            font-size: 9px !important;
+             }
+        p {
+            font-size: 9px !important;
+        }     
+    }
+}
+}
+
+
 
 // ----------------Запись на приём-------------
 

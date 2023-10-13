@@ -2599,6 +2599,9 @@ body {
   margin-bottom: 32px;
 }
 
+.page_sout_container {
+  margin-bottom: 100px;
+}
 .page_sout_container .page_sout_title {
   margin: 28px 0;
 }
@@ -2826,10 +2829,9 @@ body {
 
 .cards-for-text {
   margin-right: 35px;
-  padding: 10px;
   margin-top: 15px;
-  width: 516px;
-  height: 147px;
+  max-width: 516px;
+  max-height: 147px;
   border: 1px solid #BBDFE3;
   border-radius: 10px;
   font-family: "Open Sans";
@@ -2862,11 +2864,13 @@ body {
   font-size: 12px;
 }
 
-.display-flex {
+.wrapper_display-flex {
+  margin-bottom: 28px;
+}
+.wrapper_display-flex .display-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 28px;
 }
 
 .display-flex-hospital {
@@ -3590,6 +3594,17 @@ body {
   }
   .title-otherdepart h2 {
     font-size: 23px;
+  }
+}
+@media (max-width: 450px) {
+  .display-flex .cards-for-text h3 {
+    font-size: 16px !important;
+  }
+  .display-flex .cards-for-text span {
+    font-size: 9px !important;
+  }
+  .display-flex .cards-for-text p {
+    font-size: 9px !important;
   }
 }
 @media (max-width: 767px) {

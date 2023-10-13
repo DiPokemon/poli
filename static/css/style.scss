@@ -2517,6 +2517,7 @@ body {
 
 // ----------------Результаты СОУТ-------------
 .page_sout_container {
+    margin-bottom: 100px;
     .page_sout_title {
         margin: 28px 0;
     }
@@ -2730,10 +2731,10 @@ body {
 
 .cards-for-text {
     margin-right: 35px;
-    padding: 10px;
+    // padding: 10px;
     margin-top: 15px;
-    width: 516px;
-    height: 147px;
+    max-width: 516px;
+    max-height: 147px;
     border: 1px solid #BBDFE3;
     border-radius: 10px;
     font-family: "Open Sans";
@@ -2771,10 +2772,14 @@ body {
     }
 }
 
+.wrapper_display-flex {
+    margin-bottom: 28px;
+
 .display-flex {
     display: flex;
     // flex-wrap: wrap;
-    margin-bottom: 28px;
+    // margin-bottom: 28px;
+}
 }
 
 .display-flex-hospital {

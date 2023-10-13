@@ -29,10 +29,10 @@ Template Name: Общая информация о стационаре
         </div>
 
 
-        <div class="cards">
+        <div class="cards_stacionar">
             <?php foreach($images as $item) :?>
-                <div class="twise-card">
-                    <img src="<?=$item['image']?>"  alt="">
+                <div class="twise-card_stacionar">
+                    <img class="cards_stacionar_img" src="<?=$item['image']?>"  alt="">
                 </div>
             <?php endforeach ;?>
             

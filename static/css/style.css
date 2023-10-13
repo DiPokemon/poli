@@ -2640,8 +2640,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.search .is-form-style .is-search-input {
+  width: 90% !important;
+}
 
-.cards {
+.cards_stacionar {
   margin-top: 32px;
   margin-bottom: 32px;
   display: -webkit-box;
@@ -2651,6 +2654,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 32px;
+}
+.cards_stacionar .twise-card_stacionar .cards_stacionar_img {
+  width: 100%;
 }
 
 .title-depart {
@@ -2867,9 +2873,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-bottom: 28px;
+}
+.display-flex-hospital .card-text-img {
+  max-width: 288px;
+  max-height: 192px;
+  -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.display-flex-hospital .card-text-img .depart_hospital_img {
+  max-width: 100%;
 }
 
 .info {
@@ -2911,23 +2925,9 @@ body {
   max-width: 934px;
 }
 
-.card-text-img {
-  margin: 6px;
-  width: 288px;
-  height: 192px;
-  -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-}
-
 .card-text-img img {
-  max-width: 100%;
-  position: absolute;
+  width: 100%;
   border-radius: 5px;
-}
-
-.card-text-img .second-paragrap {
-  margin-top: 33% !important;
 }
 
 .card-text-img p {
@@ -2936,7 +2936,7 @@ body {
   font-size: 18px;
   font-family: "Open Sans";
   position: relative;
-  margin-top: 82px;
+  margin-top: -82px;
 }
 
 .depart-travmpunkt .cards {
@@ -3590,20 +3590,6 @@ body {
   }
   .title-otherdepart h2 {
     font-size: 23px;
-  }
-}
-@media (max-width: 767px) {
-  .cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 @media (max-width: 767px) {

@@ -2553,14 +2553,24 @@ body {
 .search {
     display: flex;
     justify-content: center;
+    .is-form-style {
+         .is-search-input {
+            width: 90% !important;
+         }
+        }
 }
 
-.cards {
+.cards_stacionar {
     margin-top: 32px;
     margin-bottom: 32px;
     display: flex;
     justify-content: center;
     gap: 32px;
+    .twise-card_stacionar {
+        .cards_stacionar_img {
+            width: 100%;
+        }
+    } 
 }
 
 .title-depart {
@@ -2769,8 +2779,20 @@ body {
 
 .display-flex-hospital {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     margin-bottom: 28px;
+    .card-text-img {
+        // display: flex;
+        max-width: 288px;
+        max-height: 192px;
+        box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        .depart_hospital_img {
+                max-width: 100%;
+                // height: 100%;
+            }
+        
+    }
 }
 
 .info {
@@ -2812,27 +2834,27 @@ body {
     max-width: 934px;
 }
 
-.card-text-img {
-    margin: 6px;
-    width: 288px;
-    height: 192px;
-    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}
+// .card-text-img {
+//     margin: 6px;
+//     width: 288px;
+//     height: 192px;
+//     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+//     border-radius: 5px;
+// }
 
 .card-text-img {
     // margin-bottom: 14px;
     // margin-right: 14px;
     img {
-        max-width: 100%;
-        position: absolute;
+        width: 100%;
+        // position: absolute;
         border-radius: 5px;
     }
 }
 
-.card-text-img .second-paragrap {
-    margin-top: 33% !important;
-}
+// .card-text-img .second-paragrap {
+//     margin-top: 33% !important;
+// }
 
 .card-text-img p {
     padding-left: 14px;
@@ -2840,7 +2862,7 @@ body {
     font-size: 18px;
     font-family: "Open Sans";
     position: relative;
-    margin-top: 82px;
+    margin-top: -82px;
 }
 
 .depart-travmpunkt {

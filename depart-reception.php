@@ -11,7 +11,7 @@ Template Name: Приемное отделение стационара
         <div class="title-depart">
         <h1><?php echo get_the_title(); ?></h1>
         </div>
-        <div class="for-flex">
+        <!-- <div class="for-flex">
             <div class="search">
                 <button type="submit" class="search-button">
                     <img src="http://test-dev1.ru/wp-content/uploads/otdelenie/Vector.png"
@@ -19,6 +19,16 @@ Template Name: Приемное отделение стационара
                 </button>
                 <input type="text" placeholder="Поиск" class="search-input">
             </div>
+        </div> -->
+
+        <div class="for-flex">
+                <div class="search">
+                    <button type="submit" class="search-button">
+                        <img src="http://test-dev1.ru/wp-content/uploads/otdelenie/Vector.png"
+                            alt="Search" class="search-icon">
+                    </button>
+                    <?= do_shortcode('[ivory-search id="392" title="AJAX Search Form"]'); ?>
+                </div>
         </div>
 
     

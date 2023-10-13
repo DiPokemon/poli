@@ -34,7 +34,7 @@ Template Name: Отделения Городской больницы №4
                 <div class="display-flex-hospital">
                     <?php foreach($depart_hospital as $item) :?>
                     <div class="card-text-img"> 
-                            <a href="<?=$item['url']?>"><img src="<?=$item['image']?>"   alt="img"></a>
+                            <a class="depart_hospital_a" href="<?=$item['url']?>"><img class="depart_hospital_img" src="<?=$item['image']?>"   alt="img"></a>
                             <p> <br><br><?=$item['name']?></p>
                         </div>
                         <?php endforeach ;?>

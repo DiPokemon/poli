@@ -102,6 +102,8 @@ Template Name: Шаблон страницы Информация по прав�
     <h3 class="page_information_subtitle font_w700_s35"><?=$item['title']?></h3>
         <?php endif ;?>
     <?php endforeach ?>
+
+    <div class="slider_wrapper">
     <div class="slider_patient_routing">
         <?php foreach($routing_image as $item) :?>
     <div class="slider__item">
@@ -109,11 +111,14 @@ Template Name: Шаблон страницы Информация по прав�
         </div>
         <?php endforeach ?>
     </div>
+    </div>
     <?php foreach($guarantee2 as $guarantee):?>
         <?php if (!empty($guarantee['title'])) :?>
     <h3 class="page_information_subtitle font_w700_s35"><?=$guarantee['title']?></h3>
         <?php endif ;?>
     <?php endforeach ?>
+
+    <div class="slider_wrapper">
     <div class="slider_free_medical">
         <?php foreach($guarantee2 as $guarantee):?>
         <div class="slider__item">
@@ -121,7 +126,7 @@ Template Name: Шаблон страницы Информация по прав�
         </div>
         <?php endforeach ;?>
     </div>  
-    
+    </div> 
     
     <?php foreach($information2 as $item) :?>
         <h3 class="page_information_subtitle font_w700_s35"><?=$item['head_title']?></h3> 
@@ -170,3 +175,12 @@ Template Name: Шаблон страницы Информация по прав�
 
 
 <?php get_footer(); ?>
+
+
+
+<style>
+    @media(max-width: 600px){
+    .slider_free_medical .slider__item img{
+        width:100% !important;
+    }}
+    </style>

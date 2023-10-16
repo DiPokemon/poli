@@ -250,69 +250,66 @@
 }
 
 @media(max-width: 1090px) {}
+
 // ------------------------Header мобилка------------------
 @media(max-width: 790px) {
     .header_container {
         width: 100% !important;
         justify-content: center !important;
-        
     }
-    
-    .social_header
-        {
+    .social_header {
         display: none !important;
+    }
+    // .logo_img {
+    //     display: none;
+    // }
+    // .logo_img {
+    //     img {
+    //     width: 34px;
+    //     height: 34px;
+    //     }
+    // }
+    .site_identification {
+        display: none !important;
+    }
+    .site_identification_mobil {
+        min-height: 54px;
+        margin: 0 8px;
+        display: flex !important;
+        align-items: center;
+        .logo_img {
+            margin-right: 5px;
+            img {
+                width: 34px;
+                height: 34px;
+            }
         }
-        // .logo_img {
-        //     display: none;
-        // }
-        // .logo_img {
-        //     img {
-        //     width: 34px;
-        //     height: 34px;
-        //     }
-        // }
-        .site_identification {
-            display: none !important;
-        }
-        .site_identification_mobil {
-            min-height: 54px;
-            margin: 0 8px;
-            display: flex !important;
+        .logo_text {
+            width: 100%;
+            display: flex;
             align-items: center;
-            .logo_img {
-                margin-right: 5px;
-                img {
-                    width: 34px;
-                    height: 34px;
-                }
-            } 
-            .logo_text {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                a {
-                    color: $red;
-                    font-family: $font_opensans;
-                    font-size: 12px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                }
-            }
-            .visually_impaired_mobil {
-                margin-right: 5px;
-            }
-            .header_phone_mobil {
-                margin-right: 5px;
+            a {
+                color: $red;
+                font-family: $font_opensans;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
             }
         }
-        .header_bottom {
-            display: none;
+        .visually_impaired_mobil {
+            margin-right: 5px;
         }
-     
+        .header_phone_mobil {
+            margin-right: 5px;
+        }
+    }
+    .header_bottom {
+        display: none;
+    }
 }
-@media(max-width: 450px) {
 
+@media(max-width: 450px) {
     .site_identification_mobil {
         .logo_text {
             a {
@@ -320,271 +317,260 @@
             }
         }
     }
-        .header_top_menu {
-            span {
-                font-size: 8px !important;
-            }
+    .header_top_menu {
+        span {
+            font-size: 8px !important;
         }
-
+    }
 }
+
 // --------------------Footer мобилка---------------------
 @media(max-width: 767px) {
-        .footer_container {
-            display: flex;
-            flex-direction: column;
-            // justify-content: center;
+    .footer_container {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        .footer_general {
+            min-height: 63px;
             align-items: center;
-            .footer_general {
-                min-height: 63px;
-                align-items: center;
-                gap: 10px;
-                .logo_img {
-                    margin: 0;
-                    img {
-                        width: 43px;
-                        height: 43px;
-                    }
+            gap: 10px;
+            .logo_img {
+                margin: 0;
+                img {
+                    width: 43px;
+                    height: 43px;
                 }
-                .logo_text {
-                    width: 100%;
-                    a {
+            }
+            .logo_text {
+                width: 100%;
+                a {
                     color: $red;
                     font-family: $font_opensans;
                     font-size: 13.398px;
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
-                    }
                 }
             }
-            .footer_menu {
+        }
+        .footer_menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 19px;
+            .menu_list {
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                margin-bottom: 19px;
-                .menu_list {
-                    display: flex;
-                    justify-content: center;
-                    gap: 10px;
-                    .menu-item {
-                        width: 33%;
-                        // align-items: center;
-                        // justify-content: center;
-                        .menu_link {
-                            span {
+                gap: 10px;
+                .menu-item {
+                    width: 33%;
+                    // align-items: center;
+                    // justify-content: center;
+                    .menu_link {
+                        span {
                             color: $footer_text;
                             font-family: $font_opensans;
                             font-size: 9px;
                             font-style: normal;
                             font-weight: 600;
                             line-height: normal;
-                            }
                         }
                     }
                 }
             }
         }
-
-
-
-
-
-
-
+    }
 }
+
 // ------------------------Главная страница мобилка----------
-
 @media(max-width: 767px) {
-
     .contacts_body {
         display: flex;
         flex-direction: column;
     }
     .news_body {
-
-    .news_img {
-        display: none;
+        .news_img {
+            display: none;
+        }
+        .contacts_text {
+            width: 100%;
+        }
     }
-    .contacts_text {
-        width: 100%;
-        
-    }
-    }
-
-
 }
 
 @media(min-width: 767px) {
     .contacts_text {
         margin-right: 68px;
-        
     }
 }
 
 @media(max-width: 550px) {
-        .hospital_left_mobil {
-            display: block !important;
-        }
-        .hospital_left_desktop {
-            display: none;
-        }
-        .other_right_mobil {
-            display: block !important;
-        }
-        .other_right_desktop {
-            display: none;
-        }
-
-        .departmens_body {
-            gap: 5px !important; 
-            margin: 0 8px !important;
-            .hospital_left_column, .other_right_column {
-                padding-bottom: 5px !important;
-                .hospital_subtitle, .other_office_subtitle {
-                    margin: 10px 0 9px 5px !important;
-                    .fanendoscope_img {
-                        display: none;
-                    }
-                }
-                .hospital_items, .other_office_items {
-                    margin-left: 5px !important;
-                    li {
-                        margin-bottom: 10px !important;
-                    }
+    .hospital_left_mobil {
+        display: block !important;
+    }
+    .hospital_left_desktop {
+        display: none;
+    }
+    .other_right_mobil {
+        display: block !important;
+    }
+    .other_right_desktop {
+        display: none;
+    }
+    .departmens_body {
+        gap: 5px !important;
+        margin: 0 8px !important;
+        .hospital_left_column,
+        .other_right_column {
+            padding-bottom: 5px !important;
+            .hospital_subtitle,
+            .other_office_subtitle {
+                margin: 10px 0 9px 5px !important;
+                .fanendoscope_img {
+                    display: none;
                 }
             }
-            
-        }
-        .departmens_bottom {
-            display: flex !important;
-            margin: 21px 7px 12px 7px !important;
-            justify-content: center;
-            border-radius: 50px;
-            background: linear-gradient(40deg, #E80B8B 0%, #FF8ED0 100%);
-            padding: 11px 120px;
-            .departmens_bottom_link {
-                color: $white;
-                text-align: center;
-                /* Мобилка/Основной */
-                font-family: $font_opensans;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
+            .hospital_items,
+            .other_office_items {
+                margin-left: 5px !important;
+                li {
+                    margin-bottom: 10px !important;
+                }
             }
-
         }
-        .departmens_title-link, .important_information_title-link, .news_title-link, .gallery_title-link, .contacts_title-link {
-            // font-family: $font_opensans;
-            font-size: 22px !important;
-            margin: 25px 0px 10px 8px !important;
-        }
-        .hospital_subtitle-link, .other_office_subtitle-link, .fa-brands {
-            font-size: 16px !important;
-        }
-        .hospital_items-link, .other_office_items-link, .news_posts_items-link, .adress_left, .adress_right, .contacts_departs {
+    }
+    .departmens_bottom {
+        display: flex !important;
+        margin: 21px 7px 12px 7px !important;
+        justify-content: center;
+        border-radius: 50px;
+        background: linear-gradient(40deg, #E80B8B 0%, #FF8ED0 100%);
+        padding: 11px 120px;
+        .departmens_bottom_link {
+            color: $white;
+            text-align: center;
+            /* Мобилка/Основной */
+            font-family: $font_opensans;
             font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         }
-        .slider_background {
-            height: 80vw;
+    }
+    .departmens_title-link,
+    .important_information_title-link,
+    .news_title-link,
+    .gallery_title-link,
+    .contacts_title-link {
+        // font-family: $font_opensans;
+        font-size: 22px !important;
+        margin: 25px 0px 10px 8px !important;
+    }
+    .hospital_subtitle-link,
+    .other_office_subtitle-link,
+    .fa-brands {
+        font-size: 16px !important;
+    }
+    .hospital_items-link,
+    .other_office_items-link,
+    .news_posts_items-link,
+    .adress_left,
+    .adress_right,
+    .contacts_departs {
+        font-size: 14px;
+    }
+    .slider_background {
+        height: 80vw;
+    }
+    // -----Блок новости----------
+    .news_body {
+        margin: 0 8px !important;
+    }
+    .news_buttom {
+        display: flex !important;
+        justify-content: center;
+        .news_buttom-link {
+            width: 100%;
+            color: $white;
+            text-align: center;
+            font-family: $font_opensans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         }
-        // -----Блок новости----------
-        .news_body {
-            margin: 0 8px !important;
-        }
-        .news_buttom {
-            display: flex !important;
-            justify-content: center;
-            
-            .news_buttom-link {
-                width: 100%;
-                color: $white;
-                text-align: center;
-                font-family: $font_opensans;
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                
-            }
-        }
-        .contacts_body {
+    }
+    .contacts_body {
         .contacts_text {
             margin-left: 7px !important;
             margin-right: 7px !important;
-
         }
         .contacts_departs {
             margin-left: 15px !important;
             margin-right: 15px !important;
         }
-        }
-        .cf_wrapper {
-            display: none !important;
-        }
-        .cf_wrapper_mobil {
-            display: block !important;
-        }
-
+    }
+    .cf_wrapper {
+        display: none !important;
+    }
+    .cf_wrapper_mobil {
+        display: block !important;
+    }
 }
 
 // ----О больнице mobilka-----
 @media(max-width: 906px) {
-    .block_row{
-    .block_item {
-       width: 30% !important;
+    .block_row {
+        .block_item {
+            width: 30% !important;
+        }
     }
-}
     .about_slider_bottom {
         .slick-track {
             margin-left: 0 !important;
-        } 
+        }
     }
 }
 
-
-
-
-
 @media(max-width: 767px) {
-        .about_title {
-            font-size: 40px;
-        }
-        .subtitle_top, .subtitle_bottom {
-            font-size: 25px;
-        }
-        .block_row {
+    .about_title {
+        font-size: 40px;
+    }
+    .subtitle_top,
+    .subtitle_bottom {
+        font-size: 25px;
+    }
+    .block_row {
         .block_item {
             font-size: 14px;
         }
     }
-    }
+}
 
-    @media(max-width: 620px) {
-        .about_image_block {
-            flex-wrap: wrap;
-            .about_image_item {
-                flex-basis: 48%;
-            }
+@media(max-width: 620px) {
+    .about_image_block {
+        flex-wrap: wrap;
+        .about_image_item {
+            flex-basis: 48%;
         }
-        .about_image_block {
-           .about_image_item:nth-child(even) {
+    }
+    .about_image_block {
+        .about_image_item:nth-child(even) {
             margin-right: 0 !important;
-            }
         }
-        
-        .block_row {
-            flex-wrap: wrap;
+    }
+    .block_row {
+        flex-wrap: wrap;
         .block_item {
-            
             width: 48% !important;
         }
     }
-    }
-    @media(max-width: 450px) {
-        .block_row {
+}
+
+@media(max-width: 450px) {
+    .block_row {
         .block_item {
-            
             font-size: 10px;
             font-style: normal;
             font-weight: 600;
@@ -594,38 +580,30 @@
             padding-right: 39px !important;
         }
     }
-    }
-
-
-
-
-
+}
 
 // -----------Администрация------
 @media(max-width: 1034px) {
-       
-        
-        .administration_paycheck_item {
-            width: 32% !important;
-            .block_item {
-                font-size: 14px;
-            } 
-        }
-        .administration_paycheck {
-            padding-left: 0 !important;
+    .administration_paycheck_item {
+        width: 32% !important;
+        .block_item {
+            font-size: 14px;
         }
     }
-    @media(max-width: 907px) {
-        .administration_paycheck_item {
-            width: 48% !important;
-        }
+    .administration_paycheck {
+        padding-left: 0 !important;
     }
+}
 
-
+@media(max-width: 907px) {
+    .administration_paycheck_item {
+        width: 48% !important;
+    }
+}
 
 @media(max-width: 767px) {
     .administration_title {
-    font-size: 40px;
+        font-size: 40px;
     }
     .administration_text_subtitle {
         font-size: 25px;
@@ -633,15 +611,13 @@
     .administration_text {
         font-size: 14px !important;
     }
-    .administration_position_title, .administration_position_name {
+    .administration_position_title,
+    .administration_position_name {
         font-size: 22px !important;
     }
 }
 
-
-
 @media(max-width: 560px) {
-
     .administration_main {
         display: flex;
         flex-direction: column;
@@ -649,10 +625,9 @@
     .administration_main_text {
         margin-left: 15px;
     }
-
 }
-@media(max-width: 500px) {
 
+@media(max-width: 500px) {
     .administration_position {
         display: flex;
         flex-direction: column;
@@ -661,8 +636,6 @@
         margin-left: 15px;
     }
     .administration_paycheck_item {
-        
-        
         height: 72px !important;
         a {
             font-size: 10px !important;
@@ -671,31 +644,31 @@
     }
     .administration_title {
         font-size: 35px;
-        }
-    
+    }
 }
 
 // -----------Вакансии----------------
-
 @media(max-width: 1027px) {
-    .vacancies_contact_item_top, .vacancies_contact_item_down {
+    .vacancies_contact_item_top,
+    .vacancies_contact_item_down {
         font-size: 14px !important;
-
     }
-    .block1, .block2, .block3 {
+    .block1,
+    .block2,
+    .block3 {
         justify-content: center !important;
     }
 }
+
 @media(max-width: 767px) {
     .vacancies_contact_item {
         width: 49% !important;
         display: flex !important;
         flex-direction: column;
-        
     }
     .vacancies_title {
         font-size: 40px;
-    } 
+    }
     .vacancies_block_title {
         font-size: 20px !important;
     }
@@ -709,31 +682,33 @@
         display: none !important;
     }
 }
+
 @media(max-width: 519px) {
     .vacancies_contact_item {
         width: 99% !important;
         align-items: center;
     }
-
-
 }
+
 // ----------------Реквизиты---------
 @media(max-width: 767px) {
     .requisites_title {
         font-size: 40px;
-    } 
-    .requisites_item_title, .requisites_item_subtitle, .requisites_item_text {
+    }
+    .requisites_item_title,
+    .requisites_item_subtitle,
+    .requisites_item_text {
         font-size: 14px !important;
-    } 
+    }
 }
 
 // -----------------Отделения-------------------
-
 @media(max-width: 767px) {
     .title-depart h1 {
         font-size: 40px;
     }
 }
+
 @media(max-width: 480px) {
     .title-depart h1 {
         font-size: 28px;
@@ -746,41 +721,32 @@
     }
 }
 
-
 // -------Общая информация о стационаре----------
-
 // @media(max-width: 767px) {
-
 // .cards {
 //     display: flex;
 //     flex-direction: column;
 //     align-items: center;
 // }
-
 // }
 // -------------Приёмное отделение стационара--------------------
-
-
 @media(max-width: 450px) {
-.display-flex {
-    .cards-for-text {
-        h3 {
-            font-size: 16px !important;
+    .display-flex {
+        .cards-for-text {
+            h3 {
+                font-size: 16px !important;
+            }
+            span {
+                font-size: 9px !important;
+            }
+            p {
+                font-size: 9px !important;
+            }
         }
-        span {
-            font-size: 9px !important;
-             }
-        p {
-            font-size: 9px !important;
-        }     
     }
 }
-}
-
-
 
 // ----------------Запись на приём-------------
-
 @media(max-width: 767px) {
     .appointment_title {
         font-size: 40px;
@@ -789,31 +755,31 @@
         display: flex;
         flex-direction: column;
     }
-    .important2_title, .appointment_subtitle2  {
+    .important2_title,
+    .appointment_subtitle2 {
         font-size: 24px;
-    } 
-
-    
-
-}
-@media(max-width: 450px) {
-.important2_img img {
-    // width: 100vw !important;
-    // min-width: 100vw !important;
-    width: 100%;
     }
+}
 
+@media(max-width: 450px) {
+    .important2_img img {
+        // width: 100vw !important;
+        // min-width: 100vw !important;
+        width: 100%;
+    }
 }
 
 // ----------Отзывы----------
 @media(max-width: 630px) {
     .reviews_title {
         font-size: 40px;
-    } 
-    .prev, .next {
+    }
+    .prev,
+    .next {
         display: none !important;
     }
 }
+
 // ----------------------Портал ГОСУСЛУГИ---------
 @media(max-width: 767px) {
     .page_gosuslugi_title {
@@ -822,13 +788,10 @@
     .page_gosuslugi_subtitle {
         font-size: 25px;
     }
-
-
-
 }
+
 // ----------------------Результаты СОУТ----------
 @media(max-width: 767px) {
-
     .page_sout_title {
         font-size: 40px;
     }
@@ -839,48 +802,40 @@
         }
     }
 }
+
 @media(max-width: 519px) {
     .page_sout_title {
         font-size: 30px !important;
     }
     .sout_block {
         .sout_item {
-        font-size: 12px !important;
-        line-height: 18px !important;
+            font-size: 12px !important;
+            line-height: 18px !important;
         }
     }
 }
 
 // -------------------Информация по правам пациентов------------
 @media(max-width: 770px) {
-    .insurance_organizations_block, .tabs_block {
+    .insurance_organizations_block,
+    .tabs_block {
         .block_item {
             width: 48% !important;
         }
     }
-
-
 }
-
-
 
 @media(max-width: 767px) {
     .page_information_title {
         font-size: 40px !important;
         line-height: normal !important;
     }
-    .page_information_subtitle,  {
+    .page_information_subtitle,
+    {
         font-size: 25px !important;
         line-height: normal !important;
     }
-
-
-
 }
-
-
-
-
 
 @media(max-width: 519px) {
     .page_information_reminder {
@@ -893,21 +848,18 @@
             align-items: center !important;
         }
     }
-
-    .insurance_organizations_block, .tabs_block {
+    .insurance_organizations_block,
+    .tabs_block {
         gap: 10px !important;
         .block_item {
             font-size: 12px !important;
         }
     }
-
-
-
 }
 
 @media(max-width: 405px) {
-    .insurance_organizations_block, .tabs_block {
-        
+    .insurance_organizations_block,
+    .tabs_block {
         .block_item {
             font-size: 10px !important;
             height: 9em !important;

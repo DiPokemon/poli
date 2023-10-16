@@ -2411,6 +2411,13 @@ body {
           align-items: center;
   margin-bottom: 32px;
 }
+.page_information_container .page_information_reminder .reminder_img {
+  max-width: 430px;
+  max-height: 273px;
+}
+.page_information_container .page_information_reminder .reminder_img img {
+  width: 100%;
+}
 .page_information_container .page_information_reminder .reminder_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3664,5 +3671,31 @@ body {
   .sout_block .sout_item {
     font-size: 12px !important;
     line-height: 18px !important;
+  }
+}
+@media (max-width: 519px) {
+  .page_information_reminder {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .page_information_reminder .reminder_content {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -2298,6 +2298,14 @@ body {
         gap: 44px;
         align-items: center;
         margin-bottom: 32px;
+        .reminder_img {
+            max-width: 430px;
+            max-height: 273px;
+        
+        img {
+            width: 100%;
+        }
+        }
         .reminder_content {
             display: flex;
             flex-direction: column;

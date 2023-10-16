@@ -15,7 +15,7 @@ Template Name: Шаблон страницы Информация по прав�
               <a href="#"><i class="fa fa-light fa-magnifying-glass"></i></a>
     </form> -->
 
-    <div class="for-flex">
+    <!-- <div class="for-flex">
                 <div class="search">
                     <button type="submit" class="search-button">
                         <img src="http://test-dev1.ru/wp-content/uploads/otdelenie/Vector.png"
@@ -23,7 +23,17 @@ Template Name: Шаблон страницы Информация по прав�
                     </button>
                     <input type="text" placeholder="Поиск" class="search-input">
                 </div>
-            </div>
+            </div> -->
+
+            <div class="for-flex">
+                <div class="search">
+                    <button type="submit" class="search-button">
+                        <img src="http://test-dev1.ru/wp-content/uploads/otdelenie/Vector.png"
+                            alt="Search" class="search-icon">
+                    </button>
+                    <?= do_shortcode('[ivory-search id="392" title="AJAX Search Form"]'); ?>
+                </div>
+        </div>        
     <!-- <input type="text" maxlength= "12" placeholder="Поиск" class="searchbar"> -->
     <h3 class="page_information_subtitle font_w700_s35"><?php echo carbon_get_the_post_meta('sub_title_information'); ?></h3>
     <div class="page_information_block">
@@ -60,7 +70,9 @@ Template Name: Шаблон страницы Информация по прав�
     <?php foreach($guarantee as $guarantee):?>
     <h3 class="page_information_subtitle font_w700_s35"><?=$guarantee['title']?></h3>
     <div class="page_information_reminder">
+        <div class="reminder_img">
         <img  src="<?=$guarantee['image']?>" alt="im" />
+        </div>
         <div class="reminder_content">
             <p class="reminder_text font_w400_s18"><?=$guarantee['button_title']?></p>
             <div class="reminder_bottom"><a href="<?=$guarantee['url']?>" class="font_w400_s18">Открыть</a></div>

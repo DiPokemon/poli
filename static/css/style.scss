@@ -2475,8 +2475,9 @@ body {
             width: 32%;
             // flex-shrink: 2;
             // flex-grow: 1;
-            min-height: 106px;
-            padding: 0 20px;
+            // height: 106px;
+            height: 6em;
+            padding: 0 18px;
             a {
                 color: $black;
             }
@@ -2498,7 +2499,8 @@ body {
             border-radius: 10px;
             width: 32%;
             // flex-grow: 1;
-            min-height: 106px;
+            // min-height: 106px;
+            height: 6em;
             padding: 0 20px;
             a {
                 color: $black;
@@ -2791,23 +2793,63 @@ body {
 }
 }
 
+// .display-flex-hospital {
+//     display: flex;
+//     // flex-wrap: wrap;
+//     margin-bottom: 28px;
+//     .card-text-img {
+//         // display: flex;
+//         max-width: 288px;
+//         max-height: 192px;
+//         box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+//         border-radius: 5px;
+//         .depart_hospital_img {
+//                 max-width: 100%;
+//                 // height: 100%;
+//             }
+        
+//     }
+// }
+
+
 .display-flex-hospital {
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: space-between;
     margin-bottom: 28px;
     .card-text-img {
-        // display: flex;
-        max-width: 288px;
-        max-height: 192px;
+        flex: 0 1 calc(25% - 14px);
         box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
-        .depart_hospital_img {
-                max-width: 100%;
-                // height: 100%;
-            }
+        text-align: center;
+        // padding: 10px;
+        position: relative;
+        .depart_hospital_a {
+            text-decoration: none;
+            // color: #333;
+            display: block;
+        }
         
+        .depart_hospital_img {
+            max-width: 100%;
+            height: auto;
+        }
+        p {
+            position: absolute;
+            top: 70%; 
+            left: 40%;
+            transform: translate(-50%, -50%); /* Центрируем текст */
+            font-size: 16px;
+            margin: 0;
+            font-weight: 600;
+            font-size: 18px;
+            font-family: $font_opensans;
+        }
     }
 }
+
+
 
 .info {
     font-family: "Open Sans";
@@ -2870,14 +2912,14 @@ body {
 //     margin-top: 33% !important;
 // }
 
-.card-text-img p {
-    padding-left: 14px;
-    font-weight: 600;
-    font-size: 18px;
-    font-family: "Open Sans";
-    position: relative;
-    margin-top: -82px;
-}
+// .card-text-img p {
+//     padding-left: 14px;
+//     font-weight: 600;
+//     font-size: 18px;
+//     font-family: "Open Sans";
+//     position: relative;
+//     margin-top: -82px;
+// }
 
 .depart-travmpunkt {
     .cards {

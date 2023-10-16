@@ -603,11 +603,13 @@
 
 // -----------Администрация------
 @media(max-width: 1034px) {
-        .block_item {
-            font-size: 14px;
-        } 
+       
+        
         .administration_paycheck_item {
             width: 32% !important;
+            .block_item {
+                font-size: 14px;
+            } 
         }
         .administration_paycheck {
             padding-left: 0 !important;
@@ -850,6 +852,36 @@
 }
 
 // -------------------Информация по правам пациентов------------
+@media(max-width: 770px) {
+    .insurance_organizations_block, .tabs_block {
+        .block_item {
+            width: 48% !important;
+        }
+    }
+
+
+}
+
+
+
+@media(max-width: 767px) {
+    .page_information_title {
+        font-size: 40px !important;
+        line-height: normal !important;
+    }
+    .page_information_subtitle,  {
+        font-size: 25px !important;
+        line-height: normal !important;
+    }
+
+
+
+}
+
+
+
+
+
 @media(max-width: 519px) {
     .page_information_reminder {
         display: flex !important;
@@ -862,7 +894,26 @@
         }
     }
 
+    .insurance_organizations_block, .tabs_block {
+        gap: 10px !important;
+        .block_item {
+            font-size: 12px !important;
+        }
+    }
 
 
 
+}
+
+@media(max-width: 405px) {
+    .insurance_organizations_block, .tabs_block {
+        
+        .block_item {
+            font-size: 10px !important;
+            height: 9em !important;
+            a {
+                padding: 10px 0px !important;
+            }
+        }
+    }
 }

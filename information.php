@@ -84,6 +84,8 @@ Template Name: Шаблон страницы Информация по прав�
     <h3 class="page_information_subtitle font_w700_s35"><?=$item['title'] ?></h3>
         <?php endif ;?>
     <?php endforeach ;?>
+    
+    <div class="slider_wrapper">
     <div class="slider_time_limits">
         <?php foreach($waiting_time_image as $item) :?>
         <div class="slider__item">
@@ -91,6 +93,10 @@ Template Name: Шаблон страницы Информация по прав�
         </div>
         <?php endforeach ?>
     </div> 
+    </div>
+    
+
+
     <?php foreach($routing as $item) :?>
         <?php if (!empty($item['title'])) :?>
     <h3 class="page_information_subtitle font_w700_s35"><?=$item['title']?></h3>

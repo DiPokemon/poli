@@ -37,7 +37,7 @@ Template Name: Шаблон страницы Запись на приём
         <p class="appointment_href font_w400_s18"><?=$appointment['sub_title_registration_url']?><b><a href="<?=$appointment['registration_url']?>"><?=$appointment['registration_url']?></a></b></p>
             <?php endforeach ;?>
            <?php endif ;?>
-        <h2 class="appointment_subtitle2 font_w700_s35"><?php echo carbon_get_the_post_meta('sub_title_rules'); ?></h2>
+        <h3 class="appointment_subtitle2 font_w700_s35"><?php echo carbon_get_the_post_meta('sub_title_rules'); ?></h3>
         <p class="font_w400_s18"> <?php echo carbon_get_the_post_meta('sub_title_rules_info'); ?>
 
                 <br>

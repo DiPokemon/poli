@@ -1468,12 +1468,24 @@ body {
         display: flex;
         gap: 44px;
         padding-bottom: 32px;
+        .important1_img {
+            width: 45%;
+            flex-shrink: 0.3;
+            img {
+                width: 100%;
+                height: auto;
+                max-height: 344px;
+            }
+        }    
         .important2_text {
             line-height: 25px;
+            flex-shrink: 2;
             // display: flex;
             // align-items: center;
             color: $black;
-            display: block;
+            // display: block;
+            display: inline-flex;
+            flex-direction: column;
             p {
                 // margin-top: 81px;
                 line-height: 25px;
@@ -1562,6 +1574,15 @@ body {
         display: flex;
         gap: 44px;
         padding-bottom: 32px;
+        .important1_img {
+            width: 45%;
+            flex-shrink: 0.3;
+            img {
+                width: 100%;
+                height: auto;
+                max-height: 344px;
+            }
+        }
         .important3_text {
             // margin-bottom: 56px;
             line-height: 25px;
@@ -1940,6 +1961,15 @@ body {
     .important2_body {
         display: flex;
         gap: 44px;
+        .important2_img {
+            width: 45%;
+            flex-shrink: 0.3;
+            img {
+                width: 100%;
+                height: auto;
+                max-height: 344px;
+            }
+        } 
         .important2_text {
             line-height: 25px;
             // display: flex;

@@ -34,30 +34,30 @@ $(document).ready(function() {
         arrows: false,
         slidesToShow: 3,
         responsive: [{
-            breakpoint: 1200,
-            settings: {
-                arrows: false,
-                centerMode: false,
-                slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 900,
-            settings: {
-                arrows: false,
-                centerMode: false,
-                slidesToShow: 2,
-            }
-        },
-        {
-            breakpoint: 570,
-            settings: {
-                arrows: false,
-                centerMode: false,
-                slidesToShow: 1,
-            }
-        },
-    ]
+                breakpoint: 1200,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 570,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    slidesToShow: 1,
+                }
+            },
+        ]
     });
 });
 
@@ -76,52 +76,52 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() {
-    $('.slider_time_limits').slick({
-        arrows: false,
-        slidesToShow: 3,
-        responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    arrows: false,
-                    centerMode: false,
-                    slidesToShow: 2,
-                    centerPadding: '10px',
-                }
-            },
-            {
-                breakpoint: 800,
-                settings: {
-                    arrows: false,
-                    centerMode: false,
-                    slidesToShow: 1,
-                    centerPadding: '10px',
-                }
-            },
-        ]
+// $(document).ready(function() {
+//     $('.slider_time_limits').slick({
+//         arrows: false,
+//         slidesToShow: 3,
+//         responsive: [{
+//                 breakpoint: 1200,
+//                 settings: {
+//                     arrows: false,
+//                     centerMode: false,
+//                     slidesToShow: 2,
+//                     centerPadding: '10px',
+//                 }
+//             },
+//             {
+//                 breakpoint: 800,
+//                 settings: {
+//                     arrows: false,
+//                     centerMode: false,
+//                     slidesToShow: 1,
+//                     centerPadding: '10px',
+//                 }
+//             },
+//         ]
 
-    });
-});
+//     });
+// });
 
-$(document).ready(function() {
-    $('.slider_patient_routing').slick({
-        arrows: false,
-        slidesToShow: 2,
-        responsive: [{
-            breakpoint: 800,
-            settings: {
-                arrows: false,
-                centerMode: false,
-                slidesToShow: 1
-            }
-        }, ]
-    });
+// $(document).ready(function() {
+//     $('.slider_patient_routing').slick({
+//         arrows: false,
+//         slidesToShow: 2,
+//         responsive: [{
+//             breakpoint: 800,
+//             settings: {
+//                 arrows: false,
+//                 centerMode: false,
+//                 slidesToShow: 1
+//             }
+//         }, ]
+//     });
 
-    $('.slider_free_medical').slick({
-        arrows: false,
-        slidesToShow: 3,
-    });
-});
+//     // $('.slider_free_medical').slick({
+//     //     arrows: false,
+//     //     slidesToShow: 3,
+//     // });
+// });
 
 
 

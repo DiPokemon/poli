@@ -4,9 +4,11 @@ $(document).ready(function() {
         var $main_banner = $(sliderWrap).find('.main_banner');
         var $gallery_banner = $(sliderWrap).find('.gallery_banner');
         var $information_banner = $(sliderWrap).find('.information_banner');
-
-
         var $main_important_info = $(sliderWrap).find('.information_important_info');
+        var $slider_time_limits = $(sliderWrap).find('.slider_time_limits');
+        var $slider_free_medical = $(sliderWrap).find('.slider_free_medical');
+        var $slider_patient_routing = $(sliderWrap).find('.slider_patient_routing');
+
 
         $main_banner.slick({
             infinite: true,
@@ -83,16 +85,79 @@ $(document).ready(function() {
 
 
 
+        $slider_time_limits.slick({
+            infinite: true,
+            autoplay: false,
+            slidesToShow: 1,
+            centerMode: true,
+            slidesToScroll: 1,
+            variableWidth: true,
+            dots: false,
+            arrows: false,
+            // responsive: [{
+            //     breakpoint: 1200,
+            //     settings: {
+            //         arrows: false,
+            //         centerMode: true,
+            //         slidesToShow: 1
+            //     }
+            // }, ]
+        })
+
+
+        $slider_free_medical.slick({
+            infinite: true,
+            autoplay: false,
+            slidesToShow: 1,
+            centerMode: true,
+            slidesToScroll: 1,
+            variableWidth: true,
+            dots: false,
+            arrows: false,
+            // responsive: [{
+            //     breakpoint: 1200,
+            //     settings: {
+            //         arrows: false,
+            //         centerMode: true,
+            //         slidesToShow: 1
+            //     }
+            // }, ]
+        })
+
+
+        $slider_patient_routing.slick({
+            infinite: false,
+            autoplay: false,
+            slidesToShow: 1,
+            centerMode: false,
+            slidesToScroll: 0,
+            variableWidth: true,
+            dots: false,
+            arrows: false,
+            responsive: [{
+                breakpoint: 820,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 1,
+                }
+            }, ]
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     });
-
-
-
-
-
-
-
-
-
 });

@@ -511,7 +511,6 @@ body {
         margin-bottom: 32px;
         display: flex;
         justify-content: center;
-        
         .news_buttom-link {
             background: linear-gradient(45deg, $red 0%, $pink 100%);
             border-radius: 50px;
@@ -646,9 +645,7 @@ body {
             }
         }
     }
-
     // ---------Contact form home page------------
-  
     .contacts_form {
         background: $background_cf;
         border-radius: 20px;
@@ -719,7 +716,6 @@ body {
                 border-color: transparent;
             }
             .wpcf7-form-control-wrap {
-               
                 .wpcf7-list-item {
                     margin: 0;
                     input {
@@ -760,11 +756,12 @@ body {
         margin-bottom: 22px;
     }
 }
+
 .contacts_container {
-  .cf_wrapper_mobil {
-    display: none;
-    margin-left: -10px;
-    margin-right: -10px;
+    .cf_wrapper_mobil {
+        display: none;
+        margin-left: -10px;
+        margin-right: -10px;
     }
     .contacts_form {
         background: $background_cf;
@@ -775,7 +772,6 @@ body {
         justify-content: center;
         margin-top: 10px;
         flex: 1;
-       
         .contact_form_title {
             color: #E80B8B;
             font-family: 'Open Sans';
@@ -808,7 +804,6 @@ body {
     .wpcf7 {
         margin-top: 10px;
         margin-bottom: 39px;
-        
         .wpcf7-form {
             margin-left: 10px;
             margin-right: 10px;
@@ -840,7 +835,6 @@ body {
                 border-color: transparent;
             }
             .wpcf7-form-control-wrap {
-               
                 .wpcf7-list-item {
                     margin: 0;
                     input {
@@ -880,8 +874,8 @@ body {
         color: $red;
         margin-bottom: 22px;
     }
-
 }
+
 // site_identification
 .logo_text {
     width: 370px;
@@ -1118,10 +1112,6 @@ body {
             }
         }
     }
-    
-    
-    
-    
     .about_slider_top {
         margin-top: 32px;
         // margin-bottom: 32px;
@@ -1170,14 +1160,6 @@ body {
         /* Элемент точки */
         .slick-dots li button {}
     }
-
-
-
-
-
-
-
-
     .about_slider_bottom {
         /* Слайдер */
         .slick-slider {}
@@ -1234,7 +1216,6 @@ body {
         display: flex;
         gap: 10px;
         margin-bottom: 32px;
-        
         .block_item {
             width: 23%;
             min-width: 150px;
@@ -1667,7 +1648,6 @@ body {
         .reviews_title {
             margin: 28px 0 28px 0;
         }
-
         // ---------------Contact form page Reviews-------
         .reviews_cf7 {
             background: $background_cf;
@@ -1772,8 +1752,6 @@ body {
                             border-radius: 5px;
                             padding-left: 10px;
                         }
-                    
-                    
                         textarea {
                             margin: 0 40px 26px 40px;
                             flex-grow: 1;
@@ -2093,7 +2071,6 @@ body {
             justify-content: center;
             align-items: center;
             width: 28%;
-            
             .block_item {
                 margin: 0 30px;
                 a {
@@ -2134,7 +2111,6 @@ body {
             width: 32%;
             height: 106px;
             display: block;
-            
             // line-height: 25px;
             padding-top: 28px;
             // font-weight: 500;
@@ -2325,10 +2301,9 @@ body {
         .reminder_img {
             max-width: 430px;
             max-height: 273px;
-        
-        img {
-            width: 100%;
-        }
+            img {
+                width: 100%;
+            }
         }
         .reminder_content {
             display: flex;
@@ -2590,10 +2565,10 @@ body {
     display: flex;
     justify-content: center;
     .is-form-style {
-         .is-search-input {
+        .is-search-input {
             width: 90% !important;
-         }
         }
+    }
 }
 
 .cards_stacionar {
@@ -2606,7 +2581,7 @@ body {
         .cards_stacionar_img {
             width: 100%;
         }
-    } 
+    }
 }
 
 .title-depart {
@@ -2809,12 +2784,11 @@ body {
 
 .wrapper_display-flex {
     margin-bottom: 28px;
-
-.display-flex {
-    display: flex;
-    // flex-wrap: wrap;
-    // margin-bottom: 28px;
-}
+    .display-flex {
+        display: flex;
+        // flex-wrap: wrap;
+        // margin-bottom: 28px;
+    }
 }
 
 // .display-flex-hospital {
@@ -2831,11 +2805,8 @@ body {
 //                 max-width: 100%;
 //                 // height: 100%;
 //             }
-        
 //     }
 // }
-
-
 .display-flex-hospital {
     display: flex;
     // flex-wrap: wrap;
@@ -2855,7 +2826,6 @@ body {
             // color: #333;
             display: block;
         }
-        
         .depart_hospital_img {
             width: 100%;
             height: auto;
@@ -2875,8 +2845,6 @@ body {
         }
     }
 }
-
-
 
 .info {
     font-family: "Open Sans";
@@ -2924,7 +2892,6 @@ body {
 //     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
 //     border-radius: 5px;
 // }
-
 .card-text-img {
     // margin-bottom: 14px;
     // margin-right: 14px;
@@ -2938,7 +2905,6 @@ body {
 // .card-text-img .second-paragrap {
 //     margin-top: 33% !important;
 // }
-
 // .card-text-img p {
 //     padding-left: 14px;
 //     font-weight: 600;
@@ -2947,7 +2913,6 @@ body {
 //     position: relative;
 //     margin-top: -82px;
 // }
-
 .depart-travmpunkt {
     .cards {
         margin-top: 28px;
@@ -2963,7 +2928,6 @@ body {
         height: 389px;
     }
 }
-
 
 .header_bottom_menu ul {
     list-style: none;
@@ -3033,15 +2997,99 @@ body {
     overflow: hidden;
 }
 
+// Меню бургер
+.header_mobile_menu {
+    .menu-item-has-children {
+        >.sub-menu {
+            display: none;
+        }
+    }
+}
 
+.header_mobile_menu {
+    .menu-item-has-children {
+        &:hover {
+            >.sub-menu {
+                display: block;
+            }
+        }
+    }
+}
 
+.header_mobile_menu {
+    .sub-menu {
+        .menu-item-has-children {
+            >.sub-menu {
+                display: none;
+            }
+        }
+    }
+}
 
+.header_mobile_menu {
+    .sub-menu {
+        .menu-item-has-children {
+            &:hover {
+                >.sub-menu {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.header_mobile_menu {
+    display: none;
+    .menu-item {
+        margin-left: 20px;
+        list-style: none;
+        line-height: 1.5;
+    }
+    .sub-menu {
+        display: none;
+        margin-left: 10px;
+        .sub-menu {
+            margin-left: 20px;
+        }
+    }
+    .menu_link {
+        color: $white;
+        font-size: 20px;
+        font-family: $font_opensans;
+    }
+    .menu_list {
+        margin-top: 30px;
+    }
+}
+
+.menu_list .menu_item:hover .menu_link {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.header_mobile_menu.active {
+    display: block;
+}
+
+.modal_burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(69, 166, 175, 0.9);
+    z-index: 999;
+    display: none;
+    .closemodal {
+        font-size: 30px;
+        color: $white;
+        float: right;
+        margin-right: 20px;
+    }
+}
+
+.modal_burger .header_mobile_menu {
+    display: block;
+}
 
 @import "adaptive";
-
-
-
-
-
-
-

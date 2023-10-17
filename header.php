@@ -78,27 +78,8 @@
                        <h1 class="logo_text"><a href="#" class="logo_text-link"><?php echo carbon_get_theme_option('org_name'); ?></a></h1>
                        <div class="visually_impaired_mobil"><a href="#" class="visually_impaired-link_mobil"> <img class="visually_img" src="http://test-dev1.ru/wp-content/uploads/2023/05/Group843.png" alt="img" /></a></div>
                        <div class="header_phone_mobil"><a href="#" class="header_phone-link_mobil"><img class="header_phone_img" src="http://test-dev1.ru/wp-content/uploads/2023/05/Group838.png" alt="img" /></a></div>
-                       <div class="header_menu_mobil"><a href="#" class="header_menu-link_mobil"><img class="header_menu_img" src="http://test-dev1.ru/wp-content/uploads/2023/05/Group841.png" alt="img" /></a></div>
+                       <div class="header_menu_mobil open_menu_mob"><a href="#" class="header_menu-link_mobil"><img class="header_menu_img" src="http://test-dev1.ru/wp-content/uploads/2023/05/Group841.png" alt="img" /></a></div>
                     </div>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                <!--<div class="contacts__container">
-                        <div class="contacts__container_item logo"></div>
-                        <div class="contacts__container_item">ГБУ РО “Городская Больница №4”</div>
-                        <div class="contacts__container_item">8 (863) 263-13-80</div>
-                        <div class="contacts__container_item">8 (863) 263-50-64</div>
-                        <div class="contacts__container_item">Версия для слабовидящих</div>
-                    </div> -->
                 </div>
             </div>
             <div class="header_bottom">
@@ -128,40 +109,56 @@
                                         }
                                         echo $temp_menu;
                                     ?>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                            <!-- <ul class="menubottom__list">
-                            <li><a href="#" class="menubottom_links">Главная</a></li>
-                            <li><a href="#" class="menubottom_links">О больнице</a></li>
-                            <li><a href="#" class="menubottom_links">Отделение</a></li>
-                            <li><a href="#" class="menubottom_links">Новости</a></li>
-                            <li><a href="#" class="menubottom_links">Задать вопрос</a></li>
-                            <li><a href="#" class="menubottom_links">Отзывы</a></li>
-                            <li><a href="#" class="menubottom_links">Запись на приём</a></li>
-                            <li><a href="#" class="menubottom_links">Контакты</a></li>
-                        
-                        </ul> -->
-                    </nav>
-                    
 
+                    </nav>
                 </div>
-            </div>      
+            </div> 
+<div class="modal_burger">
+<a href="#" class="closemodal">x</a>
+    <div class="header_mobile_menu">
+        <div class="header_holder">
+            <nav class="header_nav_menu">
+                <?php
+                    $args = array(
+                        'container'       => 'nav',
+                        'container_class' => 'header_nav_menu menu',
+                        'menu_class'      => 'menu_list',
+                        'fallback_cb'     => 'wp_page_menu',
+                        'link_class'      => 'menu_link',
+                        'theme_location'  => 'main_menu',
+                        'add_li_class'    => 'menu_item',
+                        'echo'            => false,
+                     );
+                    $temp_menu = wp_nav_menu($args);
+                    preg_match_all("~<a (.*?)>(.*)</a>~", $temp_menu, $matches);
+                    foreach($matches[0] as $value){
+                        if(strpos($value, "<span") === false){
+                            $temp_value = preg_replace("~<a (.*?)>(.*)</a>~", "<a $1><span itemprop='name'>$2</span></a>", $value);
+                            $temp_menu = str_replace($value, $temp_value, $temp_menu);
+                        }else{
+                            $temp_value = str_replace("<span", "<span itemprop='name'", $value);
+                            $temp_menu = str_replace($value, $temp_value, $temp_menu);
+                        }
+                     }
+                        echo $temp_menu;
+                ?>
+            </nav>
+        </div>
+</div>     
                           
         </header>
     
         <main>
 
 
-        <style>
+
+
+
+
+
+
+
+        <!-- <style>
 .header_bottom_menu ul {
   list-style: none;
   padding: 0;
@@ -201,4 +198,49 @@
     margin-top: 5px !important;
     margin-bottom: 5px !important;
 }
-</style>
+
+
+/* menu_burger */
+
+</style> -->
+
+
+<script>
+    // JavaScript для открытия и закрытия подменю при клике
+    var menuItems = document.querySelectorAll('.menu-item-has-children');
+
+    menuItems.forEach(function(item) {
+        item.addEventListener('click', function(event) {
+            var subMenu = item.querySelector('.sub-menu');
+            if (subMenu.style.display === 'block') {
+                // Подменю открыто, разрешаем переход по ссылке при клике
+                return;
+            } else {
+                event.preventDefault(); // Предотвращаем переход по ссылке
+                subMenu.style.display = 'block';
+            }
+        });
+    });
+
+
+
+    
+
+
+
+
+
+
+
+
+    var openButton = document.querySelector(".open_menu_mob");
+    var closeButton = document.querySelector(".closemodal");
+var modal = document.querySelector(".modal_burger");
+
+openButton.addEventListener("click", function() {
+  modal.style.display = "block"; // Отобразить модальное окно
+});
+closeButton.addEventListener("click", function() {
+  modal.style.display = "none"; // Отобразить модальное окно
+});
+</script>

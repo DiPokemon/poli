@@ -728,10 +728,37 @@
 }
 
 // -----------------Отделения-------------------
+@media(max-width: 1089px) {
+    .display-flex-hospital {
+        .card-text-img {
+            // flex: 0 1 calc(32.3% - 0px) !important;
+            p {
+                font-size: 14px !important;
+            }
+        }
+    }
+}
+
 
 @media(max-width: 767px) {
     .title-depart h1 {
         font-size: 40px;
+    }
+
+    .display-flex-hospital {
+        flex-wrap: wrap;
+        .card-text-img {
+            width: 32% !important;
+            
+        }
+    }
+}
+
+@media(max-width: 739px) {
+    .display-flex-hospital {
+    .card-text-img {
+    width: 49% !important;
+    }
     }
 }
 @media(max-width: 480px) {
@@ -869,7 +896,7 @@
         font-size: 40px !important;
         line-height: normal !important;
     }
-    .page_information_subtitle,  {
+    .page_information_subtitle {
         font-size: 25px !important;
         line-height: normal !important;
     }
@@ -913,6 +940,72 @@
             height: 9em !important;
             a {
                 padding: 10px 0px !important;
+            }
+        }
+    }
+}
+
+// -----------------Страница новости--------------
+
+@media(max-width: 1000px) {
+    .announcement_body {
+        gap: 10px !important;
+        .announcement_text {
+            p { 
+                margin-top: 0 !important;
+                font-size: 14px !important;
+            }
+        }
+    }
+    .important1 {
+        .important1_body {
+            gap: 10px !important;  
+            .important1_text {
+                p {
+                    padding-top: 0 !important;
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 767px) {
+    .page_news_top {
+        h2 {
+            font-size: 35px !important;
+        }
+        h3 {
+            font-size: 25px !important;
+            line-height: 1.5 !important;
+        }
+    }
+    .midel {
+        h3 {
+            font-size: 25px !important;
+        }
+    }
+    .news {
+        h3 {
+            font-size: 25px !important;
+        }
+    }
+
+}
+
+
+@media(max-width: 560px) {
+    .announcement_body, .important1_body {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        .important1_img {
+            width: 100% !important;
+            
+        }
+        .important1_text {
+            div {
+                display: flex !important;
+                justify-content: center !important;
             }
         }
     }

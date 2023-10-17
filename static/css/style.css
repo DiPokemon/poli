@@ -1517,7 +1517,19 @@ body {
   display: flex;
   gap: 44px;
 }
+.announcement_container .announcement_body .important1_img {
+  width: 45%;
+  -ms-flex-negative: 0.3;
+      flex-shrink: 0.3;
+}
+.announcement_container .announcement_body .important1_img img {
+  width: 100%;
+  height: auto;
+  max-height: 344px;
+}
 .announcement_container .announcement_body .announcement_text {
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
   line-height: 25px;
   color: #000000;
   display: block;
@@ -1560,7 +1572,19 @@ body {
   gap: 44px;
   padding-bottom: 32px;
 }
+.important1 .important1_body .important1_img {
+  width: 45%;
+  -ms-flex-negative: 0.3;
+      flex-shrink: 0.3;
+}
+.important1 .important1_body .important1_img img {
+  width: 100%;
+  height: auto;
+  max-height: 344px;
+}
 .important1 .important1_body .important1_text {
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2884,18 +2908,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 14px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 28px;
 }
 .display-flex-hospital .card-text-img {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(25% - 14px);
-          flex: 0 1 calc(25% - 14px);
+  max-width: 288px;
   -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -2907,20 +2924,22 @@ body {
   display: block;
 }
 .display-flex-hospital .card-text-img .depart_hospital_img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .display-flex-hospital .card-text-img p {
   position: absolute;
   top: 70%;
-  left: 40%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); /* Центрируем текст */
+  left: 20%;
+  -webkit-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%); /* Центрируем текст */
   font-size: 16px;
   margin: 0;
   font-weight: 600;
   font-size: 18px;
   font-family: "OpenSans";
+  text-align: left;
+  vertical-align: bottom;
 }
 
 .info {
@@ -3604,9 +3623,26 @@ body {
     font-size: 14px !important;
   }
 }
+@media (max-width: 1089px) {
+  .display-flex-hospital .card-text-img p {
+    font-size: 14px !important;
+  }
+}
 @media (max-width: 767px) {
   .title-depart h1 {
     font-size: 40px;
+  }
+  .display-flex-hospital {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .display-flex-hospital .card-text-img {
+    width: 32% !important;
+  }
+}
+@media (max-width: 739px) {
+  .display-flex-hospital .card-text-img {
+    width: 49% !important;
   }
 }
 @media (max-width: 480px) {
@@ -3744,5 +3780,61 @@ body {
   }
   .insurance_organizations_block .block_item a, .tabs_block .block_item a {
     padding: 10px 0px !important;
+  }
+}
+@media (max-width: 1000px) {
+  .announcement_body {
+    gap: 10px !important;
+  }
+  .announcement_body .announcement_text p {
+    margin-top: 0 !important;
+    font-size: 14px !important;
+  }
+  .important1 .important1_body {
+    gap: 10px !important;
+  }
+  .important1 .important1_body .important1_text p {
+    padding-top: 0 !important;
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 767px) {
+  .page_news_top h2 {
+    font-size: 35px !important;
+  }
+  .page_news_top h3 {
+    font-size: 25px !important;
+    line-height: 1.5 !important;
+  }
+  .midel h3 {
+    font-size: 25px !important;
+  }
+  .news h3 {
+    font-size: 25px !important;
+  }
+}
+@media (max-width: 560px) {
+  .announcement_body, .important1_body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .announcement_body .important1_img, .important1_body .important1_img {
+    width: 100% !important;
+  }
+  .announcement_body .important1_text div, .important1_body .important1_text div {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1374,8 +1374,21 @@ body {
     .announcement_body {
         display: flex;
         gap: 44px;
-        // .announcement_img {}
+        .important1_img {
+            width: 45%;
+            flex-shrink: 0.3;
+            // flex: 1;
+            // max-width: 430px;
+            // max-height: 344px;
+            img {
+                width: 100%;
+                height: auto;
+                max-height: 344px;
+            }
+        }
         .announcement_text {
+            flex-shrink: 2;
+            // flex: 1;
             line-height: 25px;
             // display: flex;
             // align-items: center;
@@ -1423,7 +1436,18 @@ body {
         display: flex;
         gap: 44px;
         padding-bottom: 32px;
+        .important1_img {
+            width: 45%;
+            flex-shrink: 0.3;
+            img {
+                width: 100%;
+                height: auto;
+                max-height: 344px;
+
+            }
+        }
         .important1_text {
+            flex-shrink: 2;
             display: inline-flex;
             flex-direction: column;
             // gap: 24px;
@@ -2814,12 +2838,13 @@ body {
 
 .display-flex-hospital {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     gap: 14px;
-    justify-content: space-between;
+    // justify-content: space-between;
     margin-bottom: 28px;
     .card-text-img {
-        flex: 0 1 calc(25% - 14px);
+        // flex: 0 1 calc(24% - 0px);
+        max-width: 288px;
         box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         text-align: center;
@@ -2832,19 +2857,21 @@ body {
         }
         
         .depart_hospital_img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
         }
         p {
             position: absolute;
             top: 70%; 
-            left: 40%;
-            transform: translate(-50%, -50%); /* Центрируем текст */
+            left: 20%;
+            transform: translate(-20%, -50%); /* Центрируем текст */
             font-size: 16px;
             margin: 0;
             font-weight: 600;
             font-size: 18px;
             font-family: $font_opensans;
+            text-align: left;
+            vertical-align: bottom;
         }
     }
 }

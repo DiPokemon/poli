@@ -6,7 +6,7 @@ Template Name: Шаблон страницы Новости
 <?php get_header(); ?>
 <?php include 'template-parts/variables.php' ?>
 
-<section>
+<section class="page_news_top">
     <div class="page_news_container container">
       <h2 class="page_news_title font_w700_s60"><?php the_title(); ?></h2>
       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -87,7 +87,7 @@ foreach ($news_feed as $item) :
   $current_text_class = $text_classes[$text_index]; 
   $text_index = ($text_index + 1) % count($text_classes); 
 ?>
-<section class="<?= $section_class ?>">
+<section class="<?= $section_class ?> midel">
   <div class="container">
     <h3 class="<?= $current_title_class ?> font_w700_s35"><?= $item['news_title'] ?></h3>
     <div class="<?= $current_body_class ?>">
@@ -182,3 +182,4 @@ foreach ($news_feed as $item) :
 
 
 <?php get_footer(); ?>
+

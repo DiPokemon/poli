@@ -144,3 +144,15 @@ menuItemsWithSubmenus.forEach(menuItem => {
         }, 300); // Здесь 300 миллисекунд – это время задержки
     });
 });
+
+
+window.addEventListener('load', adjustLayout);
+
+function adjustLayout() {
+  const image = document.querySelector('.important_img img');
+  const text = document.querySelector('.announcement_text p');
+  
+  if (text.offsetTop > image.clientHeight) {
+    text.style.width = '100%';
+  }
+}

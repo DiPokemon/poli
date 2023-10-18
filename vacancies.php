@@ -21,7 +21,7 @@ Template Name: Шаблон страницы Вакансии
         <div class="vacancies_block">
             <?php foreach ($vacancies as $vacancie) :?>
             <div class="vacancies_block_item">
-                <h3 class="vacancies_block_title"><?=$vacancie['title']?></h3>
+                <h4 class="vacancies_block_title"><?=$vacancie['title']?></h4>
                 <div class="vacancies_block_text"><b><?=$vacancie['sub_title_looking_for']?></b><?=$vacancie['looking_for']?><br>
                     <b><?=$vacancie['sub_title_job_type']?> </b><?=$vacancie['job_type']?><br>
                     <b><?=$vacancie['sub_title_salary']?></b><?=$vacancie['salary']?><br>

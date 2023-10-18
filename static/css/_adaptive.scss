@@ -387,7 +387,31 @@
 @media(max-width: 767px) {
     .contacts_body {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
+        .contacts_text {
+            .contacts_line1, .contacts_line2 {
+                div {
+                    font-size: 15px !important;
+                }
+            }
+            .contacts_line3 {
+                div {
+                    a {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+        .contacts_departs {
+            ul {
+                li {
+                    
+                    a {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
     }
     .news_body {
         .news_img {
@@ -401,7 +425,7 @@
 
 @media(min-width: 767px) {
     .contacts_text {
-        margin-right: 68px;
+        margin-right: 15px;
     }
 }
 
@@ -431,6 +455,37 @@
 }
 
 @media(max-width: 550px) {
+    h2 {
+        font-size: 28px !important;
+        line-height: normal !important;
+    }
+    h3 {
+        font-size: 22px !important;
+        line-height: normal !important;
+    }
+    h4 {
+        font-size: 16px !important;
+        line-height: normal !important;
+    }
+    .block_item {
+        font-size: 10px !important;
+        a {
+            font-size: 10px !important;
+        }
+    }
+    p {
+        font-size: 10px !important;
+        line-height: normal !important;
+        span {
+            font-size: 10px !important;
+            line-height: normal !important;
+        }
+    }
+    .text_bottom {
+        font-size: 10px !important;
+        line-height: normal !important;
+
+    }
     .contacts_body {
         .contacts_text {
             .contacts_line3,
@@ -605,14 +660,85 @@
             margin-left: 15px !important;
             margin-right: 15px !important;
         }
+        .contacts_form {
+            display: none !important;
+        }
     }
-    .cf_wrapper {
-        display: none !important;
-    }
+   
     .cf_wrapper_mobil {
         display: block !important;
     }
+
+    .header-card {
+        padding: 10px !important;
+        .card-img {
+            // flex: 2;
+            img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+        }
+        .card-text {
+            margin-left: 10px !important;
+            flex: 1;
+        } 
+    }
+
+
+    .info {
+        font-size: 14px !important;
+        line-height: normal !important;
+    }
+
+    .important1_text, .important3_text {
+        div {
+            a {
+                font-size: 14px !important;
+            }
+        }
+    
+    }
+
+
+
+
+
+
+
+    .reviews_column {
+        .reviews_item {
+        .reviews_item_title {
+            font-size: 14px !important;
+        }
+        }
+        }
+        .contact_form_title {
+            p {
+                font-size: 22px !important;
+            }
+        }
+        .cf_wrapper_mobil {
+            .cf7_title {
+                
+                    font-size: 22px !important;
+               
+            }
+        }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ----О больнице mobilka-----
 @media(max-width: 906px) {
@@ -697,35 +823,42 @@
 }
 
 @media(max-width: 767px) {
-    .administration_title {
-        font-size: 40px;
-    }
-    .administration_text_subtitle {
-        font-size: 25px;
-    }
-    .administration_text {
+    .administration_position {
+    .administration_position_text {
         font-size: 14px !important;
     }
-    .administration_position_title,
-    .administration_position_name {
-        font-size: 22px !important;
+    
+    h4 {
+        font-size: 16px !important;
+    }
     }
 }
 
 @media(max-width: 560px) {
     .administration_main {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
+        .administration_main_image {
+            margin: 15px 15px !important;
+        }
     }
     .administration_main_text {
         margin-left: 15px;
+        span {
+            font-size: 14px !important;
+        }
     }
 }
 
 @media(max-width: 500px) {
-    .administration_position {
-        display: flex;
-        flex-direction: column;
+    // .administration_position {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+    .administration_other {
+        .administration_position_image {
+            margin: 15px !important;
+        }
     }
     .administration_position_content {
         margin-left: 15px;
@@ -764,9 +897,9 @@
     .vacancies_title {
         font-size: 40px;
     }
-    .vacancies_block_title {
-        font-size: 20px !important;
-    }
+    // .vacancies_block_title {
+    //     font-size: 20px !important;
+    // }
     .vacancies_block_text {
         font-size: 14px !important;
     }
@@ -951,16 +1084,16 @@
 }
 
 // ----------------Запись на приём-------------
-@media(max-width: 767px) {
-    .appointment_container {
-        h2 {
-            font-size: 35px !important;
-        }
-        h3 {
-            font-size: 25px !important;
-        }
-    }
-}
+// @media(max-width: 767px) {
+//     .appointment_container {
+//         h2 {
+//             font-size: 35px !important;
+//         }
+//         h3 {
+//             font-size: 25px !important;
+//         }
+//     }
+// }
 
 // 
 // ----------Отзывы----------
@@ -999,11 +1132,11 @@
 
 @media(max-width: 519px) {
     .page_sout_title {
-        font-size: 30px !important;
+        font-size: 28px !important;
     }
     .sout_block {
         .sout_item {
-            font-size: 12px !important;
+            font-size: 10px !important;
             line-height: 18px !important;
         }
     }
@@ -1109,25 +1242,25 @@
 }
 
 @media(max-width: 767px) {
-    .page_news_top {
-        h2 {
-            font-size: 35px !important;
-        }
-        h3 {
-            font-size: 25px !important;
-            line-height: 1.5 !important;
-        }
-    }
-    .midel {
-        h3 {
-            font-size: 25px !important;
-        }
-    }
-    .news {
-        h3 {
-            font-size: 25px !important;
-        }
-    }
+    // .page_news_top {
+    //     h2 {
+    //         font-size: 35px !important;
+    //     }
+    //     h3 {
+    //         font-size: 25px !important;
+    //         line-height: 1.5 !important;
+    //     }
+    // }
+    // .midel {
+    //     h3 {
+    //         font-size: 25px !important;
+    //     }
+    // }
+    // .news {
+    //     h3 {
+    //         font-size: 25px !important;
+    //     }
+    // }
 }
 
 @media(max-width: 560px) {

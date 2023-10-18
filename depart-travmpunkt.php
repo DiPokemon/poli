@@ -8,7 +8,7 @@ Template Name: Взрослый и детский травмпункт
 <section>
         <div class="container depart-travmpunkt">
             <div class="title-depart">
-                <h1><?php echo get_the_title(); ?></h1>
+                <h2><?php echo get_the_title(); ?></h2>
             </div>
             <?php foreach($head_of_department as $item) :?>
             <div class="header-card">
@@ -16,10 +16,10 @@ Template Name: Взрослый и детский травмпункт
                     <img width="152px" height="177px" src="<?=$item['profile_pic']?>" alt="">
                 </div>
                 <div class="card-text">
-                    <h3><?=$item['job_title']?>
-                        </br>
+                    <h4><?=$item['job_title']?>
+                        <br>
                         <span> <?=$item['name']?></span>
-                    </h3>
+                    </h4>
                     <p><?=nl2br(htmlspecialchars($item['inf']))?></p>
                 </div>
             </div>
@@ -30,28 +30,28 @@ Template Name: Взрослый и детский травмпункт
                         <p><span><?=$item['sub_title_location']?></span> <?=$item['location']?></p>
                      </div>
                      <div class="info-style">
-                        <h3><b><?=$item['sub_title_number_adults']?></b> </h3>
+                        <h4><b><?=$item['sub_title_number_adults']?></b> </h4>
                         <p><li><?=$item['number_adults']?></li></p>
                         <p><li><?=$item['number_children']?></li></p>
                      </div>
                      <div class="info-style">
-                        <h3><b><?=$item['sub_title_working_hours_adults']?></b></h3>
+                        <h4><b><?=$item['sub_title_working_hours_adults']?></b></h4>
                         <p><li><?=$item['working_hours_adults']?></li></p>
                         <p><li><?=$item['working_hours_children']?></li></p>
                      </div>
                      <div class="info-style">
-                        <h3><b><?=$item['sub_title_working_hours_adults_repeat']?></b></h3>
+                        <h4><b><?=$item['sub_title_working_hours_adults_repeat']?></b></h4>
                         <p><li><?=$item['working_hours_adults_repeat']?></li></p>
                         <p><li><?=$item['working_hours_children_repeat']?></li></p>
                      </div>
                      <div class="info-style info-style_width">
-                        <h3><b> <?=$item['sub_title_content_adults']?></b></h3>
+                        <h4><b> <?=$item['sub_title_content_adults']?></b></h4>
                         <p><li><?=$item['content_adults']?></li></p>
                         <p><li><?=$item['content_children']?></li></p>
                         <?php endforeach ;?>
                   </div>
                   <div class="info-style info-style_width_profile">
-                     <h3><b> <?php echo carbon_get_the_post_meta('sub_title_profile'); ?> </b></h3>
+                     <h4><b> <?php echo carbon_get_the_post_meta('sub_title_profile'); ?> </b></h4>
                      <ul> 
                   <?php foreach($profile as $item) :?>
                   <p class="info-text"><li><?=nl2br(htmlspecialchars($item['profile']))?></li></p>
@@ -66,7 +66,7 @@ Template Name: Взрослый и детский травмпункт
                <div class="cards">
                   <?php foreach($travmpunkt_image as $item) :?>
                   <div class="twise-card">
-                     <img width="520px" height="346" src="<?=$item['image']?>"   alt="">
+                     <img src="<?=$item['image']?>"   alt="">
                   </div>
                   <?php endforeach ;?>
 

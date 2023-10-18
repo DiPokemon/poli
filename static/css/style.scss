@@ -562,7 +562,8 @@ body {
         display: flex;
         flex-direction: column;
         line-height: 24px;
-        // margin-right: 68px;
+        flex: 1.4;
+        margin-right: 5px;
         // width: 53%;
         .contacts_line1 {
             display: flex;
@@ -647,6 +648,7 @@ body {
     }
     // ---------Contact form home page------------
     .contacts_form {
+        max-width: 498px;
         background: $background_cf;
         border-radius: 20px;
         // max-width: 498px;
@@ -2008,6 +2010,11 @@ body {
         display: flex;
         .administration_main_image {
             margin: 40px 40px;
+            max-width: 238px;
+            max-height: 300px;
+            img {
+                width: 100%;
+            }
         }
         .administration_main_text {
             .administration_text_subtitle {
@@ -2044,6 +2051,11 @@ body {
             display: flex;
             .administration_position_image {
                 margin: 30px 40px 30px 30px;
+                max-width: 132px;
+                max-height: 157px;
+                img {
+                    width: 100%;
+                }
             }
             .administration_position_content {
                 display: flex;
@@ -2739,13 +2751,21 @@ body {
     border: 1px solid #BBDFE3;
     border-radius: 10px;
     padding: 30px;
+    .card-img {
+        max-width: 152px;
+        max-height: 177px;
+        img {
+            width: 152px;
+            height: 177px;
+        }
+    }
 }
 
 .card-text {
     margin-left: 30px;
 }
 
-.card-text h3 {
+.card-text h4 {
     font-size: 25px;
     font-family: "Open Sans";
     font-style: normal;
@@ -2945,10 +2965,20 @@ body {
 //     margin-top: -82px;
 // }
 .depart-travmpunkt {
+    margin-bottom: 20px;
     .cards {
         margin-top: 28px;
         margin-bottom: 28px;
-        justify-content: flex-start;
+        display: flex;
+        gap: 30px;
+        .twise-card {
+            max-width: 518px;
+            max-height: 346px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
     }
 }
 

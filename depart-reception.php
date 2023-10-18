@@ -36,12 +36,12 @@ Template Name: Приемное отделение стационара
         <div class="header-card">
             <?php foreach($receptions as $item) :?>
             <div class="card-img" >
-                <img width="152px" height="177px" src="<?=$item['profile_pic']?>" alt="">
+                <img src="<?=$item['profile_pic']?>" alt="">
             </div>
             <div class="card-text">
-                <h3><?=$item['job_title']?> <br>
+                <h4><?=$item['job_title']?> <br>
                     <span><?=$item['name']?></span>
-                </h3>
+                </h4>
                 <p><?=nl2br(htmlspecialchars($item['inf']))?></p>
             </div>
             <?php endforeach ;?>

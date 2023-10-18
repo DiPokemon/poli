@@ -84,7 +84,13 @@ Template Name: Шаблон страницы контактов
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A33a2a7bc07b169c86e649ae6c58e8143399888560efcdf4494892c443a5c2773&amp;width=1200&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
 
-
+        <div class="cf_wrapper_mobil">
+        <div class="contacts_form">
+        
+        <?= do_shortcode('[contact-form-7 id="67" title="Контактная форма 1"]'); ?>
+            
+            </div>
+            </div>
 
 
 </div>

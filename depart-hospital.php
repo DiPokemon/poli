@@ -10,7 +10,7 @@ Template Name: Отделения Городской больницы №4
     <section>
         <div class="container">
             <div class="title-depart">
-                <h1><?php echo get_the_title(); ?></h1>
+                <h2><?php echo get_the_title(); ?></h2>
             </div>
             <div class="for-flex">
                 <div class="search">
@@ -23,7 +23,7 @@ Template Name: Отделения Городской больницы №4
             </div>
 
             <div class="title-stacionar">
-                <h2><?= get_category( 1, ARRAY_A)['name']; ?></h2>
+                <h3><?= get_category( 1, ARRAY_A)['name']; ?></h3>
             </div>
         </div>
 
@@ -43,7 +43,7 @@ Template Name: Отделения Городской больницы №4
         <div class="container">
 
             <div class="title-otherdepart">
-                <h2><?= get_category( 5, ARRAY_A)['name']; ?></h2>
+                <h3><?= get_category( 5, ARRAY_A)['name']; ?></h3>
             </div>
 
 

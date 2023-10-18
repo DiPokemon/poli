@@ -391,11 +391,12 @@ Template Name: Main page
                 
             </div>
             
+            <!-- <div class="cf_wrapper"> -->
             <div class="contacts_form">
-            <div class="cf_wrapper">
+            
             <?= do_shortcode('[contact-form-7 id="67" title="Контактная форма 1"]'); ?>
             </div>
-            </div>
+            <!-- </div> -->
             
 
         </div>             

@@ -197,12 +197,12 @@ Template Name: Main page
                     <?php if ($banner['main_banner_url']) : ?>
                         <a href="<?=$banner['inf_important_banner_url']?>" class="banner">
                             <img class="main_banner_desk" src="<?=$banner['inf_important_banner_desk']?>" alt="<?=$banner['inf_important_banner_alt']?>" title="<?=$banner['inf_important_banner_title']?>">
-                            <img class="main_banner_mob" src="<?=$banner['inf_important_banner_mob']?>" alt="<?=$banner['inf_important_banner_alt']?>" title="<?=$banner['inf_important_banner_title']?>">
+                           
                         </a>
                     <?php else : ?>
                         <div class="banner">
                             <img class="main_banner_desk" src="<?=$banner['inf_important_banner_desk']?>" alt="<?=$banner['inf_important_banner_alt']?>" title="<?=$banner['inf_important_banner_title']?>">
-                            <img class="main_banner_mob" src="<?=$banner['inf_important_banner_mob']?>" alt="<?=$banner['inf_important_banner_alt']?>" title="<?=$banner['inf_important_banner_title']?>">
+                            
                         </div>
                     <?php endif; ?>
                 <?php endforeach; ?>
@@ -291,13 +291,13 @@ Template Name: Main page
                     <?php if ($banner['gallery_banner_url']) :?>
                         <a href="<?=$banner['gallery_banner_url']?>" class="banner">
                             <img class="main_banner_desk" src="<?=$banner['gallery_banner_desk']?>" alt="<?=$banner['gallery_banner_alt']?>" title="<?=$banner['gallery_banner_title']?>">
-                            <img class="main_banner_mob" src="<?=$banner['gallery_banner_mob']?>" alt="<?=$banner['gallery_banner_alt']?>" title="<?=$banner['gallery_banner_title']?>">
+                            
                     
                          </a>
                     <?php else : ?>
                         <div class='banner'>
                             <img class="main_banner_desk" src="<?=$banner['gallery_banner_desk']?>" alt="<?=$banner['gallery_banner_alt']?>" title="<?=$banner['gallery_banner_title']?>">
-                            <img class="main_banner_mob" src="<?=$banner['gallery_banner_mob']?>" alt="<?=$banner['gallery_banner_alt']?>" title="<?=$banner['gallery_banner_title']?>">
+                           
                         </div>
 
                     <?php endif; ?>

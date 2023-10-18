@@ -824,7 +824,7 @@ body {
                 font-family: $font_opensans;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 16px;
+                font-size: 14px;
                 // line-height: 19px;
                 text-align: center;
                 background: linear-gradient(40.37deg, #E80B8B 0%, #FF8ED0 100%);
@@ -978,9 +978,10 @@ body {
     // display:inline-flex;
     // align-items: center;
     // max-height: 481px;
-    height: 27vw;
+    height: auto;
     background: $slider_background;
-    padding-top: 50px;
+    padding-top: 63px;
+    padding-bottom: 50px;
     // padding-bottom: 63px;
     // max-width: 1920px;
     // margin: 0 auto;
@@ -1424,7 +1425,6 @@ body {
                 width: 100%;
                 height: auto;
                 max-height: 344px;
-
             }
         }
         .important1_text {
@@ -1476,7 +1476,7 @@ body {
                 height: auto;
                 max-height: 344px;
             }
-        }    
+        }
         .important2_text {
             line-height: 25px;
             flex-shrink: 2;
@@ -1969,7 +1969,7 @@ body {
                 height: auto;
                 max-height: 344px;
             }
-        } 
+        }
         .important2_text {
             line-height: 25px;
             // display: flex;
@@ -2816,7 +2816,7 @@ body {
     margin-bottom: 28px;
     .display-flex {
         display: flex;
-        // flex-wrap: wrap;
+        flex-wrap: wrap;
         // margin-bottom: 28px;
     }
 }
@@ -2839,7 +2839,7 @@ body {
 // }
 .display-flex-hospital {
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 14px;
     // justify-content: space-between;
     margin-bottom: 28px;
@@ -2862,9 +2862,10 @@ body {
         }
         p {
             position: absolute;
-            top: 70%; 
+            top: 70%;
             left: 20%;
-            transform: translate(-20%, -50%); /* Центрируем текст */
+            transform: translate(-20%, -50%);
+            /* Центрируем текст */
             font-size: 16px;
             margin: 0;
             font-weight: 600;

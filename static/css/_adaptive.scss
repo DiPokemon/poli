@@ -239,13 +239,13 @@
 //-------- slider important home page 
 @media(max-width: 1024px) {
     .slider_background {
-        height: 38vw;
+        // height: 38vw;
     }
 }
 
 @media(max-width: 767px) {
     .slider_background {
-        height: 70vw;
+        // height: 40vw;
     }
 }
 
@@ -405,7 +405,102 @@
     }
 }
 
+@media(max-width: 400px) {
+    .important_information {
+        .slider_background {
+            padding-top: 20px;
+            // height: 190px;
+        }
+        .slick-dots {
+            bottom: 30px;
+            li button:before {
+                font-size: 7px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 725px) {
+    .page_information_container {
+        .tabs_block {
+            .block_item {
+                line-height: 1 !important;
+            }
+        }
+    }
+}
+
 @media(max-width: 550px) {
+    .contacts_body {
+        .contacts_text {
+            .contacts_line3,
+            .contacts_line2,
+            .contacts_line1 {
+                .adress_left {
+                    font-size: 14px !important;
+                    .contacts_category-link {
+                        font-size: 14px !important;
+                    }
+                }
+                .adress_right {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+    // 
+    .contacts_departs {
+        .contacts_posts_items {
+            .contacts_posts_items-link {
+                font-size: 14px !important;
+            }
+        }
+    }
+    .important_information {
+        .slider_background {
+            padding-top: 20px;
+            // height: 55vw;
+            padding-bottom: 5px;
+        }
+        .slick-dots {
+            bottom: 20px;
+            li button:before {
+                font-size: 7px !important;
+            }
+        }
+    }
+    .gallery {
+        .slider_background_gallery {
+            padding-top: 20px;
+            height: 190px;
+            .slick-dots {
+                bottom: 20px;
+                li button:before {
+                    font-size: 7px !important;
+                }
+            }
+        }
+        .gallery_banner {
+            .banner {
+                height: 190px;
+                margin-right: 22px;
+                img {
+                    height: 150px;
+                    width: 225px;
+                    border-radius: 10px;
+                }
+                &.slick-active {
+                    width: 225px;
+                }
+            }
+            .slick-prev {
+                display: none;
+            }
+            .slick-next {
+                display: none;
+            }
+        }
+    }
     .hospital_left_mobil {
         display: block !important;
     }
@@ -446,7 +541,7 @@
         justify-content: center;
         border-radius: 50px;
         background: linear-gradient(40deg, #E80B8B 0%, #FF8ED0 100%);
-        padding: 11px 120px;
+        padding: 11px 10px;
         .departmens_bottom_link {
             color: $white;
             text-align: center;
@@ -481,7 +576,7 @@
         font-size: 14px;
     }
     .slider_background {
-        height: 80vw;
+        // height: 80vw;
     }
     // -----Блок новости----------
     .news_body {
@@ -495,7 +590,7 @@
             color: $white;
             text-align: center;
             font-family: $font_opensans;
-            font-size: 12px;
+            font-size: 14px !important;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -703,10 +798,21 @@
 }
 
 // -----------------Отделения-------------------
+@media(max-width: 1200px) {
+    .display-flex-hospital {
+        .card-text-img {
+            max-width: 24%;
+            p {
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
 @media(max-width: 1089px) {
     .display-flex-hospital {
         .card-text-img {
-            // flex: 0 1 calc(32.3% - 0px) !important;
+            max-width: 23.5%;
             p {
                 font-size: 14px !important;
             }
@@ -714,26 +820,96 @@
     }
 }
 
+@media(max-width: 950px) {
+    .display-flex-hospital {
+        .card-text-img {
+            p {
+                font-size: 13px !important;
+            }
+        }
+    }
+}
+
+@media(max-width: 850px) {
+    .display-flex-hospital {
+        .card-text-img {
+            p {
+                top: 60%;
+            }
+        }
+    }
+}
 
 @media(max-width: 767px) {
     .title-depart h1 {
         font-size: 40px;
     }
-
     .display-flex-hospital {
-        flex-wrap: wrap;
         .card-text-img {
-            width: 32% !important;
-            
+            max-width: 23%;
         }
     }
 }
 
-@media(max-width: 739px) {
+@media(max-width: 720px) {
     .display-flex-hospital {
-    .card-text-img {
-    width: 49% !important;
+        .card-text-img {
+            max-width: 31.5%;
+            p {
+                top: 65%;
+            }
+        }
     }
+}
+
+@media(max-width: 615px) {
+    .display-flex-hospital {
+        .card-text-img {
+            p {
+                top: 60%;
+            }
+        }
+    }
+}
+
+@media(max-width: 570px) {
+    .display-flex-hospital {
+        .card-text-img {
+            max-width: 48%;
+            p {
+                top: 70%;
+            }
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    .display-flex-hospital {
+        .card-text-img {
+            p {
+                top: 60%;
+            }
+        }
+    }
+}
+
+@media(max-width: 410px) {
+    .display-flex-hospital {
+        .card-text-img {
+            max-width: 47.5%;
+            p {
+                top: 60%;
+                font-size: 12px !important;
+            }
+        }
+    }
+}
+
+@media(max-width: 340px) {
+    .display-flex-hospital {
+        .card-text-img {
+            max-width: 46.5%;
+        }
     }
 }
 
@@ -776,17 +952,17 @@
 
 // ----------------Запись на приём-------------
 @media(max-width: 767px) {
-  .appointment_container {
-    h2 {
-        font-size: 35px !important;
+    .appointment_container {
+        h2 {
+            font-size: 35px !important;
+        }
+        h3 {
+            font-size: 25px !important;
+        }
     }
-    h3 {
-        font-size: 25px !important;
-    }
-  }
 }
 
-
+// 
 // ----------Отзывы----------
 @media(max-width: 630px) {
     .reviews_title {
@@ -879,7 +1055,7 @@
     .tabs_block {
         .block_item {
             font-size: 10px !important;
-            height: 9em !important;
+            height: 10em !important;
             a {
                 padding: 10px 0px !important;
             }
@@ -888,12 +1064,11 @@
 }
 
 // -----------------Страница новости--------------
-
 @media(max-width: 1000px) {
     .announcement_body {
         gap: 15px !important;
         .announcement_text {
-            p { 
+            p {
                 margin-top: 0 !important;
                 font-size: 14px !important;
             }
@@ -901,7 +1076,7 @@
     }
     .important1 {
         .important1_body {
-            gap: 15px !important;  
+            gap: 15px !important;
             padding-bottom: 0 !important;
             .important1_text {
                 p {
@@ -911,29 +1086,28 @@
             }
         }
     }
-    
-        .important2_body {
-            gap: 15px !important;  
-            padding-bottom: 0 !important;
-            .important2_text {
-                p {
-                    margin-top: 0 !important;
-                    font-size: 14px !important;
-                }
+    .important2_body {
+        gap: 15px !important;
+        padding-bottom: 0 !important;
+        .important2_text {
+            p {
+                margin-top: 0 !important;
+                font-size: 14px !important;
             }
         }
-        .important3_body {
-            gap: 15px !important;
-            padding-bottom: 10px !important;  
-            .important3_text {
-                p {
-                    padding-top: 0 !important;
-                    font-size: 14px !important;
-                }
+    }
+    .important3_body {
+        gap: 15px !important;
+        padding-bottom: 10px !important;
+        .important3_text {
+            p {
+                padding-top: 0 !important;
+                font-size: 14px !important;
             }
         }
-    
+    }
 }
+
 @media(max-width: 767px) {
     .page_news_top {
         h2 {
@@ -954,18 +1128,19 @@
             font-size: 25px !important;
         }
     }
-
 }
 
-
 @media(max-width: 560px) {
-    .announcement_body, .important1_body, .important2_body, .important3_body {
+    .announcement_body,
+    .important1_body,
+    .important2_body,
+    .important3_body {
         display: flex;
         flex-direction: column !important;
         align-items: center !important;
-        .important1_img, .important2_img {
+        .important1_img,
+        .important2_img {
             width: 100% !important;
-            
         }
         .announcement_text {
             p {

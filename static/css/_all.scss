@@ -8,7 +8,7 @@ $white: #ffffff;
 $red: #E80B8B;
 $pink: #FF8ED0;
 $footer_bg: #03646D;
-$footer_text : #BBDFE3;
+$footer_text: #BBDFE3;
 $header_social: #055D65;
 $border_line: #DCDCDC;
 $background_cf: #FAF2F9;
@@ -26,34 +26,38 @@ $font_opensans: 'OpenSans';
 
 .font_w700_s60 {
     font-family: $font_opensans;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 60px;
-        display: flex;
-        align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
 }
+
 .font_w700_s35 {
     font-family: $font_opensans;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 35px;
-        display: flex;
-        align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
 }
+
 .font_w600_s18 {
     font-family: $font_opensans;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
 }
+
 .font_w400_s18 {
     font-family: $font_opensans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        display: flex;
-        align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
 }
+
+//

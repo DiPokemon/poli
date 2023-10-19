@@ -2247,7 +2247,7 @@ body {
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  height: 109px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2261,6 +2261,7 @@ body {
 }
 .administration_container .administration_paycheck .administration_paycheck_item .block_item {
   margin: 0 30px;
+  height: 8em;
 }
 .administration_container .administration_paycheck .administration_paycheck_item .block_item a {
   color: #000000;
@@ -3834,7 +3835,7 @@ body {
     margin: 15px 15px !important;
   }
   .administration_main_text {
-    margin-left: 15px;
+    margin-left: 0px;
   }
   .administration_main_text span {
     font-size: 14px !important;
@@ -3847,10 +3848,13 @@ body {
   .administration_position_content {
     margin-left: 15px;
   }
-  .administration_paycheck_item {
-    height: 72px !important;
+  .administration_paycheck {
+    gap: 8px !important;
   }
-  .administration_paycheck_item a {
+  .administration_paycheck .administration_paycheck_item .block_item {
+    margin: 0 15px !important;
+  }
+  .administration_paycheck .administration_paycheck_item .block_item a {
     font-size: 10px !important;
     line-height: 15px !important;
   }

@@ -843,7 +843,7 @@
         }
     }
     .administration_main_text {
-        margin-left: 15px;
+        margin-left: 0px;
         span {
             font-size: 14px !important;
         }
@@ -863,12 +863,18 @@
     .administration_position_content {
         margin-left: 15px;
     }
+    .administration_paycheck {
+        gap: 8px !important;
     .administration_paycheck_item {
-        height: 72px !important;
+        // height: 72px !important;
+        .block_item {
+            margin: 0 15px !important;
         a {
             font-size: 10px !important;
             line-height: 15px !important;
         }
+    }
+    }
     }
     .administration_title {
         font-size: 35px;

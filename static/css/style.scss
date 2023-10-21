@@ -558,6 +558,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 36px;
+    margin-top: 10px;
     .contacts_text {
         display: flex;
         flex-direction: column;
@@ -577,6 +578,7 @@ body {
                 font-size: 18px;
                 // line-height: 25px;
                 color: $blue_h2;
+                
             }
             .adress_right {
                 font-family: $font_opensans;
@@ -599,6 +601,7 @@ body {
                 font-size: 18px;
                 // line-height: 25px;
                 color: $blue_h2;
+                flex-shrink: 0;
             }
             .adress_right {
                 font-family: $font_opensans;

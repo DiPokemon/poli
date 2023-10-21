@@ -329,13 +329,13 @@ Template Name: Main page
         
         <div class="contacts_body">
             <div class="contacts_text">
-                <div>
+                <!-- <div>
                     <span class="bold dark_green"></span><?= $adress_title ?>:</span>
                     <span><?= $address_index ?></span>
                     <span><?= $address_city ?></span>
                     <span><?= $address_street ?></span>
                     <span><?= $address_build ?></span>
-                </div>
+                </div> -->
                         
 
                 <div class="contacts_line1">

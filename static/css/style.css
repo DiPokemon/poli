@@ -798,6 +798,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 36px;
+  margin-top: 10px;
 }
 .contacts_body .contacts_text {
   display: -webkit-box;
@@ -855,6 +856,8 @@ body {
   font-weight: 700;
   font-size: 18px;
   color: #013236;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .contacts_body .contacts_text .contacts_line2 .adress_right {
   font-family: "OpenSans";
@@ -3970,6 +3973,7 @@ body {
   }
   .display-flex-hospital .card-text-img p {
     top: 70%;
+    line-height: 1 !important;
   }
 }
 @media (max-width: 450px) {
@@ -3983,7 +3987,7 @@ body {
   }
   .display-flex-hospital .card-text-img p {
     top: 60%;
-    font-size: 12px !important;
+    font-size: 11px !important;
   }
 }
 @media (max-width: 340px) {

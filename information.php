@@ -178,9 +178,3 @@ Template Name: Шаблон страницы Информация по прав�
 
 
 
-<style>
-    @media(max-width: 600px){
-    .slider_free_medical .slider__item img{
-        width:100% !important;
-    }}
-    </style>

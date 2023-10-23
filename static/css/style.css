@@ -4244,4 +4244,14 @@ body {
   .search-button {
     margin-left: 7px !important;
   }
+}
+@media (max-width: 767px) {
+  .page_information_block .page_information_list span {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 600px) {
+  .slider_free_medical .slider__item img {
+    width: 100% !important;
+  }
 }/*# sourceMappingURL=style.css.map */

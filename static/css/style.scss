@@ -578,7 +578,6 @@ body {
                 font-size: 18px;
                 // line-height: 25px;
                 color: $blue_h2;
-                
             }
             .adress_right {
                 font-family: $font_opensans;
@@ -2002,6 +2001,33 @@ body {
 }
 
 // --------------------Администрация-----------------------
+.admin_mob_main {
+    display: none;
+}
+
+.administration_other_mob {
+    display: none !important;
+}
+
+.administration_text {
+    margin: 0 10px 20px 0;
+    font-family: $font_opensans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    // display: flex;
+    // align-items: center;
+    color: $white;
+    .admin_contact_information {
+        font-weight: 400;
+    }
+}
+
+.administration_main_main {
+    background: linear-gradient(180deg, #51ACB5 0%, #45A6AF 52.08%, #00616A 100%);
+}
+
 .administration_container {
     .administration_title {
         margin: 28px 0;
@@ -2009,7 +2035,7 @@ body {
     }
     .administration_main {
         margin-bottom: 32px;
-        background: linear-gradient(180deg, #51ACB5 0%, #45A6AF 52.08%, #00616A 100%);
+        // background: linear-gradient(180deg, #51ACB5 0%, #45A6AF 52.08%, #00616A 100%);
         display: flex;
         .administration_main_image {
             margin: 40px 40px;

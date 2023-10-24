@@ -72,7 +72,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         variableWidth: true,
         dots: false,
-        centerPadding: '0px',
+        // centerPadding: '0px',
     });
 });
 
@@ -149,10 +149,10 @@ menuItemsWithSubmenus.forEach(menuItem => {
 window.addEventListener('load', adjustLayout);
 
 function adjustLayout() {
-  const image = document.querySelector('.important_img img');
-  const text = document.querySelector('.announcement_text p');
-  
-  if (text.offsetTop > image.clientHeight) {
-    text.style.width = '100%';
-  }
+    const image = document.querySelector('.important_img img');
+    const text = document.querySelector('.announcement_text p');
+
+    if (text.offsetTop > image.clientHeight) {
+        text.style.width = '100%';
+    }
 }

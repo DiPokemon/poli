@@ -44,6 +44,7 @@ Template Name: Приемное отделение стационара
                 </h4>
                 <p><?=nl2br(htmlspecialchars($item['inf']))?></p>
             </div>
+            
             <?php endforeach ;?>
         </div>
 

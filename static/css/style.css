@@ -4254,4 +4254,9 @@ body {
   .slider_free_medical .slider__item img {
     width: 100% !important;
   }
+}
+@media (max-width: 392px) {
+  .page_information_block .page_information_list span {
+    font-size: 11px !important;
+  }
 }/*# sourceMappingURL=style.css.map */

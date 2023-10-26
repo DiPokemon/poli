@@ -6,18 +6,22 @@ use Carbon_Fields\Field;
 Container::make('post_meta', 'Новости')
     ->show_on_template('news.php')
     ->add_fields(array(
+        Field::make('text', 'head_title', 'head title')
+            ->set_width(100),
+
+
+
         Field::make('complex', 'news_slider')
-            ->add_fields('video_slider', 'video slider',array(
-                Field::make('text', 'head_title', 'head title')
-                    ->set_width(100),
-                Field::make('complex', 'video')
-                    ->add_fields(array(
-                        Field::make('image', 'image')
+            ->add_fields('news_slider', 'video slider',array(
+                
+
+                
+                        Field::make('image', 'n_image')
                             ->set_value_type('url')
                             ->set_width(30),
-                        Field::make('text', 'url', 'url')
+                        Field::make('text', 'n_url', 'url')
                             ->set_attribute('type', 'url'),
-             ))
+             
              )),
              Field::make('complex', 'news_feed', 'все новости') 
              ->add_fields('news_feed', 'новости', array(

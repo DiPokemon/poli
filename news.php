@@ -7,7 +7,7 @@ Template Name: Шаблон страницы Новости
 <?php include 'template-parts/variables.php' ?>
 
 <section class="page_news_top">
-    <div class="page_news_container container">
+  <div class="page_news_container container">
       <h2 class="page_news_title font_w700_s60"><?php the_title(); ?></h2>
       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       
@@ -36,31 +36,61 @@ Template Name: Шаблон страницы Новости
 
       <!-- <input type="text" maxlength= "12" placeholder="Поиск" class="searchbar"> -->
       
-    </div>
-    <div class="prevention">
-        <div class="container">
-            <?php foreach($news_slider as $item) :?>
-                <h3 class="prevention_title font_w700_s35"><?=$item['head_title']?></h3>
-            <?php endforeach ;?>
-        </div>
+  </div>
+  <div class="prevention">
+      <div class="container">
+            
+                <h3 class="prevention_title font_w700_s35"><?php echo carbon_get_the_post_meta('head_title'); ?></h3>
+                
+      </div>
         <!-- <div class="news_slider"> -->
-        <div class="slider_wrapper">  
+      
+  <div class="slider_wrapper">
     <div class="news_prevention_slider">
-        <?php foreach($news_slider as $item) :?>
-        <div class="slider__item" >
-            <?php if(isset($item['video'])): ?>
-                <div class="video_wrapper" style="display: flex;">
-                    <?php foreach($item['video'] as $videoItem): ?>
-                        <div class="video_item" style="margin-right: 10px;">
-                        <a href="<?=$videoItem['url']?>"><img src="<?=$videoItem['image']?>" alt="video thumbnail"></a>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-            <?php endif; ?>
+    <?php if ($news_slider) :?>
+      <?php foreach($news_slider as $item) :?>
+        <div class="slider__item">
+          
+            <a href="<?=$item['n_url']?>"><img src="<?=$item['n_image']?>" alt="img"></a>
         </div>
         <?php endforeach ;?>
+        <?php endif; ?>
+      </div>
+      
+      
     </div>
-</div>
+  
+  
+  </div>
+      
+    
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  </div>
     
 </section>
 

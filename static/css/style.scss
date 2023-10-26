@@ -1243,8 +1243,15 @@ body {
 // ----------------Новости----------------
 .news_prevention_slider {
     /* Слайдер */
-    max-width: 1626px;
-    margin: 0 auto;
+    // max-width: 1626px;
+    // margin: 0 auto;
+    .slider__item {
+        max-width: 532px;
+        max-height: 300px;
+    img {
+        width: 100% !important;
+    }
+}
     .slick-slider {}
     /* Слайдер запущен */
     .slick-slider.slick-initialized {}
@@ -1287,10 +1294,10 @@ body {
     .slick-dots li button {}
 }
 
-.news_slider {
-    width: 1626px;
-    margin: 0 auto;
-}
+// .news_slider {
+//     width: 1626px;
+//     margin: 0 auto;
+// }
 
 .page_news_container {
     display: flex;

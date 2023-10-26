@@ -1440,8 +1440,6 @@ body {
 
 .news_prevention_slider {
   /* Слайдер */
-  max-width: 1626px;
-  margin: 0 auto;
   /* Слайдер запущен */
   /* Слайдер с точками */
   /* Ограничивающая оболочка */
@@ -1459,6 +1457,13 @@ body {
   /* Активная точка */
   /* Элемент точки */
 }
+.news_prevention_slider .slider__item {
+  max-width: 532px;
+  max-height: 300px;
+}
+.news_prevention_slider .slider__item img {
+  width: 100% !important;
+}
 .news_prevention_slider .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1468,11 +1473,6 @@ body {
 .news_prevention_slider .slick-arrow.slick-next {
   display: none;
 }
-.news_slider {
-  width: 1626px;
-  margin: 0 auto;
-}
-
 .page_news_container {
   display: -webkit-box;
   display: -ms-flexbox;

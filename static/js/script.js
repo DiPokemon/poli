@@ -61,20 +61,20 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() {
-    $('.news_prevention_slider').slick({
-        // arrows: false,
-        // slidesToShow: 3,
-        infinite: true,
-        autoplay: false,
-        slidesToShow: 1,
-        centerMode: true,
-        slidesToScroll: 1,
-        variableWidth: true,
-        dots: false,
-        // centerPadding: '0px',
-    });
-});
+// $(document).ready(function() {
+//     $('.news_prevention_slider').slick({
+//         arrows: false,
+//         slidesToShow: 3,
+//         infinite: true,
+//         autoplay: false,
+//         slidesToShow: 1,
+//         centerMode: true,
+//         slidesToScroll: 1,
+//         variableWidth: true,
+//         dots: false,
+//         centerPadding: '0px',
+//     });
+// });
 
 // $(document).ready(function() {
 //     $('.slider_time_limits').slick({

@@ -8,8 +8,8 @@ $(document).ready(function() {
         var $slider_time_limits = $(sliderWrap).find('.slider_time_limits');
         var $slider_free_medical = $(sliderWrap).find('.slider_free_medical');
         var $slider_patient_routing = $(sliderWrap).find('.slider_patient_routing');
-
-
+        var $news_prevention_slider = $(sliderWrap).find('.news_prevention_slider');
+        
         $main_banner.slick({
             infinite: true,
             autoplay: false,
@@ -151,7 +151,31 @@ $(document).ready(function() {
             }, ]
         })
 
-
+        $news_prevention_slider.slick({
+            infinite: true,
+            autoplay: false,
+            slidesToShow: 3,
+            centerMode: true,
+            slidesToScroll: 1,
+            variableWidth: false,
+            dots: false,
+            arrows: false,
+            // centerPadding: '0px',
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 2,
+                }
+            }, 
+            {
+                breakpoint: 500,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 1,
+                }
+            }, ]
+        })
 
 
 

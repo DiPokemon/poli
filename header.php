@@ -69,14 +69,14 @@
                        <h1 class="logo_text"><a href="#" class="logo_text-link"><?php echo carbon_get_theme_option('org_name'); ?></a></h1>
                        <div class="header_phone"><i class="fa-solid fa-phone"></i><a href="#" class="header_phone-link"><?php echo carbon_get_theme_option('main_phone'); ?></a></div>
                        <div class="header_phone"><i class="fa-solid fa-phone"></i><a href="#" class="header_phone-link"><?php echo carbon_get_theme_option('second_phone'); ?></a></div>
-                       <div class="visually_impaired"><a href="#" class="visually_impaired-link"><?php echo carbon_get_theme_option('visually_impaired'); ?></a></div>
+                       <div class="visually_impaired"><?php echo do_shortcode('[bvi text="версия для слабовидящих"]'); ?></div>
                     </div>
 
                     <!-- Mobil -->
                     <div class="site_identification_mobil">
                        <div class="logo_img logo_img_mobil"><?php the_custom_logo() ?></div>
                        <h1 class="logo_text"><a href="#" class="logo_text-link"><?php echo carbon_get_theme_option('org_name'); ?></a></h1>
-                       <div class="visually_impaired_mobil"><a href="#" class="visually_impaired-link_mobil"> <img class="visually_img" src="http://test-dev1.ru/wp-content/uploads/2023/05/Group843.png" alt="img" /></a></div>
+                       <div class="visually_impaired_mobil"> <?php echo do_shortcode('[bvi image_src="http://test-dev1.ru/wp-content/uploads/2023/05/Group843.png"]'); ?></div>
                        <div class="header_phone_mobil"><a href="#" class="header_phone-link_mobil"><img class="header_phone_img" src="http://test-dev1.ru/wp-content/uploads/2023/05/Group838.png" alt="img" /></a></div>
                        <div class="header_menu_mobil open_menu_mob"><a href="#" class="header_menu-link_mobil"><img class="header_menu_img" src="http://test-dev1.ru/wp-content/uploads/2023/05/Group841.png" alt="img" /></a></div>
                     </div>
@@ -244,3 +244,23 @@ closeButton.addEventListener("click", function() {
   modal.style.display = "none"; // Отобразить модальное окно
 });
 </script>
+
+
+<!-- <script>
+  // При загрузке страницы
+  document.addEventListener("DOMContentLoaded", function() {
+    // Найдите вашу кнопку
+    const visuallyImpairedButton = document.querySelector('.visually_impaired-link');
+
+    // Добавьте обработчик события клика
+    visuallyImpairedButton.addEventListener('click', function(e) {
+      // Предотвращаем стандартное действие ссылки
+      e.preventDefault();
+
+      // Запускаем функцию плагина "Button Visually Impaired" (bviToggle) при клике на вашу кнопку
+      if (typeof bviToggle === 'function') {
+        bviToggle();
+      }
+    });
+  });
+</script> -->

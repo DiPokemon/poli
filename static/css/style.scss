@@ -901,7 +901,29 @@ body {
 
 .site_identification {
     .visually_impaired {
-        margin-left: 20px;
+        margin-left: 10px;
+        .bvi-shortcode {
+            background-color: $white;
+            padding: 0;
+            margin: 0;
+            .bvi-open {
+                background-color: $white;
+                color: $red;
+                font-family: 'OpenSansCondensed';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                // line-height: 29px;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                letter-spacing: 0.8px;
+                .bvi-svg-eye {
+                    display: none;
+                }
+
+            }
+        }
     }
 }
 

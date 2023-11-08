@@ -299,6 +299,14 @@
         }
         .visually_impaired_mobil {
             margin-right: 5px;
+            img {
+                display: block !important;
+            }
+            // a {
+            //     img {
+            //     background-image: url(http://test-dev1.ru/wp-content/uploads/2023/05/Group843.svg);
+            //     }
+            // }
         }
         .header_phone_mobil {
             margin-right: 5px;

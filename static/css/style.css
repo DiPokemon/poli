@@ -1170,7 +1170,18 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.8px;
 }
-.site_identification .visually_impaired .bvi-shortcode .bvi-open .bvi-svg-eye {
+.site_identification .visually_impaired .bvi-shortcode .bvi-open img {
+  display: none;
+}
+
+.visually_impaired_mobil {
+  width: 30px;
+  height: 30px;
+}
+.visually_impaired_mobil .bvi-shortcode {
+  padding: 0;
+}
+.visually_impaired_mobil .bvi-shortcode img {
   display: none;
 }
 
@@ -3432,6 +3443,9 @@ body {
   }
   .site_identification_mobil .visually_impaired_mobil {
     margin-right: 5px;
+  }
+  .site_identification_mobil .visually_impaired_mobil img {
+    display: block !important;
   }
   .site_identification_mobil .header_phone_mobil {
     margin-right: 5px;

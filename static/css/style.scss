@@ -918,7 +918,7 @@ body {
                 align-items: center;
                 text-transform: uppercase;
                 letter-spacing: 0.8px;
-                .bvi-svg-eye {
+                img {
                     display: none;
                 }
 
@@ -926,7 +926,16 @@ body {
         }
     }
 }
-
+.visually_impaired_mobil {
+    width: 30px;
+    height: 30px;
+    .bvi-shortcode {
+        padding: 0;
+    img {
+        display: none;
+    }
+}
+}
 #menu-main-menu {
     height: 55px;
 }
